@@ -1,0 +1,366 @@
+<!-- Semana 3: El modelo IS-LM - Análisis del equilibrio general -->
+<!-- 10 páginas de contenido detallado -->
+
+<!-- Página 1 -->
+<div id="page-1" class="page-block">
+    <h2 class="handwritten-title">🔄 Semana 3: El Modelo IS-LM - Equilibrio General</h2>
+    <div class="handwritten-text">
+        <p><strong>Objetivo:</strong> Integrar las curvas IS y LM para determinar el equilibrio macroeconómico en una
+            economía cerrada, evaluando los efectos de cambios en las políticas fiscales y monetarias.</p>
+
+        <h3>3.1 Introducción al Modelo IS-LM</h3>
+        <p>El modelo <strong>IS-LM</strong>, desarrollado por <strong>John Hicks</strong> en 1937, es una síntesis de la
+            teoría keynesiana que muestra la interacción entre:</p>
+        <ul>
+            <li><strong>Mercado de Bienes:</strong> Representado por la curva IS</li>
+            <li><strong>Mercado de Dinero:</strong> Representado por la curva LM</li>
+        </ul>
+
+        <p>El modelo determina simultáneamente:</p>
+        <ul>
+            <li>El nivel de <strong>ingreso de equilibrio (Y*)</strong></li>
+            <li>La <strong>tasa de interés de equilibrio (i*)</strong></li>
+        </ul>
+
+        <div class="formula-box">
+            <strong>Sistema de Ecuaciones IS-LM:</strong><br>
+            IS: Y = [1/(1-c)]×[C₀ - cT + I₀ + G₀] - [b/(1-c)]×i<br>
+            LM: i = [(L₀ - M/P)/h] + (k/h)×Y
+        </div>
+    </div>
+</div>
+
+<!-- Página 2 -->
+<div id="page-2" class="page-block">
+    <h2 class="handwritten-title">⚖️ El Equilibrio Simultáneo</h2>
+    <div class="handwritten-text">
+        <h3>3.2 Determinación del Equilibrio</h3>
+        <p>El equilibrio macroeconómico se alcanza cuando <strong>ambos mercados</strong> están en equilibrio
+            simultáneamente:</p>
+
+        <div class="formula-box">
+            <strong>Condición de Equilibrio General:</strong><br>
+            Mercado de Bienes: Y = C + I + G (sobre la IS)<br>
+            Mercado de Dinero: M/P = L(Y, i) (sobre la LM)
+        </div>
+
+        <h4>Representación Gráfica</h4>
+        <p>En un diagrama con:</p>
+        <ul>
+            <li><strong>Eje horizontal:</strong> Ingreso (Y)</li>
+            <li><strong>Eje vertical:</strong> Tasa de interés (i)</li>
+        </ul>
+        <p>El equilibrio ocurre en la <strong>intersección</strong> de las curvas IS y LM.</p>
+
+        <h4>Solución Algebraica</h4>
+        <p>Sustituyendo la LM en la IS (o viceversa), obtenemos:</p>
+
+        <div class="formula-box">
+            <strong>Ingreso de Equilibrio:</strong><br>
+            Y* = [h/(h(1-c) + kb)] × [C₀ - cT + I₀ + G₀] + [b/(h(1-c) + kb)] × (M/P)
+        </div>
+    </div>
+</div>
+
+<!-- Página 3 -->
+<div id="page-3" class="page-block">
+    <h2 class="handwritten-title">📊 Ejemplo Numérico del Equilibrio</h2>
+    <div class="handwritten-text">
+        <h3>3.3 Caso Práctico</h3>
+        <p>Dados los siguientes parámetros:</p>
+        <ul>
+            <li>Consumo: C = 100 + 0.8Yd</li>
+            <li>Inversión: I = 200 - 25i</li>
+            <li>Gasto público: G = 150</li>
+            <li>Impuestos: T = 100</li>
+            <li>Demanda de dinero: L = 0.25Y - 50i</li>
+            <li>Oferta monetaria: M/P = 200</li>
+        </ul>
+
+        <h4>Paso 1: Derivar la Curva IS</h4>
+        <div class="formula-box">
+            Y = C + I + G<br>
+            Y = 100 + 0.8(Y - 100) + 200 - 25i + 150<br>
+            Y = 100 + 0.8Y - 80 + 200 - 25i + 150<br>
+            Y - 0.8Y = 370 - 25i<br>
+            0.2Y = 370 - 25i<br>
+            <strong>IS: Y = 1850 - 125i</strong>
+        </div>
+
+        <h4>Paso 2: Derivar la Curva LM</h4>
+        <div class="formula-box">
+            M/P = L<br>
+            200 = 0.25Y - 50i<br>
+            50i = 0.25Y - 200<br>
+            <strong>LM: i = 0.005Y - 4</strong>
+        </div>
+    </div>
+</div>
+
+<!-- Página 4 -->
+<div id="page-4" class="page-block">
+    <h2 class="handwritten-title">🔢 Solución del Equilibrio</h2>
+    <div class="handwritten-text">
+        <h4>Paso 3: Encontrar Y* e i*</h4>
+        <p>Sustituyendo LM en IS:</p>
+        <div class="formula-box">
+            Y = 1850 - 125(0.005Y - 4)<br>
+            Y = 1850 - 0.625Y + 500<br>
+            Y + 0.625Y = 2350<br>
+            1.625Y = 2350<br>
+            <strong>Y* = 1446.15</strong>
+        </div>
+
+        <p>Sustituyendo Y* en LM:</p>
+        <div class="formula-box">
+            i* = 0.005(1446.15) - 4<br>
+            i* = 7.23 - 4<br>
+            <strong>i* = 3.23%</strong>
+        </div>
+
+        <h4>Verificación</h4>
+        <p><strong>En la IS:</strong></p>
+        <div class="formula-box">
+            Y = 1850 - 125(3.23) = 1850 - 403.75 = 1446.25 ✓
+        </div>
+
+        <p><strong>En la LM:</strong></p>
+        <div class="formula-box">
+            200 = 0.25(1446.15) - 50(3.23) = 361.54 - 161.5 = 200 ✓
+        </div>
+    </div>
+</div>
+
+<!-- Página 5 -->
+<div id="page-5" class="page-block">
+    <h2 class="handwritten-title">⚡ Desequilibrios en el Modelo IS-LM</h2>
+    <div class="handwritten-text">
+        <h3>3.4 Análisis de Desequilibrios</h3>
+        <p>Fuera del equilibrio, existen fuerzas que restauran el balance:</p>
+
+        <h4>Puntos Fuera de la IS</h4>
+        <table class="data-table">
+            <tr>
+                <th>Ubicación</th>
+                <th>Situación</th>
+                <th>Ajuste</th>
+            </tr>
+            <tr>
+                <td>Arriba de IS</td>
+                <td>Y > DA (exceso de oferta)</td>
+                <td>↓Y (producción baja)</td>
+            </tr>
+            <tr>
+                <td>Debajo de IS</td>
+                <td>Y < DA (exceso de demanda)</td>
+                <td>↑Y (producción sube)</td>
+            </tr>
+        </table>
+
+        <h4>Puntos Fuera de la LM</h4>
+        <table class="data-table">
+            <tr>
+                <th>Ubicación</th>
+                <th>Situación</th>
+                <th>Ajuste</th>
+            </tr>
+            <tr>
+                <td>Arriba de LM</td>
+                <td>M/P > L (exceso de oferta de dinero)</td>
+                <td>↓i (tasa baja)</td>
+            </tr>
+            <tr>
+                <td>Debajo de LM</td>
+                <td>M/P < L (exceso de demanda de dinero)</td>
+                <td>↑i (tasa sube)</td>
+            </tr>
+        </table>
+
+        <h4>Zonas del Diagrama IS-LM</h4>
+        <p>El plano se divide en 4 zonas con diferentes presiones de ajuste, y todas convergen hacia el equilibrio E*.
+        </p>
+    </div>
+</div>
+
+<!-- Página 6 -->
+<div id="page-6" class="page-block">
+    <h2 class="handwritten-title">🔗 Interacción IS-LM</h2>
+    <div class="handwritten-text">
+        <h3>3.5 El Mecanismo de Transmisión</h3>
+        <p>Los mercados de bienes y dinero están interconectados a través de la <strong>tasa de interés</strong>:</p>
+
+        <h4>De la IS a la LM:</h4>
+        <ol>
+            <li>Un aumento en G desplaza la IS a la derecha</li>
+            <li>Aumenta Y (mayor producción)</li>
+            <li>Mayor Y → Mayor demanda de dinero</li>
+            <li>Con M fija → Sube la tasa de interés</li>
+        </ol>
+
+        <h4>De la LM a la IS:</h4>
+        <ol>
+            <li>Un aumento en M desplaza la LM a la derecha</li>
+            <li>Baja la tasa de interés</li>
+            <li>Menor i → Mayor inversión</li>
+            <li>Mayor inversión → Mayor producción (Y)</li>
+        </ol>
+
+        <div class="formula-box">
+            <strong>Cadena de Transmisión Monetaria:</strong><br>
+            ↑M → ↓i → ↑I → ↑DA → ↑Y
+        </div>
+
+        <div class="formula-box">
+            <strong>Cadena de Transmisión Fiscal:</strong><br>
+            ↑G → ↑DA → ↑Y → ↑L → ↑i → ↓I (efecto crowding-out)
+        </div>
+    </div>
+</div>
+
+<!-- Página 7 -->
+<div id="page-7" class="page-block">
+    <h2 class="handwritten-title">🚫 El Efecto Desplazamiento (Crowding-Out)</h2>
+    <div class="handwritten-text">
+        <h3>3.6 ¿Qué es el Crowding-Out?</h3>
+        <p>El <strong>efecto desplazamiento</strong> o <em>crowding-out</em> ocurre cuando un aumento del gasto público
+            reduce la inversión privada.</p>
+
+        <h4>Mecanismo del Crowding-Out</h4>
+        <ol>
+            <li>↑G → IS se desplaza a la derecha</li>
+            <li>↑Y → ↑ demanda de dinero</li>
+            <li>Con M fija → ↑i</li>
+            <li>↑i → ↓I (inversión privada cae)</li>
+            <li>El aumento final de Y es menor que sin crowding-out</li>
+        </ol>
+
+        <div class="formula-box">
+            <strong>Crowding-Out Parcial:</strong><br>
+            ΔY < k × ΔG (donde k=multiplicador simple) </div>
+
+                <h4>Grado de Crowding-Out</h4>
+                <table class="data-table">
+                    <tr>
+                        <th>Situación</th>
+                        <th>Grado de Crowding-Out</th>
+                    </tr>
+                    <tr>
+                        <td>LM vertical (caso clásico)</td>
+                        <td>Crowding-out completo</td>
+                    </tr>
+                    <tr>
+                        <td>LM horizontal (trampa de liquidez)</td>
+                        <td>Sin crowding-out</td>
+                    </tr>
+                    <tr>
+                        <td>LM con pendiente normal</td>
+                        <td>Crowding-out parcial</td>
+                    </tr>
+                </table>
+        </div>
+    </div>
+
+    <!-- Página 8 -->
+    <div id="page-8" class="page-block">
+        <h2 class="handwritten-title">📐 Multiplicadores en el Modelo IS-LM</h2>
+        <div class="handwritten-text">
+            <h3>3.7 Multiplicadores con Retroalimentación Monetaria</h3>
+            <p>Los multiplicadores del modelo IS-LM son menores que los del modelo keynesiano simple debido al efecto
+                sobre la tasa de interés.</p>
+
+            <h4>Multiplicador del Gasto Público</h4>
+            <div class="formula-box">
+                <strong>Multiplicador Fiscal (αG):</strong><br>
+                αG = dY/dG = h / [h(1-c) + kb]
+            </div>
+
+            <h4>Multiplicador Monetario</h4>
+            <div class="formula-box">
+                <strong>Multiplicador Monetario (αM):</strong><br>
+                αM = dY/d(M/P) = b / [h(1-c) + kb]
+            </div>
+
+            <h4>Comparación de Multiplicadores</h4>
+            <div class="ejemplo-box">
+                <strong>Ejemplo:</strong> Si c = 0.8, b = 25, h = 50, k = 0.25<br><br>
+                Multiplicador simple: k = 1/(1-0.8) = 5<br>
+                Multiplicador IS-LM: αG = 50/[50(0.2) + 0.25(25)] = 50/16.25 = 3.08<br><br>
+                El multiplicador efectivo es menor (3.08 vs 5) debido al crowding-out.
+            </div>
+        </div>
+    </div>
+
+    <!-- Página 9 -->
+    <div id="page-9" class="page-block">
+        <h2 class="handwritten-title">🎯 Casos Especiales del IS-LM</h2>
+        <div class="handwritten-text">
+            <h3>3.8 Casos Extremos</h3>
+
+            <h4>Caso 1: Trampa de Liquidez (LM horizontal)</h4>
+            <ul>
+                <li>h → ∞</li>
+                <li>Política fiscal: <strong>Máxima efectividad</strong></li>
+                <li>Política monetaria: <strong>Inefectiva</strong></li>
+                <li>No hay crowding-out</li>
+            </ul>
+
+            <h4>Caso 2: Caso Clásico (LM vertical)</h4>
+            <ul>
+                <li>h = 0</li>
+                <li>Política fiscal: <strong>Inefectiva</strong> (crowding-out completo)</li>
+                <li>Política monetaria: <strong>Máxima efectividad</strong></li>
+            </ul>
+
+            <h4>Caso 3: IS vertical (b = 0)</h4>
+            <ul>
+                <li>Inversión no responde a i</li>
+                <li>Política monetaria: <strong>Inefectiva</strong></li>
+                <li>Política fiscal: <strong>Efectiva</strong></li>
+            </ul>
+
+            <h4>Caso 4: IS horizontal (b → ∞)</h4>
+            <ul>
+                <li>Inversión muy sensible a i</li>
+                <li>Política monetaria: <strong>Muy efectiva</strong></li>
+                <li>Crowding-out mínimo</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Página 10 -->
+    <div id="page-10" class="page-block">
+        <h2 class="handwritten-title">📝 Resumen y Ejercicios - Semana 3</h2>
+        <div class="handwritten-text">
+            <h3>Resumen de la Semana 3</h3>
+            <div class="resumen-box">
+                <ul>
+                    <li><strong>Equilibrio IS-LM:</strong> Intersección de ambas curvas</li>
+                    <li><strong>Determina:</strong> Y* e i* simultáneamente</li>
+                    <li><strong>Crowding-out:</strong> ↑G → ↑i → ↓I</li>
+                    <li><strong>Multiplicadores IS-LM:</strong> Menores que el simple</li>
+                    <li><strong>Casos especiales:</strong> Trampa de liquidez y caso clásico</li>
+                </ul>
+            </div>
+
+            <h3>Ejercicios Propuestos</h3>
+            <div class="ejercicio-box">
+                <p><strong>1.</strong> Con C = 50 + 0.75Yd, I = 100 - 20i, G = 100, T = 80, L = 0.2Y - 40i, M/P = 100:
+                </p>
+                <p>a) Derive IS y LM</p>
+                <p>b) Encuentre Y* e i*</p>
+                <p>c) Si G sube a 150, ¿cuál es el nuevo equilibrio?</p>
+            </div>
+
+            <div class="ejercicio-box">
+                <p><strong>2.</strong> Explique el efecto crowding-out y cuándo es más severo.</p>
+            </div>
+
+            <div class="ejercicio-box">
+                <p><strong>3.</strong> ¿Por qué en la trampa de liquidez la política monetaria es inefectiva?</p>
+            </div>
+
+            <h3>Conceptos Clave</h3>
+            <p>✓ Equilibrio IS-LM | ✓ Crowding-Out | ✓ Multiplicadores | ✓ Transmisión Monetaria | ✓ Casos Especiales
+            </p>
+        </div>
+    </div>

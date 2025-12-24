@@ -1,0 +1,384 @@
+<!-- Semana 5: El modelo Mundell-Fleming -->
+<!-- 10 páginas de contenido detallado -->
+
+<!-- Página 1 -->
+<div id="page-1" class="page-block">
+    <h2 class="handwritten-title">🌍 Semana 5: El Modelo Mundell-Fleming</h2>
+    <div class="handwritten-text">
+        <p><strong>Objetivo:</strong> Aplicar el modelo Mundell-Fleming para analizar el comportamiento de una economía
+            abierta, considerando la interacción entre el tipo de cambio, la balanza de pagos y la política
+            macroeconómica.</p>
+
+        <h3>5.1 Introducción a la Economía Abierta</h3>
+        <p>El modelo <strong>Mundell-Fleming</strong> es una extensión del IS-LM para economías abiertas, desarrollado
+            por <strong>Robert Mundell</strong> y <strong>Marcus Fleming</strong> en los años 1960.</p>
+
+        <p>Añade dos elementos fundamentales:</p>
+        <ul>
+            <li><strong>Sector externo:</strong> Exportaciones e importaciones</li>
+            <li><strong>Flujos de capital:</strong> Movimientos de capital internacional</li>
+        </ul>
+
+        <h3>5.2 Supuestos del Modelo</h3>
+        <ul>
+            <li>Economía pequeña y abierta</li>
+            <li>Precios fijos (corto plazo)</li>
+            <li>Perfecta movilidad de capitales (versión básica)</li>
+            <li>Expectativas estáticas del tipo de cambio</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Página 2 -->
+<div id="page-2" class="page-block">
+    <h2 class="handwritten-title">📊 Las Tres Curvas del Modelo</h2>
+    <div class="handwritten-text">
+        <h3>5.3 Componentes del Modelo Mundell-Fleming</h3>
+
+        <h4>1. La Curva IS (Economía Abierta)</h4>
+        <div class="formula-box">
+            <strong>Demanda Agregada en Economía Abierta:</strong><br>
+            Y = C + I + G + NX<br>
+            Donde NX = X - M (exportaciones netas)
+        </div>
+
+        <p>Las exportaciones netas dependen de:</p>
+        <ul>
+            <li><strong>Tipo de cambio real (e):</strong> ↑e → ↑NX</li>
+            <li><strong>Ingreso nacional (Y):</strong> ↑Y → ↓NX (más importaciones)</li>
+            <li><strong>Ingreso extranjero (Y*):</strong> ↑Y* → ↑NX</li>
+        </ul>
+
+        <div class="formula-box">
+            NX = NX₀ + ne - mY<br>
+            Donde:<br>
+            n = sensibilidad a tipo de cambio<br>
+            m = propensión marginal a importar
+        </div>
+
+        <h4>Nueva Curva IS</h4>
+        <div class="formula-box">
+            Y = C₀ + c(Y-T) + I₀ - bi + G + NX₀ + ne - mY
+        </div>
+    </div>
+</div>
+
+<!-- Página 3 -->
+<div id="page-3" class="page-block">
+    <h2 class="handwritten-title">💱 La Curva LM y la Curva BP</h2>
+    <div class="handwritten-text">
+        <h4>2. La Curva LM</h4>
+        <p>La curva LM es similar a la de economía cerrada:</p>
+        <div class="formula-box">
+            M/P = L(Y, i)<br>
+            M/P = L₀ + kY - hi
+        </div>
+
+        <h4>3. La Curva BP (Balanza de Pagos)</h4>
+        <p>Representa el equilibrio externo:</p>
+        <div class="formula-box">
+            <strong>Balanza de Pagos:</strong><br>
+            BP = CC + CK = 0<br>
+            Donde:<br>
+            CC = Cuenta Corriente (NX)<br>
+            CK = Cuenta de Capital
+        </div>
+
+        <h4>Cuenta de Capital</h4>
+        <p>Depende del diferencial de tasas de interés:</p>
+        <div class="formula-box">
+            CK = f(i - i*)
+            <br>Donde i* = tasa de interés mundial
+        </div>
+
+        <h4>Ecuación de la BP</h4>
+        <div class="formula-box">
+            NX(Y, e) + CK(i - i*) = 0<br>
+            NX₀ + ne - mY + σ(i - i*) = 0
+        </div>
+        <p>Donde σ = sensibilidad de flujos de capital a i</p>
+    </div>
+</div>
+
+<!-- Página 4 -->
+<div id="page-4" class="page-block">
+    <h2 class="handwritten-title">📈 Pendiente de la Curva BP</h2>
+    <div class="handwritten-text">
+        <h3>5.4 Características de la Curva BP</h3>
+
+        <h4>Pendiente de la BP</h4>
+        <div class="formula-box">
+            Despejando i de la BP:<br>
+            i = i* + (mY - NX₀ - ne)/σ<br><br>
+            Pendiente: di/dY = m/σ
+        </div>
+
+        <h4>Movilidad de Capitales y Pendiente</h4>
+        <table class="data-table">
+            <tr>
+                <th>Movilidad</th>
+                <th>Valor de σ</th>
+                <th>Pendiente BP</th>
+            </tr>
+            <tr>
+                <td>Perfecta</td>
+                <td>σ → ∞</td>
+                <td>Horizontal (BP = 0)</td>
+            </tr>
+            <tr>
+                <td>Alta</td>
+                <td>σ grande</td>
+                <td>Casi horizontal</td>
+            </tr>
+            <tr>
+                <td>Baja</td>
+                <td>σ pequeño</td>
+                <td>Empinada</td>
+            </tr>
+            <tr>
+                <td>Nula</td>
+                <td>σ = 0</td>
+                <td>Vertical</td>
+            </tr>
+        </table>
+
+        <h4>Perfecta Movilidad de Capitales</h4>
+        <div class="formula-box">
+            Si σ → ∞, entonces:<br>
+            i = i* (paridad de tasas de interés)<br>
+            La BP es una línea horizontal en i = i*
+        </div>
+    </div>
+</div>
+
+<!-- Página 5 -->
+<div id="page-5" class="page-block">
+    <h2 class="handwritten-title">⚖️ Equilibrio en el Modelo Mundell-Fleming</h2>
+    <div class="handwritten-text">
+        <h3>5.5 Triple Equilibrio</h3>
+        <p>El equilibrio requiere que tres mercados estén simultáneamente en equilibrio:</p>
+
+        <ol>
+            <li><strong>Mercado de bienes:</strong> Sobre la IS</li>
+            <li><strong>Mercado de dinero:</strong> Sobre la LM</li>
+            <li><strong>Balanza de pagos:</strong> Sobre la BP</li>
+        </ol>
+
+        <div class="formula-box">
+            <strong>Equilibrio General:</strong><br>
+            IS ∩ LM ∩ BP
+        </div>
+
+        <h4>Representación Gráfica</h4>
+        <p>Con perfecta movilidad de capitales (BP horizontal):</p>
+        <ul>
+            <li>El equilibrio está donde IS y LM se cruzan sobre la línea i = i*</li>
+            <li>Si IS-LM se cruzan por encima de BP → entrada de capitales</li>
+            <li>Si IS-LM se cruzan por debajo de BP → salida de capitales</li>
+        </ul>
+
+        <h4>Mecanismo de Ajuste</h4>
+        <p>El ajuste depende del régimen cambiario:</p>
+        <ul>
+            <li><strong>Tipo de cambio fijo:</strong> Ajuste vía M (oferta monetaria)</li>
+            <li><strong>Tipo de cambio flexible:</strong> Ajuste vía e (tipo de cambio)</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Página 6 -->
+<div id="page-6" class="page-block">
+    <h2 class="handwritten-title">🔒 Tipo de Cambio Fijo</h2>
+    <div class="handwritten-text">
+        <h3>5.6 Régimen de Tipo de Cambio Fijo</h3>
+        <p>En este régimen, el Banco Central se compromete a mantener el tipo de cambio en un nivel determinado.</p>
+
+        <h4>Mecanismo de Intervención</h4>
+        <table class="data-table">
+            <tr>
+                <th>Situación</th>
+                <th>Presión sobre e</th>
+                <th>Intervención del BC</th>
+            </tr>
+            <tr>
+                <td>i > i* (superávit BP)</td>
+                <td>Apreciación</td>
+                <td>Compra divisas → ↑M</td>
+            </tr>
+            <tr>
+                <td>i < i* (déficit BP)</td>
+                <td>Depreciación</td>
+                <td>Vende divisas → ↓M</td>
+            </tr>
+        </table>
+
+        <h4>Consecuencias</h4>
+        <ul>
+            <li>El BC <strong>pierde control</strong> sobre la oferta monetaria</li>
+            <li>La LM se vuelve <strong>endógena</strong></li>
+            <li>M se ajusta para mantener i = i*</li>
+        </ul>
+
+        <div class="formula-box">
+            <strong>Equilibrio Final TC Fijo:</strong><br>
+            La LM se desplaza hasta que IS-LM se crucen sobre BP (i = i*)
+        </div>
+    </div>
+</div>
+
+<!-- Página 7 -->
+<div id="page-7" class="page-block">
+    <h2 class="handwritten-title">💹 Tipo de Cambio Flexible</h2>
+    <div class="handwritten-text">
+        <h3>5.7 Régimen de Tipo de Cambio Flexible</h3>
+        <p>En este régimen, el tipo de cambio se determina por oferta y demanda en el mercado cambiario.</p>
+
+        <h4>Mecanismo de Ajuste</h4>
+        <table class="data-table">
+            <tr>
+                <th>Situación</th>
+                <th>Efecto sobre e</th>
+                <th>Efecto sobre IS</th>
+            </tr>
+            <tr>
+                <td>i > i* (entrada de K)</td>
+                <td>↓e (apreciación)</td>
+                <td>IS izquierda (↓NX)</td>
+            </tr>
+            <tr>
+                <td>i < i* (salida de K)</td>
+                <td>↑e (depreciación)</td>
+                <td>IS derecha (↑NX)</td>
+            </tr>
+        </table>
+
+        <h4>Consecuencias</h4>
+        <ul>
+            <li>El BC <strong>mantiene control</strong> sobre M</li>
+            <li>La LM es <strong>exógena</strong></li>
+            <li>La IS se ajusta vía cambios en e</li>
+        </ul>
+
+        <div class="formula-box">
+            <strong>Equilibrio Final TC Flexible:</strong><br>
+            La IS se desplaza hasta que IS-LM se crucen sobre BP (i = i*)
+        </div>
+    </div>
+</div>
+
+<!-- Página 8 -->
+<div id="page-8" class="page-block">
+    <h2 class="handwritten-title">📐 Modelo Mundell-Fleming: Diagrama</h2>
+    <div class="handwritten-text">
+        <h3>5.8 Representación Gráfica Completa</h3>
+
+        <h4>Ejes del Diagrama</h4>
+        <ul>
+            <li><strong>Eje horizontal:</strong> Ingreso (Y)</li>
+            <li><strong>Eje vertical:</strong> Tasa de interés (i)</li>
+        </ul>
+
+        <h4>Curvas en el Diagrama</h4>
+        <table class="data-table">
+            <tr>
+                <th>Curva</th>
+                <th>Pendiente</th>
+                <th>Representa</th>
+            </tr>
+            <tr>
+                <td>IS</td>
+                <td>Negativa</td>
+                <td>Equilibrio mercado de bienes</td>
+            </tr>
+            <tr>
+                <td>LM</td>
+                <td>Positiva</td>
+                <td>Equilibrio mercado de dinero</td>
+            </tr>
+            <tr>
+                <td>BP</td>
+                <td>Horizontal*</td>
+                <td>Equilibrio balanza de pagos</td>
+            </tr>
+        </table>
+        <p>*Con perfecta movilidad de capitales</p>
+
+        <h4>Zonas del Diagrama</h4>
+        <ul>
+            <li><strong>Por encima de BP:</strong> Superávit de BP → entrada de capitales</li>
+            <li><strong>Por debajo de BP:</strong> Déficit de BP → salida de capitales</li>
+        </ul>
+
+        <div class="ejemplo-box">
+            <strong>Nota:</strong> El diagrama también puede representarse con e (tipo de cambio) en el eje vertical en
+            lugar de i, especialmente para el análisis de tipo de cambio flexible.
+        </div>
+    </div>
+</div>
+
+<!-- Página 9 -->
+<div id="page-9" class="page-block">
+    <h2 class="handwritten-title">🌐 Versión Alternativa: Y-e</h2>
+    <div class="handwritten-text">
+        <h3>5.9 Modelo con Tipo de Cambio en el Eje Vertical</h3>
+        <p>Una versión alternativa del modelo usa:</p>
+        <ul>
+            <li><strong>Eje horizontal:</strong> Y (ingreso)</li>
+            <li><strong>Eje vertical:</strong> e (tipo de cambio)</li>
+        </ul>
+
+        <h4>Curva IS* (con e)</h4>
+        <div class="formula-box">
+            IS*: Y = f(e, G, T, i*)<br>
+            Pendiente positiva: ↑e → ↑NX → ↑Y
+        </div>
+
+        <h4>Curva LM* (con e)</h4>
+        <div class="formula-box">
+            LM*: Y = f(M/P, i*)<br>
+            Vertical (no depende de e directamente)
+        </div>
+
+        <h4>Interpretación</h4>
+        <p>Con perfecta movilidad de capitales (i = i*):</p>
+        <ul>
+            <li>La LM* es <strong>vertical</strong></li>
+            <li>El equilibrio determina Y (por LM*) y e (por IS*)</li>
+            <li>Útil para analizar efectos sobre el tipo de cambio</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Página 10 -->
+<div id="page-10" class="page-block">
+    <h2 class="handwritten-title">📝 Resumen y Ejercicios - Semana 5</h2>
+    <div class="handwritten-text">
+        <h3>Resumen de la Semana 5</h3>
+        <div class="resumen-box">
+            <ul>
+                <li><strong>Mundell-Fleming:</strong> IS-LM para economía abierta</li>
+                <li><strong>Curva BP:</strong> Equilibrio de balanza de pagos</li>
+                <li><strong>Perfecta movilidad:</strong> BP horizontal, i = i*</li>
+                <li><strong>TC Fijo:</strong> BC ajusta M, LM endógena</li>
+                <li><strong>TC Flexible:</strong> e se ajusta, IS endógena</li>
+            </ul>
+        </div>
+
+        <h3>Ejercicios Propuestos</h3>
+        <div class="ejercicio-box">
+            <p><strong>1.</strong> ¿Por qué la curva BP es horizontal cuando hay perfecta movilidad de capitales?</p>
+        </div>
+
+        <div class="ejercicio-box">
+            <p><strong>2.</strong> Explique el mecanismo de ajuste bajo tipo de cambio fijo cuando i > i*.</p>
+        </div>
+
+        <div class="ejercicio-box">
+            <p><strong>3.</strong> ¿Qué diferencia hay en el control del BC sobre M entre TC fijo y flexible?</p>
+        </div>
+
+        <h3>Conceptos Clave</h3>
+        <p>✓ Economía Abierta | ✓ Balanza de Pagos | ✓ Movilidad de Capitales | ✓ Tipo de Cambio | ✓ Triple Equilibrio
+        </p>
+    </div>
+</div>

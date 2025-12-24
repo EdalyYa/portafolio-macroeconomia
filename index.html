@@ -7,27 +7,29 @@
     <title>📚 Cuaderno de Apuntes - Macroeconomía I | Edaly Yamileth Paredes Condori - UNA v3.0</title>
     <link rel="icon" href="/assets/fie.png">
     <link
-        href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Caveat:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Caveat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=UnifrakturMaguntia&family=Grenze+Gotisch:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+
     <!-- MathJax global para renderizar fórmulas en todo el sitio -->
     <script>
-      window.MathJax = {
-        tex: {
-          inlineMath: [['\\(','\\)'], ['$', '$']],
-          displayMath: [['\\[','\\]'], ['$$','$$']],
-          macros: {
-            Pr: "\\operatorname{Pr}",
-            Var: "\\operatorname{Var}",
-            SE: "\\operatorname{SE}",
-            MSE: "\\operatorname{MSE}",
-            E: "\\mathbb{E}",
-            Normal: ["\\mathcal{N}\\left(#1,#2\\right)", 2],
-            tStudent: ["\\mathrm{t}_{#1}", 1],
-            ChiSq: ["\\chi^2_{#1}", 1],
-            FDist: ["\\mathrm{F}_{#1,#2}", 2]
-          }
-        }
-      };
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)'], ['$', '$']],
+                displayMath: [['\\[', '\\]'], ['$$', '$$']],
+                macros: {
+                    Pr: "\\operatorname{Pr}",
+                    Var: "\\operatorname{Var}",
+                    SE: "\\operatorname{SE}",
+                    MSE: "\\operatorname{MSE}",
+                    E: "\\mathbb{E}",
+                    Normal: ["\\mathcal{N}\\left(#1,#2\\right)", 2],
+                    tStudent: ["\\mathrm{t}_{#1}", 1],
+                    ChiSq: ["\\chi^2_{#1}", 1],
+                    FDist: ["\\mathrm{F}_{#1,#2}", 2]
+                }
+            }
+        };
     </script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -319,8 +321,15 @@
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-6px); }
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-6px);
+            }
         }
 
         .notebook {
@@ -664,6 +673,102 @@
             transform: rotate(-0.1deg);
         }
 
+        /* Ejemplos en español */
+        .ejemplo-box {
+            background: linear-gradient(135deg, #e8f5e8, #c8e6c9);
+            border: 2px solid #4caf50;
+            border-radius: 12px;
+            padding: 15px;
+            margin: 15px 0;
+            font-family: 'Kalam', cursive;
+            box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
+        }
+
+        .ejemplo-box strong {
+            color: #2e7d32;
+        }
+
+        /* Caja de resumen */
+        .resumen-box {
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            border: 2px solid #2196f3;
+            border-radius: 12px;
+            padding: 15px;
+            margin: 15px 0;
+            font-family: 'Kalam', cursive;
+            box-shadow: 0 4px 12px rgba(33, 150, 243, 0.2);
+        }
+
+        .resumen-box ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .resumen-box li {
+            padding: 5px 0;
+            border-bottom: 1px dashed rgba(33, 150, 243, 0.3);
+        }
+
+        .resumen-box li:last-child {
+            border-bottom: none;
+        }
+
+        /* Caja de ejercicios */
+        .ejercicio-box {
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+            border: 2px solid #ff9800;
+            border-radius: 12px;
+            padding: 15px;
+            margin: 15px 0;
+            font-family: 'Kalam', cursive;
+            box-shadow: 0 4px 12px rgba(255, 152, 0, 0.2);
+        }
+
+        .ejercicio-box strong {
+            color: #e65100;
+        }
+
+        .ejercicio-box p {
+            margin: 8px 0;
+        }
+
+        /* Tabla de datos */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-family: 'Kalam', cursive;
+            font-size: 13px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .data-table th {
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            color: white;
+            padding: 10px 12px;
+            text-align: left;
+            font-weight: bold;
+            border: 1px solid #1e40af;
+        }
+
+        .data-table td {
+            padding: 8px 12px;
+            border: 1px solid #e2e8f0;
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .data-table tr:nth-child(even) td {
+            background: rgba(241, 245, 249, 0.9);
+        }
+
+        .data-table tr:hover td {
+            background: rgba(59, 130, 246, 0.1);
+        }
+
+
         /* Sticky Note para información clave */
         .sticky-note {
             position: absolute;
@@ -674,7 +779,7 @@
             border: 1px solid #f57f17;
             border-radius: 8px;
             padding: 15px;
-            box-shadow: 
+            box-shadow:
                 0 4px 8px rgba(0, 0, 0, 0.1),
                 0 0 0 1px rgba(245, 127, 23, 0.2);
             transform: rotate(2deg);
@@ -858,104 +963,30 @@
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         }
 
-        /* Portada estilo cuaderno real - OPTIMIZADA PARA ALTURA */
+        /* ========== PORTADA ESTILO LIBRO ACADÉMICO ELEGANTE ========== */
         .cover-page {
-            position: relative;
-            padding: 12px 16px;
-            height: 100%;
-            width: 100%;
-            background: linear-gradient(135deg, #2a5298 0%, #1e3a8a 50%, #1e40af 100%);
+            position: absolute;
+            top: -40px;
+            left: -130px;
+            right: -20px;
+            bottom: -40px;
+            padding: 35px 40px 35px 150px;
+            background: linear-gradient(180deg, #0d1b2a 0%, #1b2838 30%, #1b2838 70%, #0d1b2a 100%);
             overflow: hidden;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: flex-start;
-            gap: 10px;
-        }
-
-        /* Espacios para logos en la parte superior */
-        .logo-spaces {
-            position: absolute;
-            top: 12px;
-            left: 0;
-            right: 0;
-            display: flex;
-            justify-content: space-between;
-            padding: 0 20px;
-            z-index: 15;
-        }
-
-        .logo-space {
-            width: clamp(72px, 10vw, 96px);
-            height: clamp(72px, 10vw, 96px);
-            background: linear-gradient(145deg, #ffffff, #f1f5f9);
-            border: 2px solid #e2e8f0;
-            border-radius: 18px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            gap: 18px;
+            border: 6px solid #2c3e50;
             box-shadow:
-                0 6px 15px rgba(0, 0, 0, 0.15),
-                inset 0 1px 0 rgba(255, 255, 255, 0.8);
-            transform: rotate(-2deg);
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-            padding: 10px;
+                inset 0 0 60px rgba(0, 0, 0, 0.5),
+                inset 0 0 100px rgba(0, 0, 0, 0.3);
+            z-index: 100;
+            border-radius: 0 8px 8px 0;
         }
 
-        .logo-space:nth-child(2) {
-            transform: rotate(2deg);
-        }
-
-        .logo-space img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            border-radius: 8px;
-        }
-
-        /* Fallback cuando las imágenes no cargan */
-        .logo-space::before {
-            content: '🏛️';
-            font-size: 40px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 1;
-        }
-
-        .logo-space:nth-child(2)::before {
-            content: '🎓';
-        }
-
-        .logo-space img:not([src=""]) {
-            z-index: 2;
-            position: relative;
-        }
-
-        .logo-space:hover {
-            transform: rotate(0deg) scale(1.05);
-            border-color: #3b82f6;
-            box-shadow:
-                0 6px 20px rgba(59, 130, 246, 0.2),
-                inset 0 1px 0 rgba(255, 255, 255, 0.9);
-        }
-
-        .logo-space::after {
-            content: '';
-            position: absolute;
-            bottom: -25px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-family: 'Kalam', cursive;
-            font-size: 10px;
-            color: rgba(255, 255, 255, 0.6);
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-        }
-
-        /* Textura de cuaderno */
+        /* Textura de cuero/libro */
         .cover-page::before {
             content: '';
             position: absolute;
@@ -964,114 +995,243 @@
             right: 0;
             bottom: 0;
             background:
-                repeating-linear-gradient(45deg,
+                repeating-linear-gradient(0deg,
                     transparent,
-                    transparent 2px,
-                    rgba(255, 255, 255, 0.03) 2px,
-                    rgba(255, 255, 255, 0.03) 4px),
-                radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+                    transparent 1px,
+                    rgba(255, 255, 255, 0.02) 1px,
+                    rgba(255, 255, 255, 0.02) 2px);
+            pointer-events: none;
             z-index: 1;
         }
 
-        /* Etiqueta principal del cuaderno - ULTRA COMPACTA */
+        /* Borde dorado interior */
+        .cover-page::after {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            border: 2px solid rgba(201, 162, 39, 0.4);
+            border-radius: 4px;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        /* Encabezado universitario - SIN CAJA, LOGOS EN EXTREMOS */
         .notebook-label {
-            background: linear-gradient(145deg, #fef3c7, #fde68a);
-            border: 3px solid #d97706;
-            border-radius: 12px;
-            padding: 10px 16px;
-            box-shadow:
-                0 6px 20px rgba(0, 0, 0, 0.3),
-                inset 0 1px 0 rgba(255, 255, 255, 0.7);
+            background: transparent;
+            border: none;
+            border-radius: 0;
+            padding: 15px 10px;
+            box-shadow: none;
             z-index: 10;
-            transform: rotate(-1deg);
-            margin: 22px auto 0 auto;
-            width: min(700px, calc(100% - 48px));
+            margin-top: 10px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .notebook-label .logo-inline {
+            width: 90px;
+            height: 90px;
+            border-radius: 8px;
+            object-fit: contain;
+            border: 3px solid #c9a227;
+            background: white;
+            padding: 5px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .notebook-label-text {
+            text-align: center;
+            flex: 1;
         }
 
         .cover-title {
-            font-family: 'Caveat', cursive;
-            font-size: clamp(18px, 2.2vw, 24px);
+            font-family: 'Grenze Gotisch', Georgia, serif;
+            font-size: clamp(26px, 3.2vw, 36px);
             font-weight: 700;
-            color: #92400e;
+            color: #c9a227;
             margin: 0;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
             text-align: center;
+            line-height: 1.2;
         }
 
         .cover-subtitle {
-            font-family: 'Kalam', cursive;
-            font-size: clamp(11px, 1.6vw, 16px);
-            color: #b45309;
-            margin: 2px 0 0 0;
+            font-family: 'Grenze Gotisch', Georgia, serif;
+            font-size: clamp(14px, 1.6vw, 20px);
+            color: #a89060;
+            margin: 4px 0 0 0;
             text-align: center;
-            font-weight: 600;
-            line-height: 1.1;
+            font-weight: 700;
+            line-height: 1.2;
         }
 
-        /* Información del estudiante - SUPER COMPACTA */
-        .student-info {
-            background: linear-gradient(145deg, #ffffff, #f8fafc);
-            border: 2px solid #64748b;
-            border-radius: 10px;
-            padding: 14px 20px;
-            box-shadow:
-                0 6px 20px rgba(0, 0, 0, 0.2),
-                inset 0 1px 0 rgba(255, 255, 255, 0.8);
+        /* Ocultar elementos no necesarios */
+        .notebook-subtitle-label,
+        .logo-spaces,
+        .logo-space,
+        .corner-decoration,
+        .notebook-decoration {
+            display: none !important;
+        }
+
+        /* Título principal del curso - GRANDE Y ELEGANTE */
+        .course-info {
+            background: transparent;
+            border: none;
+            padding: 10px 20px;
+            box-shadow: none;
             z-index: 10;
-            width: clamp(340px, 62vw, 560px);
-            max-width: calc(100% - 48px);
-            transform: rotate(1deg);
-            position: relative;
+            width: min(500px, calc(100% - 50px));
+            text-align: center;
+            margin-top: 15px;
         }
 
-        .student-info::before {
-            content: '📝';
-            position: absolute;
-            top: -12px;
-            left: -12px;
-            font-size: 20px;
-            background: #3b82f6;
-            border-radius: 50%;
-            width: 35px;
-            height: 35px;
+        .course-title {
+            font-family: 'Grenze Gotisch', Georgia, serif;
+            font-size: clamp(36px, 5.5vw, 60px);
+            font-weight: 700;
+            font-style: normal;
+            color: #c9a227;
+            text-shadow:
+                3px 3px 6px rgba(0, 0, 0, 0.7),
+                0 0 25px rgba(201, 162, 39, 0.5);
+            margin-bottom: 20px;
+            letter-spacing: 4px;
+            display: block;
+            white-space: nowrap;
+        }
+
+        .course-title::before {
+            content: none;
+        }
+
+        .course-details {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+            gap: 10px;
+            font-family: 'Grenze Gotisch', Georgia, serif;
+            font-size: clamp(18px, 2.2vw, 26px);
+            font-weight: 700;
+            color: #c9a227;
         }
 
-        .info-line {
-            font-family: 'Kalam', cursive;
-            font-size: clamp(12px, 1.8vw, 16px);
-            color: #1e293b;
-            margin-bottom: 6px;
-            padding-bottom: 6px;
-            border-bottom: 1px dotted #cbd5e1;
+        .course-details span {
+            display: block;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .course-details strong {
+            color: #e8d4a8;
+            font-weight: 600;
+        }
+
+        /* Sección de estudiantes - ESTILO ELEGANTE */
+        .students-container {
+            background: transparent;
+            border: none;
+            padding: 8px 20px;
+            box-shadow: none;
+            z-index: 10;
+            width: min(500px, calc(100% - 50px));
+            margin-top: 5px;
+        }
+
+        .students-title {
+            display: none;
+        }
+
+        .students-grid {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+            gap: 10px;
             align-items: center;
-            line-height: 1.35;
-        }
-
-        .info-line:last-child {
-            border-bottom: none;
             margin-bottom: 0;
         }
 
-        .info-label {
-            font-weight: 600;
-            color: #475569;
-            min-width: clamp(90px, 40%, 160px);
+        .student-card {
+            background: transparent;
+            border: none;
+            padding: 0;
+            box-shadow: none;
+            display: block;
+            text-align: center;
+            min-width: auto;
+            max-width: none;
         }
 
-        .info-value {
-            color: #1e40af;
-            font-weight: 600;
-            text-align: right;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+        .student-card:hover {
+            transform: none;
+            box-shadow: none;
+        }
+
+        .student-icon {
+            display: none;
+        }
+
+        .student-name {
+            font-family: 'Grenze Gotisch', Georgia, serif;
+            font-size: clamp(18px, 2.2vw, 26px);
+            font-weight: 700;
+            color: #c9a227;
+            line-height: 1.4;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+        }
+
+        .student-name::before {
+            content: 'Estudiante: ';
+            color: #a89060;
+        }
+
+        /* Botones de acceso a unidades */
+        .unit-access-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 15px;
+            z-index: 10;
+        }
+
+        .unit-btn {
+            font-family: 'Grenze Gotisch', Georgia, serif;
+            font-size: clamp(16px, 1.8vw, 22px);
+            font-weight: 700;
+            padding: 12px 30px;
+            background: linear-gradient(180deg, rgba(201, 162, 39, 0.2) 0%, rgba(201, 162, 39, 0.1) 100%);
+            border: 2px solid #c9a227;
+            border-radius: 8px;
+            color: #c9a227;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.2);
+        }
+
+        .unit-btn:hover {
+            background: linear-gradient(180deg, rgba(201, 162, 39, 0.4) 0%, rgba(201, 162, 39, 0.2) 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(201, 162, 39, 0.4);
+        }
+
+        .unit-btn:active {
+            transform: translateY(0);
+        }
+
+        /* Ocultar botones antiguos */
+        .start-buttons-inner,
+        .start-buttons {
+            display: none !important;
+        }
+
+        /* Mantener estilos antiguos por compatibilidad */
+        .student-info {
+            display: none;
         }
 
         /* Decoraciones del cuaderno - REPOSICIONADAS */
@@ -1153,35 +1313,35 @@
             clip-path: polygon(100% 0, 100% 100%, 0 100%);
         }
 
-        /* Botones de navegación - COMPACTOS */
+        /* Botones de navegación - ULTRA COMPACTOS */
         .start-buttons {
             display: flex;
-            gap: 12px;
+            gap: 10px;
             justify-content: center;
             flex-wrap: wrap;
             z-index: 10;
-            width: min(700px, calc(100% - 48px));
-            margin: 6px auto 0 auto;
+            width: min(620px, calc(100% - 36px));
+            margin: 4px auto 0 auto;
         }
 
         .start-btn {
             background: linear-gradient(145deg, #3b82f6, #2563eb);
             color: white;
             border: none;
-            padding: 10px 16px;
-            border-radius: 12px;
+            padding: 8px 14px;
+            border-radius: 10px;
             font-family: 'Caveat', cursive;
-            font-size: clamp(14px, 1.8vw, 18px);
+            font-size: clamp(13px, 1.6vw, 16px);
             font-weight: 600;
             cursor: pointer;
             box-shadow:
-                0 4px 12px rgba(59, 130, 246, 0.3),
+                0 3px 10px rgba(59, 130, 246, 0.3),
                 inset 0 1px 0 rgba(255, 255, 255, 0.2);
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            transform: rotate(-2deg);
+            transform: rotate(-1deg);
             position: relative;
             overflow: hidden;
-            min-width: 110px;
+            min-width: 100px;
         }
 
         .start-btn::before {
@@ -1259,10 +1419,25 @@
             }
 
             /* Ajustes adicionales en móviles */
-            .logo-spaces { padding: 0 14px; top: 10px; }
-            .notebook-label { width: calc(100% - 40px); margin-top: 18px; }
-            .student-info { width: calc(100% - 40px); transform: rotate(0.5deg); }
-            .start-buttons { width: calc(100% - 40px); gap: 10px; }
+            .logo-spaces {
+                padding: 0 14px;
+                top: 10px;
+            }
+
+            .notebook-label {
+                width: calc(100% - 40px);
+                margin-top: 18px;
+            }
+
+            .student-info {
+                width: calc(100% - 40px);
+                transform: rotate(0.5deg);
+            }
+
+            .start-buttons {
+                width: calc(100% - 40px);
+                gap: 10px;
+            }
         }
 
         /* Estilos de impresión - Cuaderno real A5 */
@@ -1278,7 +1453,9 @@
             }
 
             @media print {
-                html, body {
+
+                html,
+                body {
                     width: 210mm;
                     height: 297mm;
                 }
@@ -1562,12 +1739,15 @@
             border: none;
             background: #4e7cff;
             color: #fff;
-            box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
             cursor: pointer;
             z-index: 1000;
             font-weight: 600;
         }
-        .interaction-toggle:hover { filter: brightness(1.05); }
+
+        .interaction-toggle:hover {
+            filter: brightness(1.05);
+        }
 
         .floating-actions {
             position: fixed;
@@ -1577,91 +1757,1214 @@
             gap: 10px;
             z-index: 1000;
         }
+
         .fab {
-            width: 44px; height: 44px;
+            width: 44px;
+            height: 44px;
             border-radius: 50%;
             border: none;
             background: #00b894;
             color: #fff;
             font-size: 20px;
-            box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
             cursor: pointer;
         }
-        .fab:hover { filter: brightness(1.06); }
+
+        .fab:hover {
+            filter: brightness(1.06);
+        }
 
         /* Ocultar barra lateral en pantallas pequeñas y usar acciones flotantes */
         @media (max-width: 768px) {
-            .sidebar, .side-menu, .nav-sidebar { display: none !important; }
-            .floating-actions { display: flex; }
+
+            .sidebar,
+            .side-menu,
+            .nav-sidebar {
+                display: none !important;
+            }
+
+            .floating-actions {
+                display: flex;
+            }
         }
+
         @media (min-width: 769px) {
-            .floating-actions { display: none; }
+            .floating-actions {
+                display: none;
+            }
+        }
+
+        /* ============================================= */
+        /* ESTILOS RESPONSIVOS COMPLETOS */
+        /* ============================================= */
+
+        /* === TABLETS (768px - 1024px) === */
+        @media (max-width: 1024px) and (min-width: 769px) {
+            .notebook-container {
+                max-width: calc(100vw - 180px);
+                width: calc(100vw - 180px);
+                margin-left: 160px;
+            }
+
+            .page-content {
+                padding: 30px 40px 50px 140px;
+                line-height: 26px;
+            }
+
+            .handwritten-title {
+                font-size: 24px;
+            }
+
+            .handwritten-text {
+                font-size: 13px;
+                line-height: 26px;
+            }
+
+            .sidebar {
+                left: 10px;
+                padding: 18px 12px;
+            }
+
+            .nav-btn {
+                padding: 12px 15px;
+                font-size: 12px;
+                min-width: 100px;
+            }
+
+            .fie-logo {
+                width: 55px;
+            }
+        }
+
+        /* === MÓVILES Y TABLETS PEQUEÑAS (max 768px) === */
+        @media (max-width: 768px) {
+
+            html,
+            body {
+                overflow-x: hidden;
+                overflow-y: auto;
+                height: auto;
+            }
+
+            body {
+                padding-bottom: 80px;
+            }
+
+            .sidebar {
+                position: fixed;
+                bottom: 10px;
+                left: 50%;
+                top: auto;
+                transform: translateX(-50%);
+                flex-direction: row;
+                padding: 10px 15px;
+                gap: 10px;
+                width: calc(100vw - 20px);
+                max-width: 500px;
+                flex-wrap: wrap;
+                justify-content: center;
+                border-radius: 15px;
+                z-index: 1000;
+            }
+
+            .nav-menu {
+                width: 100%;
+                margin-bottom: 5px;
+            }
+
+            .nav-menu-btn {
+                width: 100%;
+                font-size: 12px;
+                padding: 10px 15px;
+            }
+
+            .nav-dropdown {
+                max-height: 60vh;
+                bottom: 100%;
+                top: auto;
+                margin-bottom: 10px;
+            }
+
+            .nav-btn {
+                flex: 1 1 auto;
+                min-width: 70px;
+                padding: 10px 12px;
+                font-size: 11px;
+            }
+
+            .notebook-container {
+                width: 100vw;
+                max-width: 100vw;
+                height: auto;
+                min-height: calc(100vh - 100px);
+                margin: 0;
+                padding: 0;
+                animation: none;
+            }
+
+            .notebook {
+                border-radius: 0;
+                padding: 10px;
+                border-width: 2px;
+            }
+
+            .spiral-binding {
+                display: none;
+            }
+
+            .notebook-page {
+                width: 100%;
+                height: auto;
+                min-height: calc(100vh - 150px);
+                margin-left: 0;
+                border-radius: 0;
+                /* Quitar la línea roja del margen en móvil */
+                background:
+                    repeating-linear-gradient(transparent,
+                        transparent 29px,
+                        #e3f2fd 29px,
+                        #e3f2fd 31px);
+                background-color: #fefefe;
+            }
+
+
+            .notebook-page::before,
+            .notebook-page::after {
+                display: none;
+            }
+
+            .page-content {
+                padding: 20px 15px 80px 15px;
+                line-height: 24px;
+                overflow-y: auto;
+                height: auto;
+                min-height: calc(100vh - 180px);
+            }
+
+            /* Tipografía móvil */
+            .handwritten-title {
+                font-size: 20px;
+                margin-bottom: 12px;
+            }
+
+            .handwritten-text {
+                font-size: 13px;
+                line-height: 24px;
+            }
+
+            .handwritten-text p {
+                margin-bottom: 12px;
+            }
+
+            .handwritten-text ul,
+            .handwritten-text ol {
+                padding-left: 20px;
+                margin-bottom: 12px;
+            }
+
+            .handwritten-text li {
+                margin-bottom: 6px;
+            }
+
+            /* Tablas responsivas */
+            table,
+            .data-table,
+            .handwritten-table {
+                display: block;
+                width: 100%;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                font-size: 11px;
+            }
+
+            table th,
+            table td,
+            .data-table th,
+            .data-table td,
+            .handwritten-table th,
+            .handwritten-table td {
+                padding: 6px 8px;
+                font-size: 11px;
+                white-space: nowrap;
+            }
+
+            /* Cajas y fórmulas */
+            .formula-box,
+            .handwritten-formula {
+                padding: 10px;
+                font-size: 14px;
+                margin: 12px 0;
+                overflow-x: auto;
+            }
+
+            .ejemplo-box,
+            .resumen-box,
+            .ejercicio-box {
+                padding: 12px;
+                margin: 12px 0;
+                font-size: 12px;
+            }
+
+            .highlighted-note,
+            .info-box,
+            .warning-box {
+                padding: 10px;
+                margin: 10px 0;
+                font-size: 12px;
+            }
+
+            /* Logo FIE en móvil */
+            .fie-logo {
+                width: 45px;
+                top: 8px;
+                right: 10px;
+            }
+
+            /* Número de página */
+            .page-number {
+                bottom: 70px;
+                right: 15px;
+                width: 35px;
+                height: 35px;
+                font-size: 14px;
+            }
+
+            /* Portada en móvil */
+            .cover-page {
+                left: -10px;
+                right: -10px;
+                top: -10px;
+                bottom: -10px;
+                padding: 20px 15px;
+                gap: 12px;
+            }
+
+            .notebook-label {
+                width: 100%;
+                padding: 8px;
+                font-size: 10px;
+            }
+
+            .cover-main-title {
+                font-size: 20px !important;
+            }
+
+            .cover-subtitle {
+                font-size: 14px !important;
+            }
+
+            .student-info {
+                width: 100%;
+                padding: 15px;
+            }
+
+            .student-info p {
+                font-size: 12px;
+            }
+
+            .start-buttons {
+                width: 100%;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .start-btn,
+            .unit-btn {
+                width: 100%;
+                padding: 12px 15px;
+                font-size: 14px;
+            }
+
+            /* Imágenes responsivas */
+            .two-column-layout {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .column-image,
+            .graph-container img,
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            /* Floating actions */
+            .floating-actions {
+                bottom: 80px;
+            }
+        }
+
+        /* === MÓVILES PEQUEÑOS (max 480px) === */
+        @media (max-width: 480px) {
+            .page-content {
+                padding: 15px 10px 90px 10px;
+                line-height: 22px;
+            }
+
+            .handwritten-title {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            .handwritten-text {
+                font-size: 12px;
+                line-height: 22px;
+            }
+
+            .sidebar {
+                padding: 8px 10px;
+                gap: 8px;
+            }
+
+            .nav-btn {
+                padding: 8px 10px;
+                font-size: 10px;
+                min-width: 60px;
+            }
+
+            .nav-menu-btn {
+                font-size: 11px;
+                padding: 8px 12px;
+            }
+
+            .formula-box,
+            .handwritten-formula {
+                padding: 8px;
+                font-size: 12px;
+            }
+
+            table th,
+            table td,
+            .data-table th,
+            .data-table td {
+                padding: 4px 6px;
+                font-size: 10px;
+            }
+
+            .fie-logo {
+                width: 35px;
+            }
+
+            .cover-main-title {
+                font-size: 16px !important;
+            }
+
+            .cover-subtitle {
+                font-size: 12px !important;
+            }
+
+            .student-info p {
+                font-size: 11px;
+            }
+
+            .start-btn,
+            .unit-btn {
+                font-size: 12px;
+                padding: 10px 12px;
+            }
+        }
+
+        /* === MODO LANDSCAPE EN MÓVILES === */
+        @media (max-width: 900px) and (orientation: landscape) {
+            .notebook-container {
+                min-height: 100vh;
+            }
+
+            .page-content {
+                padding: 15px 20px 70px 20px;
+            }
+
+            .sidebar {
+                padding: 8px 15px;
+            }
+
+            .cover-page {
+                overflow-y: auto;
+            }
+        }
+
+        /* === PANTALLAS GRANDES (1440px+) === */
+        @media (min-width: 1440px) {
+            .notebook-container {
+                max-width: 1200px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 170px;
+            }
+
+            .page-content {
+                padding: 50px 60px 70px 180px;
+            }
+
+            .handwritten-title {
+                font-size: 32px;
+            }
+
+            .handwritten-text {
+                font-size: 16px;
+                line-height: 32px;
+            }
+        }
+
+        /* === AJUSTES DE ACCESIBILIDAD === */
+        @media (prefers-reduced-motion: reduce) {
+            .notebook-container {
+                animation: none;
+            }
+
+            .page-flipping {
+                animation: none;
+            }
+
+            * {
+                transition-duration: 0.01ms !important;
+                animation-duration: 0.01ms !important;
+            }
+        }
+
+        /* ========================================
+           NAVEGACIÓN MODERNA - FAB & GESTURES
+        ======================================== */
+
+        /* FAB Navigation Buttons */
+        .fab-nav {
+            position: fixed;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
+            font-size: 24px;
+            color: white;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .fab-nav:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25), 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .fab-nav:active {
+            transform: scale(0.95);
+        }
+
+        .fab-nav:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .fab-nav.fab-prev {
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .fab-nav.fab-prev:hover:not(:disabled) {
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .fab-nav.fab-next {
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .fab-nav.fab-next:hover:not(:disabled) {
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        /* Progress Indicator */
+        .progress-container {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 50px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .progress-dots {
+            display: flex;
+            gap: 6px;
+        }
+
+        .progress-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #e0e0e0;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .progress-dot.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            width: 24px;
+            border-radius: 4px;
+        }
+
+        .progress-dot:hover {
+            background: #bdbdbd;
+            transform: scale(1.2);
+        }
+
+        .progress-dot.active:hover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .progress-text {
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            font-size: 12px;
+            color: #666;
+            font-weight: 500;
+            margin-left: 12px;
+            min-width: 60px;
+            text-align: center;
+        }
+
+        /* Quick Menu FAB */
+        .fab-menu {
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            z-index: 1001;
+        }
+
+        .fab-menu-btn {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            border: none;
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .fab-menu-btn:hover {
+            transform: scale(1.1) rotate(90deg);
+        }
+
+        .fab-menu-items {
+            position: absolute;
+            bottom: 70px;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .fab-menu.open .fab-menu-items {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .fab-menu-item {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: none;
+            background: white;
+            color: #333;
+            font-size: 18px;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .fab-menu-item:hover {
+            transform: scale(1.1);
+            background: #f5f5f5;
+        }
+
+        .fab-menu-item-label {
+            position: absolute;
+            right: 60px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+
+        .fab-menu-item:hover .fab-menu-item-label {
+            opacity: 1;
+        }
+
+        /* Page Flip Animation - Enhanced */
+        .page-flip-next {
+            animation: pageFlipNext 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .page-flip-prev {
+            animation: pageFlipPrev 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        @keyframes pageFlipNext {
+            0% {
+                transform: perspective(1500px) rotateY(0deg);
+                transform-origin: left center;
+            }
+
+            50% {
+                transform: perspective(1500px) rotateY(-15deg);
+                transform-origin: left center;
+            }
+
+            100% {
+                transform: perspective(1500px) rotateY(0deg);
+                transform-origin: left center;
+            }
+        }
+
+        @keyframes pageFlipPrev {
+            0% {
+                transform: perspective(1500px) rotateY(0deg);
+                transform-origin: right center;
+            }
+
+            50% {
+                transform: perspective(1500px) rotateY(15deg);
+                transform-origin: right center;
+            }
+
+            100% {
+                transform: perspective(1500px) rotateY(0deg);
+                transform-origin: right center;
+            }
+        }
+
+        /* Slide Animation Alternative */
+        .page-slide-next {
+            animation: slideNext 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .page-slide-prev {
+            animation: slidePrev 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        @keyframes slideNext {
+            0% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+            50% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            51% {
+                transform: translateX(50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slidePrev {
+            0% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+            50% {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+
+            51% {
+                transform: translateX(-50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Swipe Indicator */
+        .swipe-indicator {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 999;
+        }
+
+        .swipe-indicator.left {
+            left: 0;
+            background: linear-gradient(90deg, rgba(102, 126, 234, 0.3), transparent);
+        }
+
+        .swipe-indicator.right {
+            right: 0;
+            background: linear-gradient(-90deg, rgba(102, 126, 234, 0.3), transparent);
+        }
+
+        .swipe-indicator.visible {
+            opacity: 1;
+        }
+
+        .swipe-indicator svg {
+            width: 30px;
+            height: 30px;
+            fill: #667eea;
+        }
+
+        /* Keyboard Hint */
+        .keyboard-hint {
+            position: fixed;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-family: 'Inter', sans-serif;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 1000;
+        }
+
+        .keyboard-hint.visible {
+            animation: fadeInOut 3s ease;
+        }
+
+        @keyframes fadeInOut {
+            0% {
+                opacity: 0;
+            }
+
+            15% {
+                opacity: 1;
+            }
+
+            85% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .keyboard-hint kbd {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin: 0 4px;
+        }
+
+        /* Mobile Adjustments for FAB */
+        @media (max-width: 768px) {
+
+            .fab-nav.fab-prev,
+            .fab-nav.fab-next {
+                display: none !important;
+                visibility: hidden !important;
+            }
+
+            .progress-container {
+                bottom: 90px;
+                padding: 8px 16px;
+            }
+
+            .progress-text {
+                font-size: 11px;
+            }
+
+            .fab-menu {
+                bottom: 90px;
+            }
+
+            /* Touch swipe area indicator */
+            .touch-zone {
+                position: fixed;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 40px;
+                height: 150px;
+                z-index: 998;
+            }
+
+            .touch-zone.left {
+                left: 0;
+            }
+
+            .touch-zone.right {
+                right: 0;
+            }
+        }
+
+        /* Hide old sidebar on mobile when using new nav */
+        @media (max-width: 768px) {
+            .sidebar {
+                display: none !important;
+            }
+        }
+
+        /* ========================================
+           ESTILOS NAVEGACIÓN MODERNA
+        ======================================== */
+
+        /* FAB Navigation Buttons */
+        .fab-nav {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 1000;
+            display: flex;
+        }
+
+        .fab-nav:hover {
+            transform: translateY(-50%) scale(1.1);
+            box-shadow: 0 8px 30px rgba(102, 126, 234, 0.6);
+        }
+
+        .fab-nav:active {
+            transform: translateY(-50%) scale(0.95);
+        }
+
+        .fab-nav:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+
+        .fab-prev {
+            left: 20px;
+        }
+
+        .fab-next {
+            right: 20px;
+        }
+
+        /* Progress Indicator */
+        .progress-container {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 10px 20px;
+            border-radius: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .progress-dots {
+            display: flex;
+            gap: 6px;
+        }
+
+        .progress-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #d1d5db;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .progress-dot:hover {
+            background: #9ca3af;
+            transform: scale(1.2);
+        }
+
+        .progress-dot.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transform: scale(1.3);
+        }
+
+        .progress-text {
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            color: #374151;
+            min-width: 60px;
+            text-align: center;
+        }
+
+        /* FAB Menu */
+        .fab-menu {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1001;
+            display: block;
+        }
+
+        .fab-menu-btn {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(16, 185, 129, 0.4);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .fab-menu-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 30px rgba(16, 185, 129, 0.6);
+        }
+
+        .fab-menu-items {
+            position: absolute;
+            bottom: 70px;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+        }
+
+        .fab-menu.open .fab-menu-items {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .fab-menu-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: white;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 25px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .fab-menu-item:hover {
+            transform: translateX(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .fab-menu-item-label {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: #374151;
+        }
+
+        /* Swipe Indicators */
+        .swipe-indicator {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 60px;
+            height: 60px;
+            background: rgba(102, 126, 234, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 999;
+        }
+
+        .swipe-indicator.left {
+            left: 20px;
+        }
+
+        .swipe-indicator.right {
+            right: 20px;
+        }
+
+        .swipe-indicator.visible {
+            opacity: 1;
+        }
+
+        .swipe-indicator svg {
+            width: 30px;
+            height: 30px;
+            fill: #667eea;
+        }
+
+        /* Keyboard Hint */
+        .keyboard-hint {
+            position: fixed;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(31, 41, 55, 0.9);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1002;
+        }
+
+        .keyboard-hint.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .keyboard-hint kbd {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin: 0 4px;
+        }
+
+        /* Ocultar navegación en la portada */
+        body.on-cover .fab-nav,
+        body.on-cover .progress-container,
+        body.on-cover .fab-menu {
+            display: none !important;
         }
     </style>
 </head>
-<body>
-    <!-- Barra lateral de navegación -->
-    <div class="sidebar">
-        <!-- Menú desplegable de navegación -->
-        <div class="nav-menu">
-            <button class="nav-menu-btn" onclick="toggleNavMenu()">
-                📚 Ir a Tema <span class="arrow">▼</span>
-            </button>
-            <div class="nav-dropdown" id="nav-dropdown">
-                <div class="nav-unit">
-                    <div class="nav-unit-title" onclick="selectUnit(1)">📖 Unidad I - Macroeconomía I</div>
-                    <div class="nav-pages">
-                        <div class="nav-page-item" onclick="goToPage(1, 0)">📊 Semana 1: El Mercado de Bienes</div>
-                        <div class="nav-page-item" onclick="goToPage(1, 24)">💰 Semana 2: Mercado de Dinero</div>
-                        <div class="nav-page-item" onclick="goToPage(1, 54)">⚖️ Semana 3: Modelo IS-LM</div>
-                        <div class="nav-page-item" onclick="goToPage(1, 68)">🌍 Semana 4: Modelo Mundell-Fleming - Economía Abierta</div>
-                        <div class="nav-page-item" onclick="goToPage(1, 73)">🌊 Semana 5: Políticas con Tipo de Cambio Flexible</div>
-                        <div class="nav-page-item" onclick="goToPage(1, 76)">🔮 Semana 6: Expectativas en Macroeconomía</div>
-                        <div class="nav-page-item" onclick="goToPage(1, 79)">📈 Semana 7: Introducción al Crecimiento Económico</div>
-                        <div class="nav-page-item" onclick="goToPage(1, 84)">💰 Semana 8: El Mercado de Dinero</div>
-                        <div class="nav-page-item" onclick="goToPage(1, 86)">🌊 Semana 9: Ciclos Económicos y Fluctuaciones</div>
-                    </div>
-                </div>
-                <div class="nav-unit">
-                    <div class="nav-unit-title" onclick="selectUnit(2)">📊 Unidad II - El Modelo OA-DA</div>
-                    <div class="nav-pages">
-                        <div class="nav-page-item" onclick="goToPage(2, 0)">📈 Semana 10: La Curva de Demanda Agregada</div>
-                        <div class="nav-page-item" onclick="goToPage(2, 1)">👷 Semana 11: El Mercado de Trabajo</div>
-                        <div class="nav-page-item" onclick="goToPage(2, 2)">📈 Semana 12: La Curva de Oferta Agregada</div>
-                        <div class="nav-page-item" onclick="goToPage(2, 3)">⚖️ Semana 13: El Modelo OA-DA</div>
-                        <div class="nav-page-item" onclick="goToPage(2, 4)">🏛️ Semana 14: Políticas Fiscales y Monetarias</div>
-                        <div class="nav-page-item" onclick="goToPage(2, 5)">🔮 Semana 15: Expectativas y Oferta Agregada</div>
-                        <div class="nav-page-item" onclick="goToPage(2, 6)">📈 Semana 16: La Curva de Phillips</div>
-                        <div class="nav-page-item" onclick="goToPage(2, 7)">💰 Semana 17: Déficit Fiscal y Financiamiento</div>
-                    </div>
-                </div>
+
+<body class="on-cover">
+    <!-- Menú de navegación oculto (accesible desde FAB menu) -->
+    <div class="nav-dropdown" id="nav-dropdown"
+        style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2000; background: white; border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); padding: 20px; max-height: 80vh; overflow-y: auto; min-width: 320px;">
+        <div
+            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 2px solid #e5e7eb;">
+            <h3 style="margin: 0; font-family: 'Caveat', cursive; font-size: 24px; color: #1f2937;">📚 Ir a Tema</h3>
+            <button onclick="toggleNavMenu()"
+                style="background: none; border: none; font-size: 24px; cursor: pointer; color: #6b7280;">✕</button>
+        </div>
+        <div class="nav-unit">
+            <div class="nav-unit-title" onclick="selectUnit(1)"
+                style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 12px 16px; border-radius: 10px; margin-bottom: 10px; cursor: pointer; font-weight: 600;">
+                📖 Unidad I - Macroeconomía I</div>
+            <div class="nav-pages" style="display: flex; flex-direction: column; gap: 6px; padding-left: 10px;">
+                <div class="nav-page-item" onclick="goToPage(1, 0)"
+                    style="padding: 10px 14px; background: #f8fafc; border-radius: 8px; cursor: pointer; transition: all 0.2s;">
+                    📊 Semana 1: El Mercado de Bienes</div>
+                <div class="nav-page-item" onclick="goToPage(1, 10)"
+                    style="padding: 10px 14px; background: #f8fafc; border-radius: 8px; cursor: pointer;">💰 Semana 2:
+                    Mercado de Dinero</div>
+                <div class="nav-page-item" onclick="goToPage(1, 20)"
+                    style="padding: 10px 14px; background: #f8fafc; border-radius: 8px; cursor: pointer;">⚖️ Semana 3:
+                    Modelo IS-LM</div>
+                <div class="nav-page-item" onclick="goToPage(1, 30)"
+                    style="padding: 10px 14px; background: #f8fafc; border-radius: 8px; cursor: pointer;">🌍 Semana 4:
+                    Modelo Mundell-Fleming</div>
+                <div class="nav-page-item" onclick="goToPage(1, 40)"
+                    style="padding: 10px 14px; background: #f8fafc; border-radius: 8px; cursor: pointer;">🌊 Semana 5:
+                    Políticas Tipo de Cambio</div>
+                <div class="nav-page-item" onclick="goToPage(1, 50)"
+                    style="padding: 10px 14px; background: #f8fafc; border-radius: 8px; cursor: pointer;">🔮 Semana 6:
+                    Expectativas</div>
+                <div class="nav-page-item" onclick="goToPage(1, 60)"
+                    style="padding: 10px 14px; background: #f8fafc; border-radius: 8px; cursor: pointer;">📈 Semana 7:
+                    Crecimiento Económico</div>
+                <div class="nav-page-item" onclick="goToPage(1, 70)"
+                    style="padding: 10px 14px; background: #f8fafc; border-radius: 8px; cursor: pointer;">💰 Semana 8:
+                    Mercado de Dinero II</div>
+                <div class="nav-page-item" onclick="goToPage(1, 80)"
+                    style="padding: 10px 14px; background: #f8fafc; border-radius: 8px; cursor: pointer;">🌊 Semana 9:
+                    Ciclos Económicos</div>
             </div>
         </div>
-
-        <button class="nav-btn" id="home-btn" onclick="goToHome()">
-            🏠 Portada
-        </button>
-        <button class="nav-btn" id="prev-btn" onclick="previousPage()" disabled>
-            ← Anterior
-        </button>
-        <button class="nav-btn" id="next-btn" onclick="nextPage()" disabled>
-            Siguiente →
-        </button>
-        <button class="nav-btn" id="auto-btn" onclick="autoFlip()" disabled>
-            🔄 Auto
-        </button>
-        <button class="nav-btn" id="print-btn" onclick="printPages()">
-            🖨️ Imprimir
-        </button>
-        <!-- Selector de grupos (bloques de 10 páginas) -->
-        <div class="group-select-container" style="margin-top:8px; display:none;">
-            <label for="group-select" class="nav-label" style="display:block; font-weight:600; color:#1f2937; margin-bottom:6px;">Agrupar: 10 págs</label>
-            <select id="group-select" class="nav-select" style="width:100%; padding:8px 10px; border:2px solid #cbd5e1; border-radius:10px; background:#fff; color:#1f2937; font-weight:600; cursor:pointer;">
-            </select>
+        <div class="nav-unit" style="margin-top: 15px;">
+            <div class="nav-unit-title" onclick="selectUnit(2)"
+                style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); color: white; padding: 12px 16px; border-radius: 10px; margin-bottom: 10px; cursor: pointer; font-weight: 600;">
+                📊 Unidad II - El Modelo OA-DA</div>
+            <div class="nav-pages" style="display: flex; flex-direction: column; gap: 6px; padding-left: 10px;">
+                <div class="nav-page-item" onclick="goToPage(2, 0)"
+                    style="padding: 10px 14px; background: #f8fafc; border-radius: 8px; cursor: pointer;">📈 Semana 10:
+                    Demanda Agregada</div>
+                <div class="nav-page-item" onclick="goToPage(2, 10)"
+                    style="padding: 10px 14px; background: #f8fafc; border-radius: 8px; cursor: pointer;">👷 Semana 11:
+                    Mercado de Trabajo</div>
+                <div class="nav-page-item" onclick="goToPage(2, 20)"
+                    style="padding: 10px 14px; background: #f8fafc; border-radius: 8px; cursor: pointer;">📈 Semana 12:
+                    Oferta Agregada</div>
+                <div class="nav-page-item" onclick="goToPage(2, 30)"
+                    style="padding: 10px 14px; background: #f8fafc; border-radius: 8px; cursor: pointer;">⚖️ Semana 13:
+                    Modelo OA-DA</div>
+                <div class="nav-page-item" onclick="goToPage(2, 40)"
+                    style="padding: 10px 14px; background: #f8fafc; border-radius: 8px; cursor: pointer;">🏛️ Semana 14:
+                    Políticas Fiscales</div>
+                <div class="nav-page-item" onclick="goToPage(2, 50)"
+                    style="padding: 10px 14px; background: #f8fafc; border-radius: 8px; cursor: pointer;">🔮 Semana 15:
+                    Expectativas OA</div>
+                <div class="nav-page-item" onclick="goToPage(2, 60)"
+                    style="padding: 10px 14px; background: #f8fafc; border-radius: 8px; cursor: pointer;">📈 Semana 16:
+                    Curva de Phillips</div>
+                <div class="nav-page-item" onclick="goToPage(2, 70)"
+                    style="padding: 10px 14px; background: #f8fafc; border-radius: 8px; cursor: pointer;">💰 Semana 17:
+                    Déficit Fiscal</div>
+            </div>
         </div>
     </div>
 
+    <!-- Overlay para el menú -->
+    <div id="nav-overlay"
+        style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 1999;"
+        onclick="toggleNavMenu()"></div>
+
     <!-- Cuaderno -->
+
     <div class="notebook-container">
         <div class="notebook">
             <!-- Espiral -->
@@ -1671,7 +2974,7 @@
             <div class="notebook-page" id="current-page">
                 <!-- Logo de la FIE -->
                 <img src="assets/fie.png" alt="Logo FIE" class="fie-logo" onerror="this.style.display='none'">
-                
+
                 <div class="page-content" id="page-content">
                     <!-- Contenido se carga dinámicamente -->
                 </div>
@@ -1683,6 +2986,68 @@
     <!-- Contenedor para impresión (oculto en pantalla) -->
     <div class="print-container" id="print-container">
         <!-- Se genera dinámicamente -->
+    </div>
+
+    <!-- ========================================
+         NAVEGACIÓN MODERNA
+    ======================================== -->
+
+    <!-- FAB Navigation Buttons (Desktop) -->
+    <button class="fab-nav fab-prev" id="fab-prev" onclick="previousPageAnimated('flip')" title="Página anterior (←)">
+        ❮
+    </button>
+    <button class="fab-nav fab-next" id="fab-next" onclick="nextPageAnimated('flip')" title="Página siguiente (→)">
+        ❯
+    </button>
+
+    <!-- Progress Indicator -->
+    <div class="progress-container" id="progress-container">
+        <div class="progress-dots" id="progress-dots">
+            <!-- Dots generated dynamically -->
+        </div>
+        <span class="progress-text" id="progress-text">1 / 10</span>
+    </div>
+
+    <!-- FAB Menu -->
+    <div class="fab-menu" id="fab-menu">
+        <button class="fab-menu-btn" onclick="toggleFabMenu()" title="Menú">
+            ☰
+        </button>
+        <div class="fab-menu-items">
+            <button class="fab-menu-item" onclick="goHome()">
+                🏠
+                <span class="fab-menu-item-label">Portada</span>
+            </button>
+            <button class="fab-menu-item" onclick="toggleTheme()">
+                📚
+                <span class="fab-menu-item-label">Ir a Tema</span>
+            </button>
+            <button class="fab-menu-item" onclick="autoFlip()">
+                🔄
+                <span class="fab-menu-item-label">Auto</span>
+            </button>
+            <button class="fab-menu-item" onclick="printPages()">
+                🖨️
+                <span class="fab-menu-item-label">Imprimir</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Swipe Indicators -->
+    <div class="swipe-indicator left" id="swipe-left">
+        <svg viewBox="0 0 24 24">
+            <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z" />
+        </svg>
+    </div>
+    <div class="swipe-indicator right" id="swipe-right">
+        <svg viewBox="0 0 24 24">
+            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
+        </svg>
+    </div>
+
+    <!-- Keyboard Hint -->
+    <div class="keyboard-hint" id="keyboard-hint">
+        Usa <kbd>←</kbd> <kbd>→</kbd> para navegar
     </div>
 
     <script>
@@ -1725,66 +3090,42 @@
                     {
                         content: `
                             <div class="cover-page">
-                                <!-- Espacios para logos -->
-                                <div class="logo-spaces">
-                                    <div class="logo-space" title="Universidad Nacional">
-                                        <img src="assets/una.png" alt="Logo Universidad Nacional" onerror="this.style.display='none'" />
-                                    </div>
-                                    <div class="logo-space" title="Facultad de Ingeniería Económica">
-                                        <img src="assets/fie.png" alt="Logo FIE" onerror="this.style.display='none'" />
-                                    </div>
-                                </div>
-                                
-                                <!-- Esquinas decorativas -->
-                                <div class="corner-decoration corner-top-left"></div>
-                                <div class="corner-decoration corner-top-right"></div>
-                                <div class="corner-decoration corner-bottom-left"></div>
-                                <div class="corner-decoration corner-bottom-right"></div>
-                                
-                                <!-- Decoraciones -->
-                                <div class="notebook-decoration decoration-1"></div>
-                                <div class="notebook-decoration decoration-2"></div>
-                                
-                                <!-- Etiqueta principal -->
+                                <!-- Encabezado universitario con logos -->
                                 <div class="notebook-label">
-                                    <div class="cover-title">📚 Universidad Nacional del Altiplano 🎓</div>
-                                    <div class="cover-subtitle">Facultad de Ingeniería Económica</div>
-                                    <div class="cover-subtitle">Escuela Profesional de Ingeniería Económica</div>
-                                    <div class="cover-subtitle">Cuaderno de Apuntes</div>
+                                    <img src="assets/una.png" alt="Logo UNA" class="logo-inline" onerror="this.style.display='none'" />
+                                    <div class="notebook-label-text">
+                                        <div class="cover-title">Universidad Nacional del Altiplano</div>
+                                        <div class="cover-subtitle">Facultad de Ingeniería Económica</div>
+                                        <div class="cover-subtitle">Escuela Profesional de Ingeniería Económica</div>
+                                    </div>
+                                    <img src="assets/fie.png" alt="Logo FIE" class="logo-inline" onerror="this.style.display='none'" />
                                 </div>
                                 
-                                <!-- Información del estudiante -->
-                                <div class="student-info">
-                                    <div class="info-line">
-                                        <span class="info-label">Estudiante:</span>
-                                        <span class="info-value">Edaly Yamileth Paredes Condori</span>
-                                    </div>
-                                    <div class="info-line">
-                                        <span class="info-label">Materia:</span>
-                                        <span class="info-value">Macroeconomía I</span>
-                                    </div>
-                                    <div class="info-line">
-                                        <span class="info-label">Período:</span>
-                                        <span class="info-value">2025 - II</span>
-                                    </div>
-                                    <div class="info-line">
-                                        <span class="info-label">Universidad:</span>
-                                        <span class="info-value">Universidad Nacional del Altiplano</span>
-                                    </div>
-                                    <div class="info-line">
-                                        <span class="info-label">Carrera:</span>
-                                        <span class="info-value">Ingeniería Económica</span>
-                                    </div>
-                                    <div class="info-line">
-                                        <span class="info-label">Profesor:</span>
-                                        <span class="info-value">Humberto Calizaya Coila</span>
+                                <!-- Título principal del curso -->
+                                <div class="course-info">
+                                    <div class="course-title">Macroeconomía I</div>
+                                    <div class="course-details">
+                                        <span>Periodo: <strong>2025 - II</strong></span>
+                                        <span>Docente: <strong>Humberto Calizaya Coila</strong></span>
                                     </div>
                                 </div>
                                 
-                                <!-- Botones de navegación -->
-                                <div class="start-buttons">
-                                    <button class="start-btn" onclick="selectUnit(1)">📖 Unidad I</button>
-                                    <button class="start-btn" onclick="selectUnit(2)">📊 Unidad II</button>
+                                <!-- Estudiantes -->
+                                <div class="students-container">
+                                    <div class="students-grid">
+                                        <div class="student-card">
+                                            <div class="student-name">Edaly Yamileth Paredes Condori</div>
+                                        </div>
+                                        <div class="student-card">
+                                            <div class="student-name">Yhoselyn Magaly Nina Mamani</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Botones de acceso a unidades -->
+                                <div class="unit-access-buttons">
+                                    <button class="unit-btn" onclick="selectUnit(1)">📖 Unidad I</button>
+                                    <button class="unit-btn" onclick="selectUnit(2)">📊 Unidad II</button>
                                 </div>
                             </div>
                         `
@@ -1793,27 +3134,27 @@
             },
             2: { // Unidad II
                 title: "Unidad II: El Modelo OA-DA",
-                pages: Array.from({ length: 25 }, () => ({}))
+                pages: Array.from({ length: 80 }, () => ({}))
             },
-            
 
 
-/* Página removida: Tramo final de Unidad I (contenido inline eliminado) */
-            
+
+            /* Página removida: Tramo final de Unidad I (contenido inline eliminado) */
+
             1: { // Unidad I
                 title: "Unidad I: Modelo IS-LM y Mundell-Fleming",
-                pages: Array.from({ length: 50 }, () => ({}))
+                pages: Array.from({ length: 90 }, () => ({}))
             },
-            
+
         };
 
         // Slim: sobrescribe páginas para evitar duplicidad y usar archivos externos
         try {
             if (unidades && unidades[1]) {
-                unidades[1].pages = Array.from({ length: 50 }, () => ({}));
+                unidades[1].pages = Array.from({ length: 90 }, () => ({}));
             }
             if (unidades && unidades[2]) {
-                unidades[2].pages = Array.from({ length: 25 }, () => ({}));
+                unidades[2].pages = Array.from({ length: 80 }, () => ({}));
             }
         } catch (e) {
             console.warn('No se pudo simplificar páginas de unidades:', e);
@@ -1847,7 +3188,7 @@
                     if (!isExternal && !hasFolder) {
                         const targetSrc = prefix(resources.assetsBase) + origSrc;
                         img.setAttribute('src', targetSrc);
-                        try { console.log('[img-rewrite]', { unit: currentUnit, orig: origSrc, final: img.getAttribute('src') }); } catch {}
+                        try { console.log('[img-rewrite]', { unit: currentUnit, orig: origSrc, final: img.getAttribute('src') }); } catch { }
                     }
 
                     // Fallback si falla la carga (intenta rutas alternativas básicas)
@@ -1862,10 +3203,10 @@
                         if (n < candidates.length) {
                             img.setAttribute('src', candidates[n]);
                             img.setAttribute('data-fallback-tries', String(n + 1));
-                            try { console.warn('[img-fallback]', { try: n + 1, next: candidates[n] }); } catch {}
+                            try { console.warn('[img-fallback]', { try: n + 1, next: candidates[n] }); } catch { }
                         } else {
                             img.removeEventListener('error', onErr);
-                            try { console.error('[img-error-final]', { src: img.getAttribute('src') }); } catch {}
+                            try { console.error('[img-error-final]', { src: img.getAttribute('src') }); } catch { }
                             // Fallback final: cargar como blob y usar ObjectURL
                             (async () => {
                                 const abs = (prefix(resources.assetsBase) + fileName).replace(/\/\/+/, '/');
@@ -1876,9 +3217,9 @@
                                     const url = URL.createObjectURL(blob);
                                     img.setAttribute('src', url);
                                     img.setAttribute('data-object-url', '1');
-                                    try { console.warn('[img-blob-fallback]', { from: abs }); } catch {}
+                                    try { console.warn('[img-blob-fallback]', { from: abs }); } catch { }
                                     img.addEventListener('load', () => {
-                                        try { URL.revokeObjectURL(url); } catch {}
+                                        try { URL.revokeObjectURL(url); } catch { }
                                         img.removeAttribute('data-object-url');
                                     }, { once: true });
                                 } catch (e) {
@@ -1893,7 +3234,7 @@
                                         img.replaceWith(div);
                                         console.warn('[img-background-fallback]', { from: abs });
                                     } catch (ee) {
-                                        try { console.error('[img-background-error]', ee); } catch {}
+                                        try { console.error('[img-background-error]', ee); } catch { }
                                     }
                                 }
                             })();
@@ -1925,90 +3266,193 @@
                 });
             }
             const externalMap = {
-                // Unidad I: páginas 1–10 agrupadas
-                '1:0': 'content/unidad1/group_1-10.html#page-1',
-                '1:1': 'content/unidad1/group_1-10.html#page-2',
-                '1:2': 'content/unidad1/group_1-10.html#page-3',
-                '1:3': 'content/unidad1/group_1-10.html#page-4',
-                '1:4': 'content/unidad1/group_1-10.html#page-5',
-                '1:5': 'content/unidad1/group_1-10.html#page-6',
-                '1:6': 'content/unidad1/group_1-10.html#page-7',
-                '1:7': 'content/unidad1/group_1-10.html#page-8',
-                '1:8': 'content/unidad1/group_1-10.html#page-9',
-                '1:9': 'content/unidad1/group_1-10.html#page-10',
-                // Unidad I: páginas 11–20 agrupadas
-                '1:10': 'content/unidad1/group_11-20.html#page-11',
-                '1:11': 'content/unidad1/group_11-20.html#page-12',
-                '1:12': 'content/unidad1/group_11-20.html#page-13',
-                '1:13': 'content/unidad1/group_11-20.html#page-14',
-                '1:14': 'content/unidad1/group_11-20.html#page-15',
-                '1:15': 'content/unidad1/group_11-20.html#page-16',
-                '1:16': 'content/unidad1/group_11-20.html#page-17',
-                '1:17': 'content/unidad1/group_11-20.html#page-18',
-                '1:18': 'content/unidad1/group_11-20.html#page-19',
-                '1:19': 'content/unidad1/group_11-20.html#page-20',
-                // Unidad I: páginas 21–30 agrupadas
-                '1:20': 'content/unidad1/group_21-30.html#page-21',
-                '1:21': 'content/unidad1/group_21-30.html#page-22',
-                '1:22': 'content/unidad1/group_21-30.html#page-23',
-                '1:23': 'content/unidad1/group_21-30.html#page-24',
-                '1:24': 'content/unidad1/group_21-30.html#page-25',
-                '1:25': 'content/unidad1/group_21-30.html#page-26',
-                '1:26': 'content/unidad1/group_21-30.html#page-27',
-                '1:27': 'content/unidad1/group_21-30.html#page-28',
-                '1:28': 'content/unidad1/group_21-30.html#page-29',
-                '1:29': 'content/unidad1/group_21-30.html#page-30',
-                // Unidad I: páginas 31–40 agrupadas
-                '1:30': 'content/unidad1/group_31-40.html#page-31',
-                '1:31': 'content/unidad1/group_31-40.html#page-32',
-                '1:32': 'content/unidad1/group_31-40.html#page-33',
-                '1:33': 'content/unidad1/group_31-40.html#page-34',
-                '1:34': 'content/unidad1/group_31-40.html#page-35',
-                '1:35': 'content/unidad1/group_31-40.html#page-36',
-                '1:36': 'content/unidad1/group_31-40.html#page-37',
-                '1:37': 'content/unidad1/group_31-40.html#page-38',
-                '1:38': 'content/unidad1/group_31-40.html#page-39',
-                '1:39': 'content/unidad1/group_31-40.html#page-40',
-                // Unidad I: páginas 41–50 agrupadas
-                '1:40': 'content/unidad1/group_41-50.html#page-41',
-                '1:41': 'content/unidad1/group_41-50.html#page-42',
-                '1:42': 'content/unidad1/group_41-50.html#page-43',
-                '1:43': 'content/unidad1/group_41-50.html#page-44',
-                '1:44': 'content/unidad1/group_41-50.html#page-45',
-                '1:45': 'content/unidad1/group_41-50.html#page-46',
-                '1:46': 'content/unidad1/group_41-50.html#page-47',
-                '1:47': 'content/unidad1/group_41-50.html#page-48',
-                '1:48': 'content/unidad1/group_41-50.html#page-49',
-                '1:49': 'content/unidad1/group_41-50.html#page-50',
-                // Unidad II: páginas 1–10 agrupadas
-                '2:0': 'content/unidad2/group_1-10.html#page-1',
-                '2:1': 'content/unidad2/group_1-10.html#page-2',
-                '2:2': 'content/unidad2/group_1-10.html#page-3',
-                '2:3': 'content/unidad2/group_1-10.html#page-4',
-                '2:4': 'content/unidad2/group_1-10.html#page-5',
-                '2:5': 'content/unidad2/group_1-10.html#page-6',
-                '2:6': 'content/unidad2/group_1-10.html#page-7',
-                '2:7': 'content/unidad2/group_1-10.html#page-8',
-                '2:8': 'content/unidad2/group_1-10.html#page-9',
-                '2:9': 'content/unidad2/group_1-10.html#page-10',
-                // Unidad II: páginas 11–20 agrupadas
-                '2:10': 'content/unidad2/group_11-20.html#page-11',
-                '2:11': 'content/unidad2/group_11-20.html#page-12',
-                '2:12': 'content/unidad2/group_11-20.html#page-13',
-                '2:13': 'content/unidad2/group_11-20.html#page-14',
-                '2:14': 'content/unidad2/group_11-20.html#page-15',
-                '2:15': 'content/unidad2/group_11-20.html#page-16',
-                '2:16': 'content/unidad2/group_11-20.html#page-17',
-                '2:17': 'content/unidad2/group_11-20.html#page-18',
-                '2:18': 'content/unidad2/group_11-20.html#page-19',
-                '2:19': 'content/unidad2/group_11-20.html#page-20'
-                ,
-                // Unidad II: páginas 21–25 agrupadas
-                '2:20': 'content/unidad2/group_21-25.html#page-21',
-                '2:21': 'content/unidad2/group_21-25.html#page-22',
-                '2:22': 'content/unidad2/group_21-25.html#page-23',
-                '2:23': 'content/unidad2/group_21-25.html#page-24',
-                '2:24': 'content/unidad2/group_21-25.html#page-25'
+                // Unidad I: Semana 1 (páginas 1-10)
+                '1:0': 'content/unidad1/semana1.html#page-1',
+                '1:1': 'content/unidad1/semana1.html#page-2',
+                '1:2': 'content/unidad1/semana1.html#page-3',
+                '1:3': 'content/unidad1/semana1.html#page-4',
+                '1:4': 'content/unidad1/semana1.html#page-5',
+                '1:5': 'content/unidad1/semana1.html#page-6',
+                '1:6': 'content/unidad1/semana1.html#page-7',
+                '1:7': 'content/unidad1/semana1.html#page-8',
+                '1:8': 'content/unidad1/semana1.html#page-9',
+                '1:9': 'content/unidad1/semana1.html#page-10',
+                // Unidad I: Semana 2 (páginas 11-20)
+                '1:10': 'content/unidad1/semana2.html#page-1',
+                '1:11': 'content/unidad1/semana2.html#page-2',
+                '1:12': 'content/unidad1/semana2.html#page-3',
+                '1:13': 'content/unidad1/semana2.html#page-4',
+                '1:14': 'content/unidad1/semana2.html#page-5',
+                '1:15': 'content/unidad1/semana2.html#page-6',
+                '1:16': 'content/unidad1/semana2.html#page-7',
+                '1:17': 'content/unidad1/semana2.html#page-8',
+                '1:18': 'content/unidad1/semana2.html#page-9',
+                '1:19': 'content/unidad1/semana2.html#page-10',
+                // Unidad I: Semana 3 (páginas 21-30)
+                '1:20': 'content/unidad1/semana3.html#page-1',
+                '1:21': 'content/unidad1/semana3.html#page-2',
+                '1:22': 'content/unidad1/semana3.html#page-3',
+                '1:23': 'content/unidad1/semana3.html#page-4',
+                '1:24': 'content/unidad1/semana3.html#page-5',
+                '1:25': 'content/unidad1/semana3.html#page-6',
+                '1:26': 'content/unidad1/semana3.html#page-7',
+                '1:27': 'content/unidad1/semana3.html#page-8',
+                '1:28': 'content/unidad1/semana3.html#page-9',
+                '1:29': 'content/unidad1/semana3.html#page-10',
+                // Unidad I: Semana 4 (páginas 31-40)
+                '1:30': 'content/unidad1/semana4.html#page-1',
+                '1:31': 'content/unidad1/semana4.html#page-2',
+                '1:32': 'content/unidad1/semana4.html#page-3',
+                '1:33': 'content/unidad1/semana4.html#page-4',
+                '1:34': 'content/unidad1/semana4.html#page-5',
+                '1:35': 'content/unidad1/semana4.html#page-6',
+                '1:36': 'content/unidad1/semana4.html#page-7',
+                '1:37': 'content/unidad1/semana4.html#page-8',
+                '1:38': 'content/unidad1/semana4.html#page-9',
+                '1:39': 'content/unidad1/semana4.html#page-10',
+                // Unidad I: Semana 5 (páginas 41-50)
+                '1:40': 'content/unidad1/semana5.html#page-1',
+                '1:41': 'content/unidad1/semana5.html#page-2',
+                '1:42': 'content/unidad1/semana5.html#page-3',
+                '1:43': 'content/unidad1/semana5.html#page-4',
+                '1:44': 'content/unidad1/semana5.html#page-5',
+                '1:45': 'content/unidad1/semana5.html#page-6',
+                '1:46': 'content/unidad1/semana5.html#page-7',
+                '1:47': 'content/unidad1/semana5.html#page-8',
+                '1:48': 'content/unidad1/semana5.html#page-9',
+                '1:49': 'content/unidad1/semana5.html#page-10',
+                // Unidad I: Semana 6 (páginas 51-60)
+                '1:50': 'content/unidad1/semana6.html#page-1',
+                '1:51': 'content/unidad1/semana6.html#page-2',
+                '1:52': 'content/unidad1/semana6.html#page-3',
+                '1:53': 'content/unidad1/semana6.html#page-4',
+                '1:54': 'content/unidad1/semana6.html#page-5',
+                '1:55': 'content/unidad1/semana6.html#page-6',
+                '1:56': 'content/unidad1/semana6.html#page-7',
+                '1:57': 'content/unidad1/semana6.html#page-8',
+                '1:58': 'content/unidad1/semana6.html#page-9',
+                '1:59': 'content/unidad1/semana6.html#page-10',
+                // Unidad I: Semana 7 (páginas 61-70)
+                '1:60': 'content/unidad1/semana7.html#page-1',
+                '1:61': 'content/unidad1/semana7.html#page-2',
+                '1:62': 'content/unidad1/semana7.html#page-3',
+                '1:63': 'content/unidad1/semana7.html#page-4',
+                '1:64': 'content/unidad1/semana7.html#page-5',
+                '1:65': 'content/unidad1/semana7.html#page-6',
+                '1:66': 'content/unidad1/semana7.html#page-7',
+                '1:67': 'content/unidad1/semana7.html#page-8',
+                '1:68': 'content/unidad1/semana7.html#page-9',
+                '1:69': 'content/unidad1/semana7.html#page-10',
+                // Unidad I: Semana 8 (páginas 71-80)
+                '1:70': 'content/unidad1/semana8.html#page-1',
+                '1:71': 'content/unidad1/semana8.html#page-2',
+                '1:72': 'content/unidad1/semana8.html#page-3',
+                '1:73': 'content/unidad1/semana8.html#page-4',
+                '1:74': 'content/unidad1/semana8.html#page-5',
+                '1:75': 'content/unidad1/semana8.html#page-6',
+                '1:76': 'content/unidad1/semana8.html#page-7',
+                '1:77': 'content/unidad1/semana8.html#page-8',
+                '1:78': 'content/unidad1/semana8.html#page-9',
+                '1:79': 'content/unidad1/semana8.html#page-10',
+                // Unidad I: Semana 9 (páginas 81-90)
+                '1:80': 'content/unidad1/semana9.html#page-1',
+                '1:81': 'content/unidad1/semana9.html#page-2',
+                '1:82': 'content/unidad1/semana9.html#page-3',
+                '1:83': 'content/unidad1/semana9.html#page-4',
+                '1:84': 'content/unidad1/semana9.html#page-5',
+                '1:85': 'content/unidad1/semana9.html#page-6',
+                '1:86': 'content/unidad1/semana9.html#page-7',
+                '1:87': 'content/unidad1/semana9.html#page-8',
+                '1:88': 'content/unidad1/semana9.html#page-9',
+                '1:89': 'content/unidad1/semana9.html#page-10',
+                // Unidad II: Semana 10 (páginas 1-10)
+                '2:0': 'content/unidad2/semana10.html#page-1',
+                '2:1': 'content/unidad2/semana10.html#page-2',
+                '2:2': 'content/unidad2/semana10.html#page-3',
+                '2:3': 'content/unidad2/semana10.html#page-4',
+                '2:4': 'content/unidad2/semana10.html#page-5',
+                '2:5': 'content/unidad2/semana10.html#page-6',
+                '2:6': 'content/unidad2/semana10.html#page-7',
+                '2:7': 'content/unidad2/semana10.html#page-8',
+                '2:8': 'content/unidad2/semana10.html#page-9',
+                '2:9': 'content/unidad2/semana10.html#page-10',
+                // Unidad II: Semana 11 (páginas 11-20)
+                '2:10': 'content/unidad2/semana11.html#page-1',
+                '2:11': 'content/unidad2/semana11.html#page-2',
+                '2:12': 'content/unidad2/semana11.html#page-3',
+                '2:13': 'content/unidad2/semana11.html#page-4',
+                '2:14': 'content/unidad2/semana11.html#page-5',
+                '2:15': 'content/unidad2/semana11.html#page-6',
+                '2:16': 'content/unidad2/semana11.html#page-7',
+                '2:17': 'content/unidad2/semana11.html#page-8',
+                '2:18': 'content/unidad2/semana11.html#page-9',
+                '2:19': 'content/unidad2/semana11.html#page-10',
+                // Unidad II: Semana 12 (páginas 21-30)
+                '2:20': 'content/unidad2/semana12.html#page-1',
+                '2:21': 'content/unidad2/semana12.html#page-2',
+                '2:22': 'content/unidad2/semana12.html#page-3',
+                '2:23': 'content/unidad2/semana12.html#page-4',
+                '2:24': 'content/unidad2/semana12.html#page-5',
+                '2:25': 'content/unidad2/semana12.html#page-6',
+                '2:26': 'content/unidad2/semana12.html#page-7',
+                '2:27': 'content/unidad2/semana12.html#page-8',
+                '2:28': 'content/unidad2/semana12.html#page-9',
+                '2:29': 'content/unidad2/semana12.html#page-10',
+                // Unidad II: Semana 13 (páginas 31-40)
+                '2:30': 'content/unidad2/semana13.html#page-1',
+                '2:31': 'content/unidad2/semana13.html#page-2',
+                '2:32': 'content/unidad2/semana13.html#page-3',
+                '2:33': 'content/unidad2/semana13.html#page-4',
+                '2:34': 'content/unidad2/semana13.html#page-5',
+                '2:35': 'content/unidad2/semana13.html#page-6',
+                '2:36': 'content/unidad2/semana13.html#page-7',
+                '2:37': 'content/unidad2/semana13.html#page-8',
+                '2:38': 'content/unidad2/semana13.html#page-9',
+                '2:39': 'content/unidad2/semana13.html#page-10',
+                // Unidad II: Semana 14 (páginas 41-50)
+                '2:40': 'content/unidad2/semana14.html#page-1',
+                '2:41': 'content/unidad2/semana14.html#page-2',
+                '2:42': 'content/unidad2/semana14.html#page-3',
+                '2:43': 'content/unidad2/semana14.html#page-4',
+                '2:44': 'content/unidad2/semana14.html#page-5',
+                '2:45': 'content/unidad2/semana14.html#page-6',
+                '2:46': 'content/unidad2/semana14.html#page-7',
+                '2:47': 'content/unidad2/semana14.html#page-8',
+                '2:48': 'content/unidad2/semana14.html#page-9',
+                '2:49': 'content/unidad2/semana14.html#page-10',
+                // Unidad II: Semana 15 (páginas 51-60)
+                '2:50': 'content/unidad2/semana15.html#page-1',
+                '2:51': 'content/unidad2/semana15.html#page-2',
+                '2:52': 'content/unidad2/semana15.html#page-3',
+                '2:53': 'content/unidad2/semana15.html#page-4',
+                '2:54': 'content/unidad2/semana15.html#page-5',
+                '2:55': 'content/unidad2/semana15.html#page-6',
+                '2:56': 'content/unidad2/semana15.html#page-7',
+                '2:57': 'content/unidad2/semana15.html#page-8',
+                '2:58': 'content/unidad2/semana15.html#page-9',
+                '2:59': 'content/unidad2/semana15.html#page-10',
+                // Unidad II: Semana 16 (páginas 61-70)
+                '2:60': 'content/unidad2/semana16.html#page-1',
+                '2:61': 'content/unidad2/semana16.html#page-2',
+                '2:62': 'content/unidad2/semana16.html#page-3',
+                '2:63': 'content/unidad2/semana16.html#page-4',
+                '2:64': 'content/unidad2/semana16.html#page-5',
+                '2:65': 'content/unidad2/semana16.html#page-6',
+                '2:66': 'content/unidad2/semana16.html#page-7',
+                '2:67': 'content/unidad2/semana16.html#page-8',
+                '2:68': 'content/unidad2/semana16.html#page-9',
+                '2:69': 'content/unidad2/semana16.html#page-10',
+                // Unidad II: Semana 17 (páginas 71-80)
+                '2:70': 'content/unidad2/semana17.html#page-1',
+                '2:71': 'content/unidad2/semana17.html#page-2',
+                '2:72': 'content/unidad2/semana17.html#page-3',
+                '2:73': 'content/unidad2/semana17.html#page-4',
+                '2:74': 'content/unidad2/semana17.html#page-5',
+                '2:75': 'content/unidad2/semana17.html#page-6',
+                '2:76': 'content/unidad2/semana17.html#page-7',
+                '2:77': 'content/unidad2/semana17.html#page-8',
+                '2:78': 'content/unidad2/semana17.html#page-9',
+                '2:79': 'content/unidad2/semana17.html#page-10'
             };
             const externalKey = `${currentUnit}:${currentPageIndex}`;
             const externalFile = externalMap[externalKey];
@@ -2045,9 +3489,9 @@
             const resolveAndInject = (fileSpec) => {
                 const [path, fragment] = fileSpec.split('#');
                 return fetch(path)
-                    .then(r => r.ok ? r.text() : Promise.reject(new Error('No se pudo cargar '+path)))
+                    .then(r => r.ok ? r.text() : Promise.reject(new Error('No se pudo cargar ' + path)))
                     .then(html => {
-                        try { console.log('[inject]', { path, fragment, unit: currentUnit }); } catch {}
+                        try { console.log('[inject]', { path, fragment, unit: currentUnit }); } catch { }
                         if (fragment) {
                             const tmp = document.createElement('div');
                             tmp.innerHTML = html;
@@ -2068,18 +3512,18 @@
                                 const desired = unitFolder + fileName;
                                 if (src !== desired) {
                                     img.setAttribute('src', desired);
-                                    try { console.log('[img-force]', { from: src, to: desired }); } catch {}
+                                    try { console.log('[img-force]', { from: src, to: desired }); } catch { }
                                 }
                                 img.addEventListener('error', () => {
                                     const fallback = desired.startsWith('/') ? desired : ('/' + desired);
                                     img.setAttribute('src', fallback);
-                                    try { console.warn('[img-force-fallback]', { to: fallback }); } catch {}
+                                    try { console.warn('[img-force-fallback]', { to: fallback }); } catch { }
                                 }, { once: true });
                             });
                         })();
                         initNotes();
                     })
-                    .catch(err => { pageContentEl.innerHTML = '<div class="error-box">'+err.message+'</div>'; });
+                    .catch(err => { pageContentEl.innerHTML = '<div class="error-box">' + err.message + '</div>'; });
             };
             if (externalFile) {
                 resolveAndInject(externalFile);
@@ -2095,6 +3539,13 @@
             // Agregar atributo data-unit para controlar la visibilidad del logo
             const notebookPage = document.getElementById('current-page');
             notebookPage.setAttribute('data-unit', currentUnit);
+
+            // Controlar clase on-cover para mostrar/ocultar navegación
+            if (currentUnit === 0) {
+                document.body.classList.add('on-cover');
+            } else {
+                document.body.classList.remove('on-cover');
+            }
 
             // Actualizar botones
             updateButtons();
@@ -2152,6 +3603,10 @@
             setTimeout(() => {
                 loadContent();
                 page.classList.remove('page-flipping');
+                // Actualizar navegación moderna
+                if (typeof window.updateModernNavigation === 'function') {
+                    window.updateModernNavigation();
+                }
             }, 600);
         }
 
@@ -2185,9 +3640,13 @@
 
         // Función para seleccionar unidad
         function selectUnit(unitNumber) {
+            console.log('Selecting unit:', unitNumber); // Debug log
             currentUnit = unitNumber;
             currentPageIndex = 0;
             loadContent();
+            if (typeof window.updateModernNavigation === 'function') {
+                window.updateModernNavigation();
+            }
         }
 
         // Función para ir a la portada
@@ -2195,20 +3654,26 @@
             currentUnit = 0;
             currentPageIndex = 0;
             loadContent();
+            if (typeof window.updateModernNavigation === 'function') {
+                window.updateModernNavigation();
+            }
         }
 
         // Funciones del menú desplegable
         function toggleNavMenu() {
             const dropdown = document.getElementById('nav-dropdown');
-            const btn = document.querySelector('.nav-menu-btn');
+            const overlay = document.getElementById('nav-overlay');
 
-            if (dropdown.classList.contains('show')) {
-                dropdown.classList.remove('show');
-                btn.classList.remove('active');
+            if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+                dropdown.style.display = 'block';
+                dropdown.style.opacity = '1';
+                dropdown.style.visibility = 'visible';
+                overlay.style.display = 'block';
             } else {
-                dropdown.classList.add('show');
-                btn.classList.add('active');
-                updateCurrentPageHighlight();
+                dropdown.style.display = 'none';
+                dropdown.style.opacity = '0';
+                dropdown.style.visibility = 'hidden';
+                overlay.style.display = 'none';
             }
         }
 
@@ -2219,9 +3684,14 @@
 
             // Cerrar el menú después de navegar
             const dropdown = document.getElementById('nav-dropdown');
-            const btn = document.querySelector('.nav-menu-btn');
-            dropdown.classList.remove('show');
-            btn.classList.remove('active');
+            const overlay = document.getElementById('nav-overlay');
+            dropdown.style.display = 'none';
+            overlay.style.display = 'none';
+
+            // Actualizar navegación moderna
+            if (typeof updateModernNavigation === 'function') {
+                updateModernNavigation();
+            }
 
             // Crear sonido de papel
             createPaperSound();
@@ -2281,7 +3751,7 @@
             container.style.display = 'block';
         }
 
-        document.addEventListener('change', function(ev) {
+        document.addEventListener('change', function (ev) {
             const select = document.getElementById('group-select');
             if (ev.target === select) {
                 const g = parseInt(select.value, 10) || 0;
@@ -2425,7 +3895,7 @@
                     const [path, fragment] = spec.split('#');
                     tasks.push(
                         fetch(path)
-                            .then(r => r.ok ? r.text() : Promise.reject(new Error('No se pudo cargar '+path)))
+                            .then(r => r.ok ? r.text() : Promise.reject(new Error('No se pudo cargar ' + path)))
                             .then(html => {
                                 let fragmentHtml = html;
                                 if (fragment) {
@@ -2592,10 +4062,10 @@
         });
     </script>
     <!-- Botón de alternancia del modo de interacción -->
-            <!-- Botón de alternancia ocultado por requerimiento: fijar siempre modo tap -->
-            <!-- <button id="interactionToggle" class="interaction-toggle" title="Cambiar modo de interacción">Interacción: Tap/Swipe</button> -->
-            <!-- Indicador móvil de interacción -->
-            <div id="tapHint" aria-live="polite" style="
+    <!-- Botón de alternancia ocultado por requerimiento: fijar siempre modo tap -->
+    <!-- <button id="interactionToggle" class="interaction-toggle" title="Cambiar modo de interacción">Interacción: Tap/Swipe</button> -->
+    <!-- Indicador móvil de interacción -->
+    <div id="tapHint" aria-live="polite" style="
               position: fixed;
               left: 50%;
               bottom: 16px;
@@ -2618,7 +4088,7 @@
 
     <!-- Interacciones: tap para avanzar y swipe para navegar -->
     <script>
-        (function() {
+        (function () {
             const STORAGE_KEY = 'interactionMode';
             const DEFAULT_MODE = 'tap'; // solo click/tap por defecto
             let interactionMode = localStorage.getItem(STORAGE_KEY) || DEFAULT_MODE;
@@ -2653,7 +4123,11 @@
                 }
 
                 // Tap/click: single tap = siguiente, double tap = anterior
-                pageArea.addEventListener('click', function(e) {
+                pageArea.addEventListener('click', function (e) {
+                    // Fix: Skip interactive check on cover to avoid null errors
+                    if (document.body.classList.contains('on-cover')) {
+                        return;
+                    }
                     if (isInteractiveClick(e)) return;
                     if (interactionMode === 'swipe') return; // solo swipe
                     if (singleTapTimer) {
@@ -2662,7 +4136,7 @@
                         if (typeof previousPage === 'function') previousPage();
                         return;
                     }
-                    singleTapTimer = setTimeout(function() {
+                    singleTapTimer = setTimeout(function () {
                         singleTapTimer = null;
                         if (typeof nextPage === 'function') nextPage();
                     }, SINGLE_TAP_DELAY);
@@ -2679,14 +4153,14 @@
                     return { x: evt.clientX, y: evt.clientY };
                 }
 
-                pageArea.addEventListener('pointerdown', function(e) {
+                pageArea.addEventListener('pointerdown', function (e) {
                     if (interactionMode === 'tap') return; // solo tap
                     isPointerDown = true;
                     const p = getPoint(e);
                     startX = p.x; startY = p.y;
                 });
 
-                pageArea.addEventListener('pointerup', function(e) {
+                pageArea.addEventListener('pointerup', function (e) {
                     if (isInteractiveClick(e)) return;
                     if (interactionMode === 'tap') return; // solo tap
                     if (!isPointerDown) return;
@@ -2707,14 +4181,14 @@
                 });
 
                 // Soporte para touchstart/touchend (algunos navegadores móviles)
-                pageArea.addEventListener('touchstart', function(e) {
+                pageArea.addEventListener('touchstart', function (e) {
                     if (interactionMode === 'tap') return;
                     const p = getPoint(e);
                     isPointerDown = true;
                     startX = p.x; startY = p.y;
                 }, { passive: true });
 
-                pageArea.addEventListener('touchend', function(e) {
+                pageArea.addEventListener('touchend', function (e) {
                     if (isInteractiveClick(e)) return;
                     if (interactionMode === 'tap') return;
                     if (!isPointerDown) return;
@@ -2759,7 +4233,7 @@
                 setTimeout(hideOnce, 5000);
             }
 
-            document.addEventListener('DOMContentLoaded', function() {
+            document.addEventListener('DOMContentLoaded', function () {
                 const toggle = document.getElementById('interactionToggle');
                 if (toggle) toggle.addEventListener('click', cycleInteractionMode);
                 setToggleLabel();
@@ -2769,19 +4243,376 @@
                 // Acciones flotantes
                 const faMenu = document.getElementById('faMenu');
                 const faPrint = document.getElementById('faPrint');
-                if (faMenu) faMenu.addEventListener('click', function(){ if (typeof toggleNavMenu === 'function') toggleNavMenu(); });
-                if (faPrint) faPrint.addEventListener('click', function(){ window.print(); });
+                if (faMenu) faMenu.addEventListener('click', function () { if (typeof toggleNavMenu === 'function') toggleNavMenu(); });
+                if (faPrint) faPrint.addEventListener('click', function () { window.print(); });
             });
 
             // Reaplicar interacciones tras cambios de página
             const originalLoadContent = typeof loadContent === 'function' ? loadContent : null;
             if (originalLoadContent) {
-                window.loadContent = function(pageNumber) {
+                window.loadContent = function (pageNumber) {
                     originalLoadContent(pageNumber);
                     setToggleLabel();
                     initInteractions();
                 }
             }
+        })();
+
+        // ========================================
+        // NAVEGACIÓN MODERNA - GESTURES & FAB
+        // ========================================
+
+        (function () {
+            'use strict';
+
+            // Variables para gestos
+            let touchStartX = 0;
+            let touchStartY = 0;
+            let touchEndX = 0;
+            let touchEndY = 0;
+            let isSwiping = false;
+            const SWIPE_THRESHOLD = 50;
+            const SWIPE_VELOCITY_THRESHOLD = 0.3;
+            let touchStartTime = 0;
+
+            // Animación de página actual
+            let currentAnimation = 'flip'; // 'flip' o 'slide'
+
+            // Función para navegar a la siguiente página con animación
+            window.nextPageAnimated = function (animationType = 'flip') {
+                const unit = unidades[currentUnit];
+                if (unit && currentPageIndex < unit.pages.length - 1) {
+                    const page = document.getElementById('current-page');
+                    const animClass = animationType === 'flip' ? 'page-flip-next' : 'page-slide-next';
+
+                    page.classList.add(animClass);
+                    createPaperSound();
+
+                    setTimeout(() => {
+                        currentPageIndex++;
+                        loadContent();
+                        page.classList.remove(animClass);
+                        updateModernNavigation();
+                    }, animationType === 'flip' ? 600 : 400);
+                }
+            };
+
+            // Función para navegar a la página anterior con animación
+            window.previousPageAnimated = function (animationType = 'flip') {
+                if (currentPageIndex > 0) {
+                    const page = document.getElementById('current-page');
+                    const animClass = animationType === 'flip' ? 'page-flip-prev' : 'page-slide-prev';
+
+                    page.classList.add(animClass);
+                    createPaperSound();
+
+                    setTimeout(() => {
+                        currentPageIndex--;
+                        loadContent();
+                        page.classList.remove(animClass);
+                        updateModernNavigation();
+                    }, animationType === 'flip' ? 600 : 400);
+                }
+            };
+
+            // Toggle FAB Menu
+            window.toggleFabMenu = function () {
+                const menu = document.getElementById('fab-menu');
+                menu.classList.toggle('open');
+            };
+
+            // Go Home
+            window.goHome = function () {
+                currentUnit = 0;
+                currentPageIndex = 0;
+                loadContent();
+                updateModernNavigation();
+                toggleFabMenu();
+            };
+
+            // Toggle Theme (abrir menú de temas)
+            window.toggleTheme = function () {
+                toggleNavMenu();
+                toggleFabMenu();
+            };
+
+            // Actualizar navegación moderna
+            function updateModernNavigation() {
+                const unit = unidades[currentUnit];
+                if (!unit) return;
+
+                const totalPages = unit.pages ? unit.pages.length : 1;
+                const currentPage = currentPageIndex + 1;
+
+                // Actualizar texto de progreso
+                const progressText = document.getElementById('progress-text');
+                if (progressText) {
+                    if (currentUnit === 0) {
+                        progressText.textContent = 'Portada';
+                    } else {
+                        progressText.textContent = `${currentPage} / ${totalPages}`;
+                    }
+                }
+
+                // Actualizar dots (máximo 10 dots visibles)
+                const dotsContainer = document.getElementById('progress-dots');
+                if (dotsContainer) {
+                    dotsContainer.innerHTML = '';
+
+                    if (currentUnit === 0) {
+                        // En portada, mostrar un dot activo
+                        const dot = document.createElement('div');
+                        dot.className = 'progress-dot active';
+                        dotsContainer.appendChild(dot);
+                    } else {
+                        // Calcular qué dots mostrar
+                        const maxDots = 10;
+                        const groupSize = Math.ceil(totalPages / maxDots);
+                        const numDots = Math.min(totalPages, maxDots);
+                        const currentDot = Math.floor(currentPageIndex / groupSize);
+
+                        for (let i = 0; i < numDots; i++) {
+                            const dot = document.createElement('div');
+                            dot.className = 'progress-dot' + (i === currentDot ? ' active' : '');
+                            dot.onclick = () => {
+                                const targetPage = i * groupSize;
+                                if (targetPage < totalPages) {
+                                    currentPageIndex = targetPage;
+                                    flipPage();
+                                    updateModernNavigation();
+                                }
+                            };
+                            dotsContainer.appendChild(dot);
+                        }
+                    }
+                }
+
+                // Actualizar estado de FAB buttons
+                const fabPrev = document.getElementById('fab-prev');
+                const fabNext = document.getElementById('fab-next');
+
+                if (currentUnit === 0) {
+                    // En portada, prev deshabilitado, next habilitado
+                    if (fabPrev) fabPrev.disabled = true;
+                    if (fabNext) fabNext.disabled = false;
+                } else {
+                    if (fabPrev) fabPrev.disabled = currentPageIndex === 0;
+                    if (fabNext) fabNext.disabled = currentPageIndex >= totalPages - 1;
+                }
+
+                // Mostrar navegación siempre
+                const progressContainer = document.getElementById('progress-container');
+                const fabMenu = document.getElementById('fab-menu');
+
+                if (progressContainer) progressContainer.style.display = 'flex';
+                if (fabPrev) fabPrev.style.display = 'flex';
+                if (fabNext) fabNext.style.display = 'flex';
+                if (fabMenu) fabMenu.style.display = 'block';
+            }
+
+            // Inicializar gestos táctiles
+            function initTouchGestures() {
+                const notebookContainer = document.querySelector('.notebook-container');
+                if (!notebookContainer) return;
+
+                notebookContainer.addEventListener('touchstart', handleTouchStart, { passive: true });
+                notebookContainer.addEventListener('touchmove', handleTouchMove, { passive: true });
+                notebookContainer.addEventListener('touchend', handleTouchEnd, { passive: true });
+
+                // También para mouse (drag)
+                notebookContainer.addEventListener('mousedown', handleMouseDown);
+            }
+
+            function handleTouchStart(e) {
+                touchStartX = e.touches[0].clientX;
+                touchStartY = e.touches[0].clientY;
+                touchStartTime = Date.now();
+                isSwiping = true;
+            }
+
+            function handleTouchMove(e) {
+                if (!isSwiping) return;
+
+                touchEndX = e.touches[0].clientX;
+                touchEndY = e.touches[0].clientY;
+
+                const diffX = touchEndX - touchStartX;
+
+                // Mostrar indicadores de swipe
+                if (Math.abs(diffX) > 20) {
+                    if (diffX > 0 && currentPageIndex > 0) {
+                        document.getElementById('swipe-left')?.classList.add('visible');
+                    } else if (diffX < 0) {
+                        const unit = unidades[currentUnit];
+                        if (unit && currentPageIndex < unit.pages.length - 1) {
+                            document.getElementById('swipe-right')?.classList.add('visible');
+                        }
+                    }
+                }
+            }
+
+            function handleTouchEnd(e) {
+                if (!isSwiping) return;
+                isSwiping = false;
+
+                // Ocultar indicadores
+                document.getElementById('swipe-left')?.classList.remove('visible');
+                document.getElementById('swipe-right')?.classList.remove('visible');
+
+                const diffX = touchEndX - touchStartX;
+                const diffY = touchEndY - touchStartY;
+                const touchDuration = Date.now() - touchStartTime;
+                const velocity = Math.abs(diffX) / touchDuration;
+
+                // Solo procesar swipe horizontal
+                if (Math.abs(diffX) > SWIPE_THRESHOLD && Math.abs(diffX) > Math.abs(diffY)) {
+                    if (velocity > SWIPE_VELOCITY_THRESHOLD || Math.abs(diffX) > 100) {
+                        if (diffX < 0) {
+                            // Swipe hacia la izquierda = siguiente página
+                            nextPageAnimated('flip');
+                        } else {
+                            // Swipe hacia la derecha = página anterior
+                            previousPageAnimated('flip');
+                        }
+                    }
+                }
+
+                // Reset
+                touchStartX = 0;
+                touchStartY = 0;
+                touchEndX = 0;
+                touchEndY = 0;
+            }
+
+            // Mouse drag support
+            let isDragging = false;
+            let dragStartX = 0;
+
+            function handleMouseDown(e) {
+                isDragging = true;
+                dragStartX = e.clientX;
+                touchStartTime = Date.now();
+
+                document.addEventListener('mousemove', handleMouseMove);
+                document.addEventListener('mouseup', handleMouseUp);
+            }
+
+            function handleMouseMove(e) {
+                if (!isDragging) return;
+
+                const diffX = e.clientX - dragStartX;
+
+                if (Math.abs(diffX) > 20) {
+                    if (diffX > 0 && currentPageIndex > 0) {
+                        document.getElementById('swipe-left')?.classList.add('visible');
+                    } else if (diffX < 0) {
+                        const unit = unidades[currentUnit];
+                        if (unit && currentPageIndex < unit.pages.length - 1) {
+                            document.getElementById('swipe-right')?.classList.add('visible');
+                        }
+                    }
+                }
+            }
+
+            function handleMouseUp(e) {
+                if (!isDragging) return;
+                isDragging = false;
+
+                document.removeEventListener('mousemove', handleMouseMove);
+                document.removeEventListener('mouseup', handleMouseUp);
+
+                // Ocultar indicadores
+                document.getElementById('swipe-left')?.classList.remove('visible');
+                document.getElementById('swipe-right')?.classList.remove('visible');
+
+                const diffX = e.clientX - dragStartX;
+                const dragDuration = Date.now() - touchStartTime;
+                const velocity = Math.abs(diffX) / dragDuration;
+
+                if (Math.abs(diffX) > SWIPE_THRESHOLD) {
+                    if (velocity > SWIPE_VELOCITY_THRESHOLD || Math.abs(diffX) > 100) {
+                        if (diffX < 0) {
+                            nextPageAnimated('flip');
+                        } else {
+                            previousPageAnimated('flip');
+                        }
+                    }
+                }
+
+                dragStartX = 0;
+            }
+
+            // Navegación por teclado
+            function initKeyboardNavigation() {
+                document.addEventListener('keydown', (e) => {
+                    // Ignorar si está escribiendo en un input
+                    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+                    switch (e.key) {
+                        case 'ArrowRight':
+                        case 'PageDown':
+                            e.preventDefault();
+                            nextPageAnimated('flip');
+                            break;
+                        case 'ArrowLeft':
+                        case 'PageUp':
+                            e.preventDefault();
+                            previousPageAnimated('flip');
+                            break;
+                        case 'Home':
+                            e.preventDefault();
+                            goHome();
+                            break;
+                        case 'Escape':
+                            const fabMenu = document.getElementById('fab-menu');
+                            if (fabMenu?.classList.contains('open')) {
+                                toggleFabMenu();
+                            }
+                            break;
+                    }
+                });
+
+                // Mostrar hint de teclado una vez
+                if (!sessionStorage.getItem('keyboardHintShown')) {
+                    setTimeout(() => {
+                        const hint = document.getElementById('keyboard-hint');
+                        if (hint) {
+                            hint.classList.add('visible');
+                            setTimeout(() => {
+                                hint.classList.remove('visible');
+                            }, 3000);
+                        }
+                    }, 2000);
+                    sessionStorage.setItem('keyboardHintShown', 'true');
+                }
+            }
+
+            // Cerrar menú FAB al hacer clic fuera
+            document.addEventListener('click', (e) => {
+                const fabMenu = document.getElementById('fab-menu');
+                if (fabMenu && !fabMenu.contains(e.target) && fabMenu.classList.contains('open')) {
+                    fabMenu.classList.remove('open');
+                }
+            });
+
+            // Inicializar al cargar
+            document.addEventListener('DOMContentLoaded', () => {
+                initTouchGestures();
+                initKeyboardNavigation();
+                updateModernNavigation();
+
+                // Actualizar navegación cuando se carga contenido
+                const originalLoadContent = window.loadContent;
+                if (typeof originalLoadContent === 'function') {
+                    window.loadContent = function () {
+                        originalLoadContent.apply(this, arguments);
+                        setTimeout(updateModernNavigation, 100);
+                    };
+                }
+            });
+
+            // Exponer función para actualizar desde fuera
+            window.updateModernNavigation = updateModernNavigation;
         })();
     </script>
 </body>
