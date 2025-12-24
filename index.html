@@ -3601,6 +3601,9 @@
             const nextBtn = document.getElementById('next-btn');
             const autoBtn = document.getElementById('auto-btn');
 
+            // Verificar que los elementos existan antes de modificarlos
+            if (!prevBtn || !nextBtn || !autoBtn) return;
+
             if (unit && unit.pages) {
                 prevBtn.disabled = currentPageIndex === 0;
                 nextBtn.disabled = currentPageIndex >= unit.pages.length - 1;
@@ -3859,10 +3862,14 @@
         document.addEventListener('click', function (event) {
             const navMenu = document.querySelector('.nav-menu');
             const dropdown = document.getElementById('nav-dropdown');
+            const menuBtn = document.querySelector('.nav-menu-btn');
+
+            // Verificar que los elementos existan
+            if (!navMenu || !dropdown) return;
 
             if (!navMenu.contains(event.target)) {
                 dropdown.classList.remove('show');
-                document.querySelector('.nav-menu-btn').classList.remove('active');
+                if (menuBtn) menuBtn.classList.remove('active');
             }
         });
 
@@ -4159,6 +4166,7 @@
 
                 // Evitar que clics en elementos interactivos disparen navegación
                 function isInteractiveClick(evt) {
+                    if (!evt || !evt.target) return false;
                     const interactiveSelectors = 'button, a, .nav-menu-btn, .nav-btn, .fab, .floating-actions, .nav-dropdown, .start-btn, #faMenu, #faPrint';
                     return !!evt.target.closest(interactiveSelectors);
                 }
