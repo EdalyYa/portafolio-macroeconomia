@@ -5,28 +5,39 @@
 <div id="page-1" class="page-block">
     <h2 class="handwritten-title">🔄 Semana 3: El Modelo IS-LM - Equilibrio General</h2>
     <div class="handwritten-text">
-        <p><strong>Objetivo:</strong> Integrar las curvas IS y LM para determinar el equilibrio macroeconómico en una
-            economía cerrada, evaluando los efectos de cambios en las políticas fiscales y monetarias.</p>
+        <p><strong>🎯 Objetivo:</strong> Integrar las curvas IS y LM para determinar el equilibrio macroeconómico en una
+            economía cerrada.</p>
 
-        <h3>3.1 Introducción al Modelo IS-LM</h3>
-        <p>El modelo <strong>IS-LM</strong>, desarrollado por <strong>John Hicks</strong> en 1937, es una síntesis de la
-            teoría keynesiana que muestra la interacción entre:</p>
-        <ul>
-            <li><strong>Mercado de Bienes:</strong> Representado por la curva IS</li>
-            <li><strong>Mercado de Dinero:</strong> Representado por la curva LM</li>
-        </ul>
+        <h3>3.1 Introducción: La Gran Síntesis</h3>
+        <p>El modelo <strong>IS-LM</strong> es una síntesis que muestra la interacción entre dos mercados clave:</p>
 
-        <p>El modelo determina simultáneamente:</p>
-        <ul>
-            <li>El nivel de <strong>ingreso de equilibrio (Y*)</strong></li>
-            <li>La <strong>tasa de interés de equilibrio (i*)</strong></li>
-        </ul>
-
-        <div class="formula-box">
-            <strong>Sistema de Ecuaciones IS-LM:</strong><br>
-            IS: Y = [1/(1-c)]×[C₀ - cT + I₀ + G₀] - [b/(1-c)]×i<br>
-            LM: i = [(L₀ - M/P)/h] + (k/h)×Y
+        <!-- Diagrama de Integración -->
+        <div
+            style="display: flex; justify-content: space-around; align-items: center; margin: 15px 0; background: #f8fafc; padding: 10px; border-radius: 12px; border: 1px solid #e2e8f0;">
+            <div
+                style="text-align: center; background: #eff6ff; padding: 8px; border-radius: 8px; border: 1px solid #3b82f6; width: 35%;">
+                <div style="font-size: 20px;">📦</div>
+                <div style="font-weight: bold; color: #1e40af; font-size: 11px;">M. Bienes (IS)</div>
+                <div style="font-size: 9px; color: #64748b;">Ahorro = Inversión</div>
+            </div>
+            <div style="font-size: 20px; color: #94a3b8;">➕</div>
+            <div
+                style="text-align: center; background: #f0fdf4; padding: 8px; border-radius: 8px; border: 1px solid #10b981; width: 35%;">
+                <div style="font-size: 20px;">🏦</div>
+                <div style="font-weight: bold; color: #166534; font-size: 11px;">M. Dinero (LM)</div>
+                <div style="font-size: 9px; color: #64748b;">Liquidez = Oferta</div>
+            </div>
         </div>
+
+        <p>Este modelo determina simultáneamente:</p>
+        <ul style="display: flex; gap: 10px; list-style: none; padding: 0;">
+            <li
+                style="flex:1; background: #fee2e2; padding: 5px; border-radius: 6px; text-align: center; font-size: 11px;">
+                📈 <strong>Y*</strong> (Ingreso)</li>
+            <li
+                style="flex:1; background: #fee2e2; padding: 5px; border-radius: 6px; text-align: center; font-size: 11px;">
+                📉 <strong>i*</strong> (Interés)</li>
+        </ul>
     </div>
 </div>
 
@@ -35,29 +46,45 @@
     <h2 class="handwritten-title">⚖️ El Equilibrio Simultáneo</h2>
     <div class="handwritten-text">
         <h3>3.2 Determinación del Equilibrio</h3>
-        <p>El equilibrio macroeconómico se alcanza cuando <strong>ambos mercados</strong> están en equilibrio
-            simultáneamente:</p>
+        <p>El equilibrio ocurre en la <strong>intersección</strong> de ambas curvas. Es el único punto donde ambos
+            mercados están en paz 🕊️.</p>
 
-        <div class="formula-box">
-            <strong>Condición de Equilibrio General:</strong><br>
-            Mercado de Bienes: Y = C + I + G (sobre la IS)<br>
-            Mercado de Dinero: M/P = L(Y, i) (sobre la LM)
+        <!-- Gráfico SVG: Equilibrio IS-LM -->
+        <div
+            style="background: #fff; border-radius: 10px; padding: 15px; margin: 15px 0; border: 1px solid #e5e7eb; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+            <div style="text-align: center; font-weight: bold; color: #1e293b; margin-bottom: 10px; font-size: 14px;">📊
+                Modelo IS-LM Completo</div>
+            <svg viewBox="0 0 320 200" style="width: 100%; max-width: 400px; margin: 0 auto; display: block;">
+                <!-- Ejes -->
+                <line x1="40" y1="170" x2="290" y2="170" stroke="#374151" stroke-width="2" />
+                <line x1="40" y1="170" x2="40" y2="20" stroke="#374151" stroke-width="2" />
+
+                <!-- Curva IS -->
+                <line x1="60" y1="50" x2="260" y2="150" stroke="#3b82f6" stroke-width="3" />
+                <text x="265" y="155" font-size="12" fill="#3b82f6" font-weight="bold">IS</text>
+
+                <!-- Curva LM -->
+                <line x1="60" y1="150" x2="260" y2="50" stroke="#10b981" stroke-width="3" />
+                <text x="265" y="55" font-size="12" fill="#10b981" font-weight="bold">LM</text>
+
+                <!-- Punto de Equilibrio E* -->
+                <circle cx="160" cy="100" r="5" fill="#1e293b" />
+                <text x="165" y="95" font-size="12" fill="#1e293b" font-weight="bold">E*</text>
+
+                <line x1="40" y1="100" x2="160" y2="100" stroke="#94a3b8" stroke-dasharray="3,3" />
+                <line x1="160" y1="170" x2="160" y2="100" stroke="#94a3b8" stroke-dasharray="3,3" />
+
+                <text x="15" y="103" font-size="10" fill="#1e293b" font-weight="bold">i*</text>
+                <text x="155" y="185" font-size="10" fill="#1e293b" font-weight="bold">Y*</text>
+
+                <!-- Etiquetas de ejes -->
+                <text x="280" y="185" font-size="10" fill="#374151">Y</text>
+                <text x="10" y="25" font-size="10" fill="#374151">i</text>
+            </svg>
         </div>
 
-        <h4>Representación Gráfica</h4>
-        <p>En un diagrama con:</p>
-        <ul>
-            <li><strong>Eje horizontal:</strong> Ingreso (Y)</li>
-            <li><strong>Eje vertical:</strong> Tasa de interés (i)</li>
-        </ul>
-        <p>El equilibrio ocurre en la <strong>intersección</strong> de las curvas IS y LM.</p>
-
-        <h4>Solución Algebraica</h4>
-        <p>Sustituyendo la LM en la IS (o viceversa), obtenemos:</p>
-
-        <div class="formula-box">
-            <strong>Ingreso de Equilibrio:</strong><br>
-            Y* = [h/(h(1-c) + kb)] × [C₀ - cT + I₀ + G₀] + [b/(h(1-c) + kb)] × (M/P)
+        <div class="formula-box" style="background: #fdf2f2;">
+            <strong>🧩 Nota:</strong> En E*, la demanda de bienes = producción Y, Y la demanda de dinero = oferta M/P.
         </div>
     </div>
 </div>
@@ -133,234 +160,223 @@
 
 <!-- Página 5 -->
 <div id="page-5" class="page-block">
-    <h2 class="handwritten-title">⚡ Desequilibrios en el Modelo IS-LM</h2>
+    <h2 class="handwritten-title">⚡ Desequilibrios IS-LM</h2>
     <div class="handwritten-text">
         <h3>3.4 Análisis de Desequilibrios</h3>
-        <p>Fuera del equilibrio, existen fuerzas que restauran el balance:</p>
+        <p>Fuera del punto E*, la economía experimenta presiones 🌪️ para volver al balance.</p>
 
-        <h4>Puntos Fuera de la IS</h4>
-        <table class="data-table">
-            <tr>
-                <th>Ubicación</th>
-                <th>Situación</th>
-                <th>Ajuste</th>
-            </tr>
-            <tr>
-                <td>Arriba de IS</td>
-                <td>Y > DA (exceso de oferta)</td>
-                <td>↓Y (producción baja)</td>
-            </tr>
-            <tr>
-                <td>Debajo de IS</td>
-                <td>Y < DA (exceso de demanda)</td>
-                <td>↑Y (producción sube)</td>
-            </tr>
-        </table>
+        <!-- Gráfico SVG: 4 Zonas de Desequilibrio -->
+        <div style="background: #fff; border-radius: 10px; padding: 15px; margin: 15px 0; border: 1px solid #e5e7eb;">
+            <div style="text-align: center; font-weight: bold; color: #374151; margin-bottom: 5px; font-size: 12px;">📊
+                Las 4 Zonas de Ajuste</div>
+            <svg viewBox="0 0 300 200" style="width: 100%; max-width: 350px; margin: 0 auto; display: block;">
+                <!-- Ejes -->
+                <line x1="40" y1="160" x2="260" y2="160" stroke="#374151" stroke-width="2" />
+                <line x1="40" y1="160" x2="40" y2="20" stroke="#374151" stroke-width="2" />
+                <!-- IS y LM -->
+                <line x1="60" y1="40" x2="240" y2="140" stroke="#3b82f6" stroke-width="2" />
+                <line x1="60" y1="140" x2="240" y2="40" stroke="#10b981" stroke-width="2" />
 
-        <h4>Puntos Fuera de la LM</h4>
-        <table class="data-table">
-            <tr>
-                <th>Ubicación</th>
-                <th>Situación</th>
-                <th>Ajuste</th>
-            </tr>
-            <tr>
-                <td>Arriba de LM</td>
-                <td>M/P > L (exceso de oferta de dinero)</td>
-                <td>↓i (tasa baja)</td>
-            </tr>
-            <tr>
-                <td>Debajo de LM</td>
-                <td>M/P < L (exceso de demanda de dinero)</td>
-                <td>↑i (tasa sube)</td>
-            </tr>
-        </table>
+                <!-- Zonas -->
+                <text x="140" y="35" font-size="14" fill="#64748b" font-weight="bold">I</text>
+                <text x="230" y="90" font-size="14" fill="#64748b" font-weight="bold">II</text>
+                <text x="140" y="150" font-size="14" fill="#64748b" font-weight="bold">III</text>
+                <text x="50" y="90" font-size="14" fill="#64748b" font-weight="bold">IV</text>
 
-        <h4>Zonas del Diagrama IS-LM</h4>
-        <p>El plano se divide en 4 zonas con diferentes presiones de ajuste, y todas convergen hacia el equilibrio E*.
-        </p>
+                <!-- Flechas de ajuste (Ejemplo en Zona I) -->
+                <path d="M 140 50 L 140 80" fill="none" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arr-r)" />
+                <path d="M 160 50 L 130 50" fill="none" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arr-r)" />
+
+                <defs>
+                    <marker id="arr-r" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+                        <polygon points="0 0, 6 3, 0 6" fill="#ef4444" />
+                    </marker>
+                </defs>
+            </svg>
+        </div>
+
+        <div style="font-size: 11px; display: grid; grid-template-columns: 1fr 1fr; gap: 5px;">
+            <div style="background: #f1f5f9; padding: 5px; border-radius: 4px;"><strong>Zona I:</strong> Exc. Oferta
+                Bienes / Exc. Oferta Dinero</div>
+            <div style="background: #f1f5f9; padding: 5px; border-radius: 4px;"><strong>Zona II:</strong> Exc. Oferta
+                Bienes / Exc. Demanda Dinero</div>
+            <div style="background: #f1f5f9; padding: 5px; border-radius: 4px;"><strong>Zona III:</strong> Exc. Demanda
+                Bienes / Exc. Demanda Dinero</div>
+            <div style="background: #f1f5f9; padding: 5px; border-radius: 4px;"><strong>Zona IV:</strong> Exc. Demanda
+                Bienes / Exc. Oferta Dinero</div>
+        </div>
     </div>
 </div>
 
 <!-- Página 6 -->
 <div id="page-6" class="page-block">
-    <h2 class="handwritten-title">🔗 Interacción IS-LM</h2>
+    <h2 class="handwritten-title">🔗 Mecanismos de Transmisión</h2>
     <div class="handwritten-text">
-        <h3>3.5 El Mecanismo de Transmisión</h3>
-        <p>Los mercados de bienes y dinero están interconectados a través de la <strong>tasa de interés</strong>:</p>
+        <h3>3.5 ¿Cómo viaja la Política?</h3>
 
-        <h4>De la IS a la LM:</h4>
-        <ol>
-            <li>Un aumento en G desplaza la IS a la derecha</li>
-            <li>Aumenta Y (mayor producción)</li>
-            <li>Mayor Y → Mayor demanda de dinero</li>
-            <li>Con M fija → Sube la tasa de interés</li>
-        </ol>
-
-        <h4>De la LM a la IS:</h4>
-        <ol>
-            <li>Un aumento en M desplaza la LM a la derecha</li>
-            <li>Baja la tasa de interés</li>
-            <li>Menor i → Mayor inversión</li>
-            <li>Mayor inversión → Mayor producción (Y)</li>
-        </ol>
-
-        <div class="formula-box">
-            <strong>Cadena de Transmisión Monetaria:</strong><br>
-            ↑M → ↓i → ↑I → ↑DA → ↑Y
+        <!-- Diagrama de Causalidad Monetaria -->
+        <div
+            style="background: #f0fdf4; border: 1px solid #166534; border-radius: 10px; padding: 12px; margin-bottom: 15px;">
+            <div style="font-weight: bold; color: #166534; margin-bottom: 5px; font-size: 13px;">🏦 Transmisión
+                Monetaria:</div>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+                <div style="background: white; padding: 5px; border-radius: 5px; font-weight: bold; font-size: 11px;">↑M
+                </div>
+                <span>➔</span>
+                <div
+                    style="background: white; padding: 5px; border-radius: 5px; font-weight: bold; font-size: 11px; color:#ef4444;">
+                    ↓i</div>
+                <span>➔</span>
+                <div
+                    style="background: white; padding: 5px; border-radius: 5px; font-weight: bold; font-size: 11px; color:#10b981;">
+                    ↑I</div>
+                <span>➔</span>
+                <div style="background: white; padding: 5px; border-radius: 5px; font-weight: bold; font-size: 11px;">↑Y
+                </div>
+            </div>
         </div>
 
-        <div class="formula-box">
-            <strong>Cadena de Transmisión Fiscal:</strong><br>
-            ↑G → ↑DA → ↑Y → ↑L → ↑i → ↓I (efecto crowding-out)
+        <!-- Diagrama de Causalidad Fiscal -->
+        <div style="background: #eff6ff; border: 1px solid #1e40af; border-radius: 10px; padding: 12px;">
+            <div style="font-weight: bold; color: #1e40af; margin-bottom: 5px; font-size: 13px;">🏛️ Transmisión Fiscal:
+            </div>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+                <div style="background: white; padding: 5px; border-radius: 5px; font-weight: bold; font-size: 11px;">↑G
+                </div>
+                <span>➔</span>
+                <div style="background: white; padding: 5px; border-radius: 5px; font-weight: bold; font-size: 11px;">↑Y
+                </div>
+                <span>➔</span>
+                <div
+                    style="background: white; padding: 5px; border-radius: 5px; font-weight: bold; font-size: 11px; color:#ef4444;">
+                    ↑i</div>
+                <span>➔</span>
+                <div
+                    style="background: white; padding: 5px; border-radius: 5px; font-weight: bold; font-size: 11px; color:#ef4444;">
+                    ↓I</div>
+            </div>
+            <div style="text-align: center; font-size: 10px; color: #1e40af; margin-top: 5px; font-style: italic;">
+                (Efecto Crowding-Out)</div>
         </div>
     </div>
 </div>
 
 <!-- Página 7 -->
 <div id="page-7" class="page-block">
-    <h2 class="handwritten-title">🚫 El Efecto Desplazamiento (Crowding-Out)</h2>
+    <h2 class="handwritten-title">🚫 El Efecto Crowding-Out</h2>
     <div class="handwritten-text">
-        <h3>3.6 ¿Qué es el Crowding-Out?</h3>
-        <p>El <strong>efecto desplazamiento</strong> o <em>crowding-out</em> ocurre cuando un aumento del gasto público
-            reduce la inversión privada.</p>
+        <h3>3.6 ¿Qué es el Desplazamiento?</h3>
+        <p>Ocurre cuando el estado gasta más, sube la tasa de interés y <strong>"expulsa"</strong> a la inversión
+            privada.</p>
 
-        <h4>Mecanismo del Crowding-Out</h4>
-        <ol>
-            <li>↑G → IS se desplaza a la derecha</li>
-            <li>↑Y → ↑ demanda de dinero</li>
-            <li>Con M fija → ↑i</li>
-            <li>↑i → ↓I (inversión privada cae)</li>
-            <li>El aumento final de Y es menor que sin crowding-out</li>
-        </ol>
+        <!-- Gráfico SVG: Crowding Out -->
+        <div style="background: #fff; border-radius: 10px; padding: 15px; margin: 15px 0; border: 1px solid #e5e7eb;">
+            <div style="text-align: center; font-weight: bold; color: #374151; margin-bottom: 5px; font-size: 12px;">📊
+                Visualización del Crowding-Out</div>
+            <svg viewBox="0 0 300 180" style="width: 100%; max-width: 350px; margin: 0 auto; display: block;">
+                <!-- Ejes -->
+                <line x1="40" y1="150" x2="280" y2="150" stroke="#374151" stroke-width="2" />
+                <line x1="40" y1="150" x2="40" y2="20" stroke="#374151" stroke-width="2" />
+                <!-- LM -->
+                <line x1="60" y1="130" x2="240" y2="40" stroke="#10b981" stroke-width="2" />
+                <!-- IS Original e IS Nueva -->
+                <line x1="50" y1="40" x2="180" y2="140" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4" />
+                <line x1="120" y1="40" x2="250" y2="140" stroke="#3b82f6" stroke-width="3" />
 
-        <div class="formula-box">
-            <strong>Crowding-Out Parcial:</strong><br>
-            ΔY < k × ΔG (donde k=multiplicador simple) </div>
+                <!-- Puntos -->
+                <circle cx="107" cy="83" r="3" fill="#64748b" /> <!-- E0 approx -->
+                <circle cx="160" cy="80" r="4" fill="#1e40af" /> <!-- E1 final -->
 
-                <h4>Grado de Crowding-Out</h4>
-                <table class="data-table">
-                    <tr>
-                        <th>Situación</th>
-                        <th>Grado de Crowding-Out</th>
-                    </tr>
-                    <tr>
-                        <td>LM vertical (caso clásico)</td>
-                        <td>Crowding-out completo</td>
-                    </tr>
-                    <tr>
-                        <td>LM horizontal (trampa de liquidez)</td>
-                        <td>Sin crowding-out</td>
-                    </tr>
-                    <tr>
-                        <td>LM con pendiente normal</td>
-                        <td>Crowding-out parcial</td>
-                    </tr>
-                </table>
+                <!-- Flecha de i subiendo -->
+                <path d="M 30 100 L 30 70" fill="none" stroke="#ef4444" stroke-width="2" marker-end="url(#arr-r2)" />
+                <text x="15" y="85" font-size="9" fill="#ef4444" font-weight="bold">↑i</text>
+
+                <defs>
+                    <marker id="arr-r2" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+                        <polygon points="0 0, 6 3, 0 6" fill="#ef4444" />
+                    </marker>
+                </defs>
+            </svg>
+        </div>
+
+        <div
+            style="background: #fffbeb; border: 1px solid #fef3c7; padding: 10px; border-radius: 8px; font-size: 11px;">
+            <p style="margin: 0;">⚠️ <strong>Resultado:</strong> El PIB sube, pero menos de lo esperado porque i↑
+                castiga a los empresarios.</p>
         </div>
     </div>
+</div>
 
-    <!-- Página 8 -->
-    <div id="page-8" class="page-block">
-        <h2 class="handwritten-title">📐 Multiplicadores en el Modelo IS-LM</h2>
-        <div class="handwritten-text">
-            <h3>3.7 Multiplicadores con Retroalimentación Monetaria</h3>
-            <p>Los multiplicadores del modelo IS-LM son menores que los del modelo keynesiano simple debido al efecto
-                sobre la tasa de interés.</p>
+<!-- Página 9 -->
+<div id="page-9" class="page-block">
+    <h2 class="handwritten-title">🎯 Casos Especiales IS-LM</h2>
+    <div class="handwritten-text">
+        <h3>3.8 Casos Extremos</h3>
 
-            <h4>Multiplicador del Gasto Público</h4>
-            <div class="formula-box">
-                <strong>Multiplicador Fiscal (αG):</strong><br>
-                αG = dY/dG = h / [h(1-c) + kb]
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px;">
+            <!-- Caso Trampa -->
+            <div style="background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 8px;">
+                <div style="font-weight: bold; font-size: 10px; text-align: center; color: #1e40af;">🏝️ Trampa Liquidez
+                </div>
+                <svg viewBox="0 0 100 80" style="width: 100%;">
+                    <line x1="10" y1="70" x2="90" y2="70" stroke="#374151" stroke-width="1" />
+                    <line x1="10" y1="70" x2="10" y2="10" stroke="#374151" stroke-width="1" />
+                    <line x1="20" y1="10" x2="80" y2="60" stroke="#3b82f6" stroke-width="1.5" /> <!-- IS -->
+                    <line x1="10" y1="50" x2="90" y2="50" stroke="#10b981" stroke-width="2" /> <!-- LM Flat -->
+                </svg>
+                <div style="font-size: 8px; text-align: center;">P. Fiscal <strong>Muy Efectiva</strong></div>
             </div>
 
-            <h4>Multiplicador Monetario</h4>
-            <div class="formula-box">
-                <strong>Multiplicador Monetario (αM):</strong><br>
-                αM = dY/d(M/P) = b / [h(1-c) + kb]
-            </div>
-
-            <h4>Comparación de Multiplicadores</h4>
-            <div class="ejemplo-box">
-                <strong>Ejemplo:</strong> Si c = 0.8, b = 25, h = 50, k = 0.25<br><br>
-                Multiplicador simple: k = 1/(1-0.8) = 5<br>
-                Multiplicador IS-LM: αG = 50/[50(0.2) + 0.25(25)] = 50/16.25 = 3.08<br><br>
-                El multiplicador efectivo es menor (3.08 vs 5) debido al crowding-out.
+            <!-- Caso Clasico -->
+            <div style="background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 8px;">
+                <div style="font-weight: bold; font-size: 10px; text-align: center; color: #991b1b;">🏛️ Caso Clásico
+                </div>
+                <svg viewBox="0 0 100 80" style="width: 100%;">
+                    <line x1="10" y1="70" x2="90" y2="70" stroke="#374151" stroke-width="1" />
+                    <line x1="10" y1="70" x2="10" y2="10" stroke="#374151" stroke-width="1" />
+                    <line x1="20" y1="10" x2="80" y2="60" stroke="#3b82f6" stroke-width="1.5" /> <!-- IS -->
+                    <line x1="50" y1="70" x2="50" y2="10" stroke="#10b981" stroke-width="2" /> <!-- LM Vert -->
+                </svg>
+                <div style="font-size: 8px; text-align: center;">P. Monetaria <strong>Muy Efectiva</strong></div>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Página 9 -->
-    <div id="page-9" class="page-block">
-        <h2 class="handwritten-title">🎯 Casos Especiales del IS-LM</h2>
-        <div class="handwritten-text">
-            <h3>3.8 Casos Extremos</h3>
-
-            <h4>Caso 1: Trampa de Liquidez (LM horizontal)</h4>
+<!-- Página 10 -->
+<div id="page-10" class="page-block">
+    <h2 class="handwritten-title">📝 Resumen y Ejercicios - Semana 3</h2>
+    <div class="handwritten-text">
+        <h3>Resumen de la Semana 3</h3>
+        <div class="resumen-box">
             <ul>
-                <li>h → ∞</li>
-                <li>Política fiscal: <strong>Máxima efectividad</strong></li>
-                <li>Política monetaria: <strong>Inefectiva</strong></li>
-                <li>No hay crowding-out</li>
-            </ul>
-
-            <h4>Caso 2: Caso Clásico (LM vertical)</h4>
-            <ul>
-                <li>h = 0</li>
-                <li>Política fiscal: <strong>Inefectiva</strong> (crowding-out completo)</li>
-                <li>Política monetaria: <strong>Máxima efectividad</strong></li>
-            </ul>
-
-            <h4>Caso 3: IS vertical (b = 0)</h4>
-            <ul>
-                <li>Inversión no responde a i</li>
-                <li>Política monetaria: <strong>Inefectiva</strong></li>
-                <li>Política fiscal: <strong>Efectiva</strong></li>
-            </ul>
-
-            <h4>Caso 4: IS horizontal (b → ∞)</h4>
-            <ul>
-                <li>Inversión muy sensible a i</li>
-                <li>Política monetaria: <strong>Muy efectiva</strong></li>
-                <li>Crowding-out mínimo</li>
+                <li><strong>Equilibrio IS-LM:</strong> Intersección de ambas curvas</li>
+                <li><strong>Determina:</strong> Y* e i* simultáneamente</li>
+                <li><strong>Crowding-out:</strong> ↑G → ↑i → ↓I</li>
+                <li><strong>Multiplicadores IS-LM:</strong> Menores que el simple</li>
+                <li><strong>Casos especiales:</strong> Trampa de liquidez y caso clásico</li>
             </ul>
         </div>
-    </div>
 
-    <!-- Página 10 -->
-    <div id="page-10" class="page-block">
-        <h2 class="handwritten-title">📝 Resumen y Ejercicios - Semana 3</h2>
-        <div class="handwritten-text">
-            <h3>Resumen de la Semana 3</h3>
-            <div class="resumen-box">
-                <ul>
-                    <li><strong>Equilibrio IS-LM:</strong> Intersección de ambas curvas</li>
-                    <li><strong>Determina:</strong> Y* e i* simultáneamente</li>
-                    <li><strong>Crowding-out:</strong> ↑G → ↑i → ↓I</li>
-                    <li><strong>Multiplicadores IS-LM:</strong> Menores que el simple</li>
-                    <li><strong>Casos especiales:</strong> Trampa de liquidez y caso clásico</li>
-                </ul>
-            </div>
-
-            <h3>Ejercicios Propuestos</h3>
-            <div class="ejercicio-box">
-                <p><strong>1.</strong> Con C = 50 + 0.75Yd, I = 100 - 20i, G = 100, T = 80, L = 0.2Y - 40i, M/P = 100:
-                </p>
-                <p>a) Derive IS y LM</p>
-                <p>b) Encuentre Y* e i*</p>
-                <p>c) Si G sube a 150, ¿cuál es el nuevo equilibrio?</p>
-            </div>
-
-            <div class="ejercicio-box">
-                <p><strong>2.</strong> Explique el efecto crowding-out y cuándo es más severo.</p>
-            </div>
-
-            <div class="ejercicio-box">
-                <p><strong>3.</strong> ¿Por qué en la trampa de liquidez la política monetaria es inefectiva?</p>
-            </div>
-
-            <h3>Conceptos Clave</h3>
-            <p>✓ Equilibrio IS-LM | ✓ Crowding-Out | ✓ Multiplicadores | ✓ Transmisión Monetaria | ✓ Casos Especiales
+        <h3>Ejercicios Propuestos</h3>
+        <div class="ejercicio-box">
+            <p><strong>1.</strong> Con C = 50 + 0.75Yd, I = 100 - 20i, G = 100, T = 80, L = 0.2Y - 40i, M/P = 100:
             </p>
+            <p>a) Derive IS y LM</p>
+            <p>b) Encuentre Y* e i*</p>
+            <p>c) Si G sube a 150, ¿cuál es el nuevo equilibrio?</p>
         </div>
+
+        <div class="ejercicio-box">
+            <p><strong>2.</strong> Explique el efecto crowding-out y cuándo es más severo.</p>
+        </div>
+
+        <div class="ejercicio-box">
+            <p><strong>3.</strong> ¿Por qué en la trampa de liquidez la política monetaria es inefectiva?</p>
+        </div>
+
+        <h3>Conceptos Clave</h3>
+        <p>✓ Equilibrio IS-LM | ✓ Crowding-Out | ✓ Multiplicadores | ✓ Transmisión Monetaria | ✓ Casos Especiales
+        </p>
     </div>
+</div>

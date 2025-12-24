@@ -5,380 +5,318 @@
 <div id="page-1" class="page-block">
     <h2 class="handwritten-title">🌍 Semana 5: El Modelo Mundell-Fleming</h2>
     <div class="handwritten-text">
-        <p><strong>Objetivo:</strong> Aplicar el modelo Mundell-Fleming para analizar el comportamiento de una economía
-            abierta, considerando la interacción entre el tipo de cambio, la balanza de pagos y la política
-            macroeconómica.</p>
+        <p><strong>Objetivo:</strong> Analizar la interacción entre el tipo de cambio, la balanza de pagos y la política
+            macroeconómica en una economía abierta 🚢.</p>
 
-        <h3>5.1 Introducción a la Economía Abierta</h3>
-        <p>El modelo <strong>Mundell-Fleming</strong> es una extensión del IS-LM para economías abiertas, desarrollado
-            por <strong>Robert Mundell</strong> y <strong>Marcus Fleming</strong> en los años 1960.</p>
+        <div style="display: flex; justify-content: space-around; margin: 15px 0;">
+            <div style="text-align: center;">
+                <div style="font-size: 24px;">📦</div>
+                <div style="font-size: 10px; font-weight: bold;">Sector Real<br>(NX)</div>
+            </div>
+            <div style="text-align: center;">
+                <div style="font-size: 24px;">💰</div>
+                <div style="font-size: 10px; font-weight: bold;">Sector Financiero<br>(CK)</div>
+            </div>
+            <div style="text-align: center;">
+                <div style="font-size: 24px;">💱</div>
+                <div style="font-size: 10px; font-weight: bold;">Tipo de Cambio<br>(e)</div>
+            </div>
+        </div>
 
-        <p>Añade dos elementos fundamentales:</p>
-        <ul>
-            <li><strong>Sector externo:</strong> Exportaciones e importaciones</li>
-            <li><strong>Flujos de capital:</strong> Movimientos de capital internacional</li>
-        </ul>
-
-        <h3>5.2 Supuestos del Modelo</h3>
-        <ul>
-            <li>Economía pequeña y abierta</li>
-            <li>Precios fijos (corto plazo)</li>
-            <li>Perfecta movilidad de capitales (versión básica)</li>
-            <li>Expectativas estáticas del tipo de cambio</li>
-        </ul>
+        <h3>5.1 Introducción</h3>
+        <p>El modelo <strong>Mundell-Fleming</strong> extiende el IS-LM añadiendo la dimensión internacional 🌎. Fue
+            desarrollado por Robert Mundell (Nobel 1999) y Marcus Fleming.</p>
     </div>
 </div>
 
 <!-- Página 2 -->
 <div id="page-2" class="page-block">
-    <h2 class="handwritten-title">📊 Las Tres Curvas del Modelo</h2>
+    <h2 class="handwritten-title">📊 IS en Economía Abierta</h2>
     <div class="handwritten-text">
-        <h3>5.3 Componentes del Modelo Mundell-Fleming</h3>
-
-        <h4>1. La Curva IS (Economía Abierta)</h4>
-        <div class="formula-box">
-            <strong>Demanda Agregada en Economía Abierta:</strong><br>
-            Y = C + I + G + NX<br>
-            Donde NX = X - M (exportaciones netas)
+        <h3>5.3 La Curva IS Abierta</h3>
+        <div
+            style="background: #f8fafc; border: 2px solid #3b82f6; border-radius: 12px; padding: 12px; margin: 10px 0;">
+            <div style="text-align: center; font-weight: bold; color: #1e40af; margin-bottom: 8px;">🚢 Balanza Comercial
+                (NX)</div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                <div style="background: white; padding: 8px; border-radius: 6px; border: 1px solid #bfdbfe;">
+                    <div style="font-size: 11px; font-weight: bold; color: #059669;">⬆️ Exportaciones (X)</div>
+                    <div style="font-size: 9px;">Dependen de Y* (extranjero) y e (tipo de cambio)</div>
+                </div>
+                <div style="background: white; padding: 8px; border-radius: 6px; border: 1px solid #bfdbfe;">
+                    <div style="font-size: 11px; font-weight: bold; color: #dc2626;">⬆️ Importaciones (M)</div>
+                    <div style="font-size: 9px;">Dependen de Y (local) y e (tipo de cambio)</div>
+                </div>
+            </div>
         </div>
 
-        <p>Las exportaciones netas dependen de:</p>
-        <ul>
-            <li><strong>Tipo de cambio real (e):</strong> ↑e → ↑NX</li>
-            <li><strong>Ingreso nacional (Y):</strong> ↑Y → ↓NX (más importaciones)</li>
-            <li><strong>Ingreso extranjero (Y*):</strong> ↑Y* → ↑NX</li>
-        </ul>
-
-        <div class="formula-box">
-            NX = NX₀ + ne - mY<br>
-            Donde:<br>
-            n = sensibilidad a tipo de cambio<br>
-            m = propensión marginal a importar
+        <div class="formula-box" style="background: #eff6ff;">
+            Y = C + I + G + <strong>(X - M)</strong>
         </div>
-
-        <h4>Nueva Curva IS</h4>
-        <div class="formula-box">
-            Y = C₀ + c(Y-T) + I₀ - bi + G + NX₀ + ne - mY
-        </div>
+        <p>Ahora la pendiente es más empinada porque <strong>m</strong> (propensión a importar) reduce el multiplicador
+            📉.</p>
     </div>
 </div>
 
 <!-- Página 3 -->
 <div id="page-3" class="page-block">
-    <h2 class="handwritten-title">💱 La Curva LM y la Curva BP</h2>
+    <h2 class="handwritten-title">🧭 La Curva BP</h2>
     <div class="handwritten-text">
-        <h4>2. La Curva LM</h4>
-        <p>La curva LM es similar a la de economía cerrada:</p>
+        <h3>5.4 Balanza de Pagos</h3>
+        <p>Representa las combinaciones de (Y, i) que mantienen el equilibrio externo ⚖️.</p>
+
         <div class="formula-box">
-            M/P = L(Y, i)<br>
-            M/P = L₀ + kY - hi
+            BP = NX(Y, e) + CK(i - i*) = 0
         </div>
 
-        <h4>3. La Curva BP (Balanza de Pagos)</h4>
-        <p>Representa el equilibrio externo:</p>
-        <div class="formula-box">
-            <strong>Balanza de Pagos:</strong><br>
-            BP = CC + CK = 0<br>
-            Donde:<br>
-            CC = Cuenta Corriente (NX)<br>
-            CK = Cuenta de Capital
-        </div>
+        <!-- Gráfico de Pendientes BP -->
+        <svg viewBox="0 0 300 180" style="width: 100%; max-width: 320px; margin: 15px auto; display: block;">
+            <defs>
+                <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+                    <polygon points="0 0, 10 3.5, 0 7" fill="#374151" />
+                </marker>
+            </defs>
+            <!-- Ejes -->
+            <line x1="40" y1="150" x2="280" y2="150" stroke="#374151" stroke-width="2" marker-end="url(#arrowhead)" />
+            <line x1="40" y1="150" x2="40" y2="20" stroke="#374151" stroke-width="2" marker-end="url(#arrowhead)" />
+            <text x="285" y="155" font-size="10">Y</text>
+            <text x="35" y="15" font-size="10">i</text>
 
-        <h4>Cuenta de Capital</h4>
-        <p>Depende del diferencial de tasas de interés:</p>
-        <div class="formula-box">
-            CK = f(i - i*)
-            <br>Donde i* = tasa de interés mundial
-        </div>
+            <!-- BP Perfecta Movilidad -->
+            <line x1="40" y1="85" x2="260" y2="85" stroke="#10b981" stroke-width="3" />
+            <text x="265" y="80" font-size="9" fill="#10b981" font-weight="bold">BP (σ=∞)</text>
+            <text x="15" y="88" font-size="9" fill="#10b981" font-weight="bold">i*</text>
 
-        <h4>Ecuación de la BP</h4>
-        <div class="formula-box">
-            NX(Y, e) + CK(i - i*) = 0<br>
-            NX₀ + ne - mY + σ(i - i*) = 0
-        </div>
-        <p>Donde σ = sensibilidad de flujos de capital a i</p>
+            <!-- BP Baja Movilidad -->
+            <line x1="60" y1="140" x2="160" y2="30" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4" />
+            <text x="165" y="35" font-size="9" fill="#f59e0b">BP (σ bajo)</text>
+
+            <!-- BP Nula Movilidad -->
+            <line x1="200" y1="150" x2="200" y2="30" stroke="#ef4444" stroke-width="2" stroke-dasharray="2" />
+            <text x="190" y="25" font-size="9" fill="#ef4444">BP (σ=0)</text>
+        </svg>
     </div>
 </div>
 
 <!-- Página 4 -->
 <div id="page-4" class="page-block">
-    <h2 class="handwritten-title">📈 Pendiente de la Curva BP</h2>
+    <h2 class="handwritten-title">📏 Movilidad de Capital</h2>
     <div class="handwritten-text">
-        <h3>5.4 Características de la Curva BP</h3>
-
-        <h4>Pendiente de la BP</h4>
-        <div class="formula-box">
-            Despejando i de la BP:<br>
-            i = i* + (mY - NX₀ - ne)/σ<br><br>
-            Pendiente: di/dY = m/σ
-        </div>
-
-        <h4>Movilidad de Capitales y Pendiente</h4>
         <table class="data-table">
-            <tr>
+            <tr style="background: #f1f5f9;">
                 <th>Movilidad</th>
-                <th>Valor de σ</th>
+                <th>σ</th>
                 <th>Pendiente BP</th>
             </tr>
             <tr>
-                <td>Perfecta</td>
-                <td>σ → ∞</td>
-                <td>Horizontal (BP = 0)</td>
+                <td><strong>💎 Perfecta</strong></td>
+                <td>∞</td>
+                <td style="color: #10b981;">Horizontal</td>
             </tr>
             <tr>
-                <td>Alta</td>
-                <td>σ grande</td>
-                <td>Casi horizontal</td>
+                <td><strong>📈 Alta</strong></td>
+                <td>Alto</td>
+                <td style="color: #059669;">Plana</td>
             </tr>
             <tr>
-                <td>Baja</td>
-                <td>σ pequeño</td>
-                <td>Empinada</td>
+                <td><strong>📉 Baja</strong></td>
+                <td>Bajo</td>
+                <td style="color: #d97706;">Empinada</td>
             </tr>
             <tr>
-                <td>Nula</td>
-                <td>σ = 0</td>
-                <td>Vertical</td>
+                <td><strong>🛑 Nula</strong></td>
+                <td>0</td>
+                <td style="color: #dc2626;">Vertical</td>
             </tr>
         </table>
-
-        <h4>Perfecta Movilidad de Capitales</h4>
-        <div class="formula-box">
-            Si σ → ∞, entonces:<br>
-            i = i* (paridad de tasas de interés)<br>
-            La BP es una línea horizontal en i = i*
-        </div>
+        <p style="font-size: 11px; margin-top: 10px;">🛡️ <strong>σ:</strong> Sensibilidad de los capitales a la tasa de
+            interés.</p>
     </div>
 </div>
 
 <!-- Página 5 -->
 <div id="page-5" class="page-block">
-    <h2 class="handwritten-title">⚖️ Equilibrio en el Modelo Mundell-Fleming</h2>
+    <h2 class="handwritten-title">⚖️ Triple Equilibrio</h2>
     <div class="handwritten-text">
-        <h3>5.5 Triple Equilibrio</h3>
-        <p>El equilibrio requiere que tres mercados estén simultáneamente en equilibrio:</p>
+        <p>El equilibrio general ocurre donde los tres mercados coinciden 🎯.</p>
 
-        <ol>
-            <li><strong>Mercado de bienes:</strong> Sobre la IS</li>
-            <li><strong>Mercado de dinero:</strong> Sobre la LM</li>
-            <li><strong>Balanza de pagos:</strong> Sobre la BP</li>
-        </ol>
+        <!-- Gráfico IS-LM-BP -->
+        <svg viewBox="0 0 300 180" style="width: 100%; max-width: 320px; margin: 15px auto; display: block;">
+            <!-- Ejes -->
+            <line x1="40" y1="150" x2="280" y2="150" stroke="#374151" stroke-width="2" />
+            <line x1="40" y1="150" x2="40" y2="20" stroke="#374151" stroke-width="2" />
 
-        <div class="formula-box">
-            <strong>Equilibrio General:</strong><br>
-            IS ∩ LM ∩ BP
+            <!-- BP Perfecta Movilidad -->
+            <line x1="40" y1="85" x2="260" y2="85" stroke="#10b981" stroke-width="3" />
+            <text x="265" y="80" font-size="9" fill="#10b981" font-weight="bold">BP (i=i*)</text>
+
+            <!-- IS -->
+            <line x1="60" y1="40" x2="220" y2="140" stroke="#3b82f6" stroke-width="2" />
+            <text x="50" y="35" font-size="9" fill="#3b82f6">IS</text>
+
+            <!-- LM -->
+            <line x1="60" y1="130" x2="220" y2="40" stroke="#ef4444" stroke-width="2" />
+            <text x="215" y="35" font-size="9" fill="#ef4444">LM</text>
+
+            <!-- Punto de Equilibrio -->
+            <circle cx="140" cy="85" r="4" fill="#1e293b" />
+            <text x="145" y="100" font-size="9" font-weight="bold">E*</text>
+        </svg>
+
+        <div
+            style="background: #fefce8; border: 1px dashed #f59e0b; padding: 10px; border-radius: 8px; font-size: 11px;">
+            <strong>Zonas de Desequilibrio:</strong><br>
+            • Arriba de BP: Entrada de capitales (Superávit)<br>
+            • Abajo de BP: Salida de capitales (Déficit)
         </div>
-
-        <h4>Representación Gráfica</h4>
-        <p>Con perfecta movilidad de capitales (BP horizontal):</p>
-        <ul>
-            <li>El equilibrio está donde IS y LM se cruzan sobre la línea i = i*</li>
-            <li>Si IS-LM se cruzan por encima de BP → entrada de capitales</li>
-            <li>Si IS-LM se cruzan por debajo de BP → salida de capitales</li>
-        </ul>
-
-        <h4>Mecanismo de Ajuste</h4>
-        <p>El ajuste depende del régimen cambiario:</p>
-        <ul>
-            <li><strong>Tipo de cambio fijo:</strong> Ajuste vía M (oferta monetaria)</li>
-            <li><strong>Tipo de cambio flexible:</strong> Ajuste vía e (tipo de cambio)</li>
-        </ul>
     </div>
 </div>
 
 <!-- Página 6 -->
 <div id="page-6" class="page-block">
-    <h2 class="handwritten-title">🔒 Tipo de Cambio Fijo</h2>
+    <h2 class="handwritten-title">🔒 Régimen Fijo</h2>
     <div class="handwritten-text">
-        <h3>5.6 Régimen de Tipo de Cambio Fijo</h3>
-        <p>En este régimen, el Banco Central se compromete a mantener el tipo de cambio en un nivel determinado.</p>
+        <h3>5.6 Ajuste en Tipo de Cambio Fijo</h3>
+        <p>El Banco Central sacrifica la política monetaria para defender el cambio 🛡️.</p>
 
-        <h4>Mecanismo de Intervención</h4>
-        <table class="data-table">
-            <tr>
-                <th>Situación</th>
-                <th>Presión sobre e</th>
-                <th>Intervención del BC</th>
-            </tr>
-            <tr>
-                <td>i > i* (superávit BP)</td>
-                <td>Apreciación</td>
-                <td>Compra divisas → ↑M</td>
-            </tr>
-            <tr>
-                <td>i < i* (déficit BP)</td>
-                <td>Depreciación</td>
-                <td>Vende divisas → ↓M</td>
-            </tr>
-        </table>
-
-        <h4>Consecuencias</h4>
-        <ul>
-            <li>El BC <strong>pierde control</strong> sobre la oferta monetaria</li>
-            <li>La LM se vuelve <strong>endógena</strong></li>
-            <li>M se ajusta para mantener i = i*</li>
-        </ul>
-
-        <div class="formula-box">
-            <strong>Equilibrio Final TC Fijo:</strong><br>
-            La LM se desplaza hasta que IS-LM se crucen sobre BP (i = i*)
+        <!-- Diagrama de Flujo Fijo -->
+        <div style="display: flex; flex-direction: column; gap: 8px; margin: 15px 0;">
+            <div
+                style="background: #ecfdf5; padding: 8px; border-radius: 6px; border-left: 4px solid #10b981; font-size: 11px;">
+                <strong>1. i > i* (Entrada de K)</strong> → Presión para apreciar <i>e</i>.
+            </div>
+            <div style="text-align: center; color: #10b981;">⬇️</div>
+            <div
+                style="background: #ecfdf5; padding: 8px; border-radius: 6px; border-left: 4px solid #10b981; font-size: 11px;">
+                <strong>2. Acción BC:</strong> Compra divisas y emite moneda local (↑M).
+            </div>
+            <div style="text-align: center; color: #10b981;">⬇️</div>
+            <div
+                style="background: #ecfdf5; padding: 8px; border-radius: 6px; border-left: 4px solid #10b981; font-size: 11px;">
+                <strong>3. Efecto:</strong> La LM se desplaza a la derecha hasta que i = i*.
+            </div>
         </div>
+        <p style="text-align: center; font-weight: bold; color: #065f46;">"La oferta monetaria es ENDÓGENA"</p>
     </div>
 </div>
 
 <!-- Página 7 -->
 <div id="page-7" class="page-block">
-    <h2 class="handwritten-title">💹 Tipo de Cambio Flexible</h2>
+    <h2 class="handwritten-title">💹 Régimen Flexible</h2>
     <div class="handwritten-text">
-        <h3>5.7 Régimen de Tipo de Cambio Flexible</h3>
-        <p>En este régimen, el tipo de cambio se determina por oferta y demanda en el mercado cambiario.</p>
+        <h3>5.7 Ajuste en Tipo de Cambio Flexible</h3>
+        <p>El mercado ajusta el tipo de cambio y el BC mantiene el control de M 🕹️.</p>
 
-        <h4>Mecanismo de Ajuste</h4>
-        <table class="data-table">
-            <tr>
-                <th>Situación</th>
-                <th>Efecto sobre e</th>
-                <th>Efecto sobre IS</th>
-            </tr>
-            <tr>
-                <td>i > i* (entrada de K)</td>
-                <td>↓e (apreciación)</td>
-                <td>IS izquierda (↓NX)</td>
-            </tr>
-            <tr>
-                <td>i < i* (salida de K)</td>
-                <td>↑e (depreciación)</td>
-                <td>IS derecha (↑NX)</td>
-            </tr>
-        </table>
-
-        <h4>Consecuencias</h4>
-        <ul>
-            <li>El BC <strong>mantiene control</strong> sobre M</li>
-            <li>La LM es <strong>exógena</strong></li>
-            <li>La IS se ajusta vía cambios en e</li>
-        </ul>
-
-        <div class="formula-box">
-            <strong>Equilibrio Final TC Flexible:</strong><br>
-            La IS se desplaza hasta que IS-LM se crucen sobre BP (i = i*)
+        <!-- Diagrama de Flujo Flexible -->
+        <div style="display: flex; flex-direction: column; gap: 8px; margin: 15px 0;">
+            <div
+                style="background: #eff6ff; padding: 8px; border-radius: 6px; border-left: 4px solid #3b82f6; font-size: 11px;">
+                <strong>1. i > i* (Entrada de K)</strong> → El mercado aprecia <i>e</i> (↓e).
+            </div>
+            <div style="text-align: center; color: #3b82f6;">⬇️</div>
+            <div
+                style="background: #eff6ff; padding: 8px; border-radius: 6px; border-left: 4px solid #3b82f6; font-size: 11px;">
+                <strong>2. Sector Externo:</strong> Las exportaciones caen y las importaciones suben (↓NX).
+            </div>
+            <div style="text-align: center; color: #3b82f6;">⬇️</div>
+            <div
+                style="background: #eff6ff; padding: 8px; border-radius: 6px; border-left: 4px solid #3b82f6; font-size: 11px;">
+                <strong>3. Efecto:</strong> La IS se desplaza a la izquierda hasta que i = i*.
+            </div>
         </div>
+        <p style="text-align: center; font-weight: bold; color: #1e40af;">"El Banco Central mantiene su autonomía"</p>
     </div>
 </div>
 
 <!-- Página 8 -->
 <div id="page-8" class="page-block">
-    <h2 class="handwritten-title">📐 Modelo Mundell-Fleming: Diagrama</h2>
+    <h2 class="handwritten-title">💎 La Trinidad Imposible</h2>
     <div class="handwritten-text">
-        <h3>5.8 Representación Gráfica Completa</h3>
+        <p>Un país no puede tener los tres al mismo tiempo:</p>
 
-        <h4>Ejes del Diagrama</h4>
-        <ul>
-            <li><strong>Eje horizontal:</strong> Ingreso (Y)</li>
-            <li><strong>Eje vertical:</strong> Tasa de interés (i)</li>
-        </ul>
-
-        <h4>Curvas en el Diagrama</h4>
-        <table class="data-table">
-            <tr>
-                <th>Curva</th>
-                <th>Pendiente</th>
-                <th>Representa</th>
-            </tr>
-            <tr>
-                <td>IS</td>
-                <td>Negativa</td>
-                <td>Equilibrio mercado de bienes</td>
-            </tr>
-            <tr>
-                <td>LM</td>
-                <td>Positiva</td>
-                <td>Equilibrio mercado de dinero</td>
-            </tr>
-            <tr>
-                <td>BP</td>
-                <td>Horizontal*</td>
-                <td>Equilibrio balanza de pagos</td>
-            </tr>
-        </table>
-        <p>*Con perfecta movilidad de capitales</p>
-
-        <h4>Zonas del Diagrama</h4>
-        <ul>
-            <li><strong>Por encima de BP:</strong> Superávit de BP → entrada de capitales</li>
-            <li><strong>Por debajo de BP:</strong> Déficit de BP → salida de capitales</li>
-        </ul>
-
-        <div class="ejemplo-box">
-            <strong>Nota:</strong> El diagrama también puede representarse con e (tipo de cambio) en el eje vertical en
-            lugar de i, especialmente para el análisis de tipo de cambio flexible.
+        <div style="position: relative; width: 160px; height: 160px; margin: 20px auto;">
+            <div
+                style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); text-align: center; width: 80px;">
+                <div style="font-size: 20px;">🛡️</div>
+                <div style="font-size: 9px; font-weight: bold;">TC Fijo</div>
+            </div>
+            <div style="position: absolute; bottom: 0; left: 0; text-align: center; width: 80px;">
+                <div style="font-size: 20px;">🕹️</div>
+                <div style="font-size: 9px; font-weight: bold;">Política M. Independiente</div>
+            </div>
+            <div style="position: absolute; bottom: 0; right: 0; text-align: center; width: 80px;">
+                <div style="font-size: 20px;">🔓</div>
+                <div style="font-size: 9px; font-weight: bold;">Libre Movilidad de K</div>
+            </div>
+            <!-- Triángulo -->
+            <svg style="position: absolute; top: 25px; left: 0; width: 100%; height: 100%; z-index: -1;">
+                <polygon points="80,10 10,110 150,110" fill="none" stroke="#94a3b8" stroke-width="2" />
+            </svg>
         </div>
+
+        <p style="font-size: 10px; color: #64748b; margin-top: 10px;">Solo puedes elegir <strong>un lado</strong> del
+            triángulo.</p>
     </div>
 </div>
 
 <!-- Página 9 -->
 <div id="page-9" class="page-block">
-    <h2 class="handwritten-title">🌐 Versión Alternativa: Y-e</h2>
+    <h2 class="handwritten-title">🚀 Efectividad de Políticas</h2>
     <div class="handwritten-text">
-        <h3>5.9 Modelo con Tipo de Cambio en el Eje Vertical</h3>
-        <p>Una versión alternativa del modelo usa:</p>
-        <ul>
-            <li><strong>Eje horizontal:</strong> Y (ingreso)</li>
-            <li><strong>Eje vertical:</strong> e (tipo de cambio)</li>
-        </ul>
+        <p>¿Qué política funciona mejor según el régimen? 🤔</p>
 
-        <h4>Curva IS* (con e)</h4>
-        <div class="formula-box">
-            IS*: Y = f(e, G, T, i*)<br>
-            Pendiente positiva: ↑e → ↑NX → ↑Y
+        <table class="data-table" style="font-size: 10px;">
+            <tr style="background: #f1f5f9;">
+                <th>Política</th>
+                <th>Régimen Fijo</th>
+                <th>Régimen Flexible</th>
+            </tr>
+            <tr>
+                <td><strong>🏛️ Fiscal (↑G)</strong></td>
+                <td style="background: #ecfdf5; color: #065f46; font-weight: bold;">MÁXIMA</td>
+                <td style="background: #fef2f2; color: #991b1b; font-weight: bold;">NULA</td>
+            </tr>
+            <tr>
+                <td><strong>💰 Monetaria (↑M)</strong></td>
+                <td style="background: #fef2f2; color: #991b1b; font-weight: bold;">NULA</td>
+                <td style="background: #ecfdf5; color: #065f46; font-weight: bold;">MÁXIMA</td>
+            </tr>
+        </table>
+
+        <div style="margin-top: 15px; font-size: 11px; color: #475569;">
+            💡 <strong>Dato:</strong> En TC Flexible, la expansión fiscal es anulada por la apreciación de la moneda
+            (crowding-out externo). En TC Fijo, la expansión fiscal es potenciada por la emisión necesaria para mantener
+            el tipo de cambio.
         </div>
-
-        <h4>Curva LM* (con e)</h4>
-        <div class="formula-box">
-            LM*: Y = f(M/P, i*)<br>
-            Vertical (no depende de e directamente)
-        </div>
-
-        <h4>Interpretación</h4>
-        <p>Con perfecta movilidad de capitales (i = i*):</p>
-        <ul>
-            <li>La LM* es <strong>vertical</strong></li>
-            <li>El equilibrio determina Y (por LM*) y e (por IS*)</li>
-            <li>Útil para analizar efectos sobre el tipo de cambio</li>
-        </ul>
     </div>
 </div>
 
 <!-- Página 10 -->
 <div id="page-10" class="page-block">
-    <h2 class="handwritten-title">📝 Resumen y Ejercicios - Semana 5</h2>
+    <h2 class="handwritten-title">📝 Resumen Semana 5</h2>
     <div class="handwritten-text">
-        <h3>Resumen de la Semana 5</h3>
-        <div class="resumen-box">
-            <ul>
-                <li><strong>Mundell-Fleming:</strong> IS-LM para economía abierta</li>
-                <li><strong>Curva BP:</strong> Equilibrio de balanza de pagos</li>
-                <li><strong>Perfecta movilidad:</strong> BP horizontal, i = i*</li>
-                <li><strong>TC Fijo:</strong> BC ajusta M, LM endógena</li>
-                <li><strong>TC Flexible:</strong> e se ajusta, IS endógena</li>
+        <div
+            style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-radius: 12px; padding: 15px; border: 2px solid #0ea5e9;">
+            <div style="font-weight: bold; color: #0369a1; margin-bottom: 10px;">✅ Conceptos Aprendidos:</div>
+            <ul style="font-size: 11px; margin: 0; padding-left: 20px;">
+                <li>El modelo Mundell-Fleming integra el <strong>sector externo</strong>.</li>
+                <li>La curva <strong>BP</strong> horizontal indica perfecta movilidad de capitales.</li>
+                <li>Bajo <strong>TC Fijo</strong>, la política fiscal es muy potente.</li>
+                <li>Bajo <strong>TC Flexible</strong>, la política monetaria recupera su fuerza.</li>
             </ul>
         </div>
 
-        <h3>Ejercicios Propuestos</h3>
-        <div class="ejercicio-box">
-            <p><strong>1.</strong> ¿Por qué la curva BP es horizontal cuando hay perfecta movilidad de capitales?</p>
+        <div style="display: flex; justify-content: space-around; margin-top: 20px;">
+            <div
+                style="background: white; border: 1px solid #cbd5e1; padding: 10px; border-radius: 8px; text-align: center; width: 45%;">
+                <div style="font-size: 20px;">🚢</div>
+                <div style="font-size: 10px;">BP = 0</div>
+            </div>
+            <div
+                style="background: white; border: 1px solid #cbd5e1; padding: 10px; border-radius: 8px; text-align: center; width: 45%;">
+                <div style="font-size: 20px;">🔱</div>
+                <div style="font-size: 10px;">Trilema</div>
+            </div>
         </div>
-
-        <div class="ejercicio-box">
-            <p><strong>2.</strong> Explique el mecanismo de ajuste bajo tipo de cambio fijo cuando i > i*.</p>
-        </div>
-
-        <div class="ejercicio-box">
-            <p><strong>3.</strong> ¿Qué diferencia hay en el control del BC sobre M entre TC fijo y flexible?</p>
-        </div>
-
-        <h3>Conceptos Clave</h3>
-        <p>✓ Economía Abierta | ✓ Balanza de Pagos | ✓ Movilidad de Capitales | ✓ Tipo de Cambio | ✓ Triple Equilibrio
-        </p>
     </div>
 </div>

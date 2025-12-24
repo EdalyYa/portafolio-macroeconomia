@@ -3,31 +3,76 @@
 
 <!-- Página 1 -->
 <div id="page-1" class="page-block">
-    <h2 class="handwritten-title">📚 Semana 1: El Mercado de Bienes y la Curva IS</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 2px; font-size: 24px;">📚 Sem 1: Mercado de Bienes y Curva IS
+    </h2>
     <div class="handwritten-text">
-        <p><strong>Objetivo:</strong> Analizar la relación entre el gasto agregado, la tasa de interés y el producto,
-            interpretando y construyendo la curva IS para explicar el equilibrio en el mercado de bienes.</p>
+        <p style="margin-bottom: 6px; font-size: 13px; line-height: 1.3;"><strong>🎯 Objetivo:</strong> Analizar la
+            relación entre gasto, interés y producto con la curva IS.</p>
 
-        <h3>1.1 Introducción al Mercado de Bienes</h3>
-        <p>El <strong>mercado de bienes</strong> es donde se determina el nivel de producción de una economía. En este
-            mercado, la <em>demanda agregada</em> (DA) debe igualar a la <em>oferta agregada</em> (OA) para alcanzar el
-            equilibrio.</p>
+        <h3 style="margin-bottom: 4px; font-size: 15px;">1.1 Introducción al Mercado de Bienes</h3>
+        <p style="margin-bottom: 8px; font-size: 13px;">El <strong>mercado de bienes</strong> determina la producción
+            (Y). Equilibrio: <strong>DA = OA</strong>.</p>
 
-        <p>La demanda agregada representa el gasto total planeado en bienes y servicios finales por todos los agentes
-            económicos: hogares, empresas, gobierno y sector externo.</p>
+        <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+            <!-- Columna Izquierda: Componentes -->
+            <div style="flex: 0.9;">
+                <div
+                    style="background: #f0f9ff; border-radius: 8px; padding: 10px; border: 1px solid #7dd3fc; height: 100%; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
+                    <div
+                        style="font-weight: bold; color: #0369a1; margin-bottom: 8px; font-size: 13px; text-decoration: underline;">
+                        Componentes de la DA:</div>
+                    <ul style="list-style: none; padding: 0; margin: 0; font-size: 12px; line-height: 1.8;">
+                        <li><span style="color: #3b82f6;">●</span> <strong>C:</strong> Consumo Hog.</li>
+                        <li><span style="color: #10b981;">●</span> <strong>I:</strong> Inversión Emp.</li>
+                        <li><span style="color: #8b5cf6;">●</span> <strong>G:</strong> Gasto Gob.</li>
+                        <li><span style="color: #f59e0b;">●</span> <strong>X-M:</strong> Exp. Netas</li>
+                    </ul>
+                </div>
+            </div>
 
-        <div class="formula-box">
-            <strong>Demanda Agregada:</strong><br>
-            DA = C + I + G + (X - M)
+            <!-- Columna Derecha: Tabla -->
+            <div style="flex: 1.1;">
+                <table class="data-table" style="height: 100%; margin: 0; font-size: 12px;">
+                    <thead>
+                        <tr style="background: linear-gradient(135deg, #3b82f6, #1d4ed8);">
+                            <th style="color: white; padding: 5px;">Variable</th>
+                            <th style="color: white; padding: 5px;">% PIB</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: 5px;"><strong style="color: #3b82f6;">C (Consumo)</strong></td>
+                            <td style="padding: 5px; text-align: center;">60-70%</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px;"><strong style="color: #10b981;">I (Inversión)</strong></td>
+                            <td style="padding: 5px; text-align: center;">15-20%</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px;"><strong style="color: #8b5cf6;">G (Gasto)</strong></td>
+                            <td style="padding: 5px; text-align: center;">15-25%</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px;"><strong style="color: #f59e0b;">X-M (Netas)</strong></td>
+                            <td style="padding: 5px; text-align: center;">Var</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
-        <p>Donde:</p>
-        <ul>
-            <li><strong>C</strong> = Consumo de los hogares</li>
-            <li><strong>I</strong> = Inversión de las empresas</li>
-            <li><strong>G</strong> = Gasto del gobierno</li>
-            <li><strong>X - M</strong> = Exportaciones netas</li>
-        </ul>
+        <div class="formula-box" style="margin: 10px 0; padding: 12px; text-align: center;">
+            <div style="font-size: 13px; margin-bottom: 4px; color: #555;">Identidad Macroeconómica Fundamental:</div>
+            <span style="font-size: 20px; color: #1e40af; font-weight: bold; letter-spacing: 1px;">DA = C + I + G + (X -
+                M)</span>
+        </div>
+
+        <div
+            style="background: #fffbeb; border-left: 5px solid #f59e0b; padding: 8px; border-radius: 6px; margin-top: 5px; font-size: 12px;">
+            <strong>💡 Nota Importante:</strong><br>
+            En una economía cerrada, asumimos que <strong>(X-M) = 0</strong>. Esto simplifica nuestro modelo inicial a
+            solo tres actores: Familias, Empresas y Gobierno.
+        </div>
     </div>
 </div>
 
@@ -35,71 +80,145 @@
 <div id="page-2" class="page-block">
     <h2 class="handwritten-title">📖 La Función de Consumo</h2>
     <div class="handwritten-text">
-        <h3>1.2 El Consumo Agregado (C)</h3>
-        <p>El consumo es el componente más importante de la demanda agregada, representando aproximadamente el
-            <strong>60-70%</strong> del PIB en la mayoría de las economías.</p>
+        <h3>💰 1.2 El Consumo Agregado (C)</h3>
 
-        <p>Según <strong>John Maynard Keynes</strong>, el consumo depende principalmente del ingreso disponible:</p>
-
-        <div class="formula-box">
-            <strong>Función de Consumo Keynesiana:</strong><br>
-            C = C₀ + c(Y - T)
+        <!-- Indicador visual del porcentaje -->
+        <div
+            style="background: linear-gradient(90deg, #3b82f6 0%, #3b82f6 65%, #e5e7eb 65%, #e5e7eb 100%); border-radius: 8px; padding: 10px; margin: 10px 0; color: white; font-weight: bold; text-align: center;">
+            🏠 El consumo representa el 60-70% del PIB
         </div>
 
-        <p>Donde:</p>
-        <ul>
-            <li><strong>C₀</strong> = Consumo autónomo (independiente del ingreso)</li>
-            <li><strong>c</strong> = Propensión marginal a consumir (PMC), donde 0 < c < 1</li>
-            <li><strong>Y</strong> = Ingreso o producto nacional</li>
-            <li><strong>T</strong> = Impuestos</li>
-            <li><strong>(Y - T)</strong> = Ingreso disponible</li>
-        </ul>
+        <p>Según <strong>John Maynard Keynes</strong> 🎓, el consumo depende principalmente del ingreso disponible:</p>
 
-        <h4>Propensión Marginal a Consumir (PMC)</h4>
-        <p>La PMC indica cuánto aumenta el consumo cuando el ingreso disponible aumenta en una unidad. Si c = 0.8,
-            significa que por cada sol adicional de ingreso, se gastan 80 centavos en consumo.</p>
+        <div class="formula-box"
+            style="background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%); border: 2px solid #3b82f6;">
+            <strong>📐 Función de Consumo Keynesiana:</strong><br>
+            <span style="font-size: 20px; color: #1e40af; font-weight: bold;">C = C₀ + c(Y - T)</span>
+        </div>
 
-        <div class="ejemplo-box">
-            <strong>Ejemplo:</strong> Si C₀ = 100, c = 0.75 y el ingreso disponible es 1000:<br>
-            C = 100 + 0.75(1000) = 100 + 750 = 850
+        <!-- Gráfico SVG de la función de consumo -->
+        <div style="background: #fff; border-radius: 10px; padding: 10px; margin: 15px 0; border: 1px solid #e5e7eb;">
+            <div style="text-align: center; font-weight: bold; color: #374151; margin-bottom: 5px; font-size: 12px;">📊
+                Gráfico: Función de Consumo</div>
+            <svg viewBox="0 0 300 200" style="width: 100%; max-width: 350px; margin: 0 auto; display: block;">
+                <!-- Ejes -->
+                <line x1="40" y1="160" x2="280" y2="160" stroke="#374151" stroke-width="2" />
+                <line x1="40" y1="160" x2="40" y2="20" stroke="#374151" stroke-width="2" />
+                <!-- Flechas -->
+                <polygon points="280,160 270,155 270,165" fill="#374151" />
+                <polygon points="40,20 35,30 45,30" fill="#374151" />
+                <!-- Etiquetas de ejes -->
+                <text x="270" y="175" font-size="10" fill="#374151">Yd</text>
+                <text x="20" y="30" font-size="10" fill="#374151">C</text>
+                <!-- Línea de 45° (referencia) -->
+                <line x1="40" y1="160" x2="200" y2="0" stroke="#94a3b8" stroke-width="1" stroke-dasharray="5,5" />
+                <text x="180" y="25" font-size="8" fill="#94a3b8">45°</text>
+                <!-- Función de consumo -->
+                <line x1="40" y1="130" x2="260" y2="40" stroke="#3b82f6" stroke-width="3" />
+                <text x="240" y="35" font-size="10" fill="#3b82f6" font-weight="bold">C</text>
+                <!-- C₀ (consumo autónomo) -->
+                <circle cx="40" cy="130" r="4" fill="#ef4444" />
+                <line x1="40" y1="130" x2="15" y2="130" stroke="#ef4444" stroke-dasharray="3,3" />
+                <text x="5" y="133" font-size="9" fill="#ef4444">C₀</text>
+                <!-- Pendiente c -->
+                <line x1="100" y1="106" x2="160" y2="106" stroke="#10b981" stroke-width="2" />
+                <line x1="160" y1="106" x2="160" y2="82" stroke="#10b981" stroke-width="2" />
+                <text x="120" y="118" font-size="8" fill="#10b981">ΔYd</text>
+                <text x="165" y="97" font-size="8" fill="#10b981">ΔC</text>
+                <text x="170" y="110" font-size="9" fill="#10b981" font-weight="bold">c = PMC</text>
+            </svg>
+        </div>
+
+        <!-- Tarjetas de variables -->
+        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0;">
+            <div
+                style="flex: 1; min-width: 120px; background: #fef3c7; border-radius: 8px; padding: 8px; border-left: 4px solid #f59e0b;">
+                <strong style="color: #92400e;">C₀</strong> = Consumo autónomo
+            </div>
+            <div
+                style="flex: 1; min-width: 120px; background: #d1fae5; border-radius: 8px; padding: 8px; border-left: 4px solid #10b981;">
+                <strong style="color: #065f46;">c</strong> = PMC (0 < c < 1) </div>
+            </div>
+
+            <div class="ejemplo-box"
+                style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-left: 5px solid #f59e0b;">
+                <strong>💡 Ejemplo Numérico:</strong><br>
+                Si C₀ = 100, c = 0.75 y Yd = 1000:<br>
+                <span style="color: #1e40af; font-weight: bold;">C = 100 + 0.75(1000) = 100 + 750 = 850</span>
+            </div>
         </div>
     </div>
 </div>
 
 <!-- Página 3 -->
 <div id="page-3" class="page-block">
-    <h2 class="handwritten-title">📊 La Función de Inversión</h2>
+    <h2 class="handwritten-title">🏗️ La Función de Inversión</h2>
     <div class="handwritten-text">
         <h3>1.3 La Inversión Agregada (I)</h3>
-        <p>La inversión representa el gasto de las empresas en bienes de capital: maquinaria, equipos, construcción y
-            variación de inventarios.</p>
+        <p>La inversión representa el gasto de las empresas en bienes de capital: maquinaria, equipos y construcción. Es
+            el componente más <strong>volátil</strong> 📉 de la demanda agregada.</p>
 
-        <p>La inversión es el componente más <strong>volátil</strong> de la demanda agregada y depende fundamentalmente
-            de:</p>
-        <ul>
-            <li>La tasa de interés (i)</li>
-            <li>Las expectativas empresariales</li>
-            <li>El nivel de capacidad utilizada</li>
-        </ul>
-
-        <div class="formula-box">
-            <strong>Función de Inversión:</strong><br>
-            I = I₀ - b·i
+        <div style="display: flex; gap: 10px; margin: 15px 0;">
+            <div
+                style="flex: 1; background: #fffbeb; border: 1px solid #fef3c7; border-radius: 8px; padding: 10px; text-align: center;">
+                <div style="font-size: 20px;">📉</div>
+                <div style="font-weight: bold; color: #92400e;">↑ Tasa (i)</div>
+                <div style="font-size: 11px;">↓ Inversión</div>
+            </div>
+            <div
+                style="flex: 1; background: #f0fdf4; border: 1px solid #dcfce7; border-radius: 8px; padding: 10px; text-align: center;">
+                <div style="font-size: 20px;">📈</div>
+                <div style="font-weight: bold; color: #166534;">↓ Tasa (i)</div>
+                <div style="font-size: 11px;">↑ Inversión</div>
+            </div>
         </div>
 
-        <p>Donde:</p>
-        <ul>
-            <li><strong>I₀</strong> = Inversión autónoma</li>
-            <li><strong>b</strong> = Sensibilidad de la inversión a la tasa de interés (b > 0)</li>
-            <li><strong>i</strong> = Tasa de interés real</li>
-        </ul>
+        <div class="formula-box"
+            style="background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%); border: 2px solid #ef4444;">
+            <strong>📐 Función de Inversión:</strong><br>
+            <span style="font-size: 20px; color: #991b1b; font-weight: bold;">I = I₀ - b·i</span>
+        </div>
 
-        <h4>Relación Inversa entre I e i</h4>
-        <p>Cuando la tasa de interés <strong>sube</strong>, el costo del financiamiento aumenta, haciendo menos
-            rentables los proyectos de inversión. Por tanto, la inversión <strong>disminuye</strong>.</p>
+        <!-- Gráfico SVG de Inversión vs Tasa de Interés -->
+        <div style="background: #fff; border-radius: 10px; padding: 10px; margin: 15px 0; border: 1px solid #e5e7eb;">
+            <div style="text-align: center; font-weight: bold; color: #374151; margin-bottom: 5px; font-size: 12px;">📊
+                Relación Inversión vs Tasa de Interés</div>
+            <svg viewBox="0 0 300 180" style="width: 100%; max-width: 320px; margin: 0 auto; display: block;">
+                <!-- Ejes -->
+                <line x1="40" y1="150" x2="280" y2="150" stroke="#374151" stroke-width="2" />
+                <line x1="40" y1="150" x2="40" y2="20" stroke="#374151" stroke-width="2" />
+                <!-- Flechas -->
+                <polygon points="280,150 270,145 270,155" fill="#374151" />
+                <polygon points="40,20 35,30 45,30" fill="#374151" />
+                <!-- Etiquetas -->
+                <text x="270" y="165" font-size="10" fill="#374151">i (Tasa)</text>
+                <text x="15" y="30" font-size="10" fill="#374151">I</text>
+                <!-- Curva de Inversión -->
+                <line x1="60" y1="40" x2="240" y2="130" stroke="#ef4444" stroke-width="3" />
+                <text x="245" y="135" font-size="10" fill="#ef4444" font-weight="bold">I(i)</text>
+                <!-- Puntos de ejemplo -->
+                <circle cx="100" cy="60" r="3" fill="#374151" />
+                <line x1="40" y1="60" x2="100" y2="60" stroke="#94a3b8" stroke-dasharray="3,3" />
+                <line x1="100" y1="150" x2="100" y2="60" stroke="#94a3b8" stroke-dasharray="3,3" />
+                <text x="25" y="63" font-size="8" fill="#374151">i₁</text>
 
-        <p>Cuando la tasa de interés <strong>baja</strong>, el costo del crédito disminuye, incentivando a las empresas
-            a invertir más.</p>
+                <circle cx="180" cy="100" r="3" fill="#374151" />
+                <line x1="40" y1="100" x2="180" y2="100" stroke="#94a3b8" stroke-dasharray="3,3" />
+                <line x1="180" y1="150" x2="180" y2="100" stroke="#94a3b8" stroke-dasharray="3,3" />
+                <text x="25" y="103" font-size="8" fill="#374151">i₂</text>
+
+                <!-- Flecha de dirección -->
+                <path d="M 120 70 L 160 90" stroke="#1e40af" stroke-width="2" marker-end="url(#arrowhead)" />
+                <defs>
+                    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+                        <polygon points="0 0, 10 3.5, 0 7" fill="#1e40af" />
+                    </marker>
+                </defs>
+            </svg>
+        </div>
+
+        <p style="font-size: 13px; font-style: italic; color: #475569;">"La inversión cae cuando sube el costo de
+            oportunidad (i), ya que financiar proyectos se vuelve más caro."</p>
     </div>
 </div>
 
@@ -182,23 +301,74 @@
 <div id="page-6" class="page-block">
     <h2 class="handwritten-title">🔢 El Multiplicador Keynesiano</h2>
     <div class="handwritten-text">
-        <h3>1.7 El Efecto Multiplicador</h3>
-        <p>El multiplicador keynesiano muestra cómo un cambio inicial en el gasto autónomo genera un cambio mayor en el
-            ingreso de equilibrio.</p>
+        <h3>📈 1.7 El Efecto Multiplicador</h3>
+        <p>El multiplicador keynesiano muestra cómo un cambio inicial en el gasto autónomo genera un cambio
+            <strong>mayor</strong> en el
+            ingreso de equilibrio.
+        </p>
 
-        <div class="formula-box">
-            <strong>Multiplicador (k):</strong><br>
-            k = 1/(1 - c)
+        <div class="formula-box"
+            style="background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%); border: 2px solid #10b981;">
+            <strong>📐 Multiplicador (k):</strong><br>
+            <span style="font-size: 22px; color: #065f46; font-weight: bold;">k = 1/(1 - c)</span>
         </div>
 
-        <h4>Interpretación</h4>
-        <p>Si la propensión marginal a consumir es c = 0.8:</p>
-        <div class="formula-box">
-            k = 1/(1 - 0.8) = 1/0.2 = 5
+        <!-- Visualización del multiplicador -->
+        <div
+            style="background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border-radius: 12px; padding: 15px; margin: 15px 0; border: 2px solid #22c55e;">
+            <div style="text-align: center; font-weight: bold; color: #166534; margin-bottom: 10px;">
+                🎯 Ejemplo: Si c = 0.8 → k = 5
+            </div>
+
+            <!-- Diagrama de cascada visual -->
+            <div style="display: flex; flex-direction: column; gap: 5px;">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <div
+                        style="background: #22c55e; color: white; padding: 5px 10px; border-radius: 6px; min-width: 80px; text-align: center; font-weight: bold;">
+                        ΔG = 100</div>
+                    <div style="flex: 1; background: #22c55e; height: 20px; border-radius: 4px;"></div>
+                    <span style="font-weight: bold; color: #166534;">+100</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <div
+                        style="background: #4ade80; color: white; padding: 5px 10px; border-radius: 6px; min-width: 80px; text-align: center;">
+                        Ronda 2</div>
+                    <div style="flex: 0.8; background: #4ade80; height: 20px; border-radius: 4px;"></div>
+                    <span style="color: #166534;">+80</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <div
+                        style="background: #86efac; color: #166534; padding: 5px 10px; border-radius: 6px; min-width: 80px; text-align: center;">
+                        Ronda 3</div>
+                    <div style="flex: 0.64; background: #86efac; height: 20px; border-radius: 4px;"></div>
+                    <span style="color: #166534;">+64</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <div
+                        style="background: #bbf7d0; color: #166534; padding: 5px 10px; border-radius: 6px; min-width: 80px; text-align: center;">
+                        Ronda 4</div>
+                    <div style="flex: 0.51; background: #bbf7d0; height: 20px; border-radius: 4px;"></div>
+                    <span style="color: #166534;">+51.2</span>
+                </div>
+                <div style="text-align: center; color: #64748b; font-style: italic;">... continúa ...</div>
+                <div style="display: flex; align-items: center; gap: 10px; margin-top: 5px;">
+                    <div
+                        style="background: #166534; color: white; padding: 5px 10px; border-radius: 6px; min-width: 80px; text-align: center; font-weight: bold;">
+                        TOTAL</div>
+                    <div
+                        style="flex: 1; background: linear-gradient(90deg, #166534, #22c55e); height: 25px; border-radius: 4px;">
+                    </div>
+                    <span style="font-weight: bold; color: #166534; font-size: 18px;">= 500</span>
+                </div>
+            </div>
         </div>
 
-        <p>Esto significa que un aumento de 100 en el gasto autónomo generará un aumento de 500 en el ingreso de
-            equilibrio.</p>
+        <div class="ejemplo-box"
+            style="background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%); border-left: 5px solid #3b82f6;">
+            <strong>💡 Interpretación:</strong><br>
+            Un aumento de <strong>100</strong> en gasto autónomo genera un aumento de <strong>500</strong> en el ingreso
+            de equilibrio (5 veces más).
+        </div>
 
         <h4>Proceso del Multiplicador</h4>
         <table class="data-table">
@@ -246,30 +416,74 @@
     <h2 class="handwritten-title">📈 Derivación de la Curva IS</h2>
     <div class="handwritten-text">
         <h3>1.8 ¿Qué es la Curva IS?</h3>
-        <p>La curva IS (Investment-Saving) representa todas las combinaciones de tasa de interés (i) y nivel de ingreso
-            (Y) que mantienen el mercado de bienes en equilibrio.</p>
+        <p>Representa el equilibrio en el <strong>Mercado de Bienes</strong> 📦. Muestra las combinaciones de tasa de
+            interés (i) e ingreso (Y) donde <strong>Inversión = Ahorro</strong>.</p>
 
-        <p><strong>IS = Inversión = Ahorro</strong></p>
+        <!-- Gráfico SVG: Derivación de la IS -->
+        <div
+            style="background: #fff; border-radius: 10px; padding: 15px; margin: 15px 0; border: 1px solid #e5e7eb; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+            <div style="text-align: center; font-weight: bold; color: #1e40af; margin-bottom: 10px; font-size: 14px;">
+                🛠️ Derivación de la Curva IS</div>
+            <svg viewBox="0 0 320 200" style="width: 100%; max-width: 400px; margin: 0 auto; display: block;">
+                <!-- Ejes -->
+                <line x1="40" y1="170" x2="290" y2="170" stroke="#374151" stroke-width="2" />
+                <line x1="40" y1="170" x2="40" y2="20" stroke="#374151" stroke-width="2" />
 
-        <h4>Derivación Gráfica</h4>
-        <p>La curva IS se deriva de la siguiente manera:</p>
-        <ol>
-            <li>Partimos de un equilibrio inicial con i₁ e Y₁</li>
-            <li>Si la tasa de interés baja a i₂:</li>
-            <li>La inversión aumenta (porque I = I₀ - bi)</li>
-            <li>El gasto agregado aumenta</li>
-            <li>El ingreso de equilibrio aumenta a Y₂</li>
-            <li>Obtenemos un nuevo punto (i₂, Y₂)</li>
-        </ol>
+                <!-- Curva IS -->
+                <line x1="60" y1="50" x2="260" y2="150" stroke="#2563eb" stroke-width="3" id="is-curve" />
+                <text x="265" y="155" font-size="12" fill="#2563eb" font-weight="bold">IS</text>
 
-        <div class="formula-box">
-            <strong>Ecuación de la Curva IS:</strong><br>
-            Y = [1/(1-c)] × [C₀ - cT + I₀ + G₀] - [b/(1-c)]·i
+                <!-- Punto A -->
+                <circle cx="100" cy="70" r="4" fill="#1e40af" />
+                <line x1="40" y1="70" x2="100" y2="70" stroke="#94a3b8" stroke-dasharray="3,3" />
+                <line x1="100" y1="170" x2="100" y2="70" stroke="#94a3b8" stroke-dasharray="3,3" />
+                <text x="15" y="73" font-size="10" fill="#1e40af" font-weight="bold">i₁</text>
+                <text x="95" y="185" font-size="10" fill="#1e40af" font-weight="bold">Y₁</text>
+
+                <!-- Punto B -->
+                <circle cx="200" cy="120" r="4" fill="#3b82f6" />
+                <line x1="40" y1="120" x2="200" y2="120" stroke="#94a3b8" stroke-dasharray="3,3" />
+                <line x1="200" y1="170" x2="200" y2="120" stroke="#94a3b8" stroke-dasharray="3,3" />
+                <text x="15" y="123" font-size="10" fill="#3b82f6">i₂</text>
+                <text x="195" y="185" font-size="10" fill="#3b82f6">Y₂</text>
+
+                <!-- Etiquetas de ejes -->
+                <text x="280" y="185" font-size="10" fill="#374151">Ingreso (Y)</text>
+                <text x="10" y="25" font-size="10" fill="#374151">Tasa (i)</text>
+
+                <!-- Flechas de causalidad -->
+                <path d="M 50 100 Q 30 110 50 120" fill="none" stroke="#ef4444" stroke-width="1.5"
+                    marker-end="url(#arrow-red)" />
+                <text x="50" y="115" font-size="9" fill="#ef4444">↓i</text>
+
+                <path d="M 130 180 Q 150 190 170 180" fill="none" stroke="#10b981" stroke-width="1.5"
+                    marker-end="url(#arrow-green)" />
+                <text x="140" y="195" font-size="9" fill="#10b981">↑Y</text>
+
+                <defs>
+                    <marker id="arrow-red" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+                        <circle cx="3" cy="3" r="2" fill="#ef4444" />
+                    </marker>
+                    <marker id="arrow-green" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+                        <circle cx="3" cy="3" r="2" fill="#10b981" />
+                    </marker>
+                </defs>
+            </svg>
         </div>
 
-        <p>O expresada como función de i:</p>
-        <div class="formula-box">
-            i = [(C₀ - cT + I₀ + G₀)/b] - [(1-c)/b]·Y
+        <div
+            style="background: #f8fafc; border-radius: 8px; padding: 12px; margin-top: 10px; border-left: 4px solid #2563eb;">
+            <p style="margin: 0; font-size: 13px;"><strong>⛓️ Cadena de Causalidad:</strong></p>
+            <p style="margin: 5px 0 0; font-size: 13px; color: #1e40af; font-weight: bold; text-align: center;">
+                ↓i ➔ ↑I ➔ ↑DA ➔ ↑Y
+            </p>
+        </div>
+
+        <div class="formula-box" style="margin-top: 15px; background: #eff6ff;">
+            <strong>📐 Ecuación de la Curva IS:</strong><br>
+            <span style="font-size: 16px;">Y = k · [A - bi]</span>
+            <div style="font-size: 11px; margin-top: 5px; color: #64748b;">Donde k = multiplicador, A = gasto autónomo
+                total</div>
         </div>
     </div>
 </div>
@@ -280,122 +494,124 @@
     <div class="handwritten-text">
         <h3>1.9 Características de la Curva IS</h3>
 
-        <h4>Pendiente Negativa</h4>
-        <p>La curva IS tiene pendiente negativa debido a la relación inversa entre la tasa de interés y el ingreso:</p>
-        <ul>
-            <li>↑i → ↓I → ↓DA → ↓Y</li>
-            <li>↓i → ↑I → ↑DA → ↑Y</li>
-        </ul>
+        <p>La pendiente depende de qué tan sensible es la economía a la tasa de interés ⚡.</p>
 
-        <div class="formula-box">
-            <strong>Pendiente de la IS:</strong><br>
-            di/dY = -(1-c)/b < 0 </div>
+        <!-- Gráfico SVG: Pendiente de la IS -->
+        <div style="background: #fff; border-radius: 10px; padding: 10px; margin: 15px 0; border: 1px solid #e5e7eb;">
+            <div style="text-align: center; font-weight: bold; color: #374151; margin-bottom: 5px; font-size: 12px;">📊
+                IS Plana vs IS Empinada</div>
+            <svg viewBox="0 0 300 160" style="width: 100%; max-width: 320px; margin: 0 auto; display: block;">
+                <!-- Ejes -->
+                <line x1="40" y1="140" x2="280" y2="140" stroke="#374151" stroke-width="2" />
+                <line x1="40" y1="140" x2="40" y2="20" stroke="#374151" stroke-width="2" />
+                <!-- IS Plana -->
+                <line x1="50" y1="60" x2="250" y2="90" stroke="#10b981" stroke-width="3" />
+                <text x="255" y="100" font-size="9" fill="#10b981" font-weight="bold">IS Plana (↑c, ↑b)</text>
+                <!-- IS Empinada -->
+                <line x1="100" y1="30" x2="160" y2="130" stroke="#f59e0b" stroke-width="3" />
+                <text x="165" y="135" font-size="9" fill="#f59e0b" font-weight="bold">IS Empinada</text>
+            </svg>
+        </div>
 
-                <h4>Factores que afectan la pendiente</h4>
-                <table class="data-table">
-                    <tr>
-                        <th>Factor</th>
-                        <th>Efecto en la Pendiente</th>
-                    </tr>
-                    <tr>
-                        <td>↑ c (PMC)</td>
-                        <td>IS más plana</td>
-                    </tr>
-                    <tr>
-                        <td>↑ b (sensibilidad de I a i)</td>
-                        <td>IS más plana</td>
-                    </tr>
-                    <tr>
-                        <td>↓ c</td>
-                        <td>IS más empinada</td>
-                    </tr>
-                    <tr>
-                        <td>↓ b</td>
-                        <td>IS más empinada</td>
-                    </tr>
-                </table>
-
-                <h4>IS Plana vs IS Empinada</h4>
-                <ul>
-                    <li><strong>IS plana:</strong> Pequeños cambios en i causan grandes cambios en Y</li>
-                    <li><strong>IS empinada:</strong> Grandes cambios en i causan pequeños cambios en Y</li>
-                </ul>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px;">
+            <div style="background: #ecfdf5; padding: 10px; border-radius: 8px; border: 1px solid #10b981;">
+                <div style="font-weight: bold; color: #065f46; font-size: 12px;">🌱 Sensible (Plana)</div>
+                <div style="font-size: 11px;">Pequeño Δi causa gran ΔY. Ocurre con PMC (c) alta.</div>
+            </div>
+            <div style="background: #fffbeb; padding: 10px; border-radius: 8px; border: 1px solid #f59e0b;">
+                <div style="font-weight: bold; color: #92400e; font-size: 12px;">🏔️ Rígida (Empinada)</div>
+                <div style="font-size: 11px;">Gran Δi causa poco ΔY. Ocurre si la inversión es poco sensible.</div>
+            </div>
         </div>
     </div>
+</div>
 
-    <!-- Página 9 -->
-    <div id="page-9" class="page-block">
-        <h2 class="handwritten-title">↔️ Desplazamientos de la Curva IS</h2>
-        <div class="handwritten-text">
-            <h3>1.10 Factores que Desplazan la IS</h3>
-            <p>La curva IS se desplaza cuando cambian los componentes autónomos del gasto:</p>
+<!-- Página 9 -->
+<div id="page-9" class="page-block">
+    <h2 class="handwritten-title">↔️ Desplazamientos de la IS</h2>
+    <div class="handwritten-text">
+        <h3>1.10 Factores que Desplazan la IS</h3>
+        <p>Los desplazamientos ocurren por cambios en el <strong>gasto autónomo</strong> (variables que no son <i>i</i>
+            ni <i>Y</i>).</p>
 
-            <h4>Desplazamiento a la Derecha (↑ DA)</h4>
+        <!-- Gráfico SVG: Desplazamientos -->
+        <div style="background: #fff; border-radius: 10px; padding: 10px; margin: 15px 0; border: 1px solid #e5e7eb;">
+            <div style="text-align: center; font-weight: bold; color: #374151; margin-bottom: 5px; font-size: 12px;">📊
+                Política Fiscal Expansiva vs Contractiva</div>
+            <svg viewBox="0 0 300 160" style="width: 100%; max-width: 320px; margin: 0 auto; display: block;">
+                <!-- Ejes -->
+                <line x1="40" y1="140" x2="280" y2="140" stroke="#374151" stroke-width="2" />
+                <line x1="40" y1="140" x2="40" y2="20" stroke="#374151" stroke-width="2" />
+                <!-- IS Original -->
+                <line x1="80" y1="40" x2="220" y2="120" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4" />
+                <!-- IS Derecha -->
+                <line x1="120" y1="40" x2="260" y2="120" stroke="#3b82f6" stroke-width="3" />
+                <path d="M 160 80 L 190 80" fill="none" stroke="#3b82f6" stroke-width="2"
+                    marker-end="url(#arrow-blue)" />
+                <!-- IS Izquierda -->
+                <line x1="40" y1="40" x2="180" y2="120" stroke="#ef4444" stroke-width="3" />
+                <path d="M 140 80 L 110 80" fill="none" stroke="#ef4444" stroke-width="2"
+                    marker-end="url(#arrow-red-small)" />
+
+                <defs>
+                    <marker id="arrow-blue" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+                        <polygon points="0 0, 6 3, 0 6" fill="#3b82f6" />
+                    </marker>
+                    <marker id="arrow-red-small" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+                        <polygon points="6 0, 0 3, 6 6" fill="#ef4444" />
+                    </marker>
+                </defs>
+            </svg>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+            <div style="background: #eff6ff; padding: 10px; border-radius: 8px; border-left: 5px solid #3b82f6;">
+                <span style="font-weight: bold; color: #1e40af;">🚀 Expansiva (Hacia Derecha):</span> ↑G, ↓T, ↑C₀, ↑I₀
+            </div>
+            <div style="background: #fef2f2; padding: 10px; border-radius: 8px; border-left: 5px solid #ef4444;">
+                <span style="font-weight: bold; color: #991b1b;">🛑 Contractiva (Hacia Izquierda):</span> ↓G, ↑T, ↓C₀,
+                ↓I₀
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Página 10 -->
+<div id="page-10" class="page-block">
+    <h2 class="handwritten-title">📝 Resumen y Ejercicios - Semana 1</h2>
+    <div class="handwritten-text">
+        <h3>Resumen de la Semana 1</h3>
+        <div class="resumen-box">
             <ul>
-                <li>↑ C₀ (Aumento del consumo autónomo)</li>
-                <li>↑ I₀ (Mejores expectativas empresariales)</li>
-                <li>↑ G₀ (Política fiscal expansiva)</li>
-                <li>↓ T (Reducción de impuestos)</li>
+                <li><strong>Demanda Agregada:</strong> DA = C + I + G + (X-M)</li>
+                <li><strong>Consumo:</strong> C = C₀ + c(Y-T)</li>
+                <li><strong>Inversión:</strong> I = I₀ - b·i</li>
+                <li><strong>Equilibrio:</strong> Y = DA</li>
+                <li><strong>Multiplicador:</strong> k = 1/(1-c)</li>
+                <li><strong>Curva IS:</strong> Pendiente negativa, muestra equilibrio en mercado de bienes</li>
             </ul>
-
-            <h4>Desplazamiento a la Izquierda (↓ DA)</h4>
-            <ul>
-                <li>↓ C₀ (Caída de la confianza del consumidor)</li>
-                <li>↓ I₀ (Pesimismo empresarial)</li>
-                <li>↓ G₀ (Política fiscal contractiva)</li>
-                <li>↑ T (Aumento de impuestos)</li>
-            </ul>
-
-            <div class="formula-box">
-                <strong>Magnitud del Desplazamiento:</strong><br>
-                ΔY = k × ΔGasto autónomo<br>
-                ΔY = [1/(1-c)] × ΔG₀
-            </div>
-
-            <div class="ejemplo-box">
-                <strong>Ejemplo:</strong> Si G aumenta en 50 y c = 0.75:<br>
-                ΔY = [1/(1-0.75)] × 50 = 4 × 50 = 200<br>
-                La IS se desplaza a la derecha en 200 unidades.
-            </div>
         </div>
-    </div>
 
-    <!-- Página 10 -->
-    <div id="page-10" class="page-block">
-        <h2 class="handwritten-title">📝 Resumen y Ejercicios - Semana 1</h2>
-        <div class="handwritten-text">
-            <h3>Resumen de la Semana 1</h3>
-            <div class="resumen-box">
-                <ul>
-                    <li><strong>Demanda Agregada:</strong> DA = C + I + G + (X-M)</li>
-                    <li><strong>Consumo:</strong> C = C₀ + c(Y-T)</li>
-                    <li><strong>Inversión:</strong> I = I₀ - b·i</li>
-                    <li><strong>Equilibrio:</strong> Y = DA</li>
-                    <li><strong>Multiplicador:</strong> k = 1/(1-c)</li>
-                    <li><strong>Curva IS:</strong> Pendiente negativa, muestra equilibrio en mercado de bienes</li>
-                </ul>
-            </div>
-
-            <h3>Ejercicios Propuestos</h3>
-            <div class="ejercicio-box">
-                <p><strong>1.</strong> Si C = 200 + 0.8Yd, I = 300 - 20i, G = 400 y T = 100:</p>
-                <p>a) Derive la ecuación de la curva IS</p>
-                <p>b) Calcule Y cuando i = 5%</p>
-                <p>c) ¿Qué pasa con Y si G aumenta en 100?</p>
-            </div>
-
-            <div class="ejercicio-box">
-                <p><strong>2.</strong> Explique por qué la curva IS tiene pendiente negativa.</p>
-            </div>
-
-            <div class="ejercicio-box">
-                <p><strong>3.</strong> Si la PMC aumenta de 0.75 a 0.85:</p>
-                <p>a) ¿Qué pasa con el multiplicador?</p>
-                <p>b) ¿La curva IS se vuelve más plana o más empinada?</p>
-            </div>
-
-            <h3>Conceptos Clave</h3>
-            <p>✓ Demanda Agregada | ✓ Función de Consumo | ✓ PMC | ✓ Multiplicador | ✓ Curva IS | ✓ Equilibrio del
-                Mercado de Bienes</p>
+        <h3>Ejercicios Propuestos</h3>
+        <div class="ejercicio-box">
+            <p><strong>1.</strong> Si C = 200 + 0.8Yd, I = 300 - 20i, G = 400 y T = 100:</p>
+            <p>a) Derive la ecuación de la curva IS</p>
+            <p>b) Calcule Y cuando i = 5%</p>
+            <p>c) ¿Qué pasa con Y si G aumenta en 100?</p>
         </div>
+
+        <div class="ejercicio-box">
+            <p><strong>2.</strong> Explique por qué la curva IS tiene pendiente negativa.</p>
+        </div>
+
+        <div class="ejercicio-box">
+            <p><strong>3.</strong> Si la PMC aumenta de 0.75 a 0.85:</p>
+            <p>a) ¿Qué pasa con el multiplicador?</p>
+            <p>b) ¿La curva IS se vuelve más plana o más empinada?</p>
+        </div>
+
+        <h3>Conceptos Clave</h3>
+        <p>✓ Demanda Agregada | ✓ Función de Consumo | ✓ PMC | ✓ Multiplicador | ✓ Curva IS | ✓ Equilibrio del
+            Mercado de Bienes</p>
     </div>
+</div>

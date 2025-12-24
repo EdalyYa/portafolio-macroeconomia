@@ -3,40 +3,49 @@
 
 <!-- Página 1 -->
 <div id="page-1" class="page-block">
-    <h2 class="handwritten-title">🏛️ Semana 4: Política Económica en el Modelo IS-LM</h2>
+    <h2 class="handwritten-title">🏛️ Semana 4: Política Económica</h2>
     <div class="handwritten-text">
-        <p><strong>Objetivo:</strong> Evaluar la efectividad de las políticas fiscales y monetarias en el modelo IS-LM,
-            analizando sus impactos sobre el ingreso, el consumo, la inversión y la tasa de interés.</p>
+        <p><strong>🎯 Objetivo:</strong> Evaluar la efectividad de las políticas fiscales y monetarias en el modelo
+            IS-LM.</p>
 
-        <h3>4.1 Introducción a la Política Económica</h3>
-        <p>El modelo IS-LM es una herramienta fundamental para analizar los efectos de las políticas macroeconómicas:
-        </p>
+        <h3>4.1 Instrumentos de Política</h3>
+        <p>Los gobiernos y bancos centrales usan diferentes "palancas" para mover la economía 🕹️.</p>
 
-        <table class="data-table">
-            <tr>
-                <th>Política</th>
-                <th>Instrumentos</th>
-                <th>Curva Afectada</th>
-            </tr>
-            <tr>
-                <td><strong>Política Fiscal</strong></td>
-                <td>G, T</td>
-                <td>IS</td>
-            </tr>
-            <tr>
-                <td><strong>Política Monetaria</strong></td>
-                <td>M</td>
-                <td>LM</td>
-            </tr>
-        </table>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 15px 0;">
+            <div style="background: #eff6ff; border: 1px solid #3b82f6; border-radius: 10px; padding: 12px;">
+                <div style="font-weight: bold; color: #1e40af; display: flex; align-items: center; gap: 5px;">
+                    <span>📜</span> Política Fiscal
+                </div>
+                <div style="font-size: 11px; margin-top: 5px; color: #475569;">Controlada por el <strong>Ministerio de
+                        Economía</strong>.</div>
+                <div
+                    style="background: white; margin-top: 5px; padding: 5px; border-radius: 4px; font-weight: bold; font-size: 10px; color: #1e40af; text-align: center;">
+                    ΔG (Gasto) / ΔT (Impuestos)</div>
+            </div>
+            <div style="background: #f0fdf4; border: 1px solid #10b981; border-radius: 10px; padding: 12px;">
+                <div style="font-weight: bold; color: #166534; display: flex; align-items: center; gap: 5px;">
+                    <span>🏦</span> Política Monetaria
+                </div>
+                <div style="font-size: 11px; margin-top: 5px; color: #475569;">Controlada por el <strong>Banco
+                        Central</strong>.</div>
+                <div
+                    style="background: white; margin-top: 5px; padding: 5px; border-radius: 4px; font-weight: bold; font-size: 10px; color: #166534; text-align: center;">
+                    ΔM (Oferta Monetaria) / Δi</div>
+            </div>
+        </div>
 
-        <h3>4.2 Objetivos de la Política Económica</h3>
-        <ul>
-            <li><strong>Estabilización:</strong> Suavizar el ciclo económico</li>
-            <li><strong>Crecimiento:</strong> Aumentar el producto potencial</li>
-            <li><strong>Pleno empleo:</strong> Reducir el desempleo</li>
-            <li><strong>Estabilidad de precios:</strong> Controlar la inflación</li>
-        </ul>
+        <h3>🎯 4.2 Grandes Objetivos</h3>
+        <div style="display: flex; gap: 5px; flex-wrap: wrap;">
+            <span
+                style="background: #f1f5f9; padding: 4px 8px; border-radius: 15px; font-size: 10px; color: #475569; border: 1px solid #cbd5e1;">🛠️
+                Pleno Empleo</span>
+            <span
+                style="background: #f1f5f9; padding: 4px 8px; border-radius: 15px; font-size: 10px; color: #475569; border: 1px solid #cbd5e1;">💸
+                Estabilidad Precios</span>
+            <span
+                style="background: #f1f5f9; padding: 4px 8px; border-radius: 15px; font-size: 10px; color: #475569; border: 1px solid #cbd5e1;">📈
+                Crecimiento PIB</span>
+        </div>
     </div>
 </div>
 
@@ -44,31 +53,36 @@
 <div id="page-2" class="page-block">
     <h2 class="handwritten-title">📈 Política Fiscal Expansiva</h2>
     <div class="handwritten-text">
-        <h3>4.3 Aumento del Gasto Público (ΔG > 0)</h3>
+        <h3>4.3 Aumento del Gasto (ΔG > 0)</h3>
 
-        <h4>Mecanismo de Transmisión</h4>
-        <ol>
-            <li>↑G → IS se desplaza a la derecha</li>
-            <li>En el nuevo equilibrio: ↑Y* y ↑i*</li>
-            <li>Mayor ingreso → ↑C (consumo)</li>
-            <li>Mayor tasa de interés → ↓I (inversión)</li>
-        </ol>
+        <!-- Gráfico SVG: Fiscal Expansiva -->
+        <div style="background: #fff; border-radius: 10px; padding: 15px; margin: 15px 0; border: 1px solid #e5e7eb;">
+            <div style="text-align: center; font-weight: bold; color: #1e40af; margin-bottom: 5px; font-size: 12px;">📊
+                Efecto de ↑G en IS-LM</div>
+            <svg viewBox="0 0 320 200" style="width: 100%; max-width: 350px; margin: 0 auto; display: block;">
+                <!-- Ejes -->
+                <line x1="40" y1="170" x2="280" y2="170" stroke="#374151" stroke-width="2" />
+                <line x1="40" y1="170" x2="40" y2="20" stroke="#374151" stroke-width="2" />
+                <!-- LM -->
+                <line x1="60" y1="150" x2="240" y2="50" stroke="#10b981" stroke-width="2" />
+                <!-- IS Original e IS Nueva -->
+                <line x1="50" y1="50" x2="200" y2="150" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4" />
+                <line x1="120" y1="50" x2="270" y2="150" stroke="#3b82f6" stroke-width="3" />
 
-        <div class="formula-box">
-            <strong>Efectos Cuantitativos:</strong><br>
-            ΔY = αG × ΔG (donde αG = h/[h(1-c) + kb])<br>
-            Δi = (k/h) × ΔY
+                <!-- Ajuste -->
+                <path d="M 110 90 L 150 90" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arr-b)" />
+                <text x="115" y="85" font-size="9" fill="#2563eb" font-weight="bold">↑G</text>
+
+                <defs>
+                    <marker id="arr-b" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+                        <polygon points="0 0, 6 3, 0 6" fill="#2563eb" />
+                    </marker>
+                </defs>
+            </svg>
         </div>
 
-        <h4>Análisis Gráfico</h4>
-        <p>La IS se desplaza horizontalmente en: Δ = multiplicador × ΔG</p>
-        <p>Pero el equilibrio final muestra un aumento menor en Y debido al crowding-out.</p>
-
-        <div class="ejemplo-box">
-            <strong>Ejemplo:</strong> Si ΔG = 100, c = 0.8, b = 25, h = 50, k = 0.25<br>
-            Desplazamiento IS: 100 × 5 = 500<br>
-            ΔY efectivo = 50/[50(0.2) + 0.25(25)] × 100 = 308<br>
-            Crowding-out: 500 - 308 = 192
+        <div style="background: #eff6ff; border-radius: 8px; padding: 10px; border-left: 4px solid #3b82f6;">
+            <strong>⛓️ Cadena:</strong> ↑G ➔ ↑DA ➔ ↑Y ➔ ↑L (Demanda $) ➔ ↑i ➔ ↓I (Crowding-out)
         </div>
     </div>
 </div>
@@ -77,34 +91,19 @@
 <div id="page-3" class="page-block">
     <h2 class="handwritten-title">📉 Política Fiscal Contractiva</h2>
     <div class="handwritten-text">
-        <h3>4.4 Reducción del Gasto o Aumento de Impuestos</h3>
+        <h3>4.4 Menos Gasto o Más Impuestos</h3>
+        <p>Busca reducir el déficit o enfriar la economía.</p>
 
-        <h4>a) Reducción del Gasto Público (ΔG < 0)</h4>
-                <ul>
-                    <li>IS se desplaza a la izquierda</li>
-                    <li>↓Y* y ↓i*</li>
-                    <li>↓C (menor ingreso disponible)</li>
-                    <li>↑I (menor tasa de interés - "crowding-in")</li>
-                </ul>
-
-                <h4>b) Aumento de Impuestos (ΔT > 0)</h4>
-                <div class="formula-box">
-                    <strong>Multiplicador de Impuestos:</strong><br>
-                    αT = -c×h / [h(1-c) + kb]<br>
-                    (Negativo porque ↑T → ↓Y)
-                </div>
-
-                <p>El multiplicador de impuestos es menor en valor absoluto que el del gasto porque:</p>
-                <ul>
-                    <li>↑T → ↓Yd → ↓C (solo afecta el consumo)</li>
-                    <li>ΔC = -c × ΔT (parte del ↑T se absorbe de ahorro)</li>
-                </ul>
-
-                <h4>Teorema del Presupuesto Equilibrado</h4>
-                <div class="formula-box">
-                    Si ΔG = ΔT, entonces ΔY > 0<br>
-                    El multiplicador del presupuesto equilibrado ≈ 1
-                </div>
+        <div style="display: flex; gap: 10px; margin: 10px 0;">
+            <div style="flex: 1; background: #fef2f2; padding: 10px; border-radius: 8px; border: 1px solid #ef4444;">
+                <div style="font-weight: bold; color: #991b1b; font-size: 11px;">🛑 ↓Gasto (G)</div>
+                <div style="font-size: 10px;">Impacto directo en la DA.</div>
+            </div>
+            <div style="flex: 1; background: #fff7ed; padding: 10px; border-radius: 8px; border: 1px solid #f97316;">
+                <div style="font-weight: bold; color: #9a3412; font-size: 11px;">💸 ↑Impuestos (T)</div>
+                <div style="font-size: 10px;">Impacto indirecto vía consumo.</div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -112,34 +111,36 @@
 <div id="page-4" class="page-block">
     <h2 class="handwritten-title">💰 Política Monetaria Expansiva</h2>
     <div class="handwritten-text">
-        <h3>4.5 Aumento de la Oferta Monetaria (ΔM > 0)</h3>
+        <h3>4.5 Inyección de Liquidez (ΔM > 0)</h3>
 
-        <h4>Mecanismo de Transmisión</h4>
-        <ol>
-            <li>Banco Central ↑M (compra bonos)</li>
-            <li>LM se desplaza a la derecha</li>
-            <li>↓i* (baja la tasa de interés)</li>
-            <li>↑I (mayor inversión)</li>
-            <li>↑DA → ↑Y*</li>
-            <li>↑Y → ↑C (mayor consumo)</li>
-        </ol>
+        <!-- Gráfico SVG: Monetaria Expansiva -->
+        <div style="background: #fff; border-radius: 10px; padding: 15px; margin: 15px 0; border: 1px solid #e5e7eb;">
+            <div style="text-align: center; font-weight: bold; color: #166534; margin-bottom: 5px; font-size: 12px;">📊
+                Efecto de ↑M en IS-LM</div>
+            <svg viewBox="0 0 320 200" style="width: 100%; max-width: 350px; margin: 0 auto; display: block;">
+                <!-- Ejes -->
+                <line x1="40" y1="170" x2="280" y2="170" stroke="#374151" stroke-width="2" />
+                <line x1="40" y1="170" x2="40" y2="20" stroke="#374151" stroke-width="2" />
+                <!-- IS -->
+                <line x1="60" y1="50" x2="240" y2="150" stroke="#3b82f6" stroke-width="2" />
+                <!-- LM Original e LM Nueva -->
+                <line x1="60" y1="130" x2="220" y2="40" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4" />
+                <line x1="120" y1="130" x2="280" y2="40" stroke="#10b981" stroke-width="3" />
 
-        <div class="formula-box">
-            <strong>Efectos Cuantitativos:</strong><br>
-            ΔY = αM × Δ(M/P) (donde αM = b/[h(1-c) + kb])<br>
-            Δi = -(1-c)/[h(1-c) + kb] × Δ(M/P)
+                <!-- Ajuste -->
+                <path d="M 120 100 L 160 100" fill="none" stroke="#059669" stroke-width="2" marker-end="url(#arr-g)" />
+                <text x="130" y="95" font-size="9" fill="#059669" font-weight="bold">↑M</text>
+
+                <defs>
+                    <marker id="arr-g" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+                        <polygon points="0 0, 6 3, 0 6" fill="#059669" />
+                    </marker>
+                </defs>
+            </svg>
         </div>
 
-        <h4>Características</h4>
-        <ul>
-            <li>La tasa de interés <strong>siempre baja</strong> (no hay crowding-out)</li>
-            <li>La inversión <strong>siempre aumenta</strong></li>
-            <li>No hay desplazamiento de inversión privada</li>
-        </ul>
-
-        <div class="ejemplo-box">
-            <strong>Ejemplo:</strong> Si Δ(M/P) = 50, b = 25, c = 0.8, h = 50, k = 0.25<br>
-            ΔY = 25/[50(0.2) + 0.25(25)] × 50 = 25/16.25 × 50 = 76.9
+        <div style="background: #f0fdf4; border-radius: 8px; padding: 10px; border-left: 4px solid #10b981;">
+            <strong>⛓️ Cadena:</strong> ↑M ➔ ↓i ➔ ↑I (Inversión) ➔ ↑DA ➔ ↑Y (Producto)
         </div>
     </div>
 </div>
@@ -257,79 +258,82 @@
 
 <!-- Página 7 -->
 <div id="page-7" class="page-block">
-    <h2 class="handwritten-title">🔄 Combinación de Políticas (Policy Mix)</h2>
+    <h2 class="handwritten-title">🔄 El Policy Mix</h2>
     <div class="handwritten-text">
-        <h3>4.8 El Policy Mix</h3>
-        <p>Las autoridades pueden combinar políticas fiscales y monetarias para lograr objetivos específicos.</p>
+        <h3>4.8 Combinación de Políticas</h3>
+        <p>A veces se usan ambas al mismo tiempo para objetivos específicos 🎯.</p>
 
-        <h4>Expansión Fiscal + Expansión Monetaria</h4>
-        <ul>
-            <li>IS → derecha, LM → derecha</li>
-            <li>↑↑Y (gran aumento del producto)</li>
-            <li>i puede subir, bajar o mantenerse (depende de las magnitudes)</li>
-            <li>Evita crowding-out</li>
-        </ul>
-
-        <h4>Expansión Fiscal + Contracción Monetaria</h4>
-        <ul>
-            <li>IS → derecha, LM → izquierda</li>
-            <li>↑↑i (gran aumento de tasas)</li>
-            <li>Y puede subir, bajar o mantenerse</li>
-            <li>Crowding-out severo</li>
-        </ul>
-
-        <h4>Ejemplo: Mantener Y constante y ↑i</h4>
-        <div class="ejemplo-box">
-            <strong>Objetivo:</strong> Atraer capitales sin cambiar Y<br>
-            <strong>Política:</strong> ↓G (IS izquierda) + ↓M (LM izquierda)<br>
-            <strong>Resultado:</strong> Y constante, ↑i
+        <!-- Cuadro de Policy Mix -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 15px 0;">
+            <div
+                style="background: #ecfdf5; border: 1px solid #10b981; padding: 10px; border-radius: 8px; text-align: center;">
+                <div style="font-weight: bold; color: #166534; font-size: 11px;">🚀 Súper Expansión</div>
+                <div style="font-size: 9px;">↑G + ↑M</div>
+                <div style="font-size: 10px; font-weight: bold;">↑↑ Y | i (?)</div>
+            </div>
+            <div
+                style="background: #eff6ff; border: 1px solid #3b82f6; padding: 10px; border-radius: 8px; text-align: center;">
+                <div style="font-weight: bold; color: #1e40af; font-size: 11px;">⚖️ Estabilización i</div>
+                <div style="font-size: 9px;">↑G + ↓M</div>
+                <div style="font-size: 10px; font-weight: bold;">Y (?) | ↑↑ i</div>
+            </div>
+            <div
+                style="background: #fff7ed; border: 1px solid #f97316; padding: 10px; border-radius: 8px; text-align: center;">
+                <div style="font-weight: bold; color: #9a3412; font-size: 11px;">📉 Consolidación</div>
+                <div style="font-size: 9px;">↓G + ↑M</div>
+                <div style="font-size: 10px; font-weight: bold;">Y (?) | ↓↓ i</div>
+            </div>
+            <div
+                style="background: #fef2f2; border: 1px solid #ef4444; padding: 10px; border-radius: 8px; text-align: center;">
+                <div style="font-weight: bold; color: #991b1b; font-size: 11px;">🛑 Frenado Total</div>
+                <div style="font-size: 9px;">↓G + ↓M</div>
+                <div style="font-size: 10px; font-weight: bold;">↓↓ Y | i (?)</div>
+            </div>
         </div>
     </div>
 </div>
 
 <!-- Página 8 -->
 <div id="page-8" class="page-block">
-    <h2 class="handwritten-title">⏱️ Retardos de las Políticas</h2>
+    <h2 class="handwritten-title">⏱️ Retardos de la Política</h2>
     <div class="handwritten-text">
-        <h3>4.9 Retardos en la Implementación</h3>
-        <p>Las políticas económicas no tienen efectos instantáneos:</p>
+        <h3>4.9 ¿Por qué no es Instantáneo?</h3>
 
-        <h4>Retardo Interno (desde el shock hasta la acción)</h4>
-        <table class="data-table">
-            <tr>
-                <th>Tipo</th>
-                <th>Política Fiscal</th>
-                <th>Política Monetaria</th>
-            </tr>
-            <tr>
-                <td>Reconocimiento</td>
-                <td>1-6 meses</td>
-                <td>1-6 meses</td>
-            </tr>
-            <tr>
-                <td>Decisión</td>
-                <td>6-12 meses (legislativo)</td>
-                <td>Días-semanas</td>
-            </tr>
-            <tr>
-                <td>Implementación</td>
-                <td>Meses</td>
-                <td>Inmediato</td>
-            </tr>
-        </table>
+        <!-- Línea de Tiempo de Retardos -->
+        <div style="margin: 20px 0; position: relative; padding-bottom: 20px;">
+            <div style="height: 4px; background: #cbd5e1; width: 100%; border-radius: 2px;"></div>
+            <div style="display: flex; justify-content: space-between; margin-top: -12px;">
+                <div style="text-align: center; width: 33%;">
+                    <div
+                        style="width: 20px; height: 20px; background: #3b82f6; border-radius: 50%; margin: 0 auto; border: 4px solid white;">
+                    </div>
+                    <div style="font-size: 10px; font-weight: bold; margin-top: 5px;">Shock</div>
+                </div>
+                <div style="text-align: center; width: 33%;">
+                    <div
+                        style="width: 20px; height: 20px; background: #f59e0b; border-radius: 50%; margin: 0 auto; border: 4px solid white;">
+                    </div>
+                    <div style="font-size: 10px; font-weight: bold; margin-top: 5px;">Acción</div>
+                </div>
+                <div style="text-align: center; width: 33%;">
+                    <div
+                        style="width: 20px; height: 20px; background: #10b981; border-radius: 50%; margin: 0 auto; border: 4px solid white;">
+                    </div>
+                    <div style="font-size: 10px; font-weight: bold; margin-top: 5px;">Efecto</div>
+                </div>
+            </div>
+            <div
+                style="display: flex; justify-content: space-around; font-size: 9px; color: #64748b; margin-top: 10px;">
+                <span>Retardo Interno</span>
+                <span>Retardo Externo</span>
+            </div>
+        </div>
 
-        <h4>Retardo Externo (desde la acción hasta el efecto)</h4>
-        <ul>
-            <li><strong>Política Fiscal:</strong> 3-6 meses (relativamente corto)</li>
-            <li><strong>Política Monetaria:</strong> 6-18 meses (largo y variable)</li>
-        </ul>
-
-        <h4>Implicaciones</h4>
-        <p>Los retardos pueden hacer que las políticas sean:</p>
-        <ul>
-            <li><strong>Procíclicas:</strong> Amplifican el ciclo en lugar de suavizarlo</li>
-            <li><strong>Desestabilizadoras:</strong> Si se aplican tarde</li>
-        </ul>
+        <p
+            style="font-size: 12px; font-style: italic; color: #475569; text-align: center; border: 1px dashed #94a3b8; padding: 8px; border-radius: 5px;">
+            "La política monetaria es rápida de decidir pero lenta en hacer efecto. La fiscal es lenta de decidir pero
+            rápida una vez aplicada."
+        </p>
     </div>
 </div>
 

@@ -3,258 +3,152 @@
 
 <!-- Página 1 -->
 <div id="page-1" class="page-block">
-    <h2 class="handwritten-title">📈 Semana 10: La Curva de Demanda Agregada</h2>
+    <h2 class="handwritten-title">📈 La Demanda Agregada</h2>
     <div class="handwritten-text">
-        <p><strong>Objetivo:</strong> Analizar la relación entre el nivel de precios y el producto total demandado,
-            representando la curva de demanda agregada y evaluando los efectos de cambios en la política fiscal,
-            monetaria y factores externos.</p>
+        <p><strong>Objetivo:</strong> Ver cómo el nivel de precios afecta todo lo que compramos 🛍️.</p>
 
-        <h3>10.1 Introducción al Modelo OA-DA</h3>
-        <p>El modelo <strong>OA-DA</strong> (Oferta Agregada - Demanda Agregada) permite analizar:</p>
-        <ul>
-            <li>La determinación del <strong>nivel de precios (P)</strong></li>
-            <li>La determinación del <strong>producto agregado (Y)</strong></li>
-            <li>Los efectos de políticas y shocks en el corto y largo plazo</li>
-        </ul>
-
-        <h3>10.2 ¿Qué es la Demanda Agregada?</h3>
-        <p>La <strong>Demanda Agregada (DA)</strong> representa la cantidad total de bienes y servicios que todos los
-            agentes económicos desean comprar a cada nivel de precios.</p>
-
-        <div class="formula-box">
-            <strong>Componentes de la DA:</strong><br>
-            DA = C + I + G + NX
+        <div
+            style="background: #fdf2f8; border: 1px solid #db2777; border-radius: 12px; padding: 12px; margin: 15px 0;">
+            <div style="font-weight: bold; color: #9d174d; margin-bottom: 5px;">📍 Componentes de la DA</div>
+            <div
+                style="display: flex; justify-content: space-around; align-items: center; font-size: 11px; text-align: center;">
+                <div><span style="font-size: 18px;">🛒</span><br>C</div>
+                <div style="font-weight: bold;">+</div>
+                <div><span style="font-size: 18px;">🏭</span><br>I</div>
+                <div style="font-weight: bold;">+</div>
+                <div><span style="font-size: 18px;">🏛️</span><br>G</div>
+                <div style="font-weight: bold;">+</div>
+                <div><span style="font-size: 18px;">🚢</span><br>NX</div>
+            </div>
         </div>
     </div>
 </div>
 
 <!-- Página 2 -->
 <div id="page-2" class="page-block">
-    <h2 class="handwritten-title">📊 Derivación de la Curva DA</h2>
+    <h2 class="handwritten-title">📊 Derivando la DA</h2>
     <div class="handwritten-text">
-        <h3>10.3 Del Modelo IS-LM a la Curva DA</h3>
-        <p>La curva DA se deriva del modelo IS-LM, analizando cómo cambia el equilibrio cuando varía el nivel de
-            precios:</p>
-
-        <h4>Proceso de Derivación</h4>
-        <ol>
-            <li>Partimos del equilibrio IS-LM con P = P₁</li>
-            <li>Si P aumenta a P₂:</li>
-            <li>La oferta real de dinero cae: M/P₂ < M/P₁</li>
-            <li>La LM se desplaza a la izquierda</li>
-            <li>El nuevo equilibrio tiene menor Y</li>
-            <li>Obtenemos puntos (P₁, Y₁) y (P₂, Y₂) donde Y₂ < Y₁</li>
-        </ol>
-
-        <div class="formula-box">
-            <strong>Relación Clave:</strong><br>
-            ↑P → ↓(M/P) → LM izquierda → ↓Y<br>
-            La DA tiene pendiente negativa en el plano (Y, P)
-        </div>
-
-        <h4>Representación Gráfica</h4>
-        <ul>
-            <li><strong>Eje horizontal:</strong> Producto (Y)</li>
-            <li><strong>Eje vertical:</strong> Nivel de precios (P)</li>
-            <li><strong>Pendiente:</strong> Negativa</li>
-        </ul>
+        <svg viewBox="0 0 300 180" style="width: 100%; max-width: 300px; margin: 0 auto; display: block;">
+            <!-- Ejes -->
+            <line x1="40" y1="150" x2="280" y2="150" stroke="#374151" stroke-width="2" />
+            <line x1="40" y1="150" x2="40" y2="20" stroke="#374151" stroke-width="2" />
+            <!-- Curva DA -->
+            <path d="M 60,40 Q 120,100 240,140" fill="none" stroke="#3b82f6" stroke-width="3" />
+            <text x="245" y="145" font-size="10" fill="#3b82f6" font-weight="bold">DA</text>
+            <!-- Etiquetas -->
+            <text x="270" y="165" font-size="10" fill="#374151">Y</text>
+            <text x="20" y="30" font-size="10" fill="#374151">P</text>
+            <!-- Puntos -->
+            <circle cx="90" cy="65" r="3" fill="#ef4444" />
+            <text x="95" y="60" font-size="9" fill="#ef4444">↑P → ↓Y</text>
+        </svg>
+        <p style="font-size: 9px; margin-top: 10px; color: #475569; text-align: center;">"Si los precios suben, la gente
+            tiene menos dinero real para comprar, por eso la DA baja".</p>
     </div>
 </div>
 
 <!-- Página 3 -->
 <div id="page-3" class="page-block">
-    <h2 class="handwritten-title">📉 ¿Por qué la DA tiene Pendiente Negativa?</h2>
+    <h2 class="handwritten-title">📉 Los 3 Efectos</h2>
     <div class="handwritten-text">
-        <h3>10.4 Tres Efectos que Explican la Pendiente</h3>
-
-        <h4>1. Efecto Keynes (Efecto Tasa de Interés)</h4>
-        <div class="formula-box">
-            ↑P → ↓(M/P) → ↑i → ↓I → ↓DA → ↓Y
+        <div style="display: flex; flex-direction: column; gap: 8px; margin: 15px 0;">
+            <div style="background: #eff6ff; padding: 10px; border-radius: 8px; border-left: 4px solid #3b82f6;">
+                <div style="font-weight: bold; font-size: 11px;">🔑 Efecto Keynes (Tasa i)</div>
+                <div style="font-size: 9px;">↑P → Escasea Dinero → ↑i → ↓Inversión → ↓Y</div>
+            </div>
+            <div style="background: #fdf2f8; padding: 10px; border-radius: 8px; border-left: 4px solid #db2777;">
+                <div style="font-weight: bold; font-size: 11px;">🐷 Efecto Pigou (Riqueza)</div>
+                <div style="font-size: 9px;">↑P → Tus ahorros valen menos → ↓Consumo → ↓Y</div>
+            </div>
+            <div style="background: #ecfdf5; padding: 10px; border-radius: 8px; border-left: 4px solid #10b981;">
+                <div style="font-weight: bold; font-size: 11px;">🚢 Mundell-Fleming (TC)</div>
+                <div style="font-size: 9px;">↑P → ↑i → Entra K → Moneda se aprecia → ↓Exportac.</div>
+            </div>
         </div>
-        <p>Cuando P sube, el dinero real escasea, la tasa de interés sube, la inversión cae y el producto disminuye.</p>
-
-        <h4>2. Efecto Pigou (Efecto Riqueza Real)</h4>
-        <div class="formula-box">
-            ↑P → ↓(M/P) = ↓Riqueza real → ↓C → ↓DA → ↓Y
-        </div>
-        <p>Cuando P sube, el valor real de los activos monetarios cae, reduciendo el consumo.</p>
-
-        <h4>3. Efecto Mundell-Fleming (Efecto Tipo de Cambio)</h4>
-        <div class="formula-box">
-            ↑P → ↑i → Entrada de K → ↓e (apreciación) → ↓NX → ↓Y
-        </div>
-        <p>En economía abierta, el aumento de P aprecia la moneda y reduce exportaciones netas.</p>
-
-        <h4>Importancia Relativa</h4>
-        <p>El <strong>efecto Keynes</strong> es el más importante para explicar la pendiente de la DA.</p>
     </div>
 </div>
 
 <!-- Página 4 -->
 <div id="page-4" class="page-block">
-    <h2 class="handwritten-title">📐 Ecuación de la Curva DA</h2>
+    <h2 class="handwritten-title">📐 La Ecuación DA</h2>
     <div class="handwritten-text">
-        <h3>10.5 Derivación Algebraica</h3>
-        <p>Partiendo del equilibrio IS-LM con precios variables:</p>
-
-        <h4>Sistema IS-LM</h4>
-        <div class="formula-box">
-            IS: Y = α(A₀ - bi)<br>
-            LM: M/P = kY - hi<br>
-            Donde α = 1/(1-c) y A₀ = C₀ - cT + I₀ + G
+        <div
+            style="background: #f8fafc; border: 1px dashed #64748b; border-radius: 12px; padding: 15px; margin: 10px 0; text-align: center;">
+            <div style="font-size: 14px; font-weight: bold; margin-bottom: 5px;">Y = γA₀ + δ(M/P)</div>
+            <div style="font-size: 9px; color: #64748b;">Donde <strong>γ</strong> (gamma) depende de IS y
+                <strong>δ</strong> (delta) de LM.
+            </div>
         </div>
-
-        <h4>Solución para Y</h4>
-        <p>Resolviendo el sistema:</p>
-        <div class="formula-box">
-            <strong>Ecuación de la DA:</strong><br>
-            Y = [αh/(h + αbk)]A₀ + [αb/(h + αbk)](M/P)
-        </div>
-
-        <p>Simplificando con coeficientes:</p>
-        <div class="formula-box">
-            Y = γA₀ + δ(M/P)<br><br>
-            Donde:<br>
-            γ = αh/(h + αbk) > 0<br>
-            δ = αb/(h + αbk) > 0
-        </div>
-
-        <h4>Interpretación</h4>
-        <ul>
-            <li>Y depende positivamente del gasto autónomo (A₀)</li>
-            <li>Y depende positivamente de los saldos reales (M/P)</li>
-        </ul>
+        <p style="font-size: 10px;">En palabras: Tu producción depende de cuánto gasta el gobierno (A₀) y cuánto dinero
+            real hay (M/P).</p>
     </div>
 </div>
 
 <!-- Página 5 -->
 <div id="page-5" class="page-block">
-    <h2 class="handwritten-title">↔️ Desplazamientos de la Curva DA</h2>
+    <h2 class="handwritten-title">↔️ Choques en la DA</h2>
     <div class="handwritten-text">
-        <h3>10.6 Factores que Desplazan la DA</h3>
-
-        <h4>Desplazamiento a la Derecha (↑DA)</h4>
-        <table class="data-table">
-            <tr>
-                <th>Factor</th>
-                <th>Mecanismo</th>
-            </tr>
-            <tr>
-                <td>↑G (Política fiscal expansiva)</td>
-                <td>IS derecha → ↑Y para cada P</td>
-            </tr>
-            <tr>
-                <td>↓T (Reducción impuestos)</td>
-                <td>↑Yd → ↑C → IS derecha</td>
-            </tr>
-            <tr>
-                <td>↑M (Política monetaria expansiva)</td>
-                <td>LM derecha → ↑Y para cada P</td>
-            </tr>
-            <tr>
-                <td>↑Confianza consumidor</td>
-                <td>↑C₀ → IS derecha</td>
-            </tr>
-            <tr>
-                <td>↑Expectativas inversión</td>
-                <td>↑I₀ → IS derecha</td>
-            </tr>
-            <tr>
-                <td>↑Y* (ingreso externo)</td>
-                <td>↑X → ↑NX → IS derecha</td>
-            </tr>
-        </table>
-
-        <h4>Desplazamiento a la Izquierda (↓DA)</h4>
-        <ul>
-            <li>↓G, ↑T (política fiscal contractiva)</li>
-            <li>↓M (política monetaria contractiva)</li>
-            <li>↓Confianza, pesimismo</li>
-            <li>↓Y* (recesión externa)</li>
-        </ul>
+        <p>¿Qué mueve toda la curva? 🚀</p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 10px 0;">
+            <div style="background: #ecfdf5; padding: 10px; border-radius: 8px; border: 1px solid #10b981;">
+                <div style="font-weight: bold; font-size: 10px; color: #065f46;">Derecha (↑)</div>
+                <ul style="font-size: 8px; margin: 5px 0; padding-left: 12px;">
+                    <li>↑ Gasto (G)</li>
+                    <li>↓ Impuestos (T)</li>
+                    <li>↑ Dinero (M)</li>
+                </ul>
+            </div>
+            <div style="background: #fef2f2; padding: 10px; border-radius: 8px; border: 1px solid #ef4444;">
+                <div style="font-weight: bold; font-size: 10px; color: #991b1b;">Izquierda (↓)</div>
+                <ul style="font-size: 8px; margin: 5px 0; padding-left: 12px;">
+                    <li>↓ Confianza</li>
+                    <li>↓ Exportaciones</li>
+                    <li>Recortes Fiscales</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 
 <!-- Página 6 -->
 <div id="page-6" class="page-block">
-    <h2 class="handwritten-title">🏛️ Política Fiscal y la Curva DA</h2>
+    <h2 class="handwritten-title">🏛️ El Gasto y la DA</h2>
     <div class="handwritten-text">
-        <h3>10.7 Efectos de la Política Fiscal en la DA</h3>
-
-        <h4>Expansión Fiscal (↑G o ↓T)</h4>
-        <ol>
-            <li>↑G → IS se desplaza a la derecha</li>
-            <li>Para cada nivel de P, el equilibrio IS-LM da mayor Y</li>
-            <li>La curva DA se desplaza a la derecha</li>
-        </ol>
-
-        <div class="formula-box">
-            <strong>Desplazamiento horizontal de la DA:</strong><br>
-            ΔY = γ × ΔG<br>
-            Donde γ = αh/(h + αbk)
+        <p>¿Cómo nos afecta el presupuesto del gobierno? 💰</p>
+        <div style="background: #f0fdf4; border-left: 5px solid #22c55e; padding: 12px; border-radius: 8px;">
+            <div style="font-weight: bold; color: #166534;">🚀 Expansión (↑G)</div>
+            <p style="font-size: 10px; margin: 5px 0;">La curva DA salta a la derecha. El desplazamiento es:</p>
+            <div style="font-size: 12px; text-align: center; font-weight: bold;">ΔY = γ · ΔG</div>
         </div>
-
-        <h4>Contracción Fiscal (↓G o ↑T)</h4>
-        <ul>
-            <li>IS se desplaza a la izquierda</li>
-            <li>DA se desplaza a la izquierda</li>
-            <li>Para cada P, el producto demandado es menor</li>
-        </ul>
-
-        <div class="ejemplo-box">
-            <strong>Ejemplo:</strong> Si G aumenta en 100, α = 5, h = 50, b = 25, k = 0.25:<br>
-            γ = 5(50)/[50 + 5(25)(0.25)] = 250/81.25 = 3.08<br>
-            ΔY = 3.08 × 100 = 308
-        </div>
+        <p style="font-size: 9px; margin-top: 10px;">*Nota: Por el <strong>crowding-out</strong>, el aumento final de Y
+            es menor que en el modelo simple.</p>
     </div>
 </div>
 
 <!-- Página 7 -->
 <div id="page-7" class="page-block">
-    <h2 class="handwritten-title">💰 Política Monetaria y la Curva DA</h2>
+    <h2 class="handwritten-title">💰 Dinero vs Gasto</h2>
     <div class="handwritten-text">
-        <h3>10.8 Efectos de la Política Monetaria en la DA</h3>
-
-        <h4>Expansión Monetaria (↑M)</h4>
-        <ol>
-            <li>↑M → Para cada P, M/P aumenta</li>
-            <li>LM se desplaza a la derecha</li>
-            <li>Para cada P, el equilibrio IS-LM da mayor Y</li>
-            <li>La curva DA se desplaza a la derecha</li>
-        </ol>
-
-        <div class="formula-box">
-            <strong>Desplazamiento de la DA por política monetaria:</strong><br>
-            ΔY = δ × Δ(M/P)<br>
-            Donde δ = αb/(h + αbk)
-        </div>
-
-        <h4>Diferencia con Política Fiscal</h4>
-        <table class="data-table">
-            <tr>
-                <th>Aspecto</th>
-                <th>Política Fiscal</th>
-                <th>Política Monetaria</th>
+        <table class="data-table" style="font-size: 10px;">
+            <tr style="background: #f1f5f9;">
+                <th>Variable</th>
+                <th>Fiscal (↑G) 🏛️</th>
+                <th>Monet. (↑M) 🏦</th>
             </tr>
             <tr>
-                <td>Afecta</td>
-                <td>IS directamente</td>
-                <td>LM directamente</td>
+                <td>Tasa (i)</td>
+                <td>↑ Sube</td>
+                <td>↓ Baja</td>
             </tr>
             <tr>
-                <td>Efecto sobre i</td>
-                <td>↑i (crowding-out)</td>
-                <td>↓i</td>
+                <td>Inversión (I)</td>
+                <td>↓ Cae</td>
+                <td>↑ Sube</td>
             </tr>
             <tr>
-                <td>Efecto sobre I</td>
-                <td>↓I (parcial)</td>
-                <td>↑I</td>
-            </tr>
-            <tr>
-                <td>Composición Y</td>
-                <td>Más G, menos I</td>
-                <td>Más I</td>
+                <td>DA</td>
+                <td>A la derecha</td>
+                <td>A la derecha</td>
             </tr>
         </table>
     </div>
@@ -262,118 +156,50 @@
 
 <!-- Página 8 -->
 <div id="page-8" class="page-block">
-    <h2 class="handwritten-title">🌍 Factores Externos y la Curva DA</h2>
+    <h2 class="handwritten-title">🌍 Shocks del Mundo</h2>
     <div class="handwritten-text">
-        <h3>10.9 Shocks Externos que Afectan la DA</h3>
-
-        <h4>1. Cambios en el Ingreso Mundial (Y*)</h4>
-        <div class="formula-box">
-            ↑Y* → ↑Exportaciones → ↑NX → IS derecha → DA derecha
-        </div>
-
-        <h4>2. Cambios en el Tipo de Cambio Real</h4>
-        <div class="formula-box">
-            Depreciación real (↑q) → ↑NX → DA derecha<br>
-            Apreciación real (↓q) → ↓NX → DA izquierda
-        </div>
-
-        <h4>3. Cambios en Tasas de Interés Mundiales</h4>
-        <ul>
-            <li>↑i* → Salida de K → ↑e → ↑NX → DA derecha (TC flexible)</li>
-            <li>↑i* → Salida de K → ↓M → DA izquierda (TC fijo)</li>
-        </ul>
-
-        <h4>4. Cambios en Precios de Commodities</h4>
-        <ul>
-            <li>↑Precio exportaciones → Mejora términos de intercambio → DA derecha</li>
-            <li>↑Precio importaciones → Empeora términos de intercambio → DA izquierda</li>
-        </ul>
-
-        <div class="ejemplo-box">
-            <strong>Caso Perú:</strong> Aumento del precio del cobre → ↑X → ↑NX → DA derecha → ↑Y, ↑P
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+            <div style="background: white; border: 1px solid #e2e8f0; padding: 8px; border-radius: 8px;">
+                <div style="font-size: 14px;">📈</div>
+                <div style="font-size: 9px;"><strong>↑Y* (Mundo crece):</strong><br>Nos compran más. DA →</div>
+            </div>
+            <div style="background: white; border: 1px solid #e2e8f0; padding: 8px; border-radius: 8px;">
+                <div style="font-size: 14px;">🛢️</div>
+                <div style="font-size: 9px;"><strong>↑Precio Cobre:</strong><br>Más dinero entra. DA →</div>
+            </div>
         </div>
     </div>
 </div>
 
 <!-- Página 9 -->
 <div id="page-9" class="page-block">
-    <h2 class="handwritten-title">📊 Pendiente y Casos Especiales</h2>
+    <h2 class="handwritten-title">📊 Curvas "Tiesas" o "Flojas"</h2>
     <div class="handwritten-text">
-        <h3>10.10 Factores que Afectan la Pendiente de la DA</h3>
-
-        <h4>DA más Plana cuando:</h4>
-        <ul>
-            <li>↑b: Inversión muy sensible a la tasa de interés</li>
-            <li>↑α: Multiplicador alto (alta PMC)</li>
-            <li>↓h: Demanda de dinero poco sensible a i</li>
-        </ul>
-
-        <h4>DA más Empinada cuando:</h4>
-        <ul>
-            <li>↓b: Inversión poco sensible a i</li>
-            <li>↓α: Multiplicador bajo</li>
-            <li>↑h: Demanda de dinero muy sensible a i</li>
-        </ul>
-
-        <h4>Casos Extremos</h4>
-        <table class="data-table">
-            <tr>
-                <th>Caso</th>
-                <th>Condición</th>
-                <th>Forma de DA</th>
-            </tr>
-            <tr>
-                <td>Trampa de liquidez</td>
-                <td>h → ∞</td>
-                <td>Vertical</td>
-            </tr>
-            <tr>
-                <td>Caso clásico</td>
-                <td>h = 0</td>
-                <td>Muy plana</td>
-            </tr>
-            <tr>
-                <td>Inversión insensible</td>
-                <td>b = 0</td>
-                <td>Vertical</td>
-            </tr>
-        </table>
+        <div style="display: flex; gap: 10px; margin: 10px 0;">
+            <div style="flex: 1; background: #fff7ed; padding: 8px; border-radius: 8px; border: 1px solid #f97316;">
+                <div style="font-size: 10px; font-weight: bold;">Vertical (Rígida) 📏</div>
+                <div style="font-size: 8px;">Trampa de liquidez. Los precios no mueven la demanda.</div>
+            </div>
+            <div style="flex: 1; background: #eff6ff; padding: 8px; border-radius: 8px; border: 1px solid #3b82f6;">
+                <div style="font-size: 10px; font-weight: bold;">Plana (Sensible) 🌊</div>
+                <div style="font-size: 8px;">Inversión muy sensible a i. Pequeño cambio en P mueve mucho Y.</div>
+            </div>
+        </div>
     </div>
 </div>
 
 <!-- Página 10 -->
 <div id="page-10" class="page-block">
-    <h2 class="handwritten-title">📝 Resumen y Ejercicios - Semana 10</h2>
+    <h2 class="handwritten-title">📝 Resumen Semana 10</h2>
     <div class="handwritten-text">
-        <h3>Resumen de la Semana 10</h3>
-        <div class="resumen-box">
-            <ul>
-                <li><strong>DA:</strong> Relación negativa entre P e Y demandado</li>
-                <li><strong>Derivación:</strong> Del modelo IS-LM variando P</li>
-                <li><strong>Efectos:</strong> Keynes (i), Pigou (riqueza), M-F (TC)</li>
-                <li><strong>Desplazamientos:</strong> Por política fiscal, monetaria o shocks externos</li>
-                <li><strong>Política fiscal:</strong> Desplaza IS → Desplaza DA</li>
-                <li><strong>Política monetaria:</strong> Desplaza LM → Desplaza DA</li>
+        <div
+            style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border: 1px solid #0ea5e9; padding: 15px; border-radius: 12px;">
+            <ul style="font-size: 11px; margin: 0; padding-left: 20px;">
+                <li>La <strong>DA</strong> es la suma de deseos de compra del país.</li>
+                <li>Tiene pendiente negativa por los efectos <strong>Keynes, Pigou y M-F</strong>.</li>
+                <li>Toda la política económica (G, T, M) busca mover esta curva.</li>
             </ul>
         </div>
-
-        <h3>Ejercicios Propuestos</h3>
-        <div class="ejercicio-box">
-            <p><strong>1.</strong> Explique los tres efectos que justifican la pendiente negativa de la DA.</p>
-        </div>
-
-        <div class="ejercicio-box">
-            <p><strong>2.</strong> Si el gobierno aumenta G en 200, ¿cómo afecta esto a la curva DA? Represente
-                gráficamente.</p>
-        </div>
-
-        <div class="ejercicio-box">
-            <p><strong>3.</strong> ¿Qué sucede con la DA de Perú si China (principal socio comercial) entra en recesión?
-            </p>
-        </div>
-
-        <h3>Conceptos Clave</h3>
-        <p>✓ Demanda Agregada | ✓ Efecto Keynes | ✓ Efecto Pigou | ✓ Desplazamientos DA | ✓ Política Fiscal y Monetaria
-        </p>
+        <p style="text-align: center; font-size: 14px; margin-top: 20px;">📘 ¡A seguir con la Oferta ahora!</p>
     </div>
 </div>

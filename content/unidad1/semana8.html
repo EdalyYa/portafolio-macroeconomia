@@ -3,170 +3,93 @@
 
 <!-- Página 1 -->
 <div id="page-1" class="page-block">
-    <h2 class="handwritten-title">🏛️ Semana 8: Política Económica en Mundell-Fleming</h2>
+    <h2 class="handwritten-title">🏛️ Mundell-Fleming en Acción</h2>
     <div class="handwritten-text">
-        <p><strong>Objetivo:</strong> Determinar los efectos de las políticas fiscales y monetarias bajo distintos
-            grados de movilidad de capital y regímenes cambiarios, aplicando el modelo Mundell-Fleming a casos reales.
-        </p>
+        <p><strong>Objetivo:</strong> Descubrir qué política funciona según el tipo de cambio 🛠️.</p>
 
-        <h3>8.1 Marco Analítico</h3>
-        <p>El modelo Mundell-Fleming nos permite analizar 4 combinaciones:</p>
-
-        <table class="data-table">
-            <tr>
-                <th></th>
-                <th>TC Fijo</th>
-                <th>TC Flexible</th>
-            </tr>
-            <tr>
-                <td>Perfecta Movilidad K</td>
-                <td>Caso 1</td>
-                <td>Caso 2</td>
-            </tr>
-            <tr>
-                <td>Movilidad Imperfecta</td>
-                <td>Caso 3</td>
-                <td>Caso 4</td>
-            </tr>
-        </table>
-
-        <h3>8.2 Supuesto Base: Perfecta Movilidad de Capitales</h3>
-        <ul>
-            <li>σ → ∞</li>
-            <li>BP horizontal en i = i*</li>
-            <li>Cualquier desviación genera flujos infinitos</li>
-        </ul>
-
-        <div class="formula-box">
-            <strong>Condición de equilibrio externo:</strong><br>
-            i = i* (siempre)
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 15px 0; text-align: center;">
+            <div style="background: #eff6ff; padding: 10px; border-radius: 10px; border: 1px solid #3b82f6;">
+                <div style="font-size: 14px; font-weight: bold;">🔒 TC Fijo</div>
+                <div style="font-size: 9px;">M es endógena (el BC no la controla).</div>
+            </div>
+            <div style="background: #fdf2f8; padding: 10px; border-radius: 10px; border: 1px solid #db2777;">
+                <div style="font-size: 14px; font-weight: bold;">💹 TC Flexible</div>
+                <div style="font-size: 9px;"><i>e</i> es endógena (ajusta sola).</div>
+            </div>
         </div>
     </div>
 </div>
 
 <!-- Página 2 -->
 <div id="page-2" class="page-block">
-    <h2 class="handwritten-title">📈 Política Fiscal: TC Fijo + Perfecta Movilidad</h2>
+    <h2 class="handwritten-title">📈 Fiscal bajo TC Fijo</h2>
     <div class="handwritten-text">
-        <h3>8.3 Expansión Fiscal bajo TC Fijo</h3>
-
-        <h4>Proceso paso a paso:</h4>
-        <ol>
-            <li><strong>↑G:</strong> IS se desplaza a la derecha</li>
-            <li><strong>Nuevo punto IS-LM:</strong> i > i*, Y > Y₀</li>
-            <li><strong>i > i*:</strong> Entrada masiva de capitales</li>
-            <li><strong>Presión a apreciar:</strong> Demanda de moneda local sube</li>
-            <li><strong>BC defiende TC:</strong> Compra dólares, vende moneda local</li>
-            <li><strong>↑M:</strong> LM se desplaza a la derecha</li>
-            <li><strong>Equilibrio final:</strong> i = i*, Y↑↑</li>
-        </ol>
-
-        <div class="formula-box">
-            <strong>Resultado:</strong><br>
-            ΔY = Multiplicador completo × ΔG<br>
-            Δi = 0 (vuelve a i*)<br>
-            ΔM > 0 (endógeno)<br>
-            <strong>Política fiscal: MUY EFECTIVA</strong>
+        <div
+            style="background: #f0fdf4; border: 2px solid #22c55e; border-radius: 12px; padding: 15px; margin: 10px 0;">
+            <div style="text-align: center; font-weight: bold; color: #166534; margin-bottom: 10px;">¡SÚPER EFECTIVA! ✅
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 5px; font-size: 10px;">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <div style="background: #22c55e; color: white; padding: 3px 6px; border-radius: 4px;">1</div>
+                    <span>↑G desplaza IS → ↑i (atrae capital)</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <div style="background: #22c55e; color: white; padding: 3px 6px; border-radius: 4px;">2</div>
+                    <span>BC compra $ para fijar <i>e</i> → ↑M</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <div style="background: #22c55e; color: white; padding: 3px 6px; border-radius: 4px;">3</div>
+                    <span>LM acompaña a IS → ↑↑Y sin subir <i>i</i></span>
+                </div>
+            </div>
         </div>
-
-        <h4>¿Por qué es tan efectiva?</h4>
-        <p>No hay crowding-out porque i no sube permanentemente. El aumento de M acomoda la expansión fiscal.</p>
     </div>
 </div>
 
 <!-- Página 3 -->
 <div id="page-3" class="page-block">
-    <h2 class="handwritten-title">💰 Política Monetaria: TC Fijo + Perfecta Movilidad</h2>
+    <h2 class="handwritten-title">💰 Monetaria bajo TC Fijo</h2>
     <div class="handwritten-text">
-        <h3>8.4 Expansión Monetaria bajo TC Fijo</h3>
-
-        <h4>Proceso paso a paso:</h4>
-        <ol>
-            <li><strong>BC ↑M:</strong> LM se desplaza a la derecha</li>
-            <li><strong>Nuevo punto IS-LM:</strong> i < i*, Y> Y₀</li>
-            <li><strong>i < i*:</strong> Salida masiva de capitales</li>
-            <li><strong>Presión a depreciar:</strong> Demanda de dólares sube</li>
-            <li><strong>BC defiende TC:</strong> Vende dólares, compra moneda local</li>
-            <li><strong>↓M:</strong> LM regresa a posición original</li>
-            <li><strong>Equilibrio final:</strong> Todo vuelve al inicio</li>
-        </ol>
-
-        <div class="formula-box">
-            <strong>Resultado:</strong><br>
-            ΔY = 0<br>
-            Δi = 0<br>
-            ΔM = 0 (se revierte)<br>
-            ΔReservas < 0<br>
-                <strong>Política monetaria: INEFECTIVA</strong>
+        <div
+            style="background: #fef2f2; border: 2px solid #ef4444; border-radius: 12px; padding: 15px; margin: 10px 0;">
+            <div style="text-align: center; font-weight: bold; color: #991b1b; margin-bottom: 10px;">INEFECTIVA ❌</div>
+            <p style="font-size: 10px; margin: 0;">"Lo que el BC da con una mano (↑M), lo quita con la otra para
+                defender el tipo de cambio".</p>
+            <div style="margin-top: 10px; font-size: 10px; border-top: 1px solid #fee2e2; padding-top: 5px;">
+                ↑M → ↓i → Fuga de K → BC vende reserva → ↓M (Regresa al inicio)
+            </div>
         </div>
-
-        <h4>Consecuencia importante:</h4>
-        <p>El BC pierde autonomía monetaria. La oferta de dinero se vuelve <strong>endógena</strong>.</p>
     </div>
 </div>
 
 <!-- Página 4 -->
 <div id="page-4" class="page-block">
-    <h2 class="handwritten-title">📈 Política Fiscal: TC Flexible + Perfecta Movilidad</h2>
+    <h2 class="handwritten-title">📈 Fiscal bajo TC Flexible</h2>
     <div class="handwritten-text">
-        <h3>8.5 Expansión Fiscal bajo TC Flexible</h3>
-
-        <h4>Proceso paso a paso:</h4>
-        <ol>
-            <li><strong>↑G:</strong> IS se desplaza a la derecha</li>
-            <li><strong>Nuevo punto IS-LM:</strong> i > i*, Y > Y₀</li>
-            <li><strong>i > i*:</strong> Entrada masiva de capitales</li>
-            <li><strong>↓e (apreciación):</strong> Moneda local más fuerte</li>
-            <li><strong>↓NX:</strong> Exportaciones bajan, importaciones suben</li>
-            <li><strong>IS regresa:</strong> Se desplaza a la izquierda</li>
-            <li><strong>Equilibrio final:</strong> Y vuelve al inicio, i = i*</li>
-        </ol>
-
-        <div class="formula-box">
-            <strong>Resultado:</strong><br>
-            ΔY = 0<br>
-            Δi = 0<br>
-            Δe < 0 (apreciación)<br>
-                ΔNX < 0<br>
-                    <strong>Política fiscal: INEFECTIVA</strong>
-        </div>
-
-        <h4>Crowding-out total vía apreciación:</h4>
-        <p>El aumento de G es completamente compensado por la caída de NX.</p>
-        <div class="formula-box">
-            ΔG + ΔNX = 0 → ΔDA = 0 → ΔY = 0
+        <div
+            style="background: #fef2f2; border: 2px solid #ef4444; border-radius: 12px; padding: 15px; margin: 10px 0;">
+            <div style="text-align: center; font-weight: bold; color: #991b1b; margin-bottom: 10px;">INEFECTIVA ❌</div>
+            <div style="font-size: 10px;">
+                ↑G → ↑i → Entra K → <strong>↓e (Aprecia)</strong> → ↓NX<br><br>
+                El aumento de gasto es "comido" por la caída de exportaciones.
+            </div>
         </div>
     </div>
 </div>
 
 <!-- Página 5 -->
 <div id="page-5" class="page-block">
-    <h2 class="handwritten-title">💰 Política Monetaria: TC Flexible + Perfecta Movilidad</h2>
+    <h2 class="handwritten-title">💰 Monetaria bajo TC Flexible</h2>
     <div class="handwritten-text">
-        <h3>8.6 Expansión Monetaria bajo TC Flexible</h3>
-
-        <h4>Proceso paso a paso:</h4>
-        <ol>
-            <li><strong>BC ↑M:</strong> LM se desplaza a la derecha</li>
-            <li><strong>Nuevo punto IS-LM:</strong> i < i*, Y> Y₀</li>
-            <li><strong>i < i*:</strong> Salida de capitales</li>
-            <li><strong>↑e (depreciación):</strong> Moneda local más débil</li>
-            <li><strong>↑NX:</strong> Exportaciones suben, importaciones bajan</li>
-            <li><strong>IS se desplaza a la derecha</strong></li>
-            <li><strong>Equilibrio final:</strong> Y↑↑, i = i*</li>
-        </ol>
-
-        <div class="formula-box">
-            <strong>Resultado:</strong><br>
-            ΔY > 0 (grande)<br>
-            Δi = 0 (vuelve a i*)<br>
-            Δe > 0 (depreciación)<br>
-            ΔNX > 0<br>
-            <strong>Política monetaria: MUY EFECTIVA</strong>
+        <div
+            style="background: #f0fdf4; border: 2px solid #22c55e; border-radius: 12px; padding: 15px; margin: 10px 0;">
+            <div style="text-align: center; font-weight: bold; color: #166534; margin-bottom: 10px;">¡SÚPER EFECTIVA! ✅
+            </div>
+            <div style="font-size: 10px;">
+                ↑M → ↓i → Fuga K → <strong>↑e (Deprecia)</strong> → ↑NX<br><br>
+                La moneda débil hace que el país exporte mucho más, impulsando el PIB.
+            </div>
         </div>
-
-        <h4>¿Por qué es tan efectiva?</h4>
-        <p>La depreciación estimula las exportaciones netas, amplificando el efecto expansivo.</p>
     </div>
 </div>
 
