@@ -446,36 +446,150 @@
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
-        /* Animación flipbook mejorada */
-        .page-flipping {
-            animation: flipbookTurn 1.2s ease-in-out forwards;
+        /* ====== ANIMACIONES DE PASO DE PÁGINA REALISTAS ====== */
+
+        /* Contenedor de página con perspectiva 3D */
+        .notebook-page {
+            perspective: 2000px;
         }
 
-        @keyframes flipbookTurn {
+        /* Animación para AVANZAR (página gira hacia la DERECHA/atrás) */
+        .page-flipping-next {
+            animation: flipPageNext 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+            transform-origin: left center;
+        }
+
+        @keyframes flipPageNext {
             0% {
-                transform: rotateY(0deg) scale(1);
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+                transform: perspective(2000px) rotateY(0deg);
+                box-shadow:
+                    0 5px 15px rgba(0, 0, 0, 0.2),
+                    inset 0 0 0 rgba(0, 0, 0, 0);
+                filter: brightness(1);
             }
 
-            25% {
-                transform: rotateY(45deg) scale(1.02);
-                box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.3);
+            20% {
+                transform: perspective(2000px) rotateY(-25deg) translateX(10px);
+                box-shadow:
+                    15px 10px 30px rgba(0, 0, 0, 0.35),
+                    inset -50px 0 50px rgba(0, 0, 0, 0.05);
+                filter: brightness(0.98);
             }
 
             50% {
-                transform: rotateY(90deg) scale(1.05);
-                box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.4);
+                transform: perspective(2000px) rotateY(-90deg) translateX(20px);
+                box-shadow:
+                    30px 15px 40px rgba(0, 0, 0, 0.4),
+                    inset -100px 0 80px rgba(0, 0, 0, 0.1);
+                filter: brightness(0.85);
             }
 
-            75% {
-                transform: rotateY(135deg) scale(1.02);
-                box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.3);
+            80% {
+                transform: perspective(2000px) rotateY(-150deg) translateX(10px);
+                box-shadow:
+                    10px 5px 25px rgba(0, 0, 0, 0.3),
+                    inset -30px 0 40px rgba(0, 0, 0, 0.05);
+                filter: brightness(0.95);
             }
 
             100% {
-                transform: rotateY(180deg) scale(1);
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+                transform: perspective(2000px) rotateY(-180deg) translateX(0);
+                box-shadow:
+                    0 5px 15px rgba(0, 0, 0, 0.2),
+                    inset 0 0 0 rgba(0, 0, 0, 0);
+                filter: brightness(1);
             }
+        }
+
+        /* Animación para RETROCEDER (página gira hacia la IZQUIERDA/adelante) */
+        .page-flipping-prev {
+            animation: flipPagePrev 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+            transform-origin: left center;
+        }
+
+        @keyframes flipPagePrev {
+            0% {
+                transform: perspective(2000px) rotateY(-180deg);
+                box-shadow:
+                    0 5px 15px rgba(0, 0, 0, 0.2),
+                    inset 0 0 0 rgba(0, 0, 0, 0);
+                filter: brightness(1);
+            }
+
+            20% {
+                transform: perspective(2000px) rotateY(-155deg) translateX(-10px);
+                box-shadow:
+                    -10px 5px 25px rgba(0, 0, 0, 0.3),
+                    inset 30px 0 40px rgba(0, 0, 0, 0.05);
+                filter: brightness(0.95);
+            }
+
+            50% {
+                transform: perspective(2000px) rotateY(-90deg) translateX(-20px);
+                box-shadow:
+                    -25px 15px 40px rgba(0, 0, 0, 0.4),
+                    inset 80px 0 70px rgba(0, 0, 0, 0.1);
+                filter: brightness(0.85);
+            }
+
+            80% {
+                transform: perspective(2000px) rotateY(-25deg) translateX(-10px);
+                box-shadow:
+                    -15px 10px 30px rgba(0, 0, 0, 0.35),
+                    inset 50px 0 50px rgba(0, 0, 0, 0.05);
+                filter: brightness(0.98);
+            }
+
+            100% {
+                transform: perspective(2000px) rotateY(0deg) translateX(0);
+                box-shadow:
+                    0 5px 15px rgba(0, 0, 0, 0.2),
+                    inset 0 0 0 rgba(0, 0, 0, 0);
+                filter: brightness(1);
+            }
+        }
+
+        /* Animación genérica (compatibilidad hacia atrás) */
+        .page-flipping {
+            animation: flipPageNext 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+            transform-origin: left center;
+        }
+
+        /* Efecto de sombra dinámica durante el flip */
+        .page-flipping-next::after,
+        .page-flipping-prev::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to right,
+                    rgba(0, 0, 0, 0.15) 0%,
+                    transparent 20%,
+                    transparent 80%,
+                    rgba(0, 0, 0, 0.1) 100%);
+            pointer-events: none;
+            opacity: 0;
+            animation: shadowPulse 0.8s ease-in-out;
+        }
+
+        @keyframes shadowPulse {
+
+            0%,
+            100% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        /* Efecto de curvatura del papel */
+        .page-flipping-next .page-content,
+        .page-flipping-prev .page-content {
+            filter: drop-shadow(2px 0 5px rgba(0, 0, 0, 0.1));
         }
 
         .page-content {
@@ -3577,37 +3691,43 @@
             }
         }
 
-        // Función para pasar página
+        // Función para pasar página (AVANZAR - animación hacia la derecha)
         function nextPage() {
             const unit = unidades[currentUnit];
             if (unit && currentPageIndex < unit.pages.length - 1) {
                 currentPageIndex++;
-                flipPage();
+                flipPage('next');
             }
         }
 
-        // Función para página anterior
+        // Función para página anterior (RETROCEDER - animación hacia la izquierda)
         function previousPage() {
             if (currentPageIndex > 0) {
                 currentPageIndex--;
-                flipPage();
+                flipPage('prev');
             }
         }
 
-        // Función para animar el cambio de página
-        function flipPage() {
+        // Función para animar el cambio de página con dirección
+        function flipPage(direction = 'next') {
             const page = document.getElementById('current-page');
-            page.classList.add('page-flipping');
+            const animClass = direction === 'prev' ? 'page-flipping-prev' : 'page-flipping-next';
+
+            // Limpiar clases anteriores
+            page.classList.remove('page-flipping', 'page-flipping-next', 'page-flipping-prev');
+
+            // Aplicar la animación correspondiente
+            page.classList.add(animClass);
             createPaperSound();
 
             setTimeout(() => {
                 loadContent();
-                page.classList.remove('page-flipping');
+                page.classList.remove(animClass);
                 // Actualizar navegación moderna
                 if (typeof window.updateModernNavigation === 'function') {
                     window.updateModernNavigation();
                 }
-            }, 600);
+            }, 800);
         }
 
         // Función para auto-flip
@@ -4283,17 +4403,18 @@
                 const unit = unidades[currentUnit];
                 if (unit && currentPageIndex < unit.pages.length - 1) {
                     const page = document.getElementById('current-page');
-                    const animClass = animationType === 'flip' ? 'page-flip-next' : 'page-slide-next';
-
-                    page.classList.add(animClass);
+                    // Limpiar clases anteriores
+                    page.classList.remove('page-flipping', 'page-flipping-next', 'page-flipping-prev');
+                    // Usar la nueva animación de paso de página hacia la derecha
+                    page.classList.add('page-flipping-next');
                     createPaperSound();
 
                     setTimeout(() => {
                         currentPageIndex++;
                         loadContent();
-                        page.classList.remove(animClass);
+                        page.classList.remove('page-flipping-next');
                         updateModernNavigation();
-                    }, animationType === 'flip' ? 600 : 400);
+                    }, 800);
                 }
             };
 
@@ -4301,17 +4422,18 @@
             window.previousPageAnimated = function (animationType = 'flip') {
                 if (currentPageIndex > 0) {
                     const page = document.getElementById('current-page');
-                    const animClass = animationType === 'flip' ? 'page-flip-prev' : 'page-slide-prev';
-
-                    page.classList.add(animClass);
+                    // Limpiar clases anteriores
+                    page.classList.remove('page-flipping', 'page-flipping-next', 'page-flipping-prev');
+                    // Usar la nueva animación de paso de página hacia la izquierda
+                    page.classList.add('page-flipping-prev');
                     createPaperSound();
 
                     setTimeout(() => {
                         currentPageIndex--;
                         loadContent();
-                        page.classList.remove(animClass);
+                        page.classList.remove('page-flipping-prev');
                         updateModernNavigation();
-                    }, animationType === 'flip' ? 600 : 400);
+                    }, 800);
                 }
             };
 
