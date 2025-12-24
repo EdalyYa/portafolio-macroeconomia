@@ -446,144 +446,65 @@
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
-        /* ====== ANIMACIONES DE PASO DE PÁGINA REALISTAS ====== */
+        /* ====== ANIMACIONES DE PASO DE PÁGINA ESTILO CUADERNO ====== */
 
-        /* Contenedor de página con perspectiva 3D */
-        .notebook-page {
-            perspective: 2000px;
-        }
-
-        /* Animación para AVANZAR (página gira hacia la DERECHA/atrás) */
+        /* Animación para AVANZAR - página desliza hacia la izquierda */
         .page-flipping-next {
-            animation: flipPageNext 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
-            transform-origin: left center;
+            animation: slidePageNext 0.6s ease-in-out forwards;
         }
 
-        @keyframes flipPageNext {
+        @keyframes slidePageNext {
             0% {
-                transform: perspective(2000px) rotateY(0deg);
-                box-shadow:
-                    0 5px 15px rgba(0, 0, 0, 0.2),
-                    inset 0 0 0 rgba(0, 0, 0, 0);
-                filter: brightness(1);
-            }
-
-            20% {
-                transform: perspective(2000px) rotateY(-25deg) translateX(10px);
-                box-shadow:
-                    15px 10px 30px rgba(0, 0, 0, 0.35),
-                    inset -50px 0 50px rgba(0, 0, 0, 0.05);
-                filter: brightness(0.98);
-            }
-
-            50% {
-                transform: perspective(2000px) rotateY(-90deg) translateX(20px);
-                box-shadow:
-                    30px 15px 40px rgba(0, 0, 0, 0.4),
-                    inset -100px 0 80px rgba(0, 0, 0, 0.1);
-                filter: brightness(0.85);
-            }
-
-            80% {
-                transform: perspective(2000px) rotateY(-150deg) translateX(10px);
-                box-shadow:
-                    10px 5px 25px rgba(0, 0, 0, 0.3),
-                    inset -30px 0 40px rgba(0, 0, 0, 0.05);
-                filter: brightness(0.95);
-            }
-
-            100% {
-                transform: perspective(2000px) rotateY(-180deg) translateX(0);
-                box-shadow:
-                    0 5px 15px rgba(0, 0, 0, 0.2),
-                    inset 0 0 0 rgba(0, 0, 0, 0);
-                filter: brightness(1);
-            }
-        }
-
-        /* Animación para RETROCEDER (página gira hacia la IZQUIERDA/adelante) */
-        .page-flipping-prev {
-            animation: flipPagePrev 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
-            transform-origin: left center;
-        }
-
-        @keyframes flipPagePrev {
-            0% {
-                transform: perspective(2000px) rotateY(-180deg);
-                box-shadow:
-                    0 5px 15px rgba(0, 0, 0, 0.2),
-                    inset 0 0 0 rgba(0, 0, 0, 0);
-                filter: brightness(1);
-            }
-
-            20% {
-                transform: perspective(2000px) rotateY(-155deg) translateX(-10px);
-                box-shadow:
-                    -10px 5px 25px rgba(0, 0, 0, 0.3),
-                    inset 30px 0 40px rgba(0, 0, 0, 0.05);
-                filter: brightness(0.95);
-            }
-
-            50% {
-                transform: perspective(2000px) rotateY(-90deg) translateX(-20px);
-                box-shadow:
-                    -25px 15px 40px rgba(0, 0, 0, 0.4),
-                    inset 80px 0 70px rgba(0, 0, 0, 0.1);
-                filter: brightness(0.85);
-            }
-
-            80% {
-                transform: perspective(2000px) rotateY(-25deg) translateX(-10px);
-                box-shadow:
-                    -15px 10px 30px rgba(0, 0, 0, 0.35),
-                    inset 50px 0 50px rgba(0, 0, 0, 0.05);
-                filter: brightness(0.98);
-            }
-
-            100% {
-                transform: perspective(2000px) rotateY(0deg) translateX(0);
-                box-shadow:
-                    0 5px 15px rgba(0, 0, 0, 0.2),
-                    inset 0 0 0 rgba(0, 0, 0, 0);
-                filter: brightness(1);
-            }
-        }
-
-        /* Animación genérica (compatibilidad hacia atrás) */
-        .page-flipping {
-            animation: flipPageNext 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
-            transform-origin: left center;
-        }
-
-        /* Efecto de sombra dinámica durante el flip */
-        .page-flipping-next::after,
-        .page-flipping-prev::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(to right,
-                    rgba(0, 0, 0, 0.15) 0%,
-                    transparent 20%,
-                    transparent 80%,
-                    rgba(0, 0, 0, 0.1) 100%);
-            pointer-events: none;
-            opacity: 0;
-            animation: shadowPulse 0.8s ease-in-out;
-        }
-
-        @keyframes shadowPulse {
-
-            0%,
-            100% {
-                opacity: 0;
-            }
-
-            50% {
+                transform: translateX(0) rotateY(0deg);
                 opacity: 1;
             }
+
+            40% {
+                transform: translateX(-30px) rotateY(-15deg);
+                opacity: 0.9;
+            }
+
+            60% {
+                transform: translateX(-50px) rotateY(-25deg);
+                opacity: 0.5;
+            }
+
+            100% {
+                transform: translateX(-100px) rotateY(-45deg);
+                opacity: 0;
+            }
+        }
+
+        /* Animación para RETROCEDER - página desliza desde la izquierda */
+        .page-flipping-prev {
+            animation: slidePagePrev 0.6s ease-in-out forwards;
+        }
+
+        @keyframes slidePagePrev {
+            0% {
+                transform: translateX(0) rotateY(0deg);
+                opacity: 1;
+            }
+
+            40% {
+                transform: translateX(30px) rotateY(15deg);
+                opacity: 0.9;
+            }
+
+            60% {
+                transform: translateX(50px) rotateY(25deg);
+                opacity: 0.5;
+            }
+
+            100% {
+                transform: translateX(100px) rotateY(45deg);
+                opacity: 0;
+            }
+        }
+
+        /* Animación genérica (compatibilidad) */
+        .page-flipping {
+            animation: slidePageNext 0.6s ease-in-out forwards;
         }
 
         /* Efecto de curvatura del papel */
@@ -3727,7 +3648,7 @@
                 if (typeof window.updateModernNavigation === 'function') {
                     window.updateModernNavigation();
                 }
-            }, 800);
+            }, 600);
         }
 
         // Función para auto-flip
@@ -4414,7 +4335,7 @@
                         loadContent();
                         page.classList.remove('page-flipping-next');
                         updateModernNavigation();
-                    }, 800);
+                    }, 600);
                 }
             };
 
@@ -4433,7 +4354,7 @@
                         loadContent();
                         page.classList.remove('page-flipping-prev');
                         updateModernNavigation();
-                    }, 800);
+                    }, 600);
                 }
             };
 
