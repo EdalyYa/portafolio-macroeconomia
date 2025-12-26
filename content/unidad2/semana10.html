@@ -2,108 +2,203 @@
 <!-- 10 páginas de contenido detallado -->
 
 <!-- Página 1 -->
+<!-- Página 1 -->
 <div id="page-1" class="page-block">
-    <h2 class="handwritten-title">📈 La Demanda Agregada</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">📈 La Demanda Agregada</h2>
     <div class="handwritten-text">
-        <p><strong>Objetivo:</strong> Ver cómo el nivel de precios afecta todo lo que compramos 🛍️.</p>
+        <h3 style="margin-bottom: 8px; font-size: 16px;">10.1 ¿Quién compra en el país?</h3>
 
         <div
-            style="background: #fdf2f8; border: 1px solid #db2777; border-radius: 12px; padding: 12px; margin: 15px 0;">
-            <div style="font-weight: bold; color: #9d174d; margin-bottom: 5px;">📍 Componentes de la DA</div>
+            style="background: #fff; border: 1px solid #cbd5e1; border-radius: 12px; padding: 15px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 20px;">
             <div
-                style="display: flex; justify-content: space-around; align-items: center; font-size: 11px; text-align: center;">
-                <div><span style="font-size: 18px;">🛒</span><br>C</div>
-                <div style="font-weight: bold;">+</div>
-                <div><span style="font-size: 18px;">🏭</span><br>I</div>
-                <div style="font-weight: bold;">+</div>
-                <div><span style="font-size: 18px;">🏛️</span><br>G</div>
-                <div style="font-weight: bold;">+</div>
-                <div><span style="font-size: 18px;">🚢</span><br>NX</div>
+                style="font-size: 24px; font-weight: bold; color: #1e293b; font-family: monospace; letter-spacing: 2px;">
+                DA = C + I + G + NX</div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+            <div
+                style="background: #f8fafc; padding: 8px; border-radius: 8px; border: 1px solid #e2e8f0; display: flex; align-items: center;">
+                <span style="font-size: 18px; margin-right: 10px;">🛒</span>
+                <div><strong style="font-size: 11px; display: block;">Consumo (C)</strong><span
+                        style="font-size: 10px; color: #64748b;">Familias</span></div>
+            </div>
+            <div
+                style="background: #f8fafc; padding: 8px; border-radius: 8px; border: 1px solid #e2e8f0; display: flex; align-items: center;">
+                <span style="font-size: 18px; margin-right: 10px;">🏭</span>
+                <div><strong style="font-size: 11px; display: block;">Inversión (I)</strong><span
+                        style="font-size: 10px; color: #64748b;">Empresas</span></div>
+            </div>
+            <div
+                style="background: #f8fafc; padding: 8px; border-radius: 8px; border: 1px solid #e2e8f0; display: flex; align-items: center;">
+                <span style="font-size: 18px; margin-right: 10px;">🏛️</span>
+                <div><strong style="font-size: 11px; display: block;">Gasto (G)</strong><span
+                        style="font-size: 10px; color: #64748b;">Gobierno</span></div>
+            </div>
+            <div
+                style="background: #f8fafc; padding: 8px; border-radius: 8px; border: 1px solid #e2e8f0; display: flex; align-items: center;">
+                <span style="font-size: 18px; margin-right: 10px;">🚢</span>
+                <div><strong style="font-size: 11px; display: block;">Sector Externo</strong><span
+                        style="font-size: 10px; color: #64748b;">(X - M)</span></div>
             </div>
         </div>
     </div>
 </div>
 
 <!-- Página 2 -->
+<!-- Página 2 -->
 <div id="page-2" class="page-block">
-    <h2 class="handwritten-title">📊 Derivando la DA</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">📊 La Curva DA</h2>
     <div class="handwritten-text">
-        <svg viewBox="0 0 300 180" style="width: 100%; max-width: 300px; margin: 0 auto; display: block;">
-            <!-- Ejes -->
-            <line x1="40" y1="150" x2="280" y2="150" stroke="#374151" stroke-width="2" />
-            <line x1="40" y1="150" x2="40" y2="20" stroke="#374151" stroke-width="2" />
-            <!-- Curva DA -->
-            <path d="M 60,40 Q 120,100 240,140" fill="none" stroke="#3b82f6" stroke-width="3" />
-            <text x="245" y="145" font-size="10" fill="#3b82f6" font-weight="bold">DA</text>
-            <!-- Etiquetas -->
-            <text x="270" y="165" font-size="10" fill="#374151">Y</text>
-            <text x="20" y="30" font-size="10" fill="#374151">P</text>
-            <!-- Puntos -->
-            <circle cx="90" cy="65" r="3" fill="#ef4444" />
-            <text x="95" y="60" font-size="9" fill="#ef4444">↑P → ↓Y</text>
-        </svg>
-        <p style="font-size: 9px; margin-top: 10px; color: #475569; text-align: center;">"Si los precios suben, la gente
-            tiene menos dinero real para comprar, por eso la DA baja".</p>
+        <h3 style="margin-bottom: 8px; font-size: 16px;">10.2 Precio vs Cantidad</h3>
+
+        <div style="display: flex; gap: 15px; align-items: center; height: 100%;">
+            <!-- Graph -->
+            <div style="flex: 1;">
+                <svg viewBox="0 0 200 160" style="width: 100%; height: auto;">
+                    <line x1="20" y1="140" x2="180" y2="140" stroke="#374151" stroke-width="2" />
+                    <line x1="20" y1="140" x2="20" y2="20" stroke="#374151" stroke-width="2" />
+                    <path d="M 40,30 Q 80,100 160,130" fill="none" stroke="#2563eb" stroke-width="3" />
+                    <text x="165" y="135" font-size="12" fill="#2563eb" font-weight="bold">DA</text>
+                    <text x="180" y="155" font-size="10" fill="#374151">Y</text>
+                    <text x="10" y="20" font-size="10" fill="#374151">P</text>
+                    <!-- Points -->
+                    <circle cx="60" cy="55" r="3" fill="#ef4444" />
+                    <circle cx="120" cy="110" r="3" fill="#ef4444" />
+                    <line x1="60" y1="55" x2="60" y2="140" stroke="#ef4444" stroke-width="1" stroke-dasharray="3,3" />
+                    <line x1="120" y1="110" x2="120" y2="140" stroke="#ef4444" stroke-width="1"
+                        stroke-dasharray="3,3" />
+                </svg>
+            </div>
+
+            <!-- Explanation -->
+            <div style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+                <div
+                    style="background: #fff1f2; border-left: 4px solid #f43f5e; padding: 10px; border-radius: 4px; margin-bottom: 10px;">
+                    <strong style="color: #be123c; font-size: 12px;">Pendiente Negativa</strong>
+                    <p style="font-size: 10px; margin: 3px 0 0; color: #881337;">Si los Precios (P) suben, la Producción
+                        (Y) baja.</p>
+                </div>
+                <p style="font-size: 10px; color: #475569; font-style: italic;">"Nadie compra cuando todo está caro (en
+                    términos reales del dinero)."</p>
+            </div>
+        </div>
     </div>
 </div>
 
 <!-- Página 3 -->
+<!-- Página 3 -->
 <div id="page-3" class="page-block">
-    <h2 class="handwritten-title">📉 Los 3 Efectos</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">📉 ¿Por qué baja?</h2>
     <div class="handwritten-text">
-        <div style="display: flex; flex-direction: column; gap: 8px; margin: 15px 0;">
-            <div style="background: #eff6ff; padding: 10px; border-radius: 8px; border-left: 4px solid #3b82f6;">
-                <div style="font-weight: bold; font-size: 11px;">🔑 Efecto Keynes (Tasa i)</div>
-                <div style="font-size: 9px;">↑P → Escasea Dinero → ↑i → ↓Inversión → ↓Y</div>
+        <h3 style="margin-bottom: 8px; font-size: 16px;">10.3 Los 3 Motores</h3>
+
+        <div style="display: flex; gap: 8px; height: 180px;">
+            <!-- Keynes -->
+            <div
+                style="flex: 1; background: #eff6ff; border: 1px solid #3b82f6; border-radius: 8px; padding: 8px; font-size: 10px; display: flex; flex-direction: column;">
+                <strong style="color: #1d4ed8; font-size: 11px; margin-bottom: 5px;">Efecto Keynes</strong>
+                <p style="margin: 0; color: #1e3a8a;">Si P sube, necesito más dinero físico. Como falta dinero, la tasa
+                    'i' sube.</p>
+                <strong style="margin-top: auto; color: #1e40af; text-align: center;">↓ Inversión</strong>
             </div>
-            <div style="background: #fdf2f8; padding: 10px; border-radius: 8px; border-left: 4px solid #db2777;">
-                <div style="font-weight: bold; font-size: 11px;">🐷 Efecto Pigou (Riqueza)</div>
-                <div style="font-size: 9px;">↑P → Tus ahorros valen menos → ↓Consumo → ↓Y</div>
+
+            <!-- Pigou -->
+            <div
+                style="flex: 1; background: #fdf2f8; border: 1px solid #db2777; border-radius: 8px; padding: 8px; font-size: 10px; display: flex; flex-direction: column;">
+                <strong style="color: #be185d; font-size: 11px; margin-bottom: 5px;">Efecto Pigou</strong>
+                <p style="margin: 0; color: #831843;">Si P sube, mis ahorros valen menos (soy más pobre en realidad).
+                </p>
+                <strong style="margin-top: auto; color: #9d174d; text-align: center;">↓ Consumo</strong>
             </div>
-            <div style="background: #ecfdf5; padding: 10px; border-radius: 8px; border-left: 4px solid #10b981;">
-                <div style="font-weight: bold; font-size: 11px;">🚢 Mundell-Fleming (TC)</div>
-                <div style="font-size: 9px;">↑P → ↑i → Entra K → Moneda se aprecia → ↓Exportac.</div>
+
+            <!-- Mundell -->
+            <div
+                style="flex: 1; background: #ecfdf5; border: 1px solid #10b981; border-radius: 8px; padding: 8px; font-size: 10px; display: flex; flex-direction: column;">
+                <strong style="color: #047857; font-size: 11px; margin-bottom: 5px;">Efecto M-F</strong>
+                <p style="margin: 0; color: #064e3b;">Si 'i' sube, entra capital y el dólar baja (se aprecia moneda
+                    local).</p>
+                <strong style="margin-top: auto; color: #065f46; text-align: center;">↓ XN</strong>
             </div>
         </div>
     </div>
 </div>
 
 <!-- Página 4 -->
+<!-- Página 4 -->
 <div id="page-4" class="page-block">
-    <h2 class="handwritten-title">📐 La Ecuación DA</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">📐 La Ecuación Maestra</h2>
     <div class="handwritten-text">
-        <div
-            style="background: #f8fafc; border: 1px dashed #64748b; border-radius: 12px; padding: 15px; margin: 10px 0; text-align: center;">
-            <div style="font-size: 14px; font-weight: bold; margin-bottom: 5px;">Y = γA₀ + δ(M/P)</div>
-            <div style="font-size: 9px; color: #64748b;">Donde <strong>γ</strong> (gamma) depende de IS y
-                <strong>δ</strong> (delta) de LM.
+        <h3 style="margin-bottom: 8px; font-size: 16px;">10.4 Matemática de la DA</h3>
+
+        <div style="display: flex; gap: 15px; align-items: center;">
+            <div
+                style="flex: 1; background: #1e293b; color: white; padding: 20px; border-radius: 12px; font-family: monospace; font-size: 14px; text-align: center;">
+                Y = γA₀ + δ(M/P)
+            </div>
+
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 8px;">
+                <div style="display: flex; align-items: center;">
+                    <div
+                        style="background: #e2e8f0; width: 20px; height: 20px; border-radius: 4px; text-align: center; font-size: 10px; line-height: 20px; margin-right: 8px;">
+                        γ</div>
+                    <span style="font-size: 10px; color: #475569;">Multiplicador Fiscal (Gasto)</span>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <div
+                        style="background: #e2e8f0; width: 20px; height: 20px; border-radius: 4px; text-align: center; font-size: 10px; line-height: 20px; margin-right: 8px;">
+                        A₀</div>
+                    <span style="font-size: 10px; color: #475569;">Gasto Autónomo (Confianza)</span>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <div
+                        style="background: #e2e8f0; width: 20px; height: 20px; border-radius: 4px; text-align: center; font-size: 10px; line-height: 20px; margin-right: 8px;">
+                        δ</div>
+                    <span style="font-size: 10px; color: #475569;">Multiplicador Monetario</span>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <div
+                        style="background: #e2e8f0; width: 20px; height: 20px; border-radius: 4px; text-align: center; font-size: 10px; line-height: 20px; margin-right: 8px;">
+                        M/P</div>
+                    <span style="font-size: 10px; color: #475569;">Dinero Real en la calle</span>
+                </div>
             </div>
         </div>
-        <p style="font-size: 10px;">En palabras: Tu producción depende de cuánto gasta el gobierno (A₀) y cuánto dinero
-            real hay (M/P).</p>
     </div>
 </div>
 
 <!-- Página 5 -->
+<!-- Página 5 -->
 <div id="page-5" class="page-block">
-    <h2 class="handwritten-title">↔️ Choques en la DA</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">↔️ Shocks en la DA</h2>
     <div class="handwritten-text">
-        <p>¿Qué mueve toda la curva? 🚀</p>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 10px 0;">
-            <div style="background: #ecfdf5; padding: 10px; border-radius: 8px; border: 1px solid #10b981;">
-                <div style="font-weight: bold; font-size: 10px; color: #065f46;">Derecha (↑)</div>
-                <ul style="font-size: 8px; margin: 5px 0; padding-left: 12px;">
-                    <li>↑ Gasto (G)</li>
-                    <li>↓ Impuestos (T)</li>
-                    <li>↑ Dinero (M)</li>
+        <h3 style="margin-bottom: 8px; font-size: 16px;">10.5 ¿Qué la mueve?</h3>
+
+        <div style="display: flex; gap: 15px; height: 240px;">
+            <!-- Izquierda: Expansión -->
+            <div
+                style="flex: 1; background: #f0fdf4; border: 1px solid #16a34a; border-radius: 12px; padding: 10px; text-align: center;">
+                <div style="font-size: 24px;">➡️</div>
+                <strong style="color: #15803d; font-size: 12px; display: block; margin-bottom: 10px;">Expansión
+                    (Derecha)</strong>
+                <ul style="font-size: 10px; text-align: left; margin: 0; padding-left: 20px; color: #14532d;">
+                    <li style="margin-bottom: 5px;">Gobierno Gasta Más (↑G).</li>
+                    <li style="margin-bottom: 5px;">Bajan Impuestos (↓T).</li>
+                    <li style="margin-bottom: 5px;">Banco Central imprime (↑M).</li>
+                    <li style="margin-bottom: 5px;">Optimismo (↑A₀).</li>
                 </ul>
             </div>
-            <div style="background: #fef2f2; padding: 10px; border-radius: 8px; border: 1px solid #ef4444;">
-                <div style="font-weight: bold; font-size: 10px; color: #991b1b;">Izquierda (↓)</div>
-                <ul style="font-size: 8px; margin: 5px 0; padding-left: 12px;">
-                    <li>↓ Confianza</li>
-                    <li>↓ Exportaciones</li>
-                    <li>Recortes Fiscales</li>
+
+            <!-- Derecha: Contracción -->
+            <div
+                style="flex: 1; background: #fef2f2; border: 1px solid #ef4444; border-radius: 12px; padding: 10px; text-align: center;">
+                <div style="font-size: 24px;">⬅️</div>
+                <strong style="color: #b91c1c; font-size: 12px; display: block; margin-bottom: 10px;">Contracción
+                    (Izq.)</strong>
+                <ul style="font-size: 10px; text-align: left; margin: 0; padding-left: 20px; color: #7f1d1d;">
+                    <li style="margin-bottom: 5px;">Recortes de Gasto (↓G).</li>
+                    <li style="margin-bottom: 5px;">Subida de Impuestos (↑T).</li>
+                    <li style="margin-bottom: 5px;">Pánico/Miedo (↓Coeficiente).</li>
+                    <li style="margin-bottom: 5px;">Crisis externa (↓X).</li>
                 </ul>
             </div>
         </div>
@@ -111,95 +206,181 @@
 </div>
 
 <!-- Página 6 -->
+<!-- Página 6 -->
 <div id="page-6" class="page-block">
-    <h2 class="handwritten-title">🏛️ El Gasto y la DA</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">🏛️ El Multiplicador</h2>
     <div class="handwritten-text">
-        <p>¿Cómo nos afecta el presupuesto del gobierno? 💰</p>
-        <div style="background: #f0fdf4; border-left: 5px solid #22c55e; padding: 12px; border-radius: 8px;">
-            <div style="font-weight: bold; color: #166534;">🚀 Expansión (↑G)</div>
-            <p style="font-size: 10px; margin: 5px 0;">La curva DA salta a la derecha. El desplazamiento es:</p>
-            <div style="font-size: 12px; text-align: center; font-weight: bold;">ΔY = γ · ΔG</div>
+        <h3 style="margin-bottom: 8px; font-size: 16px;">10.6 Impacto Fiscal (↑G)</h3>
+
+        <div
+            style="background: #f0fdf4; border: 2px solid #22c55e; border-radius: 12px; padding: 15px; text-align: center; margin-bottom: 20px;">
+            <div style="font-size: 12px; color: #166534; margin-bottom: 5px;">Si el Gobierno gasta $1 extra...</div>
+            <div style="font-size: 18px; font-weight: bold; color: #15803d; margin-bottom: 10px;">La economía crece MÁS
+                de $1.</div>
+            <div
+                style="background: white; display: inline-block; padding: 5px 15px; border-radius: 20px; font-family: monospace; font-weight: bold; color: #16a34a; border: 1px dashed #22c55e;">
+                ΔY = γ · ΔG</div>
         </div>
-        <p style="font-size: 9px; margin-top: 10px;">*Nota: Por el <strong>crowding-out</strong>, el aumento final de Y
-            es menor que en el modelo simple.</p>
+
+        <div style="background: #fff7ed; border-left: 4px solid #f97316; padding: 10px; border-radius: 4px;">
+            <strong style="color: #c2410c; font-size: 11px;">⚠️ Ojo al Crowding-Out:</strong>
+            <p style="font-size: 10px; margin: 3px 0 0; color: #7c2d12;">Parte del impulso se pierde porque sube la tasa
+                de interés (i) y desplaza a la inversión privada.</p>
+        </div>
     </div>
 </div>
 
 <!-- Página 7 -->
+<!-- Página 7 -->
 <div id="page-7" class="page-block">
-    <h2 class="handwritten-title">💰 Dinero vs Gasto</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">💰 Dinero vs Gasto</h2>
     <div class="handwritten-text">
-        <table class="data-table" style="font-size: 10px;">
-            <tr style="background: #f1f5f9;">
-                <th>Variable</th>
-                <th>Fiscal (↑G) 🏛️</th>
-                <th>Monet. (↑M) 🏦</th>
-            </tr>
-            <tr>
-                <td>Tasa (i)</td>
-                <td>↑ Sube</td>
-                <td>↓ Baja</td>
-            </tr>
-            <tr>
-                <td>Inversión (I)</td>
-                <td>↓ Cae</td>
-                <td>↑ Sube</td>
-            </tr>
-            <tr>
-                <td>DA</td>
-                <td>A la derecha</td>
-                <td>A la derecha</td>
-            </tr>
+        <h3 style="margin-bottom: 8px; font-size: 16px;">10.7 ¿Cuál elegir?</h3>
+
+        <table
+            style="width: 100%; border-collapse: separate; border-spacing: 0; border: 1px solid #cbd5e1; border-radius: 8px; overflow: hidden; font-size: 11px;">
+            <thead>
+                <tr style="background: #f8fafc; text-align: center;">
+                    <th style="padding: 10px; border-bottom: 1px solid #cbd5e1; color: #64748b;">Efecto en:</th>
+                    <th style="padding: 10px; border-bottom: 1px solid #cbd5e1; color: #b91c1c;">Fiscal (↑G) 🏛️</th>
+                    <th style="padding: 10px; border-bottom: 1px solid #cbd5e1; color: #15803d;">Monetaria (↑M) 🏦</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 10px; font-weight: bold; border-bottom: 1px solid #e2e8f0; text-align: center;">
+                        Tasa (i)</td>
+                    <td
+                        style="padding: 10px; text-align: center; color: #b91c1c; background: #fef2f2; border-bottom: 1px solid #e2e8f0;">
+                        ⬆️ Sube</td>
+                    <td
+                        style="padding: 10px; text-align: center; color: #15803d; background: #f0fdf4; border-bottom: 1px solid #e2e8f0;">
+                        ⬇️ Baja</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; font-weight: bold; border-bottom: 1px solid #e2e8f0; text-align: center;">
+                        Inversión (I)</td>
+                    <td
+                        style="padding: 10px; text-align: center; color: #b91c1c; background: #fef2f2; border-bottom: 1px solid #e2e8f0;">
+                        ⬇️ Cae (Crowding-out)</td>
+                    <td
+                        style="padding: 10px; text-align: center; color: #15803d; background: #f0fdf4; border-bottom: 1px solid #e2e8f0;">
+                        ⬆️ Sube (Estímulo)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; font-weight: bold; text-align: center;">Demanda (DA)</td>
+                    <td style="padding: 10px; text-align: center; font-weight: bold; color: #1e293b;">Derecha ➡️</td>
+                    <td style="padding: 10px; text-align: center; font-weight: bold; color: #1e293b;">Derecha ➡️</td>
+                </tr>
+            </tbody>
         </table>
     </div>
 </div>
 
 <!-- Página 8 -->
+<!-- Página 8 -->
 <div id="page-8" class="page-block">
-    <h2 class="handwritten-title">🌍 Shocks del Mundo</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">🌍 Shocks del Mundo</h2>
     <div class="handwritten-text">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
-            <div style="background: white; border: 1px solid #e2e8f0; padding: 8px; border-radius: 8px;">
-                <div style="font-size: 14px;">📈</div>
-                <div style="font-size: 9px;"><strong>↑Y* (Mundo crece):</strong><br>Nos compran más. DA →</div>
+        <h3 style="margin-bottom: 8px; font-size: 16px;">10.8 No estamos solos</h3>
+
+        <div style="display: flex; flex-direction: column; gap: 15px;">
+            <div
+                style="background: white; border: 1px solid #cbd5e1; border-radius: 10px; padding: 10px; display: flex; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                <div style="font-size: 24px; margin-right: 15px;">📈</div>
+                <div>
+                    <strong style="color: #1e3a8a; font-size: 12px; display: block;">Escenario 1: El mundo crece
+                        (↑Y*)</strong>
+                    <p style="font-size: 10px; color: #475569; margin: 0;">Si a China/EEUU les va bien, nos compran más
+                        productos.</p>
+                    <div style="margin-top: 5px; font-size: 10px; font-weight: bold; color: #2563eb;">Efecto:
+                        ↑Exportaciones → DA Derecha ➡️</div>
+                </div>
             </div>
-            <div style="background: white; border: 1px solid #e2e8f0; padding: 8px; border-radius: 8px;">
-                <div style="font-size: 14px;">🛢️</div>
-                <div style="font-size: 9px;"><strong>↑Precio Cobre:</strong><br>Más dinero entra. DA →</div>
+
+            <div
+                style="background: white; border: 1px solid #cbd5e1; border-radius: 10px; padding: 10px; display: flex; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                <div style="font-size: 24px; margin-right: 15px;">🛢️</div>
+                <div>
+                    <strong style="color: #7c2d12; font-size: 12px; display: block;">Escenario 2: Boom de
+                        Commodities</strong>
+                    <p style="font-size: 10px; color: #475569; margin: 0;">Sube el precio del cobre/oro. Entran más
+                        dólares al país.</p>
+                    <div style="margin-top: 5px; font-size: 10px; font-weight: bold; color: #d97706;">Efecto: ↑Ingreso
+                        Nacional → DA Derecha ➡️</div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 <!-- Página 9 -->
+<!-- Página 9 -->
 <div id="page-9" class="page-block">
-    <h2 class="handwritten-title">📊 Curvas "Tiesas" o "Flojas"</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">📊 La Pendiente</h2>
     <div class="handwritten-text">
-        <div style="display: flex; gap: 10px; margin: 10px 0;">
-            <div style="flex: 1; background: #fff7ed; padding: 8px; border-radius: 8px; border: 1px solid #f97316;">
-                <div style="font-size: 10px; font-weight: bold;">Vertical (Rígida) 📏</div>
-                <div style="font-size: 8px;">Trampa de liquidez. Los precios no mueven la demanda.</div>
+        <h3 style="margin-bottom: 8px; font-size: 16px;">10.9 Rígida vs Plana</h3>
+
+        <div style="display: flex; gap: 15px; height: 100%;">
+            <!-- Rigida -->
+            <div
+                style="flex: 1; background: #fff7ed; border: 1px solid #f97316; border-radius: 12px; padding: 10px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <div style="font-size: 14px; font-weight: bold; color: #c2410c; margin-bottom: 10px;">📉 Vertical</div>
+                <div style="flex: 1; display: flex; align-items: center; justify-content: center;">
+                    <svg width="40" height="60" viewBox="0 0 40 60">
+                        <line x1="20" y1="10" x2="20" y2="50" stroke="#f97316" stroke-width="4" />
+                    </svg>
+                </div>
+                <p style="font-size: 10px; color: #7c2d12; margin-top: 10px;"><strong>"Trampa de
+                        Liquidez"</strong><br>Bajar precios NO ayuda a vender más.</p>
             </div>
-            <div style="flex: 1; background: #eff6ff; padding: 8px; border-radius: 8px; border: 1px solid #3b82f6;">
-                <div style="font-size: 10px; font-weight: bold;">Plana (Sensible) 🌊</div>
-                <div style="font-size: 8px;">Inversión muy sensible a i. Pequeño cambio en P mueve mucho Y.</div>
+
+            <!-- Plana -->
+            <div
+                style="flex: 1; background: #eff6ff; border: 1px solid #3b82f6; border-radius: 12px; padding: 10px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <div style="font-size: 14px; font-weight: bold; color: #1e40af; margin-bottom: 10px;">🌊 Plana</div>
+                <div style="flex: 1; display: flex; align-items: center; justify-content: center;">
+                    <svg width="60" height="40" viewBox="0 0 60 40">
+                        <path d="M 10,20 Q 30,20 50,20" stroke="#3b82f6" stroke-width="4" />
+                    </svg>
+                </div>
+                <p style="font-size: 10px; color: #1e3a8a; margin-top: 10px;"><strong>"Muy
+                        Sensible"</strong><br>Pequeños cambios de precio disparan las ventas.</p>
             </div>
         </div>
     </div>
 </div>
 
 <!-- Página 10 -->
+<!-- Página 10 -->
 <div id="page-10" class="page-block">
-    <h2 class="handwritten-title">📝 Resumen Semana 10</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">📝 Resumen Semana 10</h2>
     <div class="handwritten-text">
-        <div
-            style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border: 1px solid #0ea5e9; padding: 15px; border-radius: 12px;">
-            <ul style="font-size: 11px; margin: 0; padding-left: 20px;">
-                <li>La <strong>DA</strong> es la suma de deseos de compra del país.</li>
-                <li>Tiene pendiente negativa por los efectos <strong>Keynes, Pigou y M-F</strong>.</li>
-                <li>Toda la política económica (G, T, M) busca mover esta curva.</li>
-            </ul>
+        <div style="display: flex; gap: 20px; height: 100%;">
+            <!-- Left: Resumen -->
+            <div style="flex: 1; display: flex; flex-direction: column;">
+                <h3 style="margin-bottom: 10px; font-size: 16px; color: #1e40af;">📌 Claves de la DA</h3>
+                <div class="resumen-box"
+                    style="flex: 1; margin: 0; padding: 15px; background: #f8fafc; border: 2px solid #cbd5e1;">
+                    <ul style="padding-left: 20px; margin: 0; line-height: 1.8; font-size: 11px;">
+                        <li><strong>Pendiente Negativa:</strong> Por Efectos Riqueza, Tasa de Interés y Tipo de Cambio.
+                        </li>
+                        <li><strong>Política Fiscal:</strong> Mueve la curva a la derecha (pero ojo crowding-out).</li>
+                        <li><strong>Política Monetaria:</strong> Mueve la curva a la derecha (baja tasas).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right: Badge -->
+            <div
+                style="flex: 0.8; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                <div
+                    style="width: 100px; height: 100px; background: #ecfdf5; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 4px solid #10b981; margin-bottom: 10px;">
+                    <div style="font-size: 40px;">✅</div>
+                </div>
+                <h3 style="color: #047857; font-size: 14px;">¡Semana 10 Completada!</h3>
+                <p style="font-size: 10px; color: #064e3b; margin-top: 5px;">¡Ahora vamos por la Oferta!</p>
+            </div>
         </div>
-        <p style="text-align: center; font-size: 14px; margin-top: 20px;">📘 ¡A seguir con la Oferta ahora!</p>
     </div>
 </div>

@@ -2,320 +2,495 @@
 <!-- 10 páginas de contenido detallado -->
 
 <!-- Página 1 -->
+<!-- Página 1 -->
 <div id="page-1" class="page-block">
-    <h2 class="handwritten-title">🌍 Semana 5: El Modelo Mundell-Fleming</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">🌍 Mundell-Fleming</h2>
     <div class="handwritten-text">
-        <p><strong>Objetivo:</strong> Analizar la interacción entre el tipo de cambio, la balanza de pagos y la política
-            macroeconómica en una economía abierta 🚢.</p>
+        <h3 style="margin-bottom: 8px; font-size: 16px;">5.1 IS-LM en Economía Abierta</h3>
+        <p style="font-size: 13px; margin-bottom: 15px;">Añadiendo el comercio y las finanzas internacionales al modelo.
+        </p>
 
-        <div style="display: flex; justify-content: space-around; margin: 15px 0;">
-            <div style="text-align: center;">
-                <div style="font-size: 24px;">📦</div>
-                <div style="font-size: 10px; font-weight: bold;">Sector Real<br>(NX)</div>
+        <div style="display: flex; gap: 10px; height: 320px;">
+            <!-- Pilar 1: Sector Real -->
+            <div
+                style="flex: 1; background: #eff6ff; border: 1px solid #93c5fd; border-radius: 10px; padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <div style="font-size: 32px; margin-bottom: 10px;">📦</div>
+                <strong style="color: #1e40af; font-size: 14px;">Sector Real</strong>
+                <div style="font-size: 11px; margin-top: 5px; text-align: center; color: #1e3a8a;">
+                    Balanza Comercial<br><strong>(NX = X - M)</strong>
+                </div>
             </div>
-            <div style="text-align: center;">
-                <div style="font-size: 24px;">💰</div>
-                <div style="font-size: 10px; font-weight: bold;">Sector Financiero<br>(CK)</div>
+
+            <!-- Pilar 2: Sector Financiero -->
+            <div
+                style="flex: 1; background: #fffbeb; border: 1px solid #fcd34d; border-radius: 10px; padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <div style="font-size: 32px; margin-bottom: 10px;">💰</div>
+                <strong style="color: #92400e; font-size: 14px;">Sector Financiero</strong>
+                <div style="font-size: 11px; margin-top: 5px; text-align: center; color: #78350f;">
+                    Flujos de Capital<br><strong>(CK)</strong>
+                </div>
             </div>
-            <div style="text-align: center;">
-                <div style="font-size: 24px;">💱</div>
-                <div style="font-size: 10px; font-weight: bold;">Tipo de Cambio<br>(e)</div>
+
+            <!-- Pilar 3: Tipo de Cambio -->
+            <div
+                style="flex: 1; background: #f0fdf4; border: 1px solid #86efac; border-radius: 10px; padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <div style="font-size: 32px; margin-bottom: 10px;">💱</div>
+                <strong style="color: #166534; font-size: 14px;">Tipo de Cambio</strong>
+                <div style="font-size: 11px; margin-top: 5px; text-align: center; color: #14532d;">
+                    Precio de Divisas<br><strong>(e)</strong>
+                </div>
             </div>
         </div>
-
-        <h3>5.1 Introducción</h3>
-        <p>El modelo <strong>Mundell-Fleming</strong> extiende el IS-LM añadiendo la dimensión internacional 🌎. Fue
-            desarrollado por Robert Mundell (Nobel 1999) y Marcus Fleming.</p>
     </div>
 </div>
 
 <!-- Página 2 -->
+<!-- Página 2 -->
 <div id="page-2" class="page-block">
-    <h2 class="handwritten-title">📊 IS en Economía Abierta</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">📊 IS en Economía Abierta</h2>
     <div class="handwritten-text">
-        <h3>5.3 La Curva IS Abierta</h3>
-        <div
-            style="background: #f8fafc; border: 2px solid #3b82f6; border-radius: 12px; padding: 12px; margin: 10px 0;">
-            <div style="text-align: center; font-weight: bold; color: #1e40af; margin-bottom: 8px;">🚢 Balanza Comercial
-                (NX)</div>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-                <div style="background: white; padding: 8px; border-radius: 6px; border: 1px solid #bfdbfe;">
-                    <div style="font-size: 11px; font-weight: bold; color: #059669;">⬆️ Exportaciones (X)</div>
-                    <div style="font-size: 9px;">Dependen de Y* (extranjero) y e (tipo de cambio)</div>
-                </div>
-                <div style="background: white; padding: 8px; border-radius: 6px; border: 1px solid #bfdbfe;">
-                    <div style="font-size: 11px; font-weight: bold; color: #dc2626;">⬆️ Importaciones (M)</div>
-                    <div style="font-size: 9px;">Dependen de Y (local) y e (tipo de cambio)</div>
+        <h3 style="margin-bottom: 8px; font-size: 16px;">5.2 La Nueva Curva IS</h3>
+        <p style="font-size: 13px; margin-bottom: 15px;">Incorporamos las Exportaciones Netas (NX) a la demanda.</p>
+
+        <div style="display: flex; gap: 15px;">
+            <!-- Lógica -->
+            <div style="flex: 1.2; background: #fff; border: 1px solid #bfdbfe; border-radius: 10px; padding: 12px;">
+                <div
+                    style="font-size: 16px; font-weight: bold; color: #1e40af; text-align: center; margin-bottom: 10px; font-family: monospace;">
+                    Y = C + I + G + <span style="color: #2563eb;">(X - M)</span></div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                    <div style="background: #f0fdf4; padding: 6px; border-radius: 4px; border: 1px solid #86efac;">
+                        <strong style="color: #166534; font-size: 11px;">⬆️ Exportaciones (X)</strong>
+                        <div style="font-size: 9px;">• Depende de Y* (Ext)</div>
+                        <div style="font-size: 9px;">• Depende de 'e' real</div>
+                    </div>
+                    <div style="background: #fef2f2; padding: 6px; border-radius: 4px; border: 1px solid #fecaca;">
+                        <strong style="color: #991b1b; font-size: 11px;">⬆️ Importaciones (M)</strong>
+                        <div style="font-size: 9px;">• Depende de Y (Local)</div>
+                        <div style="font-size: 9px;">• Propensión marginal 'm'</div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="formula-box" style="background: #eff6ff;">
-            Y = C + I + G + <strong>(X - M)</strong>
+            <!-- Efecto Pendiente -->
+            <div
+                style="flex: 1; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 12px; display: flex; flex-direction: column; justify-content: center;">
+                <strong style="color: #475569; font-size: 12px; margin-bottom: 5px;">📉 Cambio de Pendiente</strong>
+                <p style="font-size: 11px; margin: 0; line-height: 1.5;">La IS se vuelve <strong>más empinada</strong>
+                    (rígida).</p>
+                <p style="font-size: 10px; color: #64748b; margin-top: 5px;">Razón: Parte del aumento de ingresos se
+                    "fuga" en importaciones ('m'), reduciendo el efecto multiplicador local.</p>
+            </div>
         </div>
-        <p>Ahora la pendiente es más empinada porque <strong>m</strong> (propensión a importar) reduce el multiplicador
-            📉.</p>
     </div>
 </div>
 
 <!-- Página 3 -->
+<!-- Página 3 -->
 <div id="page-3" class="page-block">
-    <h2 class="handwritten-title">🧭 La Curva BP</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">🧭 La Curva BP</h2>
     <div class="handwritten-text">
-        <h3>5.4 Balanza de Pagos</h3>
-        <p>Representa las combinaciones de (Y, i) que mantienen el equilibrio externo ⚖️.</p>
+        <h3 style="margin-bottom: 8px; font-size: 16px;">5.3 Balanza de Pagos</h3>
+        <p style="font-size: 13px; margin-bottom: 15px;">Equilibrio externo: Cuenta Corriente (NX) + Cuenta Capital (CK)
+            = 0.</p>
 
-        <div class="formula-box">
-            BP = NX(Y, e) + CK(i - i*) = 0
+        <div style="display: flex; gap: 15px;">
+            <!-- Gráfico -->
+            <div style="flex: 1.2; background: #fff; border-radius: 10px; padding: 10px; border: 1px solid #e5e7eb;">
+                <svg viewBox="0 0 300 160" style="width: 100%; max-width: 100%; display: block;">
+                    <defs>
+                        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="#374151" />
+                        </marker>
+                    </defs>
+                    <!-- Ejes -->
+                    <line x1="30" y1="140" x2="280" y2="140" stroke="#374151" stroke-width="2"
+                        marker-end="url(#arrowhead)" />
+                    <line x1="30" y1="140" x2="30" y2="20" stroke="#374151" stroke-width="2"
+                        marker-end="url(#arrowhead)" />
+                    <text x="280" y="150" font-size="10">Y</text>
+                    <text x="20" y="20" font-size="10">i</text>
+                    <text x="15" y="88" font-size="10" fill="#10b981" font-weight="bold">i*</text>
+
+                    <!-- BP Perfecta -->
+                    <line x1="30" y1="85" x2="260" y2="85" stroke="#10b981" stroke-width="3" />
+                    <text x="180" y="75" font-size="9" fill="#10b981" font-weight="bold">Perfecta Movilidad</text>
+
+                    <!-- BP Imperfecta -->
+                    <line x1="40" y1="130" x2="250" y2="40" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4" />
+                    <text x="200" y="35" font-size="9" fill="#f59e0b">Movilidad Limitada</text>
+                </svg>
+            </div>
+
+            <!-- Explicación -->
+            <div style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+                <div
+                    style="background: #f0fdf4; border-left: 4px solid #16a34a; padding: 10px; border-radius: 6px; margin-bottom: 10px;">
+                    <strong style="color: #14532d; font-size: 12px;">BP Horizontal (Estándar):</strong>
+                    <p style="font-size: 11px; margin: 3px 0;">Capitales entran/salen libremente. La tasa interna (i)
+                        debe igualar a la externa (i*).</p>
+                </div>
+                <div style="background: #fffbeb; border-left: 4px solid #f59e0b; padding: 10px; border-radius: 6px;">
+                    <strong style="color: #78350f; font-size: 12px;">BP Inclinada:</strong>
+                    <p style="font-size: 11px; margin: 3px 0;">Controles de capital. Se necesita mayor tasa para
+                        compensar mayor ingreso (déficit comercial).</p>
+                </div>
+            </div>
         </div>
-
-        <!-- Gráfico de Pendientes BP -->
-        <svg viewBox="0 0 300 180" style="width: 100%; max-width: 320px; margin: 15px auto; display: block;">
-            <defs>
-                <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
-                    <polygon points="0 0, 10 3.5, 0 7" fill="#374151" />
-                </marker>
-            </defs>
-            <!-- Ejes -->
-            <line x1="40" y1="150" x2="280" y2="150" stroke="#374151" stroke-width="2" marker-end="url(#arrowhead)" />
-            <line x1="40" y1="150" x2="40" y2="20" stroke="#374151" stroke-width="2" marker-end="url(#arrowhead)" />
-            <text x="285" y="155" font-size="10">Y</text>
-            <text x="35" y="15" font-size="10">i</text>
-
-            <!-- BP Perfecta Movilidad -->
-            <line x1="40" y1="85" x2="260" y2="85" stroke="#10b981" stroke-width="3" />
-            <text x="265" y="80" font-size="9" fill="#10b981" font-weight="bold">BP (σ=∞)</text>
-            <text x="15" y="88" font-size="9" fill="#10b981" font-weight="bold">i*</text>
-
-            <!-- BP Baja Movilidad -->
-            <line x1="60" y1="140" x2="160" y2="30" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4" />
-            <text x="165" y="35" font-size="9" fill="#f59e0b">BP (σ bajo)</text>
-
-            <!-- BP Nula Movilidad -->
-            <line x1="200" y1="150" x2="200" y2="30" stroke="#ef4444" stroke-width="2" stroke-dasharray="2" />
-            <text x="190" y="25" font-size="9" fill="#ef4444">BP (σ=0)</text>
-        </svg>
     </div>
 </div>
 
 <!-- Página 4 -->
+<!-- Página 4 -->
 <div id="page-4" class="page-block">
-    <h2 class="handwritten-title">📏 Movilidad de Capital</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">📏 Movilidad de Capital</h2>
     <div class="handwritten-text">
-        <table class="data-table">
-            <tr style="background: #f1f5f9;">
-                <th>Movilidad</th>
-                <th>σ</th>
-                <th>Pendiente BP</th>
-            </tr>
-            <tr>
-                <td><strong>💎 Perfecta</strong></td>
-                <td>∞</td>
-                <td style="color: #10b981;">Horizontal</td>
-            </tr>
-            <tr>
-                <td><strong>📈 Alta</strong></td>
-                <td>Alto</td>
-                <td style="color: #059669;">Plana</td>
-            </tr>
-            <tr>
-                <td><strong>📉 Baja</strong></td>
-                <td>Bajo</td>
-                <td style="color: #d97706;">Empinada</td>
-            </tr>
-            <tr>
-                <td><strong>🛑 Nula</strong></td>
-                <td>0</td>
-                <td style="color: #dc2626;">Vertical</td>
-            </tr>
-        </table>
-        <p style="font-size: 11px; margin-top: 10px;">🛡️ <strong>σ:</strong> Sensibilidad de los capitales a la tasa de
-            interés.</p>
+        <h3 style="margin-bottom: 8px; font-size: 16px;">5.4 Grados de Integración</h3>
+        <p style="font-size: 13px; margin-bottom: 15px;">Sensibilidad de los capitales a cambios en la tasa de interés
+            (σ).</p>
+
+        <div style="display: flex; gap: 10px; height: 300px;">
+            <!-- Escala Visual Vertical -->
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 8px;">
+                <div
+                    style="flex: 1; background: #ecfdf5; border: 1px solid #10b981; border-radius: 8px; display: flex; align-items: center; padding: 0 10px;">
+                    <div style="font-size: 20px; margin-right: 10px;">💎</div>
+                    <div>
+                        <strong style="color: #064e3b; font-size: 12px; display: block;">Perfecta (σ=∞)</strong>
+                        <span style="font-size: 10px; color: #065f46;">BP Horizontal. Dinero fluye
+                            instantáneamente.</span>
+                    </div>
+                </div>
+                <div
+                    style="flex: 1; background: #f0f9ff; border: 1px solid #3b82f6; border-radius: 8px; display: flex; align-items: center; padding: 0 10px;">
+                    <div style="font-size: 20px; margin-right: 10px;">📈</div>
+                    <div>
+                        <strong style="color: #1e3a8a; font-size: 12px; display: block;">Alta</strong>
+                        <span style="font-size: 10px; color: #1e40af;">BP Plana. Flujos sensibles pero con
+                            fricciones.</span>
+                    </div>
+                </div>
+                <div
+                    style="flex: 1; background: #fffbeb; border: 1px solid #f59e0b; border-radius: 8px; display: flex; align-items: center; padding: 0 10px;">
+                    <div style="font-size: 20px; margin-right: 10px;">📉</div>
+                    <div>
+                        <strong style="color: #78350f; font-size: 12px; display: block;">Baja</strong>
+                        <span style="font-size: 10px; color: #92400e;">BP Empinada. Controles de capital fuertes.</span>
+                    </div>
+                </div>
+                <div
+                    style="flex: 1; background: #fef2f2; border: 1px solid #ef4444; border-radius: 8px; display: flex; align-items: center; padding: 0 10px;">
+                    <div style="font-size: 20px; margin-right: 10px;">🚫</div>
+                    <div>
+                        <strong style="color: #7f1d1d; font-size: 12px; display: block;">Nula (σ=0)</strong>
+                        <span style="font-size: 10px; color: #991b1b;">BP Vertical. Autarquía financiera.</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 </div>
 
 <!-- Página 5 -->
+<!-- Página 5 -->
 <div id="page-5" class="page-block">
-    <h2 class="handwritten-title">⚖️ Triple Equilibrio</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">⚖️ Triple Equilibrio</h2>
     <div class="handwritten-text">
-        <p>El equilibrio general ocurre donde los tres mercados coinciden 🎯.</p>
+        <h3 style="margin-bottom: 8px; font-size: 16px;">5.5 El Punto de Equilibrio General</h3>
+        <p style="font-size: 13px; margin-bottom: 15px;">Donde coinciden Bienes (IS), Dinero (LM) y Sector Externo (BP).
+        </p>
 
-        <!-- Gráfico IS-LM-BP -->
-        <svg viewBox="0 0 300 180" style="width: 100%; max-width: 320px; margin: 15px auto; display: block;">
-            <!-- Ejes -->
-            <line x1="40" y1="150" x2="280" y2="150" stroke="#374151" stroke-width="2" />
-            <line x1="40" y1="150" x2="40" y2="20" stroke="#374151" stroke-width="2" />
+        <div style="display: flex; gap: 15px;">
+            <!-- Gráfico IS-LM-BP -->
+            <div style="flex: 1.2; background: #fff; border-radius: 10px; padding: 10px; border: 1px solid #e5e7eb;">
+                <svg viewBox="0 0 300 160" style="width: 100%; max-width: 100%; display: block;">
+                    <!-- Ejes -->
+                    <line x1="30" y1="140" x2="280" y2="140" stroke="#374151" stroke-width="2" />
+                    <line x1="30" y1="140" x2="30" y2="20" stroke="#374151" stroke-width="2" />
 
-            <!-- BP Perfecta Movilidad -->
-            <line x1="40" y1="85" x2="260" y2="85" stroke="#10b981" stroke-width="3" />
-            <text x="265" y="80" font-size="9" fill="#10b981" font-weight="bold">BP (i=i*)</text>
+                    <!-- BP Perfecta Movilidad -->
+                    <line x1="30" y1="85" x2="270" y2="85" stroke="#10b981" stroke-width="3" />
+                    <text x="220" y="80" font-size="9" fill="#10b981" font-weight="bold">BP (i=i*)</text>
 
-            <!-- IS -->
-            <line x1="60" y1="40" x2="220" y2="140" stroke="#3b82f6" stroke-width="2" />
-            <text x="50" y="35" font-size="9" fill="#3b82f6">IS</text>
+                    <!-- IS -->
+                    <line x1="50" y1="40" x2="230" y2="140" stroke="#3b82f6" stroke-width="2" />
+                    <text x="40" y="35" font-size="9" fill="#3b82f6">IS</text>
 
-            <!-- LM -->
-            <line x1="60" y1="130" x2="220" y2="40" stroke="#ef4444" stroke-width="2" />
-            <text x="215" y="35" font-size="9" fill="#ef4444">LM</text>
+                    <!-- LM -->
+                    <line x1="50" y1="130" x2="230" y2="40" stroke="#ef4444" stroke-width="2" />
+                    <text x="235" y="35" font-size="9" fill="#ef4444">LM</text>
 
-            <!-- Punto de Equilibrio -->
-            <circle cx="140" cy="85" r="4" fill="#1e293b" />
-            <text x="145" y="100" font-size="9" font-weight="bold">E*</text>
-        </svg>
+                    <!-- Punto de Equilibrio -->
+                    <circle cx="140" cy="85" r="4" fill="#0f172a" />
+                    <text x="145" y="100" font-size="10" font-weight="bold">E*</text>
+                </svg>
+            </div>
 
-        <div
-            style="background: #fefce8; border: 1px dashed #f59e0b; padding: 10px; border-radius: 8px; font-size: 11px;">
-            <strong>Zonas de Desequilibrio:</strong><br>
-            • Arriba de BP: Entrada de capitales (Superávit)<br>
-            • Abajo de BP: Salida de capitales (Déficit)
+            <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 10px;">
+                <div style="background: #f0fdf4; border: 1px solid #16a34a; padding: 10px; border-radius: 8px;">
+                    <strong style="color: #166534; font-size: 12px; display: block; margin-bottom: 5px;">⬆️ Arriba de BP
+                        (i > i*)</strong>
+                    <p style="margin: 0; font-size: 11px;">Entrada masiva de capitales.<br>Superávit Cuenta Capital.</p>
+                </div>
+                <div style="background: #fef2f2; border: 1px solid #ef4444; padding: 10px; border-radius: 8px;">
+                    <strong style="color: #991b1b; font-size: 12px; display: block; margin-bottom: 5px;">⬇️ Abajo de BP
+                        (i < i*)</strong>
+                            <p style="margin: 0; font-size: 11px;">Fuga de capitales.<br>Déficit Cuenta Capital.</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
 <!-- Página 6 -->
+<!-- Página 6 -->
 <div id="page-6" class="page-block">
-    <h2 class="handwritten-title">🔒 Régimen Fijo</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">🔒 Régimen Fijo</h2>
     <div class="handwritten-text">
-        <h3>5.6 Ajuste en Tipo de Cambio Fijo</h3>
-        <p>El Banco Central sacrifica la política monetaria para defender el cambio 🛡️.</p>
+        <h3 style="margin-bottom: 8px; font-size: 16px;">5.6 La Trampa del Tipo de Cambio Fijo</h3>
+        <p style="font-size: 13px; margin-bottom: 15px;">El Banco Central sacrifica su independencia para defender la
+            paridad.</p>
 
-        <!-- Diagrama de Flujo Fijo -->
-        <div style="display: flex; flex-direction: column; gap: 8px; margin: 15px 0;">
-            <div
-                style="background: #ecfdf5; padding: 8px; border-radius: 6px; border-left: 4px solid #10b981; font-size: 11px;">
-                <strong>1. i > i* (Entrada de K)</strong> → Presión para apreciar <i>e</i>.
+        <div style="display: flex; gap: 15px;">
+            <!-- Flujo -->
+            <div style="flex: 1.2; display: flex; flex-direction: column; gap: 8px;">
+                <div
+                    style="background: #ecfdf5; border: 1px solid #10b981; padding: 8px; border-radius: 6px; font-size: 11px; display: flex; align-items: center;">
+                    <div
+                        style="font-weight: bold; background: #16a34a; color: white; border-radius: 50%; width: 18px; height: 18px; text-align: center; margin-right: 8px;">
+                        1</div>
+                    <div>Presión: <strong>i > i*</strong> (Entran dólares).</div>
+                </div>
+                <div style="text-align: center; color: #10b981;">⬇️</div>
+                <div
+                    style="background: #f0fdf4; border: 1px solid #86efac; padding: 8px; border-radius: 6px; font-size: 11px; display: flex; align-items: center;">
+                    <div
+                        style="font-weight: bold; background: #16a34a; color: white; border-radius: 50%; width: 18px; height: 18px; text-align: center; margin-right: 8px;">
+                        2</div>
+                    <div><strong>Acción BC:</strong> Compra divisas con moneda local.</div>
+                </div>
+                <div style="text-align: center; color: #10b981;">⬇️</div>
+                <div
+                    style="background: white; border: 1px solid #10b981; padding: 8px; border-radius: 6px; font-size: 11px; display: flex; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <div
+                        style="font-weight: bold; background: #16a34a; color: white; border-radius: 50%; width: 18px; height: 18px; text-align: center; margin-right: 8px;">
+                        3</div>
+                    <div><strong>Resultado:</strong> Aumenta Oferta Monetaria (M) hasta que i = i*.</div>
+                </div>
             </div>
-            <div style="text-align: center; color: #10b981;">⬇️</div>
+
+            <!-- Consecuencia -->
             <div
-                style="background: #ecfdf5; padding: 8px; border-radius: 6px; border-left: 4px solid #10b981; font-size: 11px;">
-                <strong>2. Acción BC:</strong> Compra divisas y emite moneda local (↑M).
-            </div>
-            <div style="text-align: center; color: #10b981;">⬇️</div>
-            <div
-                style="background: #ecfdf5; padding: 8px; border-radius: 6px; border-left: 4px solid #10b981; font-size: 11px;">
-                <strong>3. Efecto:</strong> La LM se desplaza a la derecha hasta que i = i*.
+                style="flex: 1; background: #fef2f2; border: 1px solid #ef4444; border-radius: 10px; padding: 12px; display: flex; flex-direction: column; justify-content: center; text-align: center;">
+                <div style="font-size: 24px; margin-bottom: 10px;">📉</div>
+                <strong style="color: #991b1b; font-size: 12px; margin-bottom: 5px;">Pérdida de Control</strong>
+                <p style="font-size: 11px; color: #7f1d1d; line-height: 1.4; margin: 0;">La oferta monetaria se vuelve
+                    <strong>ENDÓGENA</strong>. El BC NO puede usar 'M' para estimular la economía, solo para defender el
+                    tipo de cambio.</p>
             </div>
         </div>
-        <p style="text-align: center; font-weight: bold; color: #065f46;">"La oferta monetaria es ENDÓGENA"</p>
     </div>
 </div>
 
 <!-- Página 7 -->
+<!-- Página 7 -->
 <div id="page-7" class="page-block">
-    <h2 class="handwritten-title">💹 Régimen Flexible</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">💹 Régimen Flexible</h2>
     <div class="handwritten-text">
-        <h3>5.7 Ajuste en Tipo de Cambio Flexible</h3>
-        <p>El mercado ajusta el tipo de cambio y el BC mantiene el control de M 🕹️.</p>
+        <h3 style="margin-bottom: 8px; font-size: 16px;">5.7 El Mercado Ajusta</h3>
+        <p style="font-size: 13px; margin-bottom: 15px;">El tipo de cambio flota libremente, devolviendo la autonomía al
+            BC.</p>
 
-        <!-- Diagrama de Flujo Flexible -->
-        <div style="display: flex; flex-direction: column; gap: 8px; margin: 15px 0;">
-            <div
-                style="background: #eff6ff; padding: 8px; border-radius: 6px; border-left: 4px solid #3b82f6; font-size: 11px;">
-                <strong>1. i > i* (Entrada de K)</strong> → El mercado aprecia <i>e</i> (↓e).
+        <div style="display: flex; gap: 15px;">
+            <!-- Flujo -->
+            <div style="flex: 1.2; display: flex; flex-direction: column; gap: 8px;">
+                <div
+                    style="background: #eff6ff; border: 1px solid #3b82f6; padding: 8px; border-radius: 6px; font-size: 11px; display: flex; align-items: center;">
+                    <div
+                        style="font-weight: bold; background: #2563eb; color: white; border-radius: 50%; width: 18px; height: 18px; text-align: center; margin-right: 8px;">
+                        1</div>
+                    <div>Presión: <strong>i > i*</strong> (Entran dólares).</div>
+                </div>
+                <div style="text-align: center; color: #3b82f6;">⬇️</div>
+                <div
+                    style="background: #f0f9ff; border: 1px solid #93c5fd; padding: 8px; border-radius: 6px; font-size: 11px; display: flex; align-items: center;">
+                    <div
+                        style="font-weight: bold; background: #2563eb; color: white; border-radius: 50%; width: 18px; height: 18px; text-align: center; margin-right: 8px;">
+                        2</div>
+                    <div><strong>Ajuste Mercado:</strong> Moneda se aprecia (↓e).</div>
+                </div>
+                <div style="text-align: center; color: #3b82f6;">⬇️</div>
+                <div
+                    style="background: white; border: 1px solid #3b82f6; padding: 8px; border-radius: 6px; font-size: 11px; display: flex; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <div
+                        style="font-weight: bold; background: #2563eb; color: white; border-radius: 50%; width: 18px; height: 18px; text-align: center; margin-right: 8px;">
+                        3</div>
+                    <div><strong>Resultado:</strong> Caen Exportaciones Netas (IS izquierda).</div>
+                </div>
             </div>
-            <div style="text-align: center; color: #3b82f6;">⬇️</div>
+
+            <!-- Consecuencia -->
             <div
-                style="background: #eff6ff; padding: 8px; border-radius: 6px; border-left: 4px solid #3b82f6; font-size: 11px;">
-                <strong>2. Sector Externo:</strong> Las exportaciones caen y las importaciones suben (↓NX).
-            </div>
-            <div style="text-align: center; color: #3b82f6;">⬇️</div>
-            <div
-                style="background: #eff6ff; padding: 8px; border-radius: 6px; border-left: 4px solid #3b82f6; font-size: 11px;">
-                <strong>3. Efecto:</strong> La IS se desplaza a la izquierda hasta que i = i*.
+                style="flex: 1; background: #f0fdf4; border: 1px solid #16a34a; border-radius: 10px; padding: 12px; display: flex; flex-direction: column; justify-content: center; text-align: center;">
+                <div style="font-size: 24px; margin-bottom: 10px;">🕹️</div>
+                <strong style="color: #14532d; font-size: 12px; margin-bottom: 5px;">Autonomía Total</strong>
+                <p style="font-size: 11px; color: #14532d; line-height: 1.4; margin: 0;">El BC MANTIENE el control de M.
+                    La política monetaria es efectiva porque se canaliza vía tipo de cambio.</p>
             </div>
         </div>
-        <p style="text-align: center; font-weight: bold; color: #1e40af;">"El Banco Central mantiene su autonomía"</p>
     </div>
 </div>
 
 <!-- Página 8 -->
+<!-- Página 8 -->
 <div id="page-8" class="page-block">
-    <h2 class="handwritten-title">💎 La Trinidad Imposible</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">💎 La Trinidad Imposible</h2>
     <div class="handwritten-text">
-        <p>Un país no puede tener los tres al mismo tiempo:</p>
+        <h3 style="margin-bottom: 8px; font-size: 16px;">5.8 El Trilema de Mundell</h3>
+        <p style="font-size: 13px; margin-bottom: 15px;">Solo puedes elegir 2 de 3 vértices. ¡Elige sabiamente!</p>
 
-        <div style="position: relative; width: 160px; height: 160px; margin: 20px auto;">
+        <div style="position: relative; width: 220px; height: 180px; margin: 10px auto;">
+            <!-- Vértice Superior -->
             <div
-                style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); text-align: center; width: 80px;">
-                <div style="font-size: 20px;">🛡️</div>
-                <div style="font-size: 9px; font-weight: bold;">TC Fijo</div>
+                style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); text-align: center; background: #fff; border: 1px solid #94a3b8; padding: 5px 10px; border-radius: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); z-index: 2;">
+                <div style="font-size: 18px;">🛡️</div>
+                <div style="font-size: 10px; font-weight: bold; color: #334155;">Tipo de Cambio Fijo</div>
             </div>
-            <div style="position: absolute; bottom: 0; left: 0; text-align: center; width: 80px;">
-                <div style="font-size: 20px;">🕹️</div>
-                <div style="font-size: 9px; font-weight: bold;">Política M. Independiente</div>
+            <!-- Vértice Izquierdo -->
+            <div
+                style="position: absolute; bottom: 0; left: 0; text-align: center; background: #fff; border: 1px solid #94a3b8; padding: 5px 10px; border-radius: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); z-index: 2;">
+                <div style="font-size: 18px;">🕹️</div>
+                <div style="font-size: 10px; font-weight: bold; color: #334155;">Política Indep.</div>
             </div>
-            <div style="position: absolute; bottom: 0; right: 0; text-align: center; width: 80px;">
-                <div style="font-size: 20px;">🔓</div>
-                <div style="font-size: 9px; font-weight: bold;">Libre Movilidad de K</div>
+            <!-- Vértice Derecho -->
+            <div
+                style="position: absolute; bottom: 0; right: 0; text-align: center; background: #fff; border: 1px solid #94a3b8; padding: 5px 10px; border-radius: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); z-index: 2;">
+                <div style="font-size: 18px;">🔓</div>
+                <div style="font-size: 10px; font-weight: bold; color: #334155;">Libre Capital</div>
             </div>
-            <!-- Triángulo -->
-            <svg style="position: absolute; top: 25px; left: 0; width: 100%; height: 100%; z-index: -1;">
-                <polygon points="80,10 10,110 150,110" fill="none" stroke="#94a3b8" stroke-width="2" />
+
+            <!-- Triángulo SVG -->
+            <svg style="position: absolute; top: 25px; left: 0; width: 100%; height: 100%; z-index: 1;">
+                <polygon points="110,20 20,130 200,130" fill="none" stroke="#cbd5e1" stroke-width="4"
+                    stroke-linejoin="round" />
             </svg>
         </div>
 
-        <p style="font-size: 10px; color: #64748b; margin-top: 10px;">Solo puedes elegir <strong>un lado</strong> del
-            triángulo.</p>
+        <div
+            style="background: #f8fafc; padding: 10px; border-radius: 8px; margin-top: 20px; border: 1px dashed #94a3b8;">
+            <strong style="font-size: 11px; display: block; margin-bottom: 5px;">Ejemplos:</strong>
+            <div style="display: flex; gap: 5px; font-size: 10px;">
+                <span style="background: #e2e8f0; padding: 3px 6px; border-radius: 4px;">🇺🇸 USA: Flotación + Libre
+                    K</span>
+                <span style="background: #e2e8f0; padding: 3px 6px; border-radius: 4px;">🇨🇳 China: Fijo + Control
+                    K</span>
+                <span style="background: #e2e8f0; padding: 3px 6px; border-radius: 4px;">🇪🇺 Euro: Fijo + Libre
+                    K</span>
+            </div>
+        </div>
     </div>
 </div>
 
 <!-- Página 9 -->
+<!-- Página 9 -->
 <div id="page-9" class="page-block">
-    <h2 class="handwritten-title">🚀 Efectividad de Políticas</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">🚀 Efectividad de Políticas</h2>
     <div class="handwritten-text">
-        <p>¿Qué política funciona mejor según el régimen? 🤔</p>
+        <h3 style="margin-bottom: 8px; font-size: 16px;">5.9 ¿Quién gana en qué régimen?</h3>
 
-        <table class="data-table" style="font-size: 10px;">
-            <tr style="background: #f1f5f9;">
-                <th>Política</th>
-                <th>Régimen Fijo</th>
-                <th>Régimen Flexible</th>
-            </tr>
-            <tr>
-                <td><strong>🏛️ Fiscal (↑G)</strong></td>
-                <td style="background: #ecfdf5; color: #065f46; font-weight: bold;">MÁXIMA</td>
-                <td style="background: #fef2f2; color: #991b1b; font-weight: bold;">NULA</td>
-            </tr>
-            <tr>
-                <td><strong>💰 Monetaria (↑M)</strong></td>
-                <td style="background: #fef2f2; color: #991b1b; font-weight: bold;">NULA</td>
-                <td style="background: #ecfdf5; color: #065f46; font-weight: bold;">MÁXIMA</td>
-            </tr>
-        </table>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 15px;">
+            <!-- Fiscal -->
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+                <div style="font-weight: bold; color: #1e40af; font-size: 12px; text-align: center;">🏛️ Política Fiscal
+                </div>
+                <div
+                    style="background: #f0fdf4; border: 1px solid #16a34a; padding: 10px; border-radius: 8px; text-align: center;">
+                    <strong style="color: #166534; font-size: 11px;">En TC Fijo:</strong>
+                    <div style="font-size: 16px; margin: 3px 0;">⭐⭐⭐⭐⭐</div>
+                    <span style="font-size: 10px; color: #14532d;">Súper Potente (Ayuda del BC)</span>
+                </div>
+                <div
+                    style="background: #fef2f2; border: 1px solid #ef4444; padding: 10px; border-radius: 8px; text-align: center;">
+                    <strong style="color: #991b1b; font-size: 11px;">En TC Flexible:</strong>
+                    <div style="font-size: 16px; margin: 3px 0;">⭐</div>
+                    <span style="font-size: 10px; color: #7f1d1d;">Ineficaz (Apreciación Manta)</span>
+                </div>
+            </div>
 
-        <div style="margin-top: 15px; font-size: 11px; color: #475569;">
-            💡 <strong>Dato:</strong> En TC Flexible, la expansión fiscal es anulada por la apreciación de la moneda
-            (crowding-out externo). En TC Fijo, la expansión fiscal es potenciada por la emisión necesaria para mantener
-            el tipo de cambio.
+            <!-- Monetaria -->
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+                <div style="font-weight: bold; color: #166534; font-size: 12px; text-align: center;">💰 Política
+                    Monetaria</div>
+                <div
+                    style="background: #fef2f2; border: 1px solid #ef4444; padding: 10px; border-radius: 8px; text-align: center;">
+                    <strong style="color: #991b1b; font-size: 11px;">En TC Fijo:</strong>
+                    <div style="font-size: 16px; margin: 3px 0;">⭐</div>
+                    <span style="font-size: 10px; color: #7f1d1d;">Ineficaz (Dinero Endógeno)</span>
+                </div>
+                <div
+                    style="background: #f0fdf4; border: 1px solid #16a34a; padding: 10px; border-radius: 8px; text-align: center;">
+                    <strong style="color: #166534; font-size: 11px;">En TC Flexible:</strong>
+                    <div style="font-size: 16px; margin: 3px 0;">⭐⭐⭐⭐⭐</div>
+                    <span style="font-size: 10px; color: #14532d;">Súper Potente (Canal T.C.)</span>
+                </div>
+            </div>
+        </div>
+
+        <div
+            style="background: #f8fafc; border: 1px dashed #64748b; padding: 8px; border-radius: 6px; font-size: 10px; text-align: center; color: #475569;">
+            "En Mundell-Fleming, el tipo de cambio determina quién lleva el timón: ¿El Gobierno (Fiscal) o el Banco
+            Central (Monetaria)?"
         </div>
     </div>
 </div>
 
 <!-- Página 10 -->
+<!-- Página 10 -->
 <div id="page-10" class="page-block">
-    <h2 class="handwritten-title">📝 Resumen Semana 5</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">📝 Resumen y Práctica</h2>
     <div class="handwritten-text">
-        <div
-            style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-radius: 12px; padding: 15px; border: 2px solid #0ea5e9;">
-            <div style="font-weight: bold; color: #0369a1; margin-bottom: 10px;">✅ Conceptos Aprendidos:</div>
-            <ul style="font-size: 11px; margin: 0; padding-left: 20px;">
-                <li>El modelo Mundell-Fleming integra el <strong>sector externo</strong>.</li>
-                <li>La curva <strong>BP</strong> horizontal indica perfecta movilidad de capitales.</li>
-                <li>Bajo <strong>TC Fijo</strong>, la política fiscal es muy potente.</li>
-                <li>Bajo <strong>TC Flexible</strong>, la política monetaria recupera su fuerza.</li>
-            </ul>
-        </div>
-
-        <div style="display: flex; justify-content: space-around; margin-top: 20px;">
-            <div
-                style="background: white; border: 1px solid #cbd5e1; padding: 10px; border-radius: 8px; text-align: center; width: 45%;">
-                <div style="font-size: 20px;">🚢</div>
-                <div style="font-size: 10px;">BP = 0</div>
+        <div style="display: flex; gap: 20px; height: 100%;">
+            <!-- Left: Resumen -->
+            <div style="flex: 1; display: flex; flex-direction: column;">
+                <h3 style="margin-bottom: 10px; font-size: 16px; color: #1e40af;">📌 Lo esencial</h3>
+                <div class="resumen-box"
+                    style="flex: 1; margin: 0; padding: 15px; background: #f8fafc; border: 2px solid #cbd5e1;">
+                    <ul style="padding-left: 20px; margin: 0; line-height: 1.8; font-size: 11px;">
+                        <li><strong>BP:</strong> Equilibrio externo. Horizontal si hay perfecta movilidad.</li>
+                        <li><strong>TC Fijo:</strong> BC pierde control de M. Fiscal muy potente.</li>
+                        <li><strong>TC Flexible:</strong> BC tiene control total. Monetaria muy potente.</li>
+                        <li><strong>Trinidad Imposible:</strong> No se puede tener Fijo + Independencia + Libre Capital.
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div
-                style="background: white; border: 1px solid #cbd5e1; padding: 10px; border-radius: 8px; text-align: center; width: 45%;">
-                <div style="font-size: 20px;">🔱</div>
-                <div style="font-size: 10px;">Trilema</div>
+
+            <!-- Right: Quiz -->
+            <div style="flex: 1.2; display: flex; flex-direction: column; gap: 10px;">
+                <h3 style="margin-bottom: 5px; font-size: 16px; color: #b91c1c;">✏️ Ponte a Prueba</h3>
+
+                <div class="ejercicio-box"
+                    style="margin: 0; padding: 10px; background: #fff7ed; border-left: 4px solid #f97316;">
+                    <strong style="color: #c2410c; font-size: 12px;">Ejercicio 1</strong>
+                    <p style="font-size: 11px; margin: 5px 0;">Si un país quiere libertad para fijar su tasa de interés
+                        (política autónoma) y permitir el flujo de capitales, ¿qué régimen cambiario DEBE adoptar?</p>
+                </div>
+
+                <div class="ejercicio-box"
+                    style="margin: 0; padding: 10px; background: #fff7ed; border-left: 4px solid #f97316;">
+                    <strong style="color: #c2410c; font-size: 12px;">Ejercicio 2</strong>
+                    <p style="font-size: 11px; margin: 5px 0 0;">Explique por qué una expansión fiscal en tipo de cambio
+                        flexible no logra aumentar el producto (Y) al final.</p>
+                </div>
+
+                <div class="ejercicio-box"
+                    style="margin: 0; padding: 10px; background: #fff7ed; border-left: 4px solid #f97316;">
+                    <strong style="color: #c2410c; font-size: 12px;">Ejercicio 3</strong>
+                    <p style="font-size: 11px; margin: 5px 0 0;">Grafique el punto E* donde IS se cruza con LM por
+                        ENCIMA de la curva BP. ¿Hay superávit o déficit de pagos?</p>
+                </div>
             </div>
         </div>
     </div>

@@ -1,196 +1,347 @@
 <!-- Página 1 -->
 <div id="page-1" class="page-block">
-    <h2 class="handwritten-title">👷 El Mercado Laboral</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">👷 El Mercado Laboral</h2>
     <div class="handwritten-text">
-        <p><strong>Objetivo:</strong> Entender quién trabaja, cuánto se paga y por qué 💼.</p>
+        <h3 style="margin-bottom: 8px; font-size: 16px;">11.1 La Fábrica de la Economía</h3>
 
         <div
-            style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 12px; padding: 12px; margin: 15px 0;">
-            <div style="font-weight: bold; color: #1e293b; margin-bottom: 5px;">🏗️ Función de Producción</div>
-            <div style="font-size: 14px; text-align: center; font-weight: bold; margin: 8px 0;">Y = F(N)</div>
-            <p style="font-size: 9px; margin: 0;">Más trabajadores = Más producción, pero cada nuevo obrero aporta un
-                poquito menos que el anterior (PMgN decreciente).</p>
+            style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 12px; padding: 20px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 20px;">
+            <div style="font-size: 32px; font-weight: bold; color: #1e293b; font-family: monospace;">Y = F(K, N)</div>
+            <p style="font-size: 11px; color: #64748b; margin-top: 5px;">Producción (Y) = Máquinas (K) + Trabajadores
+                (N)</p>
+        </div>
+
+        <div style="background: #eff6ff; border-left: 4px solid #3b82f6; padding: 10px; border-radius: 4px;">
+            <strong style="color: #1e40af; font-size: 12px;">Ley de Rendimientos Decrecientes:</strong>
+            <p style="font-size: 10px; margin: 5px 0 0; color: #1e3a8a;">
+                "Cada nuevo trabajador aporta menos que el anterior, porque la fábrica se llena y las máquinas se
+                comparten."
+            </p>
         </div>
     </div>
 </div>
 
 <!-- Página 2 -->
 <div id="page-2" class="page-block">
-    <h2 class="handwritten-title">🏢 La Demanda (Empresas)</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">🏢 Demanda de Trabajo</h2>
     <div class="handwritten-text">
-        <div
-            style="background: #eff6ff; border: 1px solid #3b82f6; border-radius: 10px; padding: 10px; margin: 10px 0;">
-            <div style="font-weight: bold; font-size: 11px; color: #1e40af;">Regla de Oro:</div>
-            <div style="font-size: 13px; text-align: center; margin: 5px 0;">W/P = PMgN</div>
-            <p style="font-size: 8px; margin: 0;">"Te contrato si lo que produces vale lo que te pago".</p>
+        <h3 style="margin-bottom: 8px; font-size: 16px;">11.2 ¿Cuándo contrato?</h3>
+
+        <div style="display: flex; gap: 15px; align-items: center; height: 100%;">
+            <!-- Graph -->
+            <div style="flex: 1;">
+                <svg viewBox="0 0 200 160" style="width: 100%; height: auto;">
+                    <line x1="20" y1="140" x2="180" y2="140" stroke="#374151" stroke-width="2" />
+                    <line x1="20" y1="140" x2="20" y2="20" stroke="#374151" stroke-width="2" />
+                    <path d="M 40,40 C 60,60 120,120 160,130" fill="none" stroke="#dc2626" stroke-width="3" />
+                    <text x="165" y="130" font-size="12" fill="#dc2626" font-weight="bold">Nd</text>
+                    <text x="180" y="155" font-size="10" fill="#374151">N</text>
+                    <text x="10" y="20" font-size="10" fill="#374151">W/P</text>
+                </svg>
+            </div>
+
+            <!-- Rule -->
+            <div style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+                <div
+                    style="background: #fef2f2; border: 1px solid #ef4444; border-radius: 8px; padding: 10px; text-align: center; margin-bottom: 10px;">
+                    <strong style="color: #991b1b; font-size: 12px; display: block;">Regla de Oro</strong>
+                    <div style="font-size: 14px; font-weight: bold; color: #dc2626; margin: 5px 0;">PMgN = W/P</div>
+                </div>
+                <p style="font-size: 10px; color: #7f1d1d; text-align: center;">
+                    "Solo te contrato si produces (PMgN) al menos lo que me cuestas (Salario Real)."
+                </p>
+            </div>
         </div>
-        <svg viewBox="0 0 300 160" style="width: 100%; max-width: 280px; margin: 10px auto; display: block;">
-            <line x1="40" y1="140" x2="260" y2="140" stroke="#374151" stroke-width="2" />
-            <line x1="40" y1="140" x2="40" y2="20" stroke="#374151" stroke-width="2" />
-            <path d="M 60,40 C 100,100 180,130 240,135" fill="none" stroke="#ef4444" stroke-width="3" />
-            <text x="245" y="140" font-size="10" fill="#ef4444" font-weight="bold">Nd</text>
-            <text x="20" y="30" font-size="9">W/P</text>
-            <text x="250" y="155" font-size="9">N</text>
-        </svg>
     </div>
 </div>
 
 <!-- Página 3 -->
 <div id="page-3" class="page-block">
-    <h2 class="handwritten-title">👥 La Oferta (Nosotros)</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">👥 Oferta de Trabajo</h2>
     <div class="handwritten-text">
-        <p>¿Trabajar o descansar? 🛌 vs 🔨</p>
-        <div style="display: flex; gap: 10px; margin: 15px 0;">
+        <h3 style="margin-bottom: 8px; font-size: 16px;">11.3 ¿Trabajar o Dormir?</h3>
+
+        <div style="display: flex; gap: 10px; height: 200px;">
+            <!-- Substitution -->
             <div
-                style="flex: 1; background: #fdf2f8; padding: 8px; border-radius: 8px; font-size: 9px; border: 1px solid #db2777;">
-                <strong>🔄 Sustitución:</strong><br>"Pagan más, ¡mejor trabajo y dejo de dormir!"
+                style="flex: 1; background: #f0fdf4; border: 1px solid #16a34a; border-radius: 10px; padding: 10px; text-align: center; display: flex; flex-direction: column;">
+                <div style="font-size: 24px; margin-bottom: 5px;">🏃‍♂️</div>
+                <strong style="color: #15803d; font-size: 11px; display: block;">Efecto Sustitución</strong>
+                <p style="font-size: 10px; color: #14532d; margin: 10px 0;">"El salario sube, el ocio se vuelve caro.
+                    ¡Voy a trabajar más!"</p>
+                <div style="margin-top: auto; font-weight: bold; color: #16a34a;">DOMINA 🏆</div>
             </div>
+
+            <!-- Income -->
             <div
-                style="flex: 1; background: #ecfdf5; padding: 8px; border-radius: 8px; font-size: 9px; border: 1px solid #10b981;">
-                <strong>💰 Ingreso:</strong><br>"Ya soy rico, ¡trabajaré menos horas!"
+                style="flex: 1; background: #fdf2f8; border: 1px solid #db2777; border-radius: 10px; padding: 10px; text-align: center; display: flex; flex-direction: column;">
+                <div style="font-size: 24px; margin-bottom: 5px;">🏖️</div>
+                <strong style="color: #be185d; font-size: 11px; display: block;">Efecto Ingreso</strong>
+                <p style="font-size: 10px; color: #831843; margin: 10px 0;">"Soy más rico, puedo permitirme descansar
+                    más. ¡Trabajo menos!"</p>
             </div>
         </div>
-        <p style="font-size: 9px; font-style: italic; color: #64748b; text-align: center;">Ganador: Sustitución
-            (Pendiente positiva 📈).</p>
     </div>
 </div>
 
 <!-- Página 4 -->
 <div id="page-4" class="page-block">
-    <h2 class="handwritten-title">⚖️ Los Neoclásicos</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">🕊️ El Paraíso Neoclásico</h2>
     <div class="handwritten-text">
-        <div style="background: #f8fafc; border: 2px solid #64748b; border-radius: 12px; padding: 15px;">
-            <div style="text-align: center; font-weight: bold; font-size: 11px; margin-bottom: 10px;">Pleno Empleo 🕊️
+        <h3 style="margin-bottom: 8px; font-size: 16px;">11.4 Pleno Empleo Automático</h3>
+
+        <div style="background: #fff; border: 2px dashed #94a3b8; border-radius: 12px; padding: 15px;">
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+                <div style="display: flex; align-items: center;">
+                    <div
+                        style="background: #22c55e; color: white; width: 22px; height: 22px; border-radius: 50%; text-align: center; line-height: 22px; margin-right: 10px; font-size: 12px;">
+                        ✓</div>
+                    <span style="font-size: 11px; color: #334155;"><strong>Precios Flexibles:</strong> Todo se ajusta al
+                        instante.</span>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <div
+                        style="background: #22c55e; color: white; width: 22px; height: 22px; border-radius: 50%; text-align: center; line-height: 22px; margin-right: 10px; font-size: 12px;">
+                        ✓</div>
+                    <span style="font-size: 11px; color: #334155;"><strong>Salarios Flexibles:</strong> Si hay
+                        desempleo, el sueldo baja hasta que te contraten.</span>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <div
+                        style="background: #22c55e; color: white; width: 22px; height: 22px; border-radius: 50%; text-align: center; line-height: 22px; margin-right: 10px; font-size: 12px;">
+                        ✓</div>
+                    <span style="font-size: 11px; color: #334155;"><strong>Conclusión:</strong> El desempleo
+                        involuntario NO existe.</span>
+                </div>
             </div>
-            <ul style="font-size: 10px; list-style: none; padding: 0;">
-                <li>✅ Salarios 100% flexibles (suben y bajan).</li>
-                <li>✅ Si quieres trabajar, encuentras (al salario de mercado).</li>
-                <li>✅ Desempleo es por elección o mala suerte temporal.</li>
-            </ul>
+            <div
+                style="margin-top: 15px; padding-top: 10px; border-top: 1px solid #e2e8f0; text-align: center; font-size: 10px; color: #64748b;">
+                "Si estás desempleado, es porque quieres (o buscas algo mejor)."
+            </div>
         </div>
     </div>
 </div>
 
 <!-- Página 5 -->
 <div id="page-5" class="page-block">
-    <h2 class="handwritten-title">🚩 Tipos de Desocupados</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">🚩 Tipos de Desempleo</h2>
     <div class="handwritten-text">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 10px 0;">
-            <div style="background: white; border: 1px solid #e2e8f0; padding: 10px; border-radius: 10px;">
-                <div style="font-size: 20px;">🔍</div>
-                <div style="font-weight: bold; font-size: 10px;">Friccional</div>
-                <div style="font-size: 8px; color: #64748b;">"Estoy buscando uno mejor".</div>
+        <h3 style="margin-bottom: 8px; font-size: 16px;">11.5 La Tasa Natural (u*)</h3>
+
+        <div style="display: flex; gap: 15px; height: 180px;">
+            <!-- Friccional -->
+            <div
+                style="flex: 1; background: #fff7ed; border: 1px solid #f97316; border-radius: 10px; padding: 10px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <div style="font-size: 24px; margin-bottom: 5px;">🔍</div>
+                <strong style="color: #c2410c; font-size: 11px;">Friccional</strong>
+                <p style="font-size: 10px; color: #7c2d12; margin: 5px 0;">"Estoy buscando uno mejor".</p>
+                <span style="font-size: 9px; color: #fdba74; margin-top: auto;">(Temporal y Normal)</span>
             </div>
-            <div style="background: white; border: 1px solid #e2e8f0; padding: 10px; border-radius: 10px;">
-                <div style="font-size: 20px;">🤖</div>
-                <div style="font-weight: bold; font-size: 10px;">Estructural</div>
-                <div style="font-size: 8px; color: #64748b;">"La IA reemplazó mi oficio".</div>
+
+            <!-- Estructural -->
+            <div
+                style="flex: 1; background: #eff6ff; border: 1px solid #3b82f6; border-radius: 10px; padding: 10px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <div style="font-size: 24px; margin-bottom: 5px;">🤖</div>
+                <strong style="color: #1e40af; font-size: 11px;">Estructural</strong>
+                <p style="font-size: 10px; color: #1e3a8a; margin: 5px 0;">"Mis habilidades ya no sirven".</p>
+                <span style="font-size: 9px; color: #93c5fd; margin-top: auto;">(Grave y Largo Plazo)</span>
             </div>
         </div>
+
         <div
-            style="background: #eef2ff; padding: 10px; border-radius: 8px; font-size: 10px; text-align: center; border: 1px dashed #6366f1;">
-            <strong>u* (Tasa Natural):</strong> Es saludable tener un poco de ambos.
+            style="margin-top: 15px; text-align: center; font-size: 11px; background: #f1f5f9; padding: 8px; border-radius: 6px; color: #475569;">
+            <strong>u* (Tasa Natural)</strong> = Friccional + Estructural
         </div>
     </div>
 </div>
 
 <!-- Página 6 -->
+<!-- Página 6 -->
 <div id="page-6" class="page-block">
-    <h2 class="handwritten-title">🔑 El Toque Keynesiano</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">🔑 El Golpe de Realidad</h2>
     <div class="handwritten-text">
+        <h3 style="margin-bottom: 8px; font-size: 16px;">11.6 Keynes entra al chat</h3>
+
         <div
-            style="background: #fef2f2; border: 2px solid #ef4444; border-radius: 12px; padding: 15px; position: relative; margin: 15px 0;">
+            style="background: #fef2f2; border: 2px solid #ef4444; border-radius: 12px; padding: 15px; text-align: center; position: relative; margin-bottom: 15px;">
             <div
-                style="position: absolute; top: -10px; right: 10px; background: #ef4444; color: white; padding: 2px 8px; border-radius: 4px; font-size: 8px; font-weight: bold;">
+                style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: #ef4444; color: white; padding: 2px 10px; border-radius: 4px; font-size: 10px; font-weight: bold;">
                 RÍGIDO 🧊</div>
-            <div style="font-weight: bold; color: #991b1b; margin-bottom: 5px;">"Los salarios no bajan rápido"</div>
-            <p style="font-size: 10px; margin: 0;">Keynes decía que los trabajadores pelean para que no les bajen el
-                sueldo nominal (W), aunque los precios caigan.</p>
+
+            <p style="font-size: 14px; font-style: italic; color: #991b1b; margin: 15px 0;">"A largo plazo todos
+                estaremos muertos. En el corto plazo, los salarios NO bajan."</p>
+
+            <div style="font-size: 11px; background: white; padding: 10px; border-radius: 6px; color: #7f1d1d;">
+                <strong>Consecuencia:</strong> Si hay crisis y los precios bajan, pero los salarios se quedan altos →
+                Las empresas despiden gente.
+            </div>
         </div>
-        <p style="font-size: 9px; margin-top: 10px; color: #475569;">Resultado: <strong>Desempleo Involuntario</strong>.
-            Gente que quiere trabajar al sueldo actual, pero no hay puestos.</p>
+
+        <div style="background: #eef2ff; border-left: 4px solid #6366f1; padding: 10px; border-radius: 4px;">
+            <strong style="color: #3730a3; font-size: 11px;">Resultado: Desempleo Involuntario</strong>
+            <p style="font-size: 10px; margin: 3px 0 0; color: #4338ca;">Gente que quiere trabajar al salario actual,
+                pero no encuentra lugar.</p>
+        </div>
     </div>
 </div>
 
 <!-- Página 7 -->
+<!-- Página 7 -->
 <div id="page-7" class="page-block">
-    <h2 class="handwritten-title">📊 Choque de Visiones</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">📊 Choque de Visiones</h2>
     <div class="handwritten-text">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 15px 0;">
-            <div style="background: #eff6ff; padding: 10px; border-radius: 10px; border: 1px solid #3b82f6;">
-                <div style="font-weight: bold; font-size: 11px; color: #1e40af;">🏛️ Neoclásico</div>
-                <div style="font-size: 8px; margin-top: 5px;">• Salarios flexibles.<br>• El mercado se limpia solo.<br>•
-                    <strong>Largo Plazo.</strong></div>
-            </div>
-            <div style="background: #f5f3ff; padding: 10px; border-radius: 10px; border: 1px solid #8b5cf6;">
-                <div style="font-weight: bold; font-size: 11px; color: #5b21b6;">🧩 Keynesiano</div>
-                <div style="font-size: 8px; margin-top: 5px;">• Salarios pegajosos.<br>• El gobierno debe ayudar.<br>•
-                    <strong>Corto Plazo.</strong></div>
-            </div>
-        </div>
+        <h3 style="margin-bottom: 8px; font-size: 16px;">11.7 Corto vs Largo Plazo</h3>
+
+        <table
+            style="width: 100%; border-collapse: separate; border-spacing: 0; border: 1px solid #cbd5e1; border-radius: 8px; overflow: hidden; font-size: 11px;">
+            <thead>
+                <tr>
+                    <th style="background: #f1f5f9; padding: 10px; border-bottom: 1px solid #cbd5e1;"></th>
+                    <th style="background: #eff6ff; padding: 10px; border-bottom: 1px solid #cbd5e1; color: #1e40af;">
+                        🏛️ Neoclásico</th>
+                    <th style="background: #faf5ff; padding: 10px; border-bottom: 1px solid #cbd5e1; color: #6b21a8;">🧩
+                        Keynesiano</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td
+                        style="padding: 10px; font-weight: bold; border-bottom: 1px solid #e2e8f0; background: #f8fafc;">
+                        Salarios</td>
+                    <td style="padding: 10px; text-align: center; color: #1e3a8a; border-bottom: 1px solid #e2e8f0;">
+                        Flexibles</td>
+                    <td style="padding: 10px; text-align: center; color: #581c87; border-bottom: 1px solid #e2e8f0;">
+                        Rígidos (Pegajosos)</td>
+                </tr>
+                <tr>
+                    <td
+                        style="padding: 10px; font-weight: bold; border-bottom: 1px solid #e2e8f0; background: #f8fafc;">
+                        Ajuste</td>
+                    <td style="padding: 10px; text-align: center; color: #1e3a8a; border-bottom: 1px solid #e2e8f0;">
+                        Inmediato</td>
+                    <td style="padding: 10px; text-align: center; color: #581c87; border-bottom: 1px solid #e2e8f0;">
+                        Lento / Doloroso</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; font-weight: bold; background: #f8fafc;">Horizonte</td>
+                    <td style="padding: 10px; text-align: center; font-weight: bold; color: #1e40af;">Largo Plazo</td>
+                    <td style="padding: 10px; text-align: center; font-weight: bold; color: #7e22ce;">Corto Plazo</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
 
 <!-- Página 8 -->
+<!-- Página 8 -->
 <div id="page-8" class="page-block">
-    <h2 class="handwritten-title">🔧 ¿Por qué no bajan?</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">🔧 ¿Por qué no bajan?</h2>
     <div class="handwritten-text">
-        <div style="display: flex; flex-direction: column; gap: 8px; margin: 15px 0;">
+        <h3 style="margin-bottom: 8px; font-size: 16px;">11.8 Rigideces del Mercado</h3>
+
+        <div style="display: flex; flex-direction: column; gap: 10px;">
             <div
-                style="background: white; border: 1px solid #e2e8f0; padding: 10px; border-radius: 8px; font-size: 10px;">
-                <strong>📜 Contratos:</strong> Están firmados por meses o años. No cambian cada mañana.
+                style="background: white; border: 1px solid #cbd5e1; padding: 10px; border-radius: 8px; display: flex; align-items: center; box-shadow: 0 2px 2px rgba(0,0,0,0.05);">
+                <div style="font-size: 20px; margin-right: 15px;">📜</div>
+                <div>
+                    <strong style="font-size: 11px; color: #1e293b;">Contratos</strong>
+                    <div style="font-size: 10px; color: #64748b;">Firmados por 1 o 2 años. El sueldo no cambia cada
+                        mañana.</div>
+                </div>
             </div>
+
             <div
-                style="background: white; border: 1px solid #e2e8f0; padding: 10px; border-radius: 8px; font-size: 10px;">
-                <strong>⚡ Eficiencia:</strong> Pagamos más para que no nos roben el talento o trabajen mal.
+                style="background: white; border: 1px solid #cbd5e1; padding: 10px; border-radius: 8px; display: flex; align-items: center; box-shadow: 0 2px 2px rgba(0,0,0,0.05);">
+                <div style="font-size: 20px; margin-right: 15px;">⚡</div>
+                <div>
+                    <strong style="font-size: 11px; color: #1e293b;">Salarios de Eficiencia</strong>
+                    <div style="font-size: 10px; color: #64748b;">Pago más del mínimo para motivar y retener talento.
+                    </div>
+                </div>
             </div>
+
             <div
-                style="background: white; border: 1px solid #e2e8f0; padding: 10px; border-radius: 8px; font-size: 10px;">
-                <strong>🛡️ Insiders:</strong> Los que tienen empleo cuidan su sueldo, olvidando a los desempleados.
+                style="background: white; border: 1px solid #cbd5e1; padding: 10px; border-radius: 8px; display: flex; align-items: center; box-shadow: 0 2px 2px rgba(0,0,0,0.05);">
+                <div style="font-size: 20px; margin-right: 15px;">🛡️</div>
+                <div>
+                    <strong style="font-size: 11px; color: #1e293b;">Poder de Insiders</strong>
+                    <div style="font-size: 10px; color: #64748b;">Sindicatos protegen su sueldo, ignorando a los
+                        desempleados.</div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 <!-- Página 9 -->
+<!-- Página 9 -->
 <div id="page-9" class="page-block">
-    <h2 class="handwritten-title">📈 De Empleo a Oferta (OA)</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">📈 Curvas de Oferta</h2>
     <div class="handwritten-text">
-        <div style="display: flex; align-items: center; justify-content: space-around; margin: 15px 0;">
-            <div style="text-align: center;">
-                <svg viewBox="0 0 100 80" style="width: 80px;">
-                    <line x1="10" y1="70" x2="90" y2="70" stroke="black" />
-                    <line x1="10" y1="70" x2="10" y2="10" stroke="black" />
-                    <line x1="50" y1="70" x2="50" y2="15" stroke="#ef4444" stroke-width="2" />
+        <h3 style="margin-bottom: 8px; font-size: 16px;">11.9 OA Corto vs Largo</h3>
+
+        <div style="display: flex; gap: 15px; height: 220px;">
+            <!-- OALP -->
+            <div style="flex: 1; text-align: center; border: 1px solid #cbd5e1; border-radius: 8px; padding: 5px;">
+                <strong style="font-size: 11px; color: #dc2626; display: block; margin-bottom: 5px;">Largo Plazo
+                    (OALP)</strong>
+                <svg viewBox="0 0 100 100" style="width: 100%; height: 120px;">
+                    <line x1="10" y1="90" x2="90" y2="90" stroke="#333" stroke-width="1" />
+                    <line x1="10" y1="90" x2="10" y2="10" stroke="#333" stroke-width="1" />
+                    <line x1="50" y1="90" x2="50" y2="10" stroke="#dc2626" stroke-width="3" />
+                    <text x="55" y="20" font-size="10" fill="#dc2626">OALP</text>
+                    <text x="55" y="98" font-size="8" fill="#333">Yn</text>
                 </svg>
-                <div style="font-size: 8px; font-weight: bold;">OALP (Largo)</div>
+                <p style="font-size: 9px; color: #7f1d1d; margin-top: 5px;">"La producción depende de la tecnología y
+                    recursos, NO del precio/dinero."</p>
             </div>
-            <div style="text-align: center;">
-                <svg viewBox="0 0 100 80" style="width: 80px;">
-                    <line x1="10" y1="70" x2="90" y2="70" stroke="black" />
-                    <line x1="10" y1="70" x2="10" y2="10" stroke="black" />
-                    <path d="M 20,60 Q 50,55 80,20" fill="none" stroke="#3b82f6" stroke-width="2" />
+
+            <!-- OACP -->
+            <div style="flex: 1; text-align: center; border: 1px solid #cbd5e1; border-radius: 8px; padding: 5px;">
+                <strong style="font-size: 11px; color: #2563eb; display: block; margin-bottom: 5px;">Corto Plazo
+                    (OACP)</strong>
+                <svg viewBox="0 0 100 100" style="width: 100%; height: 120px;">
+                    <line x1="10" y1="90" x2="90" y2="90" stroke="#333" stroke-width="1" />
+                    <line x1="10" y1="90" x2="10" y2="10" stroke="#333" stroke-width="1" />
+                    <path d="M 20,80 Q 50,70 80,30" fill="none" stroke="#2563eb" stroke-width="3" />
+                    <text x="70" y="25" font-size="10" fill="#2563eb">OACP</text>
                 </svg>
-                <div style="font-size: 8px; font-weight: bold;">OACP (Corto)</div>
+                <p style="font-size: 9px; color: #1e3a8a; margin-top: 5px;">"Si subes los precios, produzco más (porque
+                    mis costos salariales están fijos)."</p>
             </div>
         </div>
-        <p style="font-size: 9px; line-height: 1.2; color: #64748b;">En el largo plazo somos todos neoclásicos; en el
-            corto, keynesianos.</p>
     </div>
 </div>
 
 <!-- Página 10 -->
+<!-- Página 10 -->
 <div id="page-10" class="page-block">
-    <h2 class="handwritten-title">📝 Resumen Semana 11</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">📝 Resumen Semana 11</h2>
     <div class="handwritten-text">
-        <div
-            style="background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border: 1px solid #22c55e; padding: 15px; border-radius: 12px; margin: 15px 0;">
-            <ul style="font-size: 11px; margin: 0; padding-left: 20px;">
-                <li>El mercado de trabajo define cuánto podemos producir (Oferta Agregada).</li>
-                <li>La rigidez salarial es el "corazón" del desempleo involuntario keynesiano.</li>
-                <li>La OALP es vertical: el dinero no afecta la producción a largo plazo.</li>
-            </ul>
+        <div style="display: flex; gap: 20px; height: 100%;">
+            <!-- Left: Resumen -->
+            <div style="flex: 1; display: flex; flex-direction: column;">
+                <h3 style="margin-bottom: 10px; font-size: 16px; color: #1e40af;">📌 Entendiendo la Oferta</h3>
+                <div class="resumen-box"
+                    style="flex: 1; margin: 0; padding: 15px; background: #f8fafc; border: 2px solid #cbd5e1;">
+                    <ul style="padding-left: 20px; margin: 0; line-height: 1.8; font-size: 11px;">
+                        <li><strong>Mercado Laboral:</strong> Base de la producción. Límite físico.</li>
+                        <li><strong>Largo Plazo:</strong> Flexible. Solo importan recursos reales. (OALP Vertical).</li>
+                        <li><strong>Corto Plazo:</strong> Rígido. El dinero y demanda sí importan. (OACP +).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right: Badge -->
+            <div
+                style="flex: 0.8; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                <div
+                    style="width: 100px; height: 100px; background: #ecfdf5; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 4px solid #10b981; margin-bottom: 10px;">
+                    <div style="font-size: 40px;">✅</div>
+                </div>
+                <h3 style="color: #047857; font-size: 14px;">¡Semana 11 Completada!</h3>
+                <p style="font-size: 10px; color: #064e3b; margin-top: 5px;">¡Listos para juntar DA y OA!</p>
+            </div>
         </div>
-        <p style="text-align: center; font-size: 14px; margin-top: 15px;">👷🏽‍♂️ ¡Trabajo bien hecho!</p>
     </div>
 </div>

@@ -1,19 +1,34 @@
 <!-- Página 1 -->
 <div id="page-1" class="page-block">
-    <h2 class="handwritten-title">📈 La Oferta Agregada</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">📈 La Oferta Agregada</h2>
     <div class="handwritten-text">
-        <p><strong>Objetivo:</strong> Ver el mundo desde los ojos de las empresas 🏭.</p>
+        <h3 style="margin-bottom: 8px; font-size: 16px;">12.1 La Fábrica Nacional</h3>
 
-        <div style="display: flex; gap: 10px; margin: 15px 0;">
+        <div style="display: flex; gap: 15px; height: 100%;">
+            <!-- Short Term -->
             <div
-                style="flex: 1; background: #eff6ff; border: 1px solid #3b82f6; border-radius: 8px; padding: 10px; font-size: 9px;">
-                <div style="font-weight: bold; color: #1e40af;">⏳ Corto Plazo (OACP)</div>
-                Los precios y sueldos están "pegajosos". Pendiente positiva 📈.
+                style="flex: 1; background: #eff6ff; border: 1px solid #3b82f6; border-radius: 12px; padding: 15px; display: flex; flex-direction: column; text-align: center;">
+                <div style="font-size: 28px; margin-bottom: 5px;">⏳</div>
+                <strong style="color: #1e40af; font-size: 14px; margin-bottom: 5px;">Corto Plazo</strong>
+                <p style="font-size: 10px; color: #1e3a8a; flex: 1;">
+                    "Somos flexibles. Si pagas más, trabajamos horas extra."
+                </p>
+                <div
+                    style="background: white; padding: 5px; border-radius: 6px; font-weight: bold; color: #2563eb; font-size: 10px;">
+                    Pendiente Positiva ↗️</div>
             </div>
+
+            <!-- Long Term -->
             <div
-                style="flex: 1; background: #fdf2f8; border: 1px solid #db2777; border-radius: 8px; padding: 10px; font-size: 9px;">
-                <div style="font-weight: bold; color: #9d174d;">⌛ Largo Plazo (OALP)</div>
-                Todo se ajusta. Somos 100% productivos. Vertical 📏.
+                style="flex: 1; background: #fdf2f8; border: 1px solid #db2777; border-radius: 12px; padding: 15px; display: flex; flex-direction: column; text-align: center;">
+                <div style="font-size: 28px; margin-bottom: 5px;">⌛</div>
+                <strong style="color: #be185d; font-size: 14px; margin-bottom: 5px;">Largo Plazo</strong>
+                <p style="font-size: 10px; color: #831843; flex: 1;">
+                    "Es el límite físico. No podemos inventar máquinas de la nada."
+                </p>
+                <div
+                    style="background: white; padding: 5px; border-radius: 6px; font-weight: bold; color: #db2777; font-size: 10px;">
+                    Vertical ⬆️</div>
             </div>
         </div>
     </div>
@@ -21,61 +36,105 @@
 
 <!-- Página 2 -->
 <div id="page-2" class="page-block">
-    <h2 class="handwritten-title">📊 El Corto Plazo (OACP)</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">📊 El Corto Plazo (OACP)</h2>
     <div class="handwritten-text">
-        <svg viewBox="0 0 300 160" style="width: 100%; max-width: 280px; margin: 0 auto; display: block;">
-            <line x1="40" y1="140" x2="260" y2="140" stroke="#374151" stroke-width="2" />
-            <line x1="40" y1="140" x2="40" y2="20" stroke="#374151" stroke-width="2" />
-            <path d="M 60,120 Q 150,100 240,40" fill="none" stroke="#3b82f6" stroke-width="3" />
-            <text x="245" y="45" font-size="10" fill="#3b82f6" font-weight="bold">OACP</text>
-            <text x="210" y="30" font-size="8" fill="#64748b">↑P → ↑Y</text>
-        </svg>
-        <div class="formula-box" style="margin-top: 10px;">
-            Y = Ȳ + α(P - Pᵉ)
+        <h3 style="margin-bottom: 8px; font-size: 16px;">12.2 La Ecuación Clave</h3>
+
+        <div style="display: flex; gap: 10px; align-items: center;">
+            <div style="flex: 1;">
+                <svg viewBox="0 0 160 120" style="width: 100%;">
+                    <line x1="20" y1="100" x2="140" y2="100" stroke="#374151" stroke-width="1.5" />
+                    <line x1="20" y1="100" x2="20" y2="20" stroke="#374151" stroke-width="1.5" />
+                    <path d="M 30,90 Q 80,80 130,30" fill="none" stroke="#2563eb" stroke-width="2.5" />
+                    <text x="110" y="30" font-size="8" fill="#2563eb" font-weight="bold">OACP</text>
+                    <text x="10" y="20" font-size="8" fill="#374151">P</text>
+                    <text x="140" y="110" font-size="8" fill="#374151">Y</text>
+                </svg>
+            </div>
+            <div style="flex: 1.2;">
+                <div
+                    style="background: #eef2ff; border: 2px solid #3b82f6; border-radius: 8px; padding: 10px; text-align: center;">
+                    <div style="font-family: monospace; font-size: 14px; font-weight: bold; color: #1e40af;">Y = Ȳ + α(P
+                        - Pᵉ)</div>
+                </div>
+                <div style="margin-top: 10px; font-size: 10px; color: #475569; line-height: 1.3;">
+                    <strong>Lectura:</strong><br>
+                    Si los Precios (P) son más altos de lo que esperábamos (Pᵉ), producimos MÁS que lo normal (Ȳ).
+                </div>
+            </div>
         </div>
-        <p style="font-size: 9px; color: #64748b; text-align: center;">Si el precio (P) es mayor al esperado (Pᵉ), las
-            empresas producen extra.</p>
     </div>
 </div>
 
 <!-- Página 3 -->
 <div id="page-3" class="page-block">
-    <h2 class="handwritten-title">📉 El Largo Plazo (OALP)</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">📉 El Largo Plazo (OALP)</h2>
     <div class="handwritten-text">
+        <h3 style="margin-bottom: 8px; font-size: 16px;">12.3 Pleno Empleo (Ȳ)</h3>
+
         <div
-            style="background: #f8fafc; border: 1px dashed #64748b; border-radius: 12px; padding: 12px; margin: 15px 0;">
-            <div style="text-align: center; font-size: 11px; font-weight: bold;">Pleno Empleo (Y*)</div>
-            <div style="height: 60px; display: flex; align-items: flex-end; justify-content: center; gap: 20px;">
-                <div style="width: 20px; background: #94a3b8; height: 30%;"></div>
-                <div style="width: 2px; background: #ef4444; height: 100%;"></div>
-                <div style="width: 20px; background: #94a3b8; height: 50%;"></div>
+            style="background: #f8fafc; border: 1px dashed #94a3b8; border-radius: 12px; padding: 20px; position: relative;">
+            <div style="text-align: center; font-size: 12px; font-weight: bold; color: #334155; margin-bottom: 10px;">
+                Capacidad Máxima</div>
+
+            <!-- Capacity Bar Visual -->
+            <div style="height: 30px; background: #e2e8f0; border-radius: 15px; overflow: hidden; display: flex;">
+                <div
+                    style="width: 100%; background: #22c55e; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 10px;">
+                    100% EFICIENCIA
+                </div>
             </div>
-            <p style="font-size: 8px; text-align: center; margin-top: 5px;">A largo plazo, no importa el precio,
-                producimos lo que nuestra tecnología permite.</p>
+
+            <div style="margin-top: 15px; display: flex; justify-content: center;">
+                <svg viewBox="0 0 100 80" style="width: 80px;">
+                    <line x1="10" y1="70" x2="90" y2="70" stroke="#333" />
+                    <line x1="10" y1="70" x2="10" y2="10" stroke="#333" />
+                    <line x1="50" y1="70" x2="50" y2="10" stroke="#dc2626" stroke-width="3" />
+                    <text x="55" y="20" font-size="8" fill="#dc2626">OALP</text>
+                </svg>
+            </div>
+
+            <p style="font-size: 10px; text-align: center; margin-top: 10px; color: #64748b;">
+                "No importa cuánto dinero imprimas, la fábrica no da más si no hay más máquinas."
+            </p>
         </div>
     </div>
 </div>
 
 <!-- Página 4 -->
 <div id="page-4" class="page-block">
-    <h2 class="handwritten-title">🔄 4 Caminos a la OACP</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">🔄 ¿Por qué sube?</h2>
     <div class="handwritten-text">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 10px 0;">
+        <h3 style="margin-bottom: 8px; font-size: 16px;">12.4 Cuatro Explicaciones</h3>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; height: 100%;">
             <div
-                style="background: white; border: 1px solid #e2e8f0; padding: 8px; border-radius: 8px; font-size: 8px;">
-                <strong>🧊 Sueldos Rígidos:</strong> El contrato no cambia, el precio sí.
+                style="background: white; border: 1px solid #e2e8f0; padding: 10px; border-radius: 8px; text-align: center;">
+                <div style="font-size: 20px;">🧊</div>
+                <strong style="font-size: 10px; color: #1e293b; display: block;">Sueldos Rígidos</strong>
+                <p style="font-size: 8px; color: #64748b; margin: 2px 0;">El precio sube, mi costo salarial no → ¡Gano
+                    más! → Produzco más.</p>
             </div>
             <div
-                style="background: white; border: 1px solid #e2e8f0; padding: 8px; border-radius: 8px; font-size: 8px;">
-                <strong>😵 Error de Percepción:</strong> El obrero cree que gana más de lo que gana.
+                style="background: white; border: 1px solid #e2e8f0; padding: 10px; border-radius: 8px; text-align: center;">
+                <div style="font-size: 20px;">😵</div>
+                <strong style="font-size: 10px; color: #1e293b; display: block;">Percepción</strong>
+                <p style="font-size: 8px; color: #64748b; margin: 2px 0;">Obreros creen que su sueldo real subió (pero
+                    no) y trabajan más.</p>
             </div>
             <div
-                style="background: white; border: 1px solid #e2e8f0; padding: 8px; border-radius: 8px; font-size: 8px;">
-                <strong>🕵️ Mala Información:</strong> "Mi precio subió, ¡debo vender más!" (Pero todos subieron).
+                style="background: white; border: 1px solid #e2e8f0; padding: 10px; border-radius: 8px; text-align: center;">
+                <div style="font-size: 20px;">🕵️</div>
+                <strong style="font-size: 10px; color: #1e293b; display: block;">Información</strong>
+                <p style="font-size: 8px; color: #64748b; margin: 2px 0;">Confundo inflación general con "mi producto es
+                    un éxito".</p>
             </div>
             <div
-                style="background: white; border: 1px solid #e2e8f0; padding: 8px; border-radius: 8px; font-size: 8px;">
-                <strong>🏷️ Precios Rígidos:</strong> Cambiar el menú es caro, mejor produzco más.
+                style="background: white; border: 1px solid #e2e8f0; padding: 10px; border-radius: 8px; text-align: center;">
+                <div style="font-size: 20px;">🏷️</div>
+                <strong style="font-size: 10px; color: #1e293b; display: block;">Precios Rígidos</strong>
+                <p style="font-size: 8px; color: #64748b; margin: 2px 0;">Costos de menú. No subo precios → vendo mucho
+                    volumen.</p>
             </div>
         </div>
     </div>
@@ -83,15 +142,33 @@
 
 <!-- Página 5 -->
 <div id="page-5" class="page-block">
-    <h2 class="handwritten-title">📐 ¿Qué tan Empinada?</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">📐 ¿Qué tan Empinada?</h2>
     <div class="handwritten-text">
-        <p>¿Qué tan rápido reaccionan las empresas? ⚡</p>
-        <div style="display: flex; flex-direction: column; gap: 5px;">
-            <div style="background: #f0fdf4; border-left: 4px solid #22c55e; padding: 8px; font-size: 9px;">
-                <strong>Plana:</strong> Mucha capacidad libre. Puedo producir más sin subir mucho los precios.
+        <h3 style="margin-bottom: 8px; font-size: 16px;">12.5 La Pendiente Importa</h3>
+
+        <div style="display: flex; gap: 15px; height: 100%;">
+            <!-- Flat -->
+            <div
+                style="flex: 1; background: #f0fdf4; border: 1px solid #22c55e; border-radius: 12px; padding: 10px; text-align: center; display: flex; flex-direction: column; align-items: center;">
+                <div style="font-size: 24px; margin-bottom: 5px;">🐢</div>
+                <strong style="color: #15803d; font-size: 12px;">Plana</strong>
+                <p style="font-size: 9px; color: #14532d; margin-top: 5px;">Mucha capacidad ociosa. Puedo producir más
+                    sin subir precios.</p>
+                <svg width="40" height="30" viewBox="0 0 40 30" style="margin-top:auto;">
+                    <path d="M 5,25 L 35,20" stroke="#22c55e" stroke-width="3" />
+                </svg>
             </div>
-            <div style="background: #fff7ed; border-left: 4px solid #f97316; padding: 8px; font-size: 9px;">
-                <strong>Empinada:</strong> Casi a full. Fabricar un extra cuesta carísimo, subo precios.
+
+            <!-- Steep -->
+            <div
+                style="flex: 1; background: #fff7ed; border: 1px solid #f97316; border-radius: 12px; padding: 10px; text-align: center; display: flex; flex-direction: column; align-items: center;">
+                <div style="font-size: 24px; margin-bottom: 5px;">🐇</div>
+                <strong style="color: #c2410c; font-size: 12px;">Empinada</strong>
+                <p style="font-size: 9px; color: #7c2d12; margin-top: 5px;">Estamos a tope. Producir un poco más cuesta
+                    carísimo.</p>
+                <svg width="40" height="30" viewBox="0 0 40 30" style="margin-top:auto;">
+                    <path d="M 5,25 L 35,5" stroke="#f97316" stroke-width="3" />
+                </svg>
             </div>
         </div>
     </div>
@@ -99,17 +176,33 @@
 
 <!-- Página 6 -->
 <div id="page-6" class="page-block">
-    <h2 class="handwritten-title">↔️ Saltos de la Oferta</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">↔️ Saltos de la Oferta</h2>
     <div class="handwritten-text">
-        <p>¿Qué hace que las empresas cambien sus planes? 📦</p>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 10px 0;">
+        <h3 style="margin-bottom: 8px; font-size: 16px;">12.6 Shocks de Oferta</h3>
+
+        <div style="display: flex; flex-direction: column; gap: 15px;">
             <div
-                style="background: #fdf2f8; padding: 10px; border-radius: 8px; border: 1px solid #db2777; font-size: 9px;">
-                <strong>⛽ Costos:</strong> Si sube el petróleo, la OA se va a la izquierda (↓).
+                style="background: white; border: 1px solid #cbd5e1; border-radius: 10px; padding: 10px; display: flex; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                <div style="font-size: 24px; margin-right: 15px;">⛽</div>
+                <div>
+                    <strong style="color: #be185d; font-size: 12px; display: block;">Shock Negativo (Costos)</strong>
+                    <p style="font-size: 10px; color: #475569; margin: 0;">Sube el petróleo/energía. Cuesta más
+                        producir.</p>
+                    <div style="margin-top: 5px; font-size: 10px; font-weight: bold; color: #be185d;">OA Izquierda ⬅️
+                        (Malo)</div>
+                </div>
             </div>
+
             <div
-                style="background: #ecfdf5; padding: 10px; border-radius: 8px; border: 1px solid #10b981; font-size: 9px;">
-                <strong>🚀 Tecnología:</strong> Si inventamos algo mejor, la OA va a la derecha (↑).
+                style="background: white; border: 1px solid #cbd5e1; border-radius: 10px; padding: 10px; display: flex; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                <div style="font-size: 24px; margin-right: 15px;">🚀</div>
+                <div>
+                    <strong style="color: #15803d; font-size: 12px; display: block;">Shock Positivo
+                        (Tecnología)</strong>
+                    <p style="font-size: 10px; color: #475569; margin: 0;">Nueva Internet/IA. Somos más productivos.</p>
+                    <div style="margin-top: 5px; font-size: 10px; font-weight: bold; color: #15803d;">OA Derecha ➡️
+                        (Bueno)</div>
+                </div>
             </div>
         </div>
     </div>
@@ -117,40 +210,62 @@
 
 <!-- Página 7 -->
 <div id="page-7" class="page-block">
-    <h2 class="handwritten-title">⚡ El Terror: Estanflación</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">⚡ El Terror: Estanflación</h2>
     <div class="handwritten-text">
+        <h3 style="margin-bottom: 8px; font-size: 16px;">12.7 La Peor Pesadilla</h3>
+
         <div
-            style="background: #fef2f2; border: 2px solid #ef4444; border-radius: 12px; padding: 15px; margin: 15px 0;">
-            <div style="font-weight: bold; color: #b91c1c; text-align: center;">⚠️ ESTANFLACIÓN (↑P + ↓Y)</div>
-            <p style="font-size: 10px; margin-top: 5px;">Es el peor de los mundos: los precios suben y la economía se
-                detiene.
-                Históricamente pasó en la <strong>Crisis del Petróleo de 1973</strong>.</p>
+            style="background: #450a0a; border: 2px solid #ef4444; border-radius: 12px; padding: 20px; text-align: center; color: white; position: relative; overflow: hidden;">
+            <div style="font-size: 40px; margin-bottom: 10px;">💀</div>
+            <div style="font-size: 24px; font-weight: bold; color: #fca5a5; margin-bottom: 10px;">ESTANFLACIÓN</div>
+
+            <div
+                style="display: flex; justify-content: center; gap: 20px; font-family: monospace; font-size: 16px; margin-bottom: 15px;">
+                <span style="color: #fca5a5;">↑ Precios</span>
+                <span style="color: #fca5a5;">+</span>
+                <span style="color: #fca5a5;">↓ PBI</span>
+            </div>
+
+            <p style="font-size: 10px; color: #fee2e2;">
+                "Los precios suben Y la gente pierde su empleo al mismo tiempo."
+            </p>
+            <div style="position: absolute; bottom: 5px; right: 10px; font-size: 8px; color: #7f1d1d;">Crisis 1973</div>
         </div>
     </div>
 </div>
 
 <!-- Página 8 -->
 <div id="page-8" class="page-block">
-    <h2 class="handwritten-title">🔄 El Camino al Equilibrio</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">🔄 Camino al Equilibrio</h2>
     <div class="handwritten-text">
-        <div style="display: flex; flex-direction: column; gap: 8px; margin: 10px 0;">
-            <div style="display: flex; align-items: center; gap: 10px; font-size: 10px;">
+        <h3 style="margin-bottom: 8px; font-size: 16px;">12.8 El Auto-Ajuste</h3>
+
+        <div style="position: relative; padding-left: 20px; border-left: 2px dashed #cbd5e1; margin-left: 10px;">
+            <div style="margin-bottom: 20px; position: relative;">
                 <div
-                    style="background: #3b82f6; color: white; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                    style="position: absolute; left: -27px; top: 0; background: #3b82f6; color: white; width: 14px; height: 14px; border-radius: 50%; font-size: 9px; display: flex; align-items: center; justify-content: center;">
                     1</div>
-                <span>Estamos "recalentados" (Y > Y*).</span>
+                <strong style="font-size: 11px; color: #1e3a8a;">Sobrecalentamiento (Y > Ȳ)</strong>
+                <p style="font-size: 10px; color: #64748b; margin: 2px 0;">Producimos por encima de la capacidad. No hay
+                    desempleados.</p>
             </div>
-            <div style="display: flex; align-items: center; gap: 10px; font-size: 10px;">
+
+            <div style="margin-bottom: 20px; position: relative;">
                 <div
-                    style="background: #3b82f6; color: white; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                    style="position: absolute; left: -27px; top: 0; background: #3b82f6; color: white; width: 14px; height: 14px; border-radius: 50%; font-size: 9px; display: flex; align-items: center; justify-content: center;">
                     2</div>
-                <span>Los sueldos suben porque no hay obreros libres.</span>
+                <strong style="font-size: 11px; color: #1e3a8a;">Sueldos Suben</strong>
+                <p style="font-size: 10px; color: #64748b; margin: 2px 0;">Los trabajadores piden aumento porque
+                    escasean.</p>
             </div>
-            <div style="display: flex; align-items: center; gap: 10px; font-size: 10px;">
+
+            <div style="position: relative;">
                 <div
-                    style="background: #3b82f6; color: white; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                    style="position: absolute; left: -27px; top: 0; background: #3b82f6; color: white; width: 14px; height: 14px; border-radius: 50%; font-size: 9px; display: flex; align-items: center; justify-content: center;">
                     3</div>
-                <span>La OACP sube (se va a la izq) hasta enfriar la economía.</span>
+                <strong style="font-size: 11px; color: #1e3a8a;">OACP Sube (A la Izquierda)</strong>
+                <p style="font-size: 10px; color: #64748b; margin: 2px 0;">Mayores costos → Menor Oferta. Volvemos al
+                    equilibrio (pero con precios más altos).</p>
             </div>
         </div>
     </div>
@@ -158,16 +273,39 @@
 
 <!-- Página 9 -->
 <div id="page-9" class="page-block">
-    <h2 class="handwritten-title">📊 Resumen OA</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">📊 Resumen OA</h2>
     <div class="handwritten-text">
-        <div style="display: flex; gap: 10px; margin: 10px 0;">
+        <h3 style="margin-bottom: 8px; font-size: 16px;">12.9 Los Dos Horizontes</h3>
+
+        <div style="display: flex; gap: 15px; height: 180px;">
+            <!-- Short -->
             <div
-                style="flex: 1; background: #f8fafc; border: 1px solid #cbd5e1; padding: 10px; border-radius: 10px; font-size: 9px;">
-                <strong>OACP ⏳</strong><br>• Sueldos Rígidos.<br>• El dinero importa.<br>• Pendiente (+).
+                style="flex: 1; background: #eff6ff; border: 1px solid #3b82f6; border-radius: 12px; padding: 15px; display: flex; flex-direction: column; text-align: center;">
+                <strong style="color: #1e40af; font-size: 12px; display: block; margin-bottom: 5px;">Corto
+                    Plazo</strong>
+                <div
+                    style="font-size: 10px; color: #1e3a8a; background: white; border-radius: 4px; padding: 2px 6px; display: inline-block; margin-bottom: 10px;">
+                    Pendiente +</div>
+                <ul
+                    style="text-align: left; padding-left: 15px; font-size: 9px; color: #1e40af; margin: 0; line-height: 1.5;">
+                    <li>Sueldos Rígidos.</li>
+                    <li>Dinero afecta Y.</li>
+                </ul>
             </div>
+
+            <!-- Long -->
             <div
-                style="flex: 1; background: #f8fafc; border: 1px solid #cbd5e1; padding: 10px; border-radius: 10px; font-size: 9px;">
-                <strong>OALP ⌛</strong><br>• Todo es Flexible.<br>• Solo importa la Tecnología.<br>• Vertical.
+                style="flex: 1; background: #fdf2f8; border: 1px solid #db2777; border-radius: 12px; padding: 15px; display: flex; flex-direction: column; text-align: center;">
+                <strong style="color: #be185d; font-size: 12px; display: block; margin-bottom: 5px;">Largo
+                    Plazo</strong>
+                <div
+                    style="font-size: 10px; color: #831843; background: white; border-radius: 4px; padding: 2px 6px; display: inline-block; margin-bottom: 10px;">
+                    Vertical |</div>
+                <ul
+                    style="text-align: left; padding-left: 15px; font-size: 9px; color: #9d174d; margin: 0; line-height: 1.5;">
+                    <li>Sueldos Flexibles.</li>
+                    <li>Solo Tecnología importa.</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -175,16 +313,32 @@
 
 <!-- Página 10 -->
 <div id="page-10" class="page-block">
-    <h2 class="handwritten-title">📝 Resumen Semana 12</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">📝 Resumen Semana 12</h2>
     <div class="handwritten-text">
-        <div
-            style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border: 1px solid #0ea5e9; padding: 15px; border-radius: 12px; margin: 15px 0;">
-            <ul style="font-size: 11px; margin: 0; padding-left: 20px;">
-                <li>La <strong>Oferta</strong> es el límite real de lo que un país puede lograr.</li>
-                <li>Los <strong>shocks de oferta</strong> son peligrosos porque causan inflación y recesión.</li>
-                <li>A largo plazo, solo crecemos si somos más eficientes.</li>
-            </ul>
+        <div style="display: flex; gap: 20px; height: 100%;">
+            <!-- Left: Resumen -->
+            <div style="flex: 1; display: flex; flex-direction: column;">
+                <h3 style="margin-bottom: 10px; font-size: 16px; color: #1e40af;">📌 Claves de la OA</h3>
+                <div class="resumen-box"
+                    style="flex: 1; margin: 0; padding: 15px; background: #f8fafc; border: 2px solid #cbd5e1;">
+                    <ul style="padding-left: 20px; margin: 0; line-height: 1.8; font-size: 11px;">
+                        <li><strong>OACP:</strong> Pendiente positiva por rigideces y errores de percepción.</li>
+                        <li><strong>OALP:</strong> Límite físico de la economía (Vertical).</li>
+                        <li><strong>Estanflación:</strong> El peor escenario (menos producción, más precios).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right: Badge -->
+            <div
+                style="flex: 0.8; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                <div
+                    style="width: 100px; height: 100px; background: #ecfdf5; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 4px solid #10b981; margin-bottom: 10px;">
+                    <div style="font-size: 40px;">✅</div>
+                </div>
+                <h3 style="color: #047857; font-size: 14px;">¡Semana 12 Completada!</h3>
+                <p style="font-size: 10px; color: #064e3b; margin-top: 5px;">¡Ahora sí, el Modelo Completo!</p>
+            </div>
         </div>
-        <p style="text-align: center; font-size: 14px; margin-top: 15px;">🏭 ¡Producción terminada!</p>
     </div>
 </div>

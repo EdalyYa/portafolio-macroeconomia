@@ -2,215 +2,389 @@
 <!-- 10 páginas de contenido detallado -->
 
 <!-- Página 1 -->
+<!-- Página 1 -->
 <div id="page-1" class="page-block">
-    <h2 class="handwritten-title">💱 Regímenes Cambiarios</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">💱 Tipo de Cambio Real</h2>
     <div class="handwritten-text">
-        <p><strong>Objetivo:</strong> Entender el valor de nuestra moneda frente al mundo 🌎.</p>
+        <h3 style="margin-bottom: 8px; font-size: 16px;">7.1 ¿Qué tan baratos somos?</h3>
 
         <div
-            style="background: #fdf2f8; border: 1px solid #db2777; border-radius: 12px; padding: 12px; margin: 15px 0;">
-            <div style="font-weight: bold; color: #9d174d; margin-bottom: 5px;">📍 Tipo de Cambio Real (q)</div>
-            <div style="font-size: 14px; text-align: center; font-weight: bold; margin: 8px 0;">q = E · P* / P</div>
-            <p style="font-size: 9px; margin: 0;">Mide el <strong>poder de compra</strong> relativo. Si q sube, somos
-                más competitivos (nuestros productos son más baratos para fuera).</p>
+            style="background: #fff; border: 1px solid #cbd5e1; border-radius: 10px; padding: 15px; margin-bottom: 20px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            <div style="font-size: 18px; font-weight: bold; color: #1e293b; font-family: monospace;">q = (E × P*) / P
+            </div>
+            <div style="font-size: 11px; color: #64748b; margin-top: 5px;">Nominal (E) × Precios USA (P*) ÷ Precios
+                Locales (P)</div>
         </div>
 
-        <div style="display: flex; gap: 10px; margin: 15px 0;">
+        <div style="display: flex; gap: 15px;">
+            <!-- Apreciación Real -->
             <div
-                style="flex: 1; background: #ecfdf5; padding: 8px; border-radius: 8px; text-align: center; border: 1px solid #10b981;">
-                <div style="font-size: 11px; font-weight: bold; color: #065f46;">⬇️ Apreciación</div>
-                <div style="font-size: 8px;">Moneda fuerte, ↑Importaciones</div>
+                style="flex: 1; background: #ecfdf5; border: 1px solid #10b981; border-radius: 10px; padding: 12px; text-align: center;">
+                <div style="font-size: 24px; margin-bottom: 5px;">⬇️ q</div>
+                <strong style="color: #065f46; font-size: 12px; display: block;">Apreciación Real</strong>
+                <p style="font-size: 10px; margin: 5px 0 0; color: #064e3b;">Nuestros productos se
+                    encarecen.<br>Perdemos competitividad.</p>
             </div>
+
+            <!-- Depreciación Real -->
             <div
-                style="flex: 1; background: #fef2f2; padding: 8px; border-radius: 8px; text-align: center; border: 1px solid #ef4444;">
-                <div style="font-size: 11px; font-weight: bold; color: #991b1b;">⬆️ Depreciación</div>
-                <div style="font-size: 8px;">Moneda débil, ↑Exportaciones</div>
+                style="flex: 1; background: #fef2f2; border: 1px solid #ef4444; border-radius: 10px; padding: 12px; text-align: center;">
+                <div style="font-size: 24px; margin-bottom: 5px;">⬆️ q</div>
+                <strong style="color: #991b1b; font-size: 12px; display: block;">Depreciación Real</strong>
+                <p style="font-size: 10px; margin: 5px 0 0; color: #7f1d1d;">Nuestros productos se abaratan.<br>Ganamos
+                    competitividad.</p>
             </div>
         </div>
     </div>
 </div>
 
 <!-- Página 2 -->
+<!-- Página 2 -->
 <div id="page-2" class="page-block">
-    <h2 class="handwritten-title">📋 Escala de Regímenes</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">📋 Escala de Regímenes</h2>
     <div class="handwritten-text">
-        <div
-            style="position: relative; height: 10px; margin: 30px 0; background: linear-gradient(90deg, #1e293b, #64748b, #3b82f6); border-radius: 5px;">
-            <div style="position: absolute; left: 0; top: 15px; text-align: center; width: 60px;">
-                <div style="font-size: 8px; font-weight: bold;">Fijo</div>
-                <div style="font-size: 7px;">(Dolarización)</div>
-            </div>
+        <h3 style="margin-bottom: 8px; font-size: 16px;">7.2 Del Control a la Libertad</h3>
+        <p style="font-size: 13px; margin-bottom: 20px;">Es un espectro continuo, no solo blanco o negro.</p>
+
+        <div style="display: flex; gap: 5px; height: 80px; align-items: stretch;">
+            <!-- Fijo -->
             <div
-                style="position: absolute; left: 50%; transform: translateX(-50%); top: 15px; text-align: center; width: 70px;">
-                <div style="font-size: 8px; font-weight: bold;">Administrado</div>
-                <div style="font-size: 7px;">(Dirty Float)</div>
+                style="flex: 1; background: #1e293b; color: white; border-radius: 8px; padding: 8px; display: flex; flex-direction: column; justify-content: center; text-align: center;">
+                <div style="font-size: 18px;">🔒</div>
+                <strong style="font-size: 10px;">Fijo / Dolarizado</strong>
             </div>
-            <div style="position: absolute; right: 0; top: 15px; text-align: center; width: 60px;">
-                <div style="font-size: 8px; font-weight: bold;">Flexible</div>
-                <div style="font-size: 7px;">(Free Float)</div>
+
+            <!-- Bandas -->
+            <div style="width: 20px; display: flex; align-items: center; justify-content: center; color: #cbd5e1;">➜
+            </div>
+
+            <!-- Administrado -->
+            <div
+                style="flex: 1; background: #475569; color: white; border-radius: 8px; padding: 8px; display: flex; flex-direction: column; justify-content: center; text-align: center;">
+                <div style="font-size: 18px;">👮</div>
+                <strong style="font-size: 10px;">Administrado (Dirty)</strong>
+            </div>
+
+            <!-- Bandas -->
+            <div style="width: 20px; display: flex; align-items: center; justify-content: center; color: #cbd5e1;">➜
+            </div>
+
+            <!-- Flexible -->
+            <div
+                style="flex: 1; background: #3b82f6; color: white; border-radius: 8px; padding: 8px; display: flex; flex-direction: column; justify-content: center; text-align: center;">
+                <div style="font-size: 18px;">🪁</div>
+                <strong style="font-size: 10px;">Flotación Libre</strong>
             </div>
         </div>
-        <p style="margin-top: 40px; font-size: 10px;">🇵🇪 <strong>Perú</strong> usa Flotación Administrada ("El BC
-            interviene para evitar saltos bruscos").</p>
+
+        <div
+            style="margin-top: 20px; background: #eff6ff; border-left: 4px solid #3b82f6; padding: 10px; font-size: 11px;">
+            🇵🇪 <strong>Perú:</strong> Flotación Sucia (Administrada). El BC interviene "cortando las colas" de la
+            volatilidad.
+        </div>
     </div>
 </div>
 
 <!-- Página 3 -->
+<!-- Página 3 -->
 <div id="page-3" class="page-block">
-    <h2 class="handwritten-title">🛡️ Intervención en TC Fijo</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">🛡️ Intervención en TC Fijo</h2>
     <div class="handwritten-text">
-        <p>¿Qué hace el BC ante cambios en el mercado? 🏦</p>
+        <h3 style="margin-bottom: 8px; font-size: 16px;">7.3 Defendiendo el Precio</h3>
+        <p style="font-size: 13px; margin-bottom: 15px;">El BC actúa como contraparte para anular al mercado.</p>
 
-        <div style="display: flex; flex-direction: column; gap: 8px; margin: 15px 0;">
+        <div style="display: flex; gap: 15px; height: 280px;">
+            <!-- Presión al Alza -->
             <div
-                style="background: white; border: 1px solid #cbd5e1; padding: 8px; border-radius: 8px; font-size: 10px;">
-                <strong>🔥 Presión a Subir (↑Demand $):</strong><br>
-                <span>BC <strong>Vende</strong> Dólares → ↓Reservas → ↓Oferta Monetaria</span>
+                style="flex: 1; background: #fff7ed; border: 1px solid #f97316; border-radius: 10px; padding: 10px; display: flex; flex-direction: column; justify-content: space-between;">
+                <div style="text-align: center;">
+                    <strong style="color: #c2410c; font-size: 12px; display: block; margin-bottom: 5px;">🔥 Presión
+                        Alza</strong>
+                    <div style="font-size: 10px; color: #7c2d12;">Mucha gente compra dólares.</div>
+                </div>
+                <div style="text-align: center; font-size: 24px;">⬆️💲</div>
+                <div
+                    style="background: white; padding: 8px; border-radius: 6px; border: 1px dashed #f97316; font-size: 10px;">
+                    <strong>Respuesta BC:</strong><br>VENDE Dólares.<br>↓ Reservas.<br>↓ M (Contracción).
+                </div>
             </div>
+
+            <!-- Presión a la Baja -->
             <div
-                style="background: white; border: 1px solid #cbd5e1; padding: 8px; border-radius: 8px; font-size: 10px;">
-                <strong>💧 Presión a Bajar (↑Supply $):</strong><br>
-                <span>BC <strong>Compra</strong> Dólares → ↑Reservas → ↑Oferta Monetaria</span>
+                style="flex: 1; background: #eff6ff; border: 1px solid #3b82f6; border-radius: 10px; padding: 10px; display: flex; flex-direction: column; justify-content: space-between;">
+                <div style="text-align: center;">
+                    <strong style="color: #1e40af; font-size: 12px; display: block; margin-bottom: 5px;">💧 Presión
+                        Baja</strong>
+                    <div style="font-size: 10px; color: #1e3a8a;">Muchos dólares sobran.</div>
+                </div>
+                <div style="text-align: center; font-size: 24px;">⬇️💲</div>
+                <div
+                    style="background: white; padding: 8px; border-radius: 6px; border: 1px dashed #3b82f6; font-size: 10px;">
+                    <strong>Respuesta BC:</strong><br>COMPRA Dólares.<br>↑ Reservas.<br>↑ M (Expansión).
+                </div>
             </div>
         </div>
-        <p style="font-size: 9px; font-style: italic; color: #64748b;">*El BC sacrifica su oro y divisas para mantener
-            el precio.</p>
     </div>
 </div>
 
 <!-- Página 4 -->
+<!-- Página 4 -->
 <div id="page-4" class="page-block">
-    <h2 class="handwritten-title">✅ Beneficios del TC Fijo</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">✅ Beneficios del TC Fijo</h2>
     <div class="handwritten-text">
-        <ul style="font-size: 11px; list-style: none; padding: 0;">
-            <li style="margin-bottom: 10px;">📍 <strong>Ancla Nominal:</strong> Disciplina contra la inflación.</li>
-            <li style="margin-bottom: 10px;">🤝 <strong>Estabilidad:</strong> Facilita el comercio (sabes cuánto costará
-                en un mes).</li>
-            <li style="margin-bottom: 10px;">📉 <strong>Menos Riesgo:</strong> Ayuda si tu país debe mucho dinero en
-                dólares.</li>
-        </ul>
-        <div
-            style="background: #fefce8; padding: 10px; border-radius: 8px; font-size: 10px; border: 1px dashed #f59e0b;">
-            💡 <strong>Dato:</strong> Bretton Woods fue el sistema más famoso de cambio fijo (oro-dólar).
+        <h3 style="margin-bottom: 8px; font-size: 16px;">7.4 ¿Por qué atarse?</h3>
+
+        <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 15px;">
+            <div style="background: #f0fdf4; border-left: 4px solid #16a34a; padding: 10px; border-radius: 4px;">
+                <strong style="color: #14532d; font-size: 12px; display: flex; align-items: center;"><span
+                        style="font-size: 16px; margin-right: 5px;">📍</span> Ancla Nominal</strong>
+                <p style="margin: 0; font-size: 11px; color: #064e3b;">Controla la inflación rápidamente al "importar"
+                    la estabilidad d3l dólar.</p>
+            </div>
+            <div style="background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 10px; border-radius: 4px;">
+                <strong style="color: #0c4a6e; font-size: 12px; display: flex; align-items: center;"><span
+                        style="font-size: 16px; margin-right: 5px;">🤝</span> Certeza Comercial</strong>
+                <p style="margin: 0; font-size: 11px; color: #075985;">Exportadores e importadores saben precios exactos
+                    a futuro. Cero riesgo cambiario.</p>
+            </div>
+            <div style="background: #fffbeb; border-left: 4px solid #f59e0b; padding: 10px; border-radius: 4px;">
+                <strong style="color: #78350f; font-size: 12px; display: flex; align-items: center;"><span
+                        style="font-size: 16px; margin-right: 5px;">📉</span> Menos Riesgo Financiero</strong>
+                <p style="margin: 0; font-size: 11px; color: #92400e;">Ideal si el país tiene mucha deuda en dólares
+                    (evita quiebras por devaluación).</p>
+            </div>
+        </div>
+
+        <div style="font-size: 10px; text-align: center; color: #94a3b8; font-style: italic;">
+            "Bretton Woods (1944-1971) fue la era dorada del cambio fijo."
         </div>
     </div>
 </div>
 
 <!-- Página 5 -->
+<!-- Página 5 -->
 <div id="page-5" class="page-block">
-    <h2 class="handwritten-title">❌ Problemas del TC Fijo</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">❌ Problemas del TC Fijo</h2>
     <div class="handwritten-text">
-        <ul style="font-size: 11px; list-style: none; padding: 0;">
-            <li style="margin-bottom: 8px;">🚫 <strong>Sin Autonomía:</strong> El BC no puede bajar tasas para frenar
-                una recesión.</li>
-            <li style="margin-bottom: 8px;">🚩 <strong>Especulación:</strong> Si el mercado huele debilidad, atacará tus
-                reservas.</li>
-            <li style="margin-bottom: 8px;">🌡️ <strong>Inflación Importada:</strong> Te "contagias" de la inflación del
-                país ancla.</li>
-        </ul>
-        <div
-            style="background: #fef2f2; border: 1px solid #ef4444; padding: 10px; border-radius: 8px; margin-top: 5px;">
-            <strong>Ejemplo:</strong> La crisis de Argentina en 2001 fue el colapso de un sistema fijo.
+        <h3 style="margin-bottom: 8px; font-size: 16px;">7.5 El Costo de la Estabilidad</h3>
+
+        <div style="display: grid; grid-template-columns: 1fr; gap: 10px;">
+            <!-- Card 1 -->
+            <div
+                style="background: #fef2f2; border: 1px solid #ef4444; border-radius: 8px; padding: 10px; display: flex; align-items: start;">
+                <div style="font-size: 20px; margin-right: 10px;">🚫</div>
+                <div>
+                    <strong style="color: #991b1b; font-size: 12px;">Sin Autonomía Monetaria</strong>
+                    <p style="margin: 2px 0 0; font-size: 10px; color: #7f1d1d;">No puedes bajar 'i' en recesión si eso
+                        devalúa la moneda. Estás atado de manos.</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+                style="background: #fef2f2; border: 1px solid #ef4444; border-radius: 8px; padding: 10px; display: flex; align-items: start;">
+                <div style="font-size: 20px; margin-right: 10px;">🎯</div>
+                <div>
+                    <strong style="color: #991b1b; font-size: 12px;">Imán de Ataques</strong>
+                    <p style="margin: 2px 0 0; font-size: 10px; color: #7f1d1d;">Si el mercado cree que te quedan pocas
+                        reservas, apostarán contra ti hasta quebrarte (Crisis cambiaria).</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+                style="background: #fff7ed; border: 1px solid #f97316; border-radius: 8px; padding: 10px; display: flex; align-items: start;">
+                <div style="font-size: 20px; margin-right: 10px;">🤒</div>
+                <div>
+                    <strong style="color: #c2410c; font-size: 12px;">Inflación Contagiada</strong>
+                    <p style="margin: 2px 0 0; font-size: 10px; color: #7c2d12;">Si USA tiene inflación, tú también la
+                        tendrás porque tu moneda está atada a la suya.</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
 <!-- Página 6 -->
+<!-- Página 6 -->
 <div id="page-6" class="page-block">
-    <h2 class="handwritten-title">💹 Régimen Flexible</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">💹 Régimen Flexible</h2>
     <div class="handwritten-text">
-        <p>Aquí manda la <strong>Oferta y Demanda</strong> ⚖️.</p>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 15px 0;">
+        <h3 style="margin-bottom: 8px; font-size: 16px;">7.6 La Mano Invisible</h3>
+        <p style="font-size: 13px; margin-bottom: 15px;">El precio del dólar lo fija el mercado, sin intervención
+            estatal.</p>
+
+        <div style="display: flex; gap: 15px; height: 250px;">
+            <!-- Oferta de Dólares -->
             <div
-                style="background: #ecfdf5; padding: 8px; border-radius: 8px; border: 1px solid #10b981; text-align: center;">
-                <div style="font-size: 16px;">🚢</div>
-                <div style="font-size: 9px;">↑Exportaciones<br><strong>↓E (Aprecia)</strong></div>
+                style="flex: 1; background: #fff; border: 1px solid #10b981; border-radius: 10px; padding: 10px; text-align: center; position: relative; overflow: hidden;">
+                <div
+                    style="position: absolute; top: -10px; right: -10px; background: #ecfdf5; width: 60px; height: 60px; border-radius: 50%; z-index: 0;">
+                </div>
+                <strong style="color: #065f46; font-size: 12px; position: relative; z-index: 1;">Exportadores
+                    (Oferta)</strong>
+                <div style="font-size: 32px; margin: 15px 0;">🚢</div>
+                <p style="font-size: 10px; color: #064e3b; margin: 0; line-height: 1.4;">Traen dólares y quieren moneda
+                    local.<br>Si hay muchos → <strong>El dólar Baja (Apreciación)</strong>.</p>
             </div>
+
+            <!-- Demanda de Dólares -->
             <div
-                style="background: #fef2f2; padding: 8px; border-radius: 8px; border: 1px solid #ef4444; text-align: center;">
-                <div style="font-size: 16px;">🛒</div>
-                <div style="font-size: 9px;">↑Importaciones<br><strong>↑E (Deprecia)</strong></div>
+                style="flex: 1; background: #fff; border: 1px solid #ef4444; border-radius: 10px; padding: 10px; text-align: center; position: relative; overflow: hidden;">
+                <div
+                    style="position: absolute; top: -10px; right: -10px; background: #fef2f2; width: 60px; height: 60px; border-radius: 50%; z-index: 0;">
+                </div>
+                <strong style="color: #991b1b; font-size: 12px; position: relative; z-index: 1;">Importadores
+                    (Demanda)</strong>
+                <div style="font-size: 32px; margin: 15px 0;">🛒</div>
+                <p style="font-size: 10px; color: #7f1d1d; margin: 0; line-height: 1.4;">Necesitan dólares para pagar
+                    fuera.<br>Si faltan → <strong>El dólar Sube (Depreciación)</strong>.</p>
             </div>
         </div>
     </div>
 </div>
 
 <!-- Página 7 -->
+<!-- Página 7 -->
 <div id="page-7" class="page-block">
-    <h2 class="handwritten-title">✅ Beneficios del TC Flexible</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">✅ Beneficios del TC Flexible</h2>
     <div class="handwritten-text">
-        <ul style="font-size: 11px; list-style: none; padding: 0;">
-            <li style="margin-bottom: 10px;">🕹️ <strong>Autonomía:</strong> El BC controla su propia oferta monetaria.
-            </li>
-            <li style="margin-bottom: 10px;">🛡️ <strong>Amortiguador:</strong> El tipo de cambio "absorbe" los golpes
-                externos.</li>
-            <li style="margin-bottom: 10px;">🏦 <strong>Ahorro:</strong> No necesitas tantas reservas para "pelear" con
-                el mercado.</li>
-        </ul>
+        <h3 style="margin-bottom: 8px; font-size: 16px;">7.7 Libertad de Maniobra</h3>
+
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+            <div style="background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 10px; border-radius: 4px;">
+                <strong style="color: #0c4a6e; font-size: 12px; display: flex; align-items: center;"><span
+                        style="font-size: 16px; margin-right: 5px;">🕹️</span> Política Autónoma</strong>
+                <p style="margin: 0; font-size: 11px; color: #075985;">El BC recupera el control de la tasa de interés
+                    ('i') para luchar contra el desempleo o la inflación interna.</p>
+            </div>
+            <div style="background: #f0fdf4; border-left: 4px solid #16a34a; padding: 10px; border-radius: 4px;">
+                <strong style="color: #14532d; font-size: 12px; display: flex; align-items: center;"><span
+                        style="font-size: 16px; margin-right: 5px;">🛡️</span> Amortiguador de Shocks</strong>
+                <p style="margin: 0; font-size: 11px; color: #064e3b;">Si caen los precios del cobre, el dólar sube
+                    solo, ayudando a los exportadores sin que el gobierno haga nada.</p>
+            </div>
+            <div style="background: #fffbeb; border-left: 4px solid #f59e0b; padding: 10px; border-radius: 4px;">
+                <strong style="color: #78350f; font-size: 12px; display: flex; align-items: center;"><span
+                        style="font-size: 16px; margin-right: 5px;">🏦</span> Ahorro de Reservas</strong>
+                <p style="margin: 0; font-size: 11px; color: #92400e;">El BC no necesita quemar millones de dólares
+                    defendiendo un precio artificial.</p>
+            </div>
+        </div>
     </div>
 </div>
 
 <!-- Página 8 -->
+<!-- Página 8 -->
 <div id="page-8" class="page-block">
-    <h2 class="handwritten-title">❌ Riesgos del TC Flexible</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">❌ Riesgos del TC Flexible</h2>
     <div class="handwritten-text">
-        <p>La libertad tiene su precio 💸.</p>
-        <div
-            style="background: #fff7ed; border-left: 4px solid #f97316; padding: 10px; margin: 10px 0; font-size: 11px;">
-            <strong>🌊 Volatilidad:</strong> Saltos bruscos que asustan a los inversores.
-        </div>
-        <div
-            style="background: #fff7ed; border-left: 4px solid #f97316; padding: 10px; margin: 10px 0; font-size: 11px;">
-            <strong>🔗 Descalce (Mismatch):</strong> Si ganas en soles pero debes en dólares, una depreciación te
-            quiebra.
+        <h3 style="margin-bottom: 8px; font-size: 16px;">7.8 La Volatilidad Duele</h3>
+
+        <div style="display: flex; gap: 15px; height: 100%;">
+            <!-- Card 1 -->
+            <div
+                style="flex: 1; background: #fff7ed; border: 1px solid #f97316; border-radius: 10px; padding: 12px; text-align: center;">
+                <div style="font-size: 32px; margin-bottom: 10px;">🌊</div>
+                <strong style="color: #c2410c; font-size: 12px;">Incertidumbre</strong>
+                <p style="font-size: 11px; margin-top: 5px; color: #7c2d12;">Cambios bruscos de precio dificultan
+                    inversiones a largo plazo. "¿Cuánto valdrá mi ganancia mañana?"</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+                style="flex: 1; background: #fef2f2; border: 1px solid #ef4444; border-radius: 10px; padding: 12px; text-align: center;">
+                <div style="font-size: 32px; margin-bottom: 10px;">💔</div>
+                <strong style="color: #991b1b; font-size: 12px;">Hoja de Balance (Descalce)</strong>
+                <p style="font-size: 11px; margin-top: 5px; color: #7f1d1d;">Si las empresas deben en Dólares pero
+                    venden en Soles, una devaluación masiva las quiebra inmediatamente.</p>
+            </div>
         </div>
     </div>
 </div>
 
 <!-- Página 9 -->
+<!-- Página 9 -->
 <div id="page-9" class="page-block">
-    <h2 class="handwritten-title">⚖️ ¿Cuál elegir?</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">⚖️ ¿Cuál elegir?</h2>
     <div class="handwritten-text">
-        <table class="data-table" style="font-size: 10px;">
-            <tr style="background: #f1f5f9;">
-                <th>Meta</th>
-                <th>Fijo 🔒</th>
-                <th>Flexible 💹</th>
-            </tr>
-            <tr>
-                <td>Baja Inflación</td>
-                <td>Mejor (Ancla)</td>
-                <td>Variable</td>
-            </tr>
-            <tr>
-                <td>Controlar M</td>
-                <td>Imposible</td>
-                <td>Total</td>
-            </tr>
-            <tr>
-                <td>Absorber Shocks</td>
-                <td>Precios internos</td>
-                <td>Tipo cambio</td>
-            </tr>
-        </table>
-        <p style="font-size: 10px; margin-top: 10px;">🛡️ <strong>Fear of Floating:</strong> Muchos países dicen ser
-            flexibles pero intervienen para evitar pánico.</p>
+        <h3 style="margin-bottom: 8px; font-size: 16px;">7.9 El Dilema del BC</h3>
+
+        <div style="overflow: hidden; border-radius: 8px; border: 1px solid #cbd5e1;">
+            <table style="width: 100%; border-collapse: collapse; font-size: 11px;">
+                <thead style="background: #f1f5f9;">
+                    <tr>
+                        <th style="padding: 10px; text-align: left; color: #475569;">Objetivo</th>
+                        <th style="padding: 10px; text-align: center; color: #0f172a;">Régimen Fijo 🔒</th>
+                        <th style="padding: 10px; text-align: center; color: #0f172a;">Régimen Flexible 🪁</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                        <td style="padding: 10px; font-weight: bold; color: #334155;">Bajar Inflación</td>
+                        <td
+                            style="padding: 10px; text-align: center; background: #ecfdf5; color: #065f46; font-weight: bold;">
+                            Excelente (Ancla)</td>
+                        <td style="padding: 10px; text-align: center; color: #64748b;">Variable</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                        <td style="padding: 10px; font-weight: bold; color: #334155;">Política Monetaria</td>
+                        <td
+                            style="padding: 10px; text-align: center; background: #fef2f2; color: #991b1b; font-weight: bold;">
+                            Nula (Atada)</td>
+                        <td
+                            style="padding: 10px; text-align: center; background: #ecfdf5; color: #065f46; font-weight: bold;">
+                            Total Independencia</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; font-weight: bold; color: #334155;">Shock Externo</td>
+                        <td style="padding: 10px; text-align: center; color: #64748b;">Ajuste vía Recesión</td>
+                        <td
+                            style="padding: 10px; text-align: center; background: #ecfdf5; color: #065f46; font-weight: bold;">
+                            Ajuste Automático</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div
+            style="margin-top: 15px; padding: 10px; background: #f8fafc; border-radius: 8px; border-left: 4px solid #64748b; font-size: 11px;">
+            <strong>Miedo a Flotar:</strong> En la práctica, casi nadie deja el tipo de cambio 100% libre. La mayoría
+            usa una "Flotación Sucia" para tener lo mejor de ambos mundos.
+        </div>
     </div>
 </div>
 
 <!-- Página 10 -->
+<!-- Página 10 -->
 <div id="page-10" class="page-block">
-    <h2 class="handwritten-title">📝 Resumen Semana 7</h2>
+    <h2 class="handwritten-title" style="margin-bottom: 10px; font-size: 26px;">📝 Resumen Semana 7</h2>
     <div class="handwritten-text">
-        <div
-            style="background: linear-gradient(135deg, #fdf2f8 0%, #fae8ff 100%); border: 1px solid #d946ef; padding: 12px; border-radius: 12px;">
-            <ul style="font-size: 11px; margin: 0; padding-left: 20px;">
-                <li>El <strong>TC Fijo</strong> requiere muchas reservas y credibilidad.</li>
-                <li>El <strong>TC Flexible</strong> permite política monetaria independiente.</li>
-                <li>La <strong>Dolarización</strong> es el caso extremo de tipo de cambio fijo.</li>
-                <li>El <strong>Currency Mismatch</strong> es el mayor riesgo de la depreciación.</li>
-            </ul>
+        <div style="display: flex; gap: 20px; height: 100%;">
+            <!-- Left: Resumen -->
+            <div style="flex: 1; display: flex; flex-direction: column;">
+                <h3 style="margin-bottom: 10px; font-size: 16px; color: #1e40af;">📌 Cierre Unidad 1</h3>
+                <div class="resumen-box"
+                    style="flex: 1; margin: 0; padding: 15px; background: #f8fafc; border: 2px solid #cbd5e1;">
+                    <ul style="padding-left: 20px; margin: 0; line-height: 1.8; font-size: 11px;">
+                        <li><strong>TC Fijo:</strong> Estabilidad comercial pero sin herramientas contra crisis.</li>
+                        <li><strong>TC Flexible:</strong> Amortiguador automático pero volátil.</li>
+                        <li><strong>Tipo de Cambio Real (q):</strong> La verdadera medida de competitividad.</li>
+                        <li><strong>Descalce:</strong> El peligro mortal de endeudarse en dólares ganando en pesos.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right: Badge -->
+            <div
+                style="flex: 0.8; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                <div
+                    style="width: 120px; height: 120px; background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 4px solid #db2777; box-shadow: 0 4px 10px rgba(219, 39, 119, 0.3);">
+                    <div style="font-size: 48px;">🌟</div>
+                </div>
+                <h3 style="color: #be185d; font-size: 14px; margin-top: 15px;">¡Fin de la Unidad 1!</h3>
+                <p style="font-size: 10px; color: #831843; margin-top: 5px;">Has dominado el Corto Plazo (IS-LM-BP).</p>
+            </div>
         </div>
-        <p style="text-align: center; font-size: 14px; margin-top: 20px;">🌟 Fin de la Unidad 1</p>
     </div>
 </div>
