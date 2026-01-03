@@ -998,7 +998,406 @@
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         }
 
-        /* ========== PORTADA ESTILO LIBRO ACADÉMICO ELEGANTE ========== */
+        /* ========== PORTADA MEJORADA - PROFESSIONAL LUXURY ========== */
+        .cover-page {
+            position: absolute;
+            top: -40px;
+            left: -130px;
+            right: -20px;
+            bottom: -40px;
+            padding: 20px;
+            background: radial-gradient(circle at center, #0f172a 0%, #020617 100%);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 8px solid #1e293b;
+            box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.9);
+            z-index: 100;
+            border-radius: 0 12px 12px 0;
+        }
+
+        /* Trama de fondo tecnológica/económica */
+        .cover-page::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 30px 30px;
+            background-position: center;
+            opacity: 0.4;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        /* Marco Dorado con esquinas */
+        .cover-frame {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            bottom: 20px;
+            border: 2px solid rgba(217, 119, 6, 0.3);
+            border-radius: 15px;
+            z-index: 2;
+            pointer-events: none;
+            box-shadow: inset 0 0 40px rgba(217, 119, 6, 0.05);
+        }
+
+        .cover-frame::before,
+        .cover-frame::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border: 3px solid #d97706;
+            transition: all 0.5s ease;
+        }
+
+        .cover-frame::before {
+            top: -2px;
+            left: -2px;
+            border-right: none;
+            border-bottom: none;
+            border-radius: 15px 0 0 0;
+        }
+
+        .cover-frame::after {
+            bottom: -2px;
+            right: -2px;
+            border-left: none;
+            border-top: none;
+            border-radius: 0 0 15px 0;
+        }
+
+        /* Contenedor principal centrado */
+        .cover-content {
+            position: relative;
+            z-index: 10;
+            width: 90%;
+            max-width: 900px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            padding: 40px;
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow:
+                0 25px 50px -12px rgba(0, 0, 0, 0.5),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            transform: translateZ(0);
+        }
+
+        /* Encabezado Institucional */
+        .cover-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            gap: 20px;
+            border-bottom: 1px solid rgba(251, 191, 36, 0.2);
+            padding-bottom: 20px;
+            margin-bottom: 10px;
+        }
+
+        .uni-logo {
+            width: 85px;
+            height: 85px;
+            object-fit: contain;
+            filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.15));
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            background: rgba(255, 255, 255, 0.05);
+            padding: 8px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .uni-logo:hover {
+            transform: scale(1.15) rotate(3deg);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .uni-text {
+            flex: 1;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .uni-title {
+            font-family: 'Grenze Gotisch', Georgia, serif;
+            font-size: clamp(24px, 2.5vw, 34px);
+            color: #fbbf24;
+            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+            margin: 0;
+            line-height: 1.1;
+            letter-spacing: 0.5px;
+        }
+
+        .uni-subtitle {
+            font-family: 'Cinzel', 'Playfair Display', serif;
+            font-size: clamp(12px, 1.5vw, 16px);
+            color: #cbd5e1;
+            margin-top: 8px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 600;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+            padding: 4px 20px;
+            border-radius: 20px;
+        }
+
+        /* Título Principal */
+        .main-title-container {
+            text-align: center;
+            margin: 15px 0;
+            position: relative;
+            padding: 0 20px;
+        }
+
+        .main-title {
+            font-family: 'UnifrakturMaguntia', cursive;
+            font-size: clamp(50px, 7vw, 90px);
+            color: transparent;
+            background: linear-gradient(180deg, #fcd34d 0%, #f59e0b 50%, #b45309 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            filter: drop-shadow(0 5px 0px rgba(0, 0, 0, 0.5));
+            line-height: 1.1;
+            margin: 0;
+            animation: titleFloat 6s ease-in-out infinite;
+            letter-spacing: 2px;
+        }
+
+        @keyframes titleFloat {
+
+            0%,
+            100% {
+                transform: translateY(0);
+                filter: drop-shadow(0 5px 0px rgba(0, 0, 0, 0.5));
+            }
+
+            50% {
+                transform: translateY(-8px);
+                filter: drop-shadow(0 15px 5px rgba(0, 0, 0, 0.3));
+            }
+        }
+
+        .semester-badge {
+            background: linear-gradient(90deg, #991b1b, #ef4444);
+            color: white;
+            padding: 6px 24px;
+            border-radius: 50px;
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            font-size: clamp(14px, 1.5vw, 18px);
+            display: inline-block;
+            margin-top: -10px;
+            position: relative;
+            z-index: 2;
+            box-shadow:
+                0 4px 15px rgba(220, 38, 38, 0.4),
+                inset 0 1px 0 rgba(255, 255, 255, 0.3);
+            border: 1px solid #fecaca;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Sección de Docente */
+        .teacher-info {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            color: #94a3b8;
+            font-size: clamp(16px, 1.8vw, 20px);
+            margin-bottom: 5px;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 10px 30px;
+            border-radius: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .teacher-name {
+            color: #fbbf24;
+            font-style: italic;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+
+        /* Tarjetas de Estudiantes */
+        .students-box {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .student-badge {
+            background: linear-gradient(145deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.9));
+            border: 1px solid rgba(251, 191, 36, 0.2);
+            padding: 15px 25px;
+            border-radius: 16px;
+            text-align: center;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            flex: 1;
+            min-width: 250px;
+            max-width: 350px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .student-badge::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: #d97706;
+            opacity: 0.7;
+        }
+
+        .student-badge:hover {
+            background: rgba(30, 41, 59, 1);
+            transform: translateY(-5px);
+            border-color: rgba(251, 191, 36, 0.6);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .student-label {
+            font-size: 11px;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            display: block;
+            margin-bottom: 6px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+        }
+
+        .student-val {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(16px, 1.8vw, 20px);
+            color: #f1f5f9;
+            font-weight: 700;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Botones de Acción */
+        .cover-buttons {
+            display: flex;
+            gap: 25px;
+            margin-top: 15px;
+            justify-content: center;
+        }
+
+        .glow-btn {
+            position: relative;
+            padding: 14px 40px;
+            background: linear-gradient(180deg, rgba(15, 23, 42, 0.8) 0%, rgba(15, 23, 42, 1) 100%);
+            border: 1px solid #fbbf24;
+            color: #fbbf24;
+            font-family: 'Grenze Gotisch', serif;
+            font-size: 22px;
+            border-radius: 12px;
+            cursor: pointer;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .glow-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(251, 191, 36, 0.2), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .glow-btn:hover {
+            background: #fbbf24;
+            color: #0f172a;
+            box-shadow: 0 0 40px rgba(251, 191, 36, 0.4);
+            transform: translateY(-3px) scale(1.02);
+            border-color: #fbbf24;
+        }
+
+        .glow-btn:hover::before {
+            left: 100%;
+        }
+
+        .glow-btn:active {
+            transform: translateY(0);
+        }
+
+        /* Elementos decorativos */
+        .decoration-icon {
+            position: absolute;
+            opacity: 0.1;
+            pointer-events: none;
+            z-index: 0;
+            animation: spinSlow 60s linear infinite;
+        }
+
+        .deco-top-right {
+            top: -50px;
+            right: -50px;
+            width: 300px;
+            height: 300px;
+        }
+
+        .deco-bottom-left {
+            bottom: -50px;
+            left: -50px;
+            width: 250px;
+            height: 250px;
+        }
+
+        @keyframes spinSlow {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Ocultar elementos antiguos para compatibilidad */
+        .notebook-subtitle-label,
+        .logo-spaces,
+        .logo-space,
+        .corner-decoration,
+        .notebook-decoration,
+        .students-title,
+        .student-icon,
+        .student-name::before,
+        .course-title::before,
+        .start-buttons,
+        .start-buttons-inner {
+            display: none !important;
+        }
+
         .cover-page {
             position: absolute;
             top: -40px;
@@ -3125,45 +3524,59 @@
                     {
                         content: `
                             <div class="cover-page">
-                                <!-- Encabezado universitario con logos -->
-                                <div class="notebook-label">
-                                    <img src="assets/una.png" alt="Logo UNA" class="logo-inline" onerror="this.style.display='none'" />
-                                    <div class="notebook-label-text">
-                                        <div class="cover-title">Universidad Nacional del Altiplano</div>
-                                        <div class="cover-subtitle">Facultad de Ingeniería Económica</div>
-                                        <div class="cover-subtitle">Escuela Profesional de Ingeniería Económica</div>
-                                    </div>
-                                    <img src="assets/fie.png" alt="Logo FIE" class="logo-inline" onerror="this.style.display='none'" />
-                                </div>
+                                <div class="cover-frame"></div>
                                 
-                                <!-- Título principal del curso -->
-                                <div class="course-info">
-                                    <div class="course-title">Macroeconomía I</div>
-                                    <div class="course-details">
-                                        <span>Periodo: <strong>2025 - II</strong></span>
-                                        <span>Docente: <strong>Humberto Calizaya Coila</strong></span>
-                                    </div>
-                                </div>
+                                <!-- Decoración de fondo -->
+                                <svg class="decoration-icon deco-top-right" viewBox="0 0 100 100" fill="none" stroke="white" stroke-width="0.5">
+                                    <circle cx="50" cy="50" r="40" stroke-dasharray="5 5" />
+                                    <circle cx="50" cy="50" r="30" stroke-opacity="0.5" />
+                                    <path d="M50 10 L50 90 M10 50 L90 50" stroke-opacity="0.3" />
+                                </svg>
                                 
-                                <!-- Estudiantes -->
-                                <div class="students-container">
-                                    <div class="students-grid">
-                                        <div class="student-card">
-                                            <div class="student-name">Edaly Yamileth Paredes Condori</div>
+                                <div class="cover-content">
+                                    <!-- Encabezado -->
+                                    <div class="cover-header">
+                                        <img src="assets/una.png" alt="UNA" class="uni-logo" onerror="this.style.display='none'">
+                                        <div class="uni-text">
+                                            <h2 class="uni-title">Universidad Nacional del Altiplano</h2>
+                                            <div class="uni-subtitle">Facultad de Ingeniería Económica</div>
+                                            <div class="uni-subtitle" style="font-size: 11px; margin-top: 2px; opacity: 0.8;">Escuela Profesional de Ingeniería Económica</div>
                                         </div>
-                                        <div class="student-card">
-                                            <div class="student-name">Yhoselyn Magaly Nina Mamani</div>
+                                        <img src="assets/fie.png" alt="FIE" class="uni-logo" onerror="this.style.display='none'">
+                                    </div>
+
+                                    <!-- Título Principal -->
+                                    <div class="main-title-container">
+                                        <h1 class="main-title">Macroeconomía I</h1>
+                                        <div class="semester-badge">Periodo 2025 - II</div>
+                                    </div>
+
+                                    <!-- Docente -->
+                                    <div class="teacher-info">
+                                        Docente: <span class="teacher-name">M.Sc. Humberto Calizaya Coila</span>
+                                    </div>
+
+                                    <!-- Estudiantes -->
+                                    <div class="students-box">
+                                        <div class="student-badge">
+                                            <span class="student-label">Estudiante</span>
+                                            <div class="student-val">Edaly Y. Paredes Condori</div>
+                                        </div>
+                                        <div class="student-badge">
+                                            <span class="student-label">Estudiante</span>
+                                            <div class="student-val">Yhoselyn M. Nina Mamani</div>
                                         </div>
                                     </div>
-                                </div>
-                                
-                                <!-- Botones de acceso a unidades -->
-                                <div class="unit-access-buttons">
-                                    <button class="unit-btn" onclick="selectUnit(1)">📖 Unidad I</button>
-                                    <button class="unit-btn" onclick="selectUnit(2)">📊 Unidad II</button>
+
+                                    <!-- Botones -->
+                                    <div class="cover-buttons">
+                                        <button class="glow-btn" onclick="selectUnit(1)">📖 Unidad I</button>
+                                        <button class="glow-btn" onclick="selectUnit(2)">📊 Unidad II</button>
+                                    </div>
                                 </div>
                             </div>
                         `
+
                     }
                 ]
             },
